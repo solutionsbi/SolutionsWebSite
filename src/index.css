@@ -5,6 +5,7 @@
 @layer base {
     body {
         font-family: 'Inter', sans-serif;
+        @apply bg-neutral-darkest text-text-alternative;
     }
 
     h1,

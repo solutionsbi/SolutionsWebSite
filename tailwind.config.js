@@ -99,6 +99,7 @@ export default {
                 brand: {
                     black: '#000000',
                     white: '#ffffff',
+                    blueBrand: '#2960F7',
                 },
                 neutral: {
                     DEFAULT: '#666666',
