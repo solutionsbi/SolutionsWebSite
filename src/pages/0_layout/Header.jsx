@@ -1,4 +1,4 @@
-import { Button } from '../ui/shadcn/button'
+import { Button } from '../../components/shadcn/button'
 import { Link } from 'react-router-dom'
 import {
     Select,
@@ -6,10 +6,10 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/shadcn/select'
-import { DropdownMenuCustom } from '../ui/Custom/DropDownMenuCustom'
+} from '@/components/shadcn/select'
+import { DropdownMenuCustom } from '../../components/custom/DropDownMenuCustom'
 import { Globe } from 'lucide-react'
-import { Navbar2 } from '../ui/relume/Navbar2'
+import { Navbar2 } from '../../components/relume/Navbar2'
 
 export default function Header() {
     return (
