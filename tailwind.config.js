@@ -1,15 +1,14 @@
 import tailwindcssAnimate from 'tailwindcss-animate'
+import typography from '@tailwindcss/typography'
 
-/** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ['class'],
-    content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+    content: [
+        './index.html',
+        './src/**/*.{js,ts,jsx,tsx}',
+        './node_modules/@relume_io/relume-ui/dist/**/*.{js,ts,jsx,tsx}',
+    ],
     theme: {
-        // Your existing theme configuration
-        fontFamily: {
-            ibm: ['IBM Plex Sans', 'sans-serif'],
-            inter: ['Inter', 'sans-serif'],
-        },
         screens: {
             xs: '320px',
             sm: '480px',
@@ -47,8 +46,6 @@ export default {
             large: '0px 20px 24px -4px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.03)',
             xlarge: '0px 24px 48px -12px rgba(0, 0, 0, 0.18)',
             xxlarge: '0px 32px 64px -12px rgba(0, 0, 0, 0.14)',
-            custom1:
-                '0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 0px 50px 0px rgba(0, 0, 0, 0.25) inset',
         },
         fontSize: {
             xs: ['0.75rem', { lineHeight: '1.5' }],
@@ -182,8 +179,39 @@ export default {
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
+                'loop-horizontally': 'loop-horizontally 20s linear infinite',
+                'loop-testimonials': 'loop-testimonials 30s linear infinite',
+                'loop-vertically': 'loop-vertically 30s linear infinite',
+                'marquee-horizontally': 'marquee-top 30s linear infinite',
+                'marquee-top': 'marquee-top 50s linear infinite',
+                'marquee-right': 'marquee-right 25s linear infinite',
+                'marquee-bottom': 'marquee-bottom 50s linear infinite',
             },
         },
     },
-    plugins: [tailwindcssAnimate],
+    plugins: [
+        tailwindcssAnimate,
+        typography,
+        ({ addComponents }) => {
+            const newComponents = {
+                '.animate-disable': {
+                    animationName: 'none',
+                    animationDuration: '0s',
+                    '--tw-enter-opacity': 'initial',
+                    '--tw-enter-scale': 'initial',
+                    '--tw-enter-rotate': 'initial',
+                    '--tw-enter-translate-x': 'initial',
+                    '--tw-enter-translate-y': 'initial',
+                },
+                '.no-scrollbar::-webkit-scrollbar': {
+                    display: 'none',
+                },
+                '.no-scrollbar': {
+                    '-ms-overflow-style': 'none',
+                    scrollbarWidth: 'none',
+                },
+            }
+            addComponents(newComponents)
+        },
+    ],
 }
