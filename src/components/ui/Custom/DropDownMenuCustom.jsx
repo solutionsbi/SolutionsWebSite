@@ -2,7 +2,7 @@ import { ChevronDown } from 'lucide-react'
 
 import { Link } from 'react-router-dom'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/shadcn/button'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -16,7 +16,7 @@ import {
     DropdownMenuSubContent,
     DropdownMenuSubTrigger,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@/components/ui/shadcn/dropdown-menu'
 
 export function DropdownMenuCustom() {
     return (

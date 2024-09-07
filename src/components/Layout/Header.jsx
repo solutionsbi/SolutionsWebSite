@@ -1,4 +1,4 @@
-import { Button } from '../ui/button'
+import { Button } from '../ui/shadcn/button'
 import { Link } from 'react-router-dom'
 
 import {
@@ -7,7 +7,7 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/select'
+} from '@/components/ui/shadcn/select'
 
 import { DropdownMenuCustom } from '../ui/Custom/DropDownMenuCustom'
 
