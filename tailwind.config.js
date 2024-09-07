@@ -6,6 +6,10 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         // Your existing theme configuration
+        fontFamily: {
+            ibm: ['IBM Plex Sans', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+        },
         screens: {
             xs: '320px',
             sm: '480px',
@@ -43,6 +47,8 @@ export default {
             large: '0px 20px 24px -4px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.03)',
             xlarge: '0px 24px 48px -12px rgba(0, 0, 0, 0.18)',
             xxlarge: '0px 32px 64px -12px rgba(0, 0, 0, 0.14)',
+            custom1:
+                '0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 0px 50px 0px rgba(0, 0, 0, 0.25) inset',
         },
         fontSize: {
             xs: ['0.75rem', { lineHeight: '1.5' }],

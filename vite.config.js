@@ -1,6 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import { fileURLToPath } from 'url'
+
+// Convert import.meta.url to a file path
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,10 +15,10 @@ export default defineConfig({
         watch: {
             usePolling: true, // Necessary for some environments like Docker where file changes might not be detected.
         },
-        resolve: {
-            alias: {
-                '@': path.resolve(__dirname, './src'),
-            },
+    },
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, './src'),
         },
     },
 })

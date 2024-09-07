@@ -16,7 +16,8 @@
     h6 {
         font-family: 'IBM Plex Sans', sans-serif;
     }
-  :root {
-        --radius: 0.5rem;
+
+    :focus-visible {
+        @apply outline-none;
     }
 }

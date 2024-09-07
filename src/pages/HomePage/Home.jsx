@@ -1,7 +1,9 @@
 export default function Home() {
     return (
-        <>
-            <h1 className="text-blue-500">Home</h1>
-        </>
+        <div className="grid">
+            <section className="grid place-content-center h-[88vh]">
+                <h1>Hero</h1>
+            </section>
+        </div>
     )
 }
