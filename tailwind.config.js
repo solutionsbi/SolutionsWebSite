@@ -18,6 +18,11 @@ export default {
             '2xl': '1440px',
             '3xl': '1920px',
         },
+        fontFamily: {
+            ibm: ['IBM Plex Sans', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+        },
+
         container: {
             center: true,
             screens: {
@@ -46,6 +51,7 @@ export default {
             large: '0px 20px 24px -4px rgba(0, 0, 0, 0.08), 0px 8px 8px -4px rgba(0, 0, 0, 0.03)',
             xlarge: '0px 24px 48px -12px rgba(0, 0, 0, 0.18)',
             xxlarge: '0px 32px 64px -12px rgba(0, 0, 0, 0.14)',
+            custom: '0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 0px 50px 0px rgba(0, 0, 0, 0.25) inset',
         },
         fontSize: {
             xs: ['0.75rem', { lineHeight: '1.5' }],
@@ -101,7 +107,7 @@ export default {
                 brand: {
                     black: '#000000',
                     white: '#ffffff',
-                    blueBrand: '#2960F7',
+                    blue: '#2960F7',
                 },
                 neutral: {
                     DEFAULT: '#666666',

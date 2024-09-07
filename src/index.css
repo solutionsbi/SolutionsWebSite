@@ -21,3 +21,9 @@
         @apply outline-none;
     }
 }
+
+@layer utilities {
+    .blurred-bg {
+        @apply backdrop-blur-md shadow-custom border border-x-neutral-100/10;
+    }
+}

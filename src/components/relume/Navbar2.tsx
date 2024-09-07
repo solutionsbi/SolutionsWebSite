@@ -1,10 +1,12 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Button, useMediaQuery } from '@relume_io/relume-ui'
+import { useMediaQuery } from '@relume_io/relume-ui'
 import type { ButtonProps } from '@relume_io/relume-ui'
 import { AnimatePresence, motion } from 'framer-motion'
 import { RxChevronDown } from 'react-icons/rx'
+import { Link } from 'react-router-dom'
+import { Button } from '../shadcn/button'
 
 type ImageProps = {
     url?: string
@@ -15,6 +17,7 @@ type ImageProps = {
 type NavLink = {
     url: string
     title: string
+    icon?: string
     subMenuLinks?: NavLink[]
 }
 
@@ -37,12 +40,13 @@ export const Navbar2 = (props: Navbar2Props) => {
     const isMobile = useMediaQuery('(max-width: 991px)')
 
     return (
-        <nav className="flex w-full items-center border-b border-border-primary bg-background-primary lg:min-h-18 lg:px-[5%]">
+        <nav className="flex w-full items-center lg:min-h-24 lg:px-[5%] relative">
             <div className="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
                 <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
-                    <a href={logo.url}>
+                    <Link to={`${logo.url}`}>
                         <img src={logo.src} alt={logo.alt} />
-                    </a>
+                    </Link>
+
                     <div className="flex items-center gap-4 lg:hidden">
                         <div>
                             {buttons.map((button, index) => (
@@ -98,7 +102,7 @@ export const Navbar2 = (props: Navbar2Props) => {
                     initial="close"
                     exit="close"
                     transition={{ duration: 0.4 }}
-                    className="overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+                    className="lg:gap-4 overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
                 >
                     {navLinks.map((navLink, index) => (
                         <div key={index} className="first:pt-4 lg:first:pt-0">
@@ -121,8 +125,15 @@ export const Navbar2 = (props: Navbar2Props) => {
                 </motion.div>
                 <div className="hidden justify-self-end lg:block">
                     {buttons.map((button, index) => (
-                        <Button key={index} className="px-6 py-2" {...button}>
-                            {button.title}
+                        <Button
+                            asChild={true}
+                            key={index}
+                            variant="blue"
+                            {...button}
+                        >
+                            <a href={button.url} target="_blank">
+                                {button.title}
+                            </a>
                         </Button>
                     ))}
                 </div>
@@ -180,16 +191,17 @@ const SubMenu = ({
                             },
                         }}
                         transition={{ duration: 0.2 }}
-                        className="bg-background-primary lg:absolute lg:z-50 lg:border lg:border-border-primary lg:p-2 lg:[--y-close:25%]"
+                        className="lg:absolute blurred-bg lg:z-50 lg:border shadow-custom lg:border-border-alternative/10 lg:rounded-xl lg:py-3 lg:[--y-close:25%]"
                     >
                         {navLink.subMenuLinks?.map((subMenuLink, index) => (
-                            <a
+                            <Link
                                 key={index}
-                                href={subMenuLink.url}
-                                className="block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+                                to={subMenuLink.url}
+                                className="py-3 text-center lg:px-4 lg:py-2 lg:text-left flex gap-3"
                             >
+                                <img src={subMenuLink.icon} alt="" />
                                 {subMenuLink.title}
-                            </a>
+                            </Link>
                         ))}
                     </motion.nav>
                 </AnimatePresence>
