@@ -14,7 +14,7 @@ export const Layout245 = (props: Layout245Props) => {
         ...props,
     } as Props
     return (
-        <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+        <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
             <div className="container flex flex-col items-start">
                 <div className="grid grid-cols-1 items-start justify-between gap-5 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:gap-x-20">
                     <div>
@@ -29,6 +29,6 @@ export const Layout245 = (props: Layout245Props) => {
                     <p className="md:text-md">{description}</p>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

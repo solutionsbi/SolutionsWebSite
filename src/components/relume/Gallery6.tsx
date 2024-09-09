@@ -18,7 +18,7 @@ export const Gallery6 = (props: Gallery6Props) => {
         ...props,
     } as Props
     return (
-        <section id="relume" className="px-[5%]">
+        <div id="relume" className="px-[5%]">
             <div className="container">
                 <div className="mx-auto grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] items-center justify-center gap-4">
                     {images.map((image, index) => (
@@ -36,6 +36,6 @@ export const Gallery6 = (props: Gallery6Props) => {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

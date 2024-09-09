@@ -3,28 +3,21 @@ import { Button } from '../ui/button'
 import type { ButtonProps } from '@relume_io/relume-ui'
 import { Link } from 'react-router-dom'
 
-type VideoProps = {
-    src: string
-    alt?: string
-}
-
 type Props = {
     heading: React.ReactNode
     description: string
     buttons: ButtonProps[]
-    video: VideoProps
 }
 
-export type Header30Props = React.ComponentPropsWithoutRef<'section'> &
+export type Header30Props = React.ComponentPropsWithoutRef<'div'> &
     Partial<Props>
 
 export const Header30 = (props: Header30Props) => {
-    const { heading, description, buttons, video } = {
-        ...Header30Defaults,
+    const { heading, description, buttons } = {
         ...props,
     } as Props
     return (
-        <section id="relume" className="relative px-[5%]">
+        <div id="relume" className="relative px-[5%]">
             <div className="container relative z-10">
                 <div className="flex h-[75vh] max-h-[60rem] items-center justify-center py-16 text-center md:py-24 lg:py-28">
                     <div className="w-full max-w-lg">
@@ -51,20 +44,6 @@ export const Header30 = (props: Header30Props) => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
-}
-
-export const Header30Defaults: Header30Props = {
-    heading: 'Medium length hero heading goes here',
-    description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.',
-    buttons: [
-        { title: 'Button' },
-        { title: 'Button', variant: 'secondary-alt' },
-    ],
-    video: {
-        src: 'https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg',
-        alt: 'Relume placeholder image',
-    },
 }

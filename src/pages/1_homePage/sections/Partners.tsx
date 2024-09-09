@@ -54,7 +54,7 @@ export default function Partners() {
     ]
 
     return (
-        <>
+        <section className="">
             <Layout245
                 tagline="nossos clientes"
                 heading={
@@ -68,6 +68,6 @@ export default function Partners() {
                 description="Empresas líderes de mercado de diferentes setores confiam em nossas soluções de dados e sistemas personalizados para superar desafios e conquistar resultados excepcionais."
             />
             <Gallery6 images={partnersData} />
-        </>
+        </section>
     )
 }
