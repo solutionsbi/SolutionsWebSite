@@ -48,23 +48,12 @@ export const Navbar2 = (props: Navbar2Props) => {
                     </Link>
 
                     <div className="flex items-center gap-4 lg:hidden">
-                        <div>
-                            {buttons.map((button, index) => (
-                                <Button
-                                    key={index}
-                                    className="w-full px-4 py-1"
-                                    {...button}
-                                >
-                                    {button.title}
-                                </Button>
-                            ))}
-                        </div>
                         <button
                             className="-mr-2 flex size-12 flex-col items-center justify-center"
                             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                         >
                             <motion.span
-                                className="my-[3px] h-0.5 w-6 bg-black"
+                                className="my-[3px] h-0.5 w-6 bg-white"
                                 animate={
                                     isMobileMenuOpen
                                         ? ['open', 'rotatePhase']
@@ -73,12 +62,12 @@ export const Navbar2 = (props: Navbar2Props) => {
                                 variants={topLineVariants}
                             />
                             <motion.span
-                                className="my-[3px] h-0.5 w-6 bg-black"
+                                className="my-[3px] h-0.5 w-6 bg-white"
                                 animate={isMobileMenuOpen ? 'open' : 'closed'}
                                 variants={middleLineVariants}
                             />
                             <motion.span
-                                className="my-[3px] h-0.5 w-6 bg-black"
+                                className="my-[3px] h-0.5 w-6 bg-white"
                                 animate={
                                     isMobileMenuOpen
                                         ? ['open', 'rotatePhase']

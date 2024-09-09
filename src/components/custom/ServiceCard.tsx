@@ -25,18 +25,18 @@ export default function ServiceCard({
     img,
 }: ServiceCardProps) {
     return (
-        <div className="flex flex-col gap-2">
-            <Card className="flex select-none flex-col justify-between">
-                <div className="flex flex-col gap-10">
-                    <CardHeader className="flex flex-row items-center gap-4">
-                        <img className="h-10 w-10" src={icon} alt="" />
-                        <CardTitle>{title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p>{description}</p>
-                    </CardContent>
-                </div>
-                <CardFooter>
+        <div className="flex flex-col gap-2 xl:max-w-[420px]">
+            <Card className="flex select-none flex-col gap-10 lg:h-[450px] xl:h-[480px]">
+                <CardHeader className="flex flex-row items-center gap-6">
+                    <img className="h-10 w-10" src={icon} alt="" />
+                    <CardTitle className="whitespace-pre-line">
+                        {title}
+                    </CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p>{description}</p>
+                </CardContent>
+                <CardFooter className="mt-auto justify-self-end">
                     <Link
                         to={url}
                         className="flex w-full items-center justify-between"

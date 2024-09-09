@@ -20,7 +20,7 @@ type Service = {
 
 const services: Service[] = [
     {
-        title: 'Egenharia de Dados',
+        title: 'Egenharia\nde Dados',
         description:
             'Oferecemos soluções completas em engenharia de dados, desde a coleta e armazenamento até o processamento e análise de grandes volumes de dados, apoiando decisões estratégicas e promovendo a inovação contínua em sua empresa.',
         url: '/engenharia-de-dados',
@@ -28,7 +28,7 @@ const services: Service[] = [
         img: '/src/assets/images/service-cards/engenharia-de-dados.jpeg',
     },
     {
-        title: 'Business Intelligence',
+        title: 'Business\nIntelligence',
         description:
             'Com nossas soluções de BI, transformamos dados em vantagem competitiva. Organizamos suas informações e geramos insights que antecipam tendências, otimizam operações e melhoram a tomada de decisões. O BI oferece uma visão clara do seu negócio, permitindo reações rápidas e exploração de novas oportunidades de crescimento.',
         url: '/business-intelligence',
@@ -36,7 +36,7 @@ const services: Service[] = [
         img: '/src/assets/images/service-cards/business-intelligence.jpeg',
     },
     {
-        title: 'Sistemas Personalizados',
+        title: 'Sistemas\nPersonalizados',
         description:
             'Projetamos e desenvolvemos sistemas personalizados que atendem as necessidades específicas do seu negócio. Desde aplicativos web e móveis até plataformas complexas, nossos desenvolvedores transformam ideias em ferramentas eficientes e escaláveis.',
         url: '/sistemas-personalizados',
@@ -44,7 +44,7 @@ const services: Service[] = [
         img: '/src/assets/images/service-cards/sistemas-personalizados.jpeg',
     },
     {
-        title: 'Inteligência Artificial',
+        title: 'Inteligência\nArtificial',
         description:
             'Ajudamos sua empresa a se adaptar e prosperar na era digital, modernizando processos e integrando tecnologias inovadoras. Nossa abordagem de transformação digital não só melhora a eficiência, mas também cria novas oportunidades de crescimento e inovação, alinhando sua empresa às demandas do mercado atual.',
         url: 'inteligencia-artificial',
@@ -52,7 +52,7 @@ const services: Service[] = [
         img: '/src/assets/images/service-cards/inteligencia-artificial.jpeg',
     },
     {
-        title: 'Transformação Digital',
+        title: 'Transformação\nDigital',
         description:
             'Ajudamos sua empresa a se adaptar e prosperar na era digital, modernizando processos e integrando tecnologias inovadoras. Nossa abordagem de transformação digital não só melhora a eficiência, mas também cria novas oportunidades de crescimento e inovação, alinhando sua empresa às demandas do mercado atual.',
         url: 'transformacao-digital',
@@ -60,7 +60,7 @@ const services: Service[] = [
         img: '/src/assets/images/service-cards/transformacao-digital.jpeg',
     },
     {
-        title: 'Websites e E-commerce',
+        title: 'Websites e\nE-commerce',
         description:
             'Desenvolvemos websites e plataformas de e-commerce que não apenas atraem visitantes, mas também convertem vendas. Nossas soluções são projetadas para oferecer uma experiência de usuário intuitiva e fluida, alinhada às melhores práticas de design e SEO, garantindo que sua presença online seja forte e eficaz.',
         url: 'websites-ecommerce',
@@ -94,14 +94,14 @@ export function ServicesCarousel() {
                 align: 'start',
                 loop: true,
             }}
-            plugins={[Autoplay({ delay: 5000 })]}
-            className="mx-auto w-full max-w-[90%] 2xl:max-w-[1440px]"
+            plugins={[Autoplay({ delay: 8000 })]}
+            className="mx-auto max-w-[90%] 2xl:max-w-[1296px]"
         >
-            <CarouselContent>
+            <CarouselContent className="">
                 {services.map((service: Service, index) => (
                     <CarouselItem
                         key={index}
-                        className="md:basis-1/2 xl:basis-1/3"
+                        className="basis-full lg:basis-1/2 xl:basis-1/3"
                     >
                         <ServiceCard
                             title={service.title}

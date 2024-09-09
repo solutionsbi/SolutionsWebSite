@@ -51,64 +51,6 @@ export const Header30 = (props: Header30Props) => {
                     </div>
                 </div>
             </div>
-            {/* background video */}
-            <div
-                className="absolute left-0 top-[-11vh] -z-10 min-h-screen w-full"
-                style={{
-                    mask: 'url(#circle-mask)',
-                    WebkitMask: 'url(#circle-mask)',
-                }}
-            >
-                <video
-                    src={video.src}
-                    className="size-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                />
-                <div className="absolute inset-0 bg-neutral-darkest/30 backdrop-blur-[4px]"></div>
-            </div>
-
-            <svg
-                width="200px"
-                height="200px"
-                className="absolute left-1/2 top-[-11vh] h-[120vh] w-[100%] translate-x-[-50%]"
-            >
-                <defs>
-                    <mask id="circle-mask">
-                        <radialGradient
-                            id="grad1"
-                            cx="50%"
-                            cy="50%"
-                            r="50%"
-                            fx="50%"
-                            fy="50%"
-                        >
-                            <stop
-                                offset="0%"
-                                style={{
-                                    stopColor: 'white',
-                                    stopOpacity: 1,
-                                }}
-                            />
-                            <stop
-                                offset="100%"
-                                style={{
-                                    stopColor: 'white',
-                                    stopOpacity: 0,
-                                }}
-                            />
-                        </radialGradient>
-                        <rect
-                            x="0"
-                            y="0"
-                            width="100%"
-                            height="100%"
-                            fill="url(#grad1)"
-                        />
-                    </mask>
-                </defs>
-            </svg>
         </section>
     )
 }
