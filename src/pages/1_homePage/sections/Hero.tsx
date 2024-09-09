@@ -29,6 +29,7 @@ export default function hero() {
                     { title: 'Saiba mais', variant: 'outline', url: '#' },
                 ]}
             />
+            <div className="absolute left-0 top-0 h-[975.06px] w-[975.06px] translate-x-[-100%] translate-y-[-100%] rotate-[-64.47deg] rounded-full bg-gradient-to-r from-[#244ec4] to-[#c0864f] blur-[100px]"></div>
         </section>
     )
 }
