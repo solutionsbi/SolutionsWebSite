@@ -1,0 +1,19 @@
+<svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Brutalist Shape 196" filter="url(#filter0_d_6461_14181)">
+<path id="Vector" d="M4 25L17.1642 50L30.3163 25L17.1642 0L4 25Z" fill="#244EC4"/>
+<path id="Vector_2" d="M30.3164 25L38.4559 50L46.6075 25L38.4559 0L30.3164 25Z" fill="#1C3477"/>
+<path id="Vector_3" d="M51.3037 0L46.6074 25L51.3037 50L56 25L51.3037 0Z" fill="#2960F7"/>
+</g>
+<defs>
+<filter id="filter0_d_6461_14181" x="0" y="0" width="60" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6461_14181"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6461_14181" result="shape"/>
+</filter>
+</defs>
+</svg>

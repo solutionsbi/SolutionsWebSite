@@ -14,6 +14,7 @@ interface ServiceCardProps {
     description: string
     url: string
     icon: string
+    img: string
 }
 
 export default function ServiceCard({
@@ -21,21 +22,37 @@ export default function ServiceCard({
     description,
     url,
     icon,
+    img,
 }: ServiceCardProps) {
     return (
-        <Card>
-            <CardHeader>
-                <CardTitle>{title}</CardTitle>
-                <img src={icon} alt="" />
-            </CardHeader>
-            <CardContent>
-                <p>C{description}</p>
-            </CardContent>
-            <CardFooter>
-                <Button asChild>
-                    <Link to={url}>Saiba mais</Link>
-                </Button>
-            </CardFooter>
-        </Card>
+        <div className="flex flex-col gap-2">
+            <Card className="flex select-none flex-col justify-between">
+                <div className="flex flex-col gap-10">
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <img className="h-10 w-10" src={icon} alt="" />
+                        <CardTitle>{title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p>{description}</p>
+                    </CardContent>
+                </div>
+                <CardFooter>
+                    <Link
+                        to={url}
+                        className="flex w-full items-center justify-between"
+                    >
+                        <span>Saiba mais</span>
+                        <img src="/src/assets/svg/right-arrow.svg" alt="" />
+                    </Link>
+                </CardFooter>
+            </Card>
+            <div className="before:bg- relative h-[300px] before:absolute before:inset-0 before:bg-black/10">
+                <img
+                    src={img}
+                    alt={title}
+                    className="h-full w-full rounded-2xl object-cover"
+                />
+            </div>
+        </div>
     )
 }

@@ -40,7 +40,7 @@ export const Navbar2 = (props: Navbar2Props) => {
     const isMobile = useMediaQuery('(max-width: 991px)')
 
     return (
-        <nav className="flex w-full items-center lg:min-h-[10vh] lg:px-[5%] relative">
+        <nav className="relative flex min-h-[12vh] w-full items-center lg:px-[5%]">
             <div className="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
                 <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
                     <Link to={`${logo.url}`}>
@@ -102,7 +102,7 @@ export const Navbar2 = (props: Navbar2Props) => {
                     initial="close"
                     exit="close"
                     transition={{ duration: 0.4 }}
-                    className="lg:gap-4 overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+                    className="overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:gap-4 lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
                 >
                     {navLinks.map((navLink, index) => (
                         <div key={index} className="first:pt-4 lg:first:pt-0">
@@ -191,13 +191,13 @@ const SubMenu = ({
                             },
                         }}
                         transition={{ duration: 0.2 }}
-                        className="lg:absolute blurred-bg lg:z-50 lg:border shadow-custom lg:border-border-alternative/10 lg:rounded-xl lg:py-3 lg:[--y-close:25%]"
+                        className="blurred-bg shadow-custom lg:absolute lg:z-50 lg:rounded-xl lg:border lg:border-border-alternative/10 lg:py-3 lg:[--y-close:25%]"
                     >
                         {navLink.subMenuLinks?.map((subMenuLink, index) => (
                             <Link
                                 key={index}
                                 to={subMenuLink.url}
-                                className="py-3 text-center lg:px-4 lg:py-2 lg:text-left flex gap-3"
+                                className="flex gap-3 py-3 text-center lg:px-4 lg:py-2 lg:text-left"
                             >
                                 <img src={subMenuLink.icon} alt="" />
                                 {subMenuLink.title}

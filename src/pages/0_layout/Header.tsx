@@ -50,8 +50,8 @@ export default function Header() {
     ]
 
     return (
-        <header className="fixed w-full z-50 top-0">
-            <div className="relative before:absolute before:inset-0 before:backdrop-blur-xl">
+        <header className="fixed top-0 z-50 w-full">
+            <div className="relative before:absolute before:inset-0 before:backdrop-blur-md">
                 <Navbar2 logo={logo} navLinks={navLinks} buttons={buttons} />
             </div>
         </header>
