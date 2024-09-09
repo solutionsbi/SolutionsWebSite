@@ -71,6 +71,9 @@ export default {
             '10xl': ['3.5rem', { lineHeight: '1.2' }],
         },
         extend: {
+            dropShadow: {
+                custom: '0px 4px 4px rgba(00, 0, 0, 0.5)',
+            },
             spacing: {
                 0: '0px',
                 1: '0.25rem',

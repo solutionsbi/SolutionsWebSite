@@ -6,7 +6,7 @@ import type { ButtonProps } from '@relume_io/relume-ui'
 import { AnimatePresence, motion } from 'framer-motion'
 import { RxChevronDown } from 'react-icons/rx'
 import { Link } from 'react-router-dom'
-import { Button } from '../shadcn/button'
+import { Button } from '../ui/button'
 
 type ImageProps = {
     url?: string
@@ -40,7 +40,7 @@ export const Navbar2 = (props: Navbar2Props) => {
     const isMobile = useMediaQuery('(max-width: 991px)')
 
     return (
-        <nav className="flex w-full items-center lg:min-h-24 lg:px-[5%] relative">
+        <nav className="flex w-full items-center lg:min-h-[10vh] lg:px-[5%] relative">
             <div className="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
                 <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
                     <Link to={`${logo.url}`}>

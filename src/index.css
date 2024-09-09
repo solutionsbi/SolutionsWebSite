@@ -15,6 +15,7 @@
     h5,
     h6 {
         font-family: 'IBM Plex Sans', sans-serif;
+        text-transform: uppercase;
     }
 
     :focus-visible {
