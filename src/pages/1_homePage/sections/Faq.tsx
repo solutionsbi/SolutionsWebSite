@@ -38,9 +38,9 @@ export default function Faq() {
 
     return (
         <section className="relative">
-            <div className="absolute left-0 top-0 -z-50 h-full w-full translate-y-[10%]">
+            <div className="absolute left-0 top-0 -z-50 h-full w-full translate-y-[0%]">
                 <img
-                    src="src\assets\images\adobe25.jpeg"
+                    src="src\assets\images\adobe23.jpeg"
                     className="mask-linear fixed-size"
                 />
             </div>

@@ -1,64 +1,46 @@
 import React from 'react'
-import { Button } from '@relume_io/relume-ui'
-import type { ButtonProps } from '@relume_io/relume-ui'
-
-type ImageProps = {
-    src: string
-    alt?: string
-}
+import { Button } from '../ui/button'
 
 type Props = {
-    heading: string
-    description: string
-    buttons: ButtonProps[]
-    image: ImageProps
+    tagline: string
+    heading: React.ReactNode
+    button: {
+        title: string
+        url: string
+    }
 }
 
-export type Cta1Props = React.ComponentPropsWithoutRef<'section'> &
-    Partial<Props>
+export type Cta1Props = React.ComponentPropsWithoutRef<'div'> & Partial<Props>
 
 export const Cta1 = (props: Cta1Props) => {
-    const { heading, description, buttons, image } = {
+    const { heading, button, tagline } = {
         ...Cta1Defaults,
         ...props,
     } as Props
     return (
-        <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+        <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
             <div className="container">
-                <div className="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center">
-                    <div>
-                        <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-                            {heading}
-                        </h2>
-                        <p className="md:text-md">{description}</p>
-                        <div className="mt-6 flex gap-x-4 md:mt-8">
-                            {buttons.map((button, index) => (
-                                <Button key={index} {...button}>
-                                    {button.title}
-                                </Button>
-                            ))}
-                        </div>
+                <div className="rounded-3xl border border-white/10 bg-neutral-darkest/0 bg-gradient-to-r from-neutral-darkest p-12 shadow-custom backdrop-blur">
+                    <div className="mb-5 flex items-center gap-4">
+                        <img src="/src/assets/svg/small-logo.png" alt="" />
+                        <p className="font-semibold uppercase">{tagline}</p>
                     </div>
-                    <div>
-                        <img
-                            src={image.src}
-                            className="w-full object-cover"
-                            alt={image.alt}
-                        />
+                    <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+                        {heading}
+                    </h2>
+                    <div className="mt-6 flex gap-x-4 md:mt-8">
+                        <Button asChild variant="blue" {...button}>
+                            <a href={button.url}>{button.title}</a>
+                        </Button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 
 export const Cta1Defaults: Cta1Props = {
-    heading: 'Medium length heading goes here',
-    description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
-    buttons: [{ title: 'Button' }, { title: 'Button', variant: 'secondary' }],
-    image: {
-        src: 'https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg',
-        alt: 'Relume placeholder image',
-    },
+    heading: <>medium length heading</>,
+    button: { title: 'Button', url: '#' },
+    tagline: 'short tagline',
 }

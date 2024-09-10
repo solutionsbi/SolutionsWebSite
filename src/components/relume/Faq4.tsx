@@ -33,9 +33,9 @@ export const Faq4 = (props: Faq4Props) => {
                 <div className="rb-12 mb-12 flex flex-col items-center text-center md:mb-18 lg:mb-20">
                     <div className="mb-5 flex items-center gap-4">
                         <img src="/src/assets/svg/small-logo.png" alt="" />
-                        <h5 className="text-lg font-semibold md:text-xl">
+                        <p className="font-semibold uppercase">
                             {props.tagline}
-                        </h5>
+                        </p>
                     </div>
                     <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
                         {heading}

@@ -66,7 +66,7 @@ export default function Stats() {
         <section className="relative">
             <div className="absolute left-0 top-0 -z-50 h-full w-full translate-y-[10%]">
                 <img
-                    src="src\assets\images\adobe19.jpeg"
+                    src="src\assets\images\adobe20.jpeg"
                     className="mask-linear fixed-size"
                 />
             </div>
