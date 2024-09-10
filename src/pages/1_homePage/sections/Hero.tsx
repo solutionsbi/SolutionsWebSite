@@ -3,13 +3,13 @@ import { Header30 } from '@/components/relume/Header30'
 export default function hero() {
     return (
         <section className="relative">
-            <div className="absolute left-0 top-[-12vh] -z-50 h-full w-full">
+            <div className="absolute left-0 top-[5%] -z-50 h-full w-full">
                 <video
-                    src="/src/assets/videos/home-hero.mov"
+                    src="/src/assets/videos/home-hero-2.mov"
                     autoPlay
                     muted
                     loop
-                    className="mask-circle fixed-size"
+                    className="mask-linear fixed-size"
                 />
             </div>
             <Header30
@@ -29,7 +29,6 @@ export default function hero() {
                     { title: 'Saiba mais', variant: 'outline', url: '#' },
                 ]}
             />
-            <div className="absolute left-0 top-0 h-[975.06px] w-[975.06px] translate-x-[-100%] translate-y-[-100%] rotate-[-64.47deg] rounded-full bg-gradient-to-r from-[#244ec4] to-[#c0864f] blur-[100px]"></div>
         </section>
     )
 }

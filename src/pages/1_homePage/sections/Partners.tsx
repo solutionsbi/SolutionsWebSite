@@ -54,7 +54,13 @@ export default function Partners() {
     ]
 
     return (
-        <section className="">
+        <section className="relative mb-16 md:mb-20 lg:mb-24">
+            <div className="absolute left-0 top-0 -z-50 h-full w-full translate-y-[10%]">
+                <img
+                    src="src\assets\images\adobe24.jpeg"
+                    className="mask-linear fixed-size"
+                />
+            </div>
             <Layout245
                 tagline="nossos clientes"
                 heading={

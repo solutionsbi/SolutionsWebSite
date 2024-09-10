@@ -18,10 +18,16 @@
         text-transform: uppercase;
     }
 }
-
 @layer utilities {
     .blurred-bg {
         @apply border border-x-neutral-100/10 shadow-custom backdrop-blur-md;
+    }
+
+    .fixed-size {
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        object-fit: cover; /* Ensure the video covers the entire area */
+        position: absolute; /* Ensure it stays in place */
     }
 
     .mask-circle {
@@ -30,19 +36,13 @@
             rgba(0, 0, 0, 0.7) 0%,
             rgba(0, 0, 0, 0) 100%
         );
-        -webkit-mask-image: radial-gradient(
-            closest-side at 50% 50%,
-            rgba(0, 0, 0, 0.7) 0%,
-            rgba(0, 0, 0, 0) 100%
-        );
     }
 
-    .fixed-size {
-        width: 100vw; /* Full viewport width */
-        height: 100vh; /* Full viewport height */
-        object-fit: cover; /* Ensure the video covers the entire area */
-        position: absolute; /* Ensure it stays in place */
-        top: 0;
-        left: 0;
+    .mask-linear {
+        mask-image: linear-gradient(
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0) 100%
+        );
     }
 }
