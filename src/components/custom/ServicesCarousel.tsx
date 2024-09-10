@@ -95,7 +95,7 @@ export function ServicesCarousel() {
                 loop: true,
             }}
             plugins={[Autoplay({ delay: 8000 })]}
-            className="mx-auto max-w-[90%] 2xl:max-w-[1296px]"
+            className="mx-auto max-w-[90%] 3xl:max-w-[1440px]"
         >
             <CarouselContent className="">
                 {services.map((service: Service, index) => (

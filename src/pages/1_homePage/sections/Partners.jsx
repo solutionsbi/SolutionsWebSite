@@ -55,17 +55,17 @@ export default function Partners() {
 
     return (
         <section className="relative mb-16 md:mb-20 lg:mb-24">
-            <div className="absolute left-0 top-0 -z-50 h-full w-full translate-y-[10%]">
+            <div className="absolute left-0 top-0 -z-50 h-full w-full translate-y-[0%] 2xl:translate-y-[-20%] 3xl:translate-y-[-10%]">
                 <img
                     src="src\assets\images\adobe24.jpeg"
-                    className="mask-linear fixed-size"
+                    className="mask-linear fixed-size opacity-70"
                 />
             </div>
             <Layout245
                 tagline="nossos clientes"
                 heading={
                     <span className="">
-                        somos parceiros de mais de 50 empresas{' '}
+                        somos parceiros de mais de <br /> 50 empresas{' '}
                         <span className="text-brand-blue">
                             ao redor do mundo
                         </span>

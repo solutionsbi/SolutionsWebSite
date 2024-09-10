@@ -20,11 +20,11 @@ export const Header30 = (props: Header30Props) => {
         <div id="relume" className="relative px-[5%]">
             <div className="container relative z-10">
                 <div className="flex h-[75vh] max-h-[60rem] items-center justify-center py-16 text-center md:py-24 lg:py-28">
-                    <div className="w-full max-w-lg">
-                        <h1 className="mb-5 text-6xl font-semibold text-text-alternative drop-shadow-custom md:mb-6 md:text-9xl lg:text-10xl">
+                    <div className="flex w-full flex-col items-center">
+                        <h1 className="mb-5 text-6xl font-semibold text-text-alternative drop-shadow-custom md:mb-6 md:text-9xl lg:text-10xl 3xl:text-[68px]">
                             {heading}
                         </h1>
-                        <p className="text-base text-text-alternative drop-shadow-custom md:text-md">
+                        <p className="max-w-lg text-base text-text-alternative drop-shadow-custom md:text-md 3xl:text-xl">
                             {description}
                         </p>
                         <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">

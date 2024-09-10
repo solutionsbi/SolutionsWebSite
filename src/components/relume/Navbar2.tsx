@@ -104,7 +104,7 @@ export const Navbar2 = (props: Navbar2Props) => {
                             ) : (
                                 <a
                                     href={navLink.url}
-                                    className="block py-3 text-md lg:px-4 lg:py-2 lg:text-base"
+                                    className="block py-3 text-md lg:px-4 lg:py-2 lg:text-base 3xl:text-lg"
                                 >
                                     {navLink.title}
                                 </a>
@@ -146,7 +146,7 @@ const SubMenu = ({
             onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
         >
             <button
-                className="flex w-full items-center justify-center gap-4 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2 lg:text-base"
+                className="flex w-full items-center justify-center gap-4 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2 lg:text-base 3xl:text-lg"
                 onClick={() => setIsDropdownOpen((prev) => !prev)}
             >
                 <span>{navLink.title}</span>

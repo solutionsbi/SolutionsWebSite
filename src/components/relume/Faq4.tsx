@@ -30,7 +30,7 @@ export const Faq4 = (props: Faq4Props) => {
     return (
         <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
             <div className="container mx-auto max-w-xl">
-                <div className="rb-12 mb-12 flex flex-col items-center text-center md:mb-18 lg:mb-20">
+                <div className="mb-12 flex flex-col items-center text-center md:mb-18 lg:mb-20">
                     <div className="mb-5 flex items-center gap-4">
                         <img src="/src/assets/svg/small-logo.png" alt="" />
                         <p className="font-semibold uppercase">
@@ -55,14 +55,18 @@ export const Faq4 = (props: Faq4Props) => {
                                 icon={
                                     <RxPlus className="size-7 shrink-0 p-1 transition-transform duration-300 md:size-8" />
                                 }
-                                className="md:py-5 md:text-md [&[data-state=open]>svg]:rotate-45"
+                                className="md:py-5 md:text-md 3xl:py-7 [&[data-state=open]>svg]:rotate-45"
                             >
-                                <div className="flex items-center gap-6">
-                                    <img src={question.icon} alt="" />
+                                <div className="flex items-center gap-6 text-left font-inter font-medium 3xl:text-[22px]">
+                                    <img
+                                        src={question.icon}
+                                        alt=""
+                                        className="h-10 w-10"
+                                    />
                                     {question.title}
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent className="md:pb-6">
+                            <AccordionContent className="md:pb-6 3xl:text-md">
                                 {question.answer}
                             </AccordionContent>
                         </AccordionItem>

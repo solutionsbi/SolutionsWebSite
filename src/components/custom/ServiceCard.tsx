@@ -25,8 +25,8 @@ export default function ServiceCard({
     img,
 }: ServiceCardProps) {
     return (
-        <div className="flex flex-col gap-2 xl:max-w-[420px]">
-            <Card className="flex select-none flex-col gap-10 lg:h-[450px] xl:h-[480px]">
+        <div className="flex flex-col gap-2 xl:max-w-[420px] 3xl:max-w-[464px]">
+            <Card className="flex select-none flex-col gap-10 lg:h-[450px] xl:h-[480px] 3xl:h-[500px]">
                 <CardHeader className="flex flex-row items-center gap-6">
                     <img className="h-10 w-10" src={icon} alt="" />
                     <CardTitle className="whitespace-pre-line">
@@ -34,14 +34,16 @@ export default function ServiceCard({
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p>{description}</p>
+                    <p className="3xl:text-md">{description}</p>
                 </CardContent>
                 <CardFooter className="mt-auto justify-self-end">
                     <Link
                         to={url}
                         className="flex w-full items-center justify-between"
                     >
-                        <span>Saiba mais</span>
+                        <span className="font-semibold uppercase 3xl:text-xl">
+                            Saiba mais
+                        </span>
                         <img src="/src/assets/svg/right-arrow.svg" alt="" />
                     </Link>
                 </CardFooter>

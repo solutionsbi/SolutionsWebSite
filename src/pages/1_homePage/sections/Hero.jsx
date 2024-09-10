@@ -9,13 +9,14 @@ export default function hero() {
                     autoPlay
                     muted
                     loop
-                    className="mask-linear fixed-size"
+                    className="mask-linear fixed-size opacity-70"
                 />
             </div>
             <Header30
                 heading={
                     <>
-                        Impulsione Seu Negócio com Nossas{' '}
+                        Impulsione Seu Negócio{' '}
+                        <br className="hidden lg:block" /> com Nossas{' '}
                         <span className="text-brand-blue">Soluções</span>
                     </>
                 }

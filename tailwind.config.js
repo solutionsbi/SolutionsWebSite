@@ -31,8 +31,6 @@ export default {
                 lg: '992px',
                 xl: '1280px',
                 '2xl': '1440px',
-                '3xl': '1650px',
-                '4xl': '1920px',
             },
         },
         maxWidth: {
