@@ -19,20 +19,20 @@
     }
 }
 @layer utilities {
-    .blurred-bg {
-        @apply border border-x-neutral-100/10 shadow-custom backdrop-blur-md;
+    .card-bg {
+        @apply relative border border-white/10 bg-neutral-darkest/50 shadow-custom before:absolute before:inset-0 before:-z-50 before:rounded-3xl before:backdrop-blur;
     }
 
     .fixed-size {
-        width: 100vw; /* Full viewport width */
-        height: 100vh; /* Full viewport height */
-        object-fit: cover; /* Ensure the video covers the entire area */
-        position: absolute; /* Ensure it stays in place */
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
     }
 
     .mask-circle {
         mask-image: radial-gradient(
-            closest-side at 50% 50%,
+            farthest-side at 50% 50%,
             rgba(0, 0, 0, 0.7) 0%,
             rgba(0, 0, 0, 0) 100%
         );
@@ -44,5 +44,22 @@
             rgba(0, 0, 0, 0.7) 50%,
             rgba(0, 0, 0, 0) 100%
         );
+    }
+
+    .mask-rect {
+        mask-image: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 1) 50%,
+                /* rgba(0, 0, 0, 1) 50%, */ rgba(0, 0, 0, 0) 100%
+            ),
+            linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.7) 50%,
+                /* rgba(0, 0, 0, 1) 50%, */ rgba(0, 0, 0, 0) 100%
+            );
+        mask-composite: intersect;
+        -webkit-mask-composite: source-in;
     }
 }

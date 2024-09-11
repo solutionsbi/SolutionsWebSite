@@ -23,7 +23,7 @@ export const Layout393 = (props: Layout393Props) => {
     } as Props
     return (
         <div id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
-            <div className="container">
+            <div className="container max-w-xxl">
                 <div className="mx-auto mb-12 flex w-full max-w-lg flex-col items-center text-center md:mb-18 lg:mb-20">
                     <div className="flex items-center gap-4">
                         <img src="/src/assets/svg/small-logo.png" alt="" />
@@ -37,13 +37,13 @@ export const Layout393 = (props: Layout393Props) => {
                     {card[0] && <Card {...card[0]} />}
                     {card[1] && <Card {...card[1]} />}
                     <img
-                        src="/src/assets/images/stats3.jpeg"
+                        src="/src/assets/images/Stats/stat1.jpeg"
                         className="hidden h-full w-full rounded-2xl object-cover shadow-custom md:block"
                         alt=""
                     />
                     <img
-                        src="/src/assets/images/stats2.jpeg"
-                        className="h-full w-full rounded-2xl object-cover shadow-custom"
+                        src="/src/assets/images/Stats/stat3.jpeg"
+                        className="h-full w-full rounded-2xl object-cover object-right shadow-custom"
                         alt=""
                     />
 
@@ -60,11 +60,11 @@ function Card(Card: Card) {
         <div className="flex flex-col rounded-2xl border border-white/10 bg-neutral-darkest/50 shadow-custom backdrop-blur">
             <div className="flex flex-1 flex-col justify-center p-6 md:p-8">
                 <div>
-                    <p className="mb-16 font-semibold uppercase">
+                    <p className="mb-28 font-semibold uppercase">
                         {Card.tagline}
                     </p>
-                    <div className="">
-                        <h2 className="mb-3 border-b border-white/10 pb-3 text-6xl/none font-bold normal-case">
+                    <div className="flex flex-col text-right">
+                        <h2 className="mb-3 border-b border-white/10 pb-3 text-9xl/none font-bold normal-case">
                             {Card.heading}
                         </h2>
                         <p>{Card.description}</p>

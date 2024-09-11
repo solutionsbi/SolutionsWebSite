@@ -1,5 +1,5 @@
 import Hero from './sections/Hero'
-import Servicos from './sections/Servicos'
+import Solucoes from './sections/Solucoes/Solucoes'
 import Partners from './sections/Partners'
 import WorldMap from './sections/WorldMap'
 import Stats from './sections/Stats'
@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <div className="grid">
             <Hero />
-            <Servicos />
+            <Solucoes />
             <Partners />
             <WorldMap />
             <Stats />

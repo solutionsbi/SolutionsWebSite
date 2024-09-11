@@ -146,7 +146,7 @@ const SubMenu = ({
             onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
         >
             <button
-                className="flex w-full items-center justify-center gap-4 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2 lg:text-base 3xl:text-lg"
+                className="flex w-full items-center justify-center gap-4 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:gap-2 lg:py-2 lg:pl-4 lg:text-base 3xl:text-lg"
                 onClick={() => setIsDropdownOpen((prev) => !prev)}
             >
                 <span>{navLink.title}</span>
