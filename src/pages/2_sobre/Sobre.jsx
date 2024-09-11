@@ -1,7 +1,11 @@
+import Hero from './sections/1_Hero/Hero'
+import Timeline from './sections/2_Timeline/Timeline'
+
 export default function Sobre() {
     return (
-        <>
-            <h1>Sobre</h1>
-        </>
+        <div className="grid">
+            <Hero />
+            <Timeline />
+        </div>
     )
 }
