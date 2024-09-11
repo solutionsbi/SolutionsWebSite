@@ -117,7 +117,7 @@ export const Navbar2 = (props: Navbar2Props) => {
                         <Button
                             asChild={true}
                             key={index}
-                            variant="blue"
+                            variant="outline"
                             {...button}
                         >
                             <a href={button.url} target="_blank">
