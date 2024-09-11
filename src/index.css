@@ -8,6 +8,21 @@
         @apply bg-neutral-darkest text-text-alternative;
     }
 
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1000;
+        background: radial-gradient(
+            ellipse at bottom,
+            #1b2735 0%,
+            #090a0f 100%
+        );
+    }
+
     h1,
     h2,
     h3,
@@ -20,7 +35,11 @@
 }
 @layer utilities {
     .card-bg {
-        @apply relative border border-white/10 bg-neutral-darkest/50 shadow-custom before:absolute before:inset-0 before:-z-50 before:rounded-3xl before:backdrop-blur;
+        @apply relative rounded-3xl border border-white/10 bg-neutral-darkest/50 shadow-custom before:absolute before:inset-0 before:-z-50 before:rounded-3xl before:backdrop-blur;
+    }
+
+    .page-section {
+        @apply relative px-[5%] py-16 md:py-24 lg:py-28;
     }
 
     .fixed-size {

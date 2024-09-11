@@ -1,4 +1,4 @@
-import { Navbar2 } from '../../components/relume/Navbar2'
+import { Navbar2 } from './Navbar2'
 
 export default function Header() {
     const logo = {
@@ -50,7 +50,7 @@ export default function Header() {
     ]
 
     return (
-        <header className="fixed top-0 z-50 w-full">
+        <header className="fixed top-0 z-50 w-full max-w-[1920px]">
             <div className="relative before:absolute before:inset-0 before:backdrop-blur-md">
                 <Navbar2 logo={logo} navLinks={navLinks} buttons={buttons} />
             </div>
