@@ -29,8 +29,15 @@
     h4,
     h5,
     h6 {
-        font-family: 'IBM Plex Sans', sans-serif;
-        text-transform: uppercase;
+        @apply font-ibm font-bold uppercase leading-tight tracking-tight drop-shadow-custom;
+    }
+
+    h1 {
+        @apply text-6xl md:text-9xl lg:text-10xl 3xl:text-[68px];
+    }
+
+    h2 {
+        @apply text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl;
     }
 }
 @layer utilities {

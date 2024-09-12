@@ -7,14 +7,14 @@ export default function Footer() {
                 <img src="/src/assets/svg/footer-log.svg" alt="" />
             </div>
             <div className="container flex items-center justify-between border-t border-white/10 py-12">
-                <div className="flex flex-col gap-2">
-                    <p>Copyright © 2024 – SolutionsBI Brazil </p>
-                    <Link
-                        to="/privacy-policy"
-                        className="font-bold text-brand-blue underline"
-                    >
-                        Política de Privacidade
-                    </Link>
+                <Link
+                    to="/privacy-policy"
+                    className="font-bold text-brand-blue underline"
+                >
+                    Política de Privacidade
+                </Link>
+                <div className="flex flex-wrap gap-2">
+                    <p>Copyright © 2024 – SolutionsBI Brazil</p>
                 </div>
                 <ul className="flex gap-4 justify-self-end">
                     <li>
@@ -25,6 +25,7 @@ export default function Footer() {
                             <img
                                 src="/src/assets/svg/linkedin-icon.svg"
                                 alt="linkedin"
+                                className="rounded-xl border border-brand-blue"
                             />
                         </a>
                     </li>
@@ -33,7 +34,7 @@ export default function Footer() {
                             <img
                                 src="/src/assets/svg/instagram-icon.svg"
                                 alt=""
-                                className=""
+                                className="rounded-xl border border-brand-blue"
                             />
                         </a>
                     </li>

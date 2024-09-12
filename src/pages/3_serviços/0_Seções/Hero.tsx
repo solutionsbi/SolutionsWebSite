@@ -1,8 +1,9 @@
+import React from 'react'
 import { Button } from '../../../components/ui/button'
 import { Link } from 'react-router-dom'
 
 type HeroProps = {
-    title: string
+    title: React.ReactNode
     description: string
     cta1: string
     cta2?: string
@@ -22,7 +23,7 @@ export default function Hero({
     return (
         <section className="relative px-[5%]">
             {/* Background container */}
-            <div className="absolute left-0 top-[0%] -z-50 h-[120vh] w-full">
+            <div className="absolute left-0 top-[0%] -z-50 h-[88vh] w-full">
                 <img
                     src={img}
                     className="mask-rect h-full w-full object-cover"
@@ -33,11 +34,9 @@ export default function Hero({
                 <div
                     className={`flex w-full flex-col ${position === 'start' ? 'items-start' : 'items-center'}`}
                 >
-                    <h1 className="mb-5 text-6xl font-bold tracking-tight text-text-alternative drop-shadow-custom md:mb-6 md:text-9xl lg:text-10xl 3xl:text-[68px]">
-                        {title}
-                    </h1>
+                    <h1 className="mb-4">{title}</h1>
 
-                    <p className="max-w-[650px] text-base text-text-alternative drop-shadow-custom md:text-md 3xl:text-xl">
+                    <p className="max-w-[650px] text-base text-text-alternative drop-shadow-custom md:text-md xl:text-xl">
                         {description}
                     </p>
 

@@ -10,7 +10,7 @@ export default function Cta() {
                     className="mask-rect h-full w-full object-cover"
                 />
             </div>
-            <div className="container relative inset-0 flex flex-col justify-between border-l-2 border-brand-blue bg-gradient-to-r from-neutral-darkest/50 p-10 before:absolute before:inset-0 before:-z-10 before:backdrop-blur-sm md:p-14 lg:flex-row lg:p-20">
+            <div className="container relative inset-0 flex flex-col justify-between border-l-[5px] border-brand-blue bg-gradient-to-r from-neutral-darkest/50 p-10 before:absolute before:inset-0 before:-z-10 before:backdrop-blur-sm md:p-14 lg:flex-row lg:p-20">
                 <div className="flex flex-col">
                     <h3 className="text-5xl font-bold md:text-7xl lg:text-8xl">
                         fale com um de <br /> nossos{' '}
@@ -21,17 +21,15 @@ export default function Cta() {
                     </h3>
                 </div>
                 <div className="mt-16 self-end lg:mt-0">
-                    <a
-                        href="https://api.whatsapp.com/send?phone=5519993230833"
-                        target="_blank"
-                        className="flex items-center gap-4 font-ibm text-md font-bold uppercase"
-                    >
-                        <span className="hover:text-brand-blue">
-                            Agende uma consultoria
-                        </span>
-
-                        <MoveRight />
-                    </a>
+                    <Button className="">
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5519993230833"
+                            target="_blank"
+                            className="flex items-center gap-4 font-ibm text-md font-bold uppercase"
+                        >
+                            <MoveRight />
+                        </a>
+                    </Button>
                 </div>
             </div>
         </section>

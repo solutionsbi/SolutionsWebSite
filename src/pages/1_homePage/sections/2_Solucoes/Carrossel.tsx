@@ -77,10 +77,8 @@ export default function Carrossel() {
                 loop: true,
             }}
             plugins={[Autoplay({ delay: 8000 })]}
-            className="mx-auto w-full max-w-xxl"
+            className="max-w-xxl mx-auto w-full"
         >
-            <CarouselPrevious className="" />
-            <CarouselNext className="" />
             <CarouselContent className="">
                 {services.map((service: Service, index) => (
                     <CarouselItem
@@ -97,6 +95,10 @@ export default function Carrossel() {
                     </CarouselItem>
                 ))}
             </CarouselContent>
+            <div className="mx-auto mt-10 flex w-max items-center gap-4">
+                <CarouselPrevious className="" />
+                <CarouselNext className="" />
+            </div>
         </Carousel>
     )
 }
