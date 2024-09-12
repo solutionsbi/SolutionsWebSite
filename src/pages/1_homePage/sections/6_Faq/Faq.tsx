@@ -1,9 +1,9 @@
 import {
     Accordion,
-    AccordionTrigger,
     AccordionContent,
     AccordionItem,
-} from '@relume_io/relume-ui'
+    AccordionTrigger,
+} from '@/components/ui/accordion'
 
 import { RxPlus } from 'react-icons/rx'
 
@@ -29,11 +29,6 @@ const questions = [
         answer: 'O processo de implementação começa com uma fase de planejamento detalhada, onde definimos os requisitos do projeto em conjunto com o cliente. Em seguida, passamos para a fase de desenvolvimento, que é dividida em sprints para permitir ajustes contínuos. Após a conclusão do desenvolvimento, realizamos testes rigorosos para garantir a qualidade. Por fim, fazemos a implantação e oferecemos suporte contínuo para assegurar o sucesso da solução implementada.',
     },
     {
-        icon: 'src/assets/svg/services-cards-icons/transformacao-digital.svg',
-        title: 'Qual é o processo de implementação das soluções?',
-        answer: 'O processo de implementação começa com uma fase de planejamento detalhada, onde definimos os requisitos do projeto em conjunto com o cliente. Em seguida, passamos para a fase de desenvolvimento, que é dividida em sprints para permitir ajustes contínuos. Após a conclusão do desenvolvimento, realizamos testes rigorosos para garantir a qualidade. Por fim, fazemos a implantação e oferecemos suporte contínuo para assegurar o sucesso da solução implementada.',
-    },
-    {
         icon: 'src/assets/svg/services-cards-icons/websites-ecommerce.svg',
         title: 'Como garantir a segurança dos dados ao implementar novas soluções?',
         answer: 'Garantir a segurança dos dados é uma prioridade em todos os nossos projetos. Implementamos práticas rigorosas de segurança, como criptografia de dados, controles de acesso baseados em permissões, e auditorias regulares. Além disso, trabalhamos com as melhores práticas da indústria para assegurar que as soluções estejam em conformidade com as normas de segurança, como GDPR e LGPD, garantindo que seus dados estejam sempre protegidos.',
@@ -45,16 +40,6 @@ export default function Faq() {
         <div id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28">
             <div className="container mx-auto max-w-xl">
                 <div className="container flex flex-col items-center text-center">
-                    <div className="mb-3 flex items-center gap-4 md:mb-4">
-                        <img
-                            src="/src/assets/svg/small-logo.png"
-                            alt=""
-                            className="h-auto w-6"
-                        />
-                        <h2 className="text-xl font-semibold uppercase drop-shadow-custom">
-                            tire suas dúvidas
-                        </h2>
-                    </div>
                     <h3 className="mb-20 text-5xl font-bold md:text-7xl lg:text-8xl">
                         <span className="text-brand-blue">saiba mais</span>{' '}
                         sobre <br /> nossas soluções
@@ -62,25 +47,20 @@ export default function Faq() {
                 </div>
                 <Accordion
                     type="multiple"
-                    className="grid items-start justify-stretch gap-4"
+                    className="grid max-w-xxl items-start justify-stretch gap-4"
                 >
                     {questions.map((question, index) => (
                         <AccordionItem
                             key={index}
                             value={`item-${index}`}
-                            className="card-bg px-10 py-4"
+                            className="gradient-border hover:shadow-lg rounded-lg bg-gradient-to-br from-neutral-darkest/40 px-10 py-4 transition-all duration-300 ease-in-out hover:border-brand-blue"
                         >
-                            <AccordionTrigger
-                                icon={
-                                    <RxPlus className="size-7 shrink-0 p-1 transition-transform duration-300 md:size-8" />
-                                }
-                                className="md:py-5 md:text-md 3xl:py-7 [&[data-state=open]>svg]:rotate-45"
-                            >
+                            <AccordionTrigger className="md:py-5 md:text-md 3xl:py-7">
                                 <div className="flex items-center gap-6 text-left font-inter font-medium 3xl:text-[22px]">
                                     <img
                                         src={question.icon}
                                         alt=""
-                                        className="h-10 w-10"
+                                        className="h-8 w-8"
                                     />
                                     {question.title}
                                 </div>

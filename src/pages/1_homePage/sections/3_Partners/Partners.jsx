@@ -52,46 +52,66 @@ export default function Partners() {
 
     return (
         <section className="page-section">
-            <div className="absolute left-1/2 top-[-15%] -z-50 mx-auto h-full w-full max-w-[1920px] translate-x-[-50%]">
-                <img
-                    src="/src/assets/images/Background/10.jpeg"
-                    className="mask-rect fixed-size"
-                />
-            </div>
-            <div className="container flex flex-col items-center text-center">
-                <div className="mb-3 flex items-center gap-4 md:mb-4">
+            <div className="container">
+                <div className="absolute left-1/2 top-[50%] -z-50 mx-auto h-[110%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
                     <img
-                        src="/src/assets/svg/small-logo.png"
-                        alt=""
-                        className="h-auto w-6"
+                        src="/src/assets/images/Background/4.jpeg"
+                        className="mask-rect h-full w-full object-cover opacity-50"
                     />
-                    <h2 className="text-xl font-semibold uppercase drop-shadow-custom">
-                        nossos clientes
-                    </h2>
                 </div>
-                <h3 className="text-5xl font-bold drop-shadow-custom md:text-7xl lg:text-8xl">
-                    temos parceiros <br className="hidden md:inline-block" />{' '}
-                    <span className="text-brand-blue">ao redor do mundo</span>
-                </h3>
-                <p className="mt-6 max-w-xl text-lg text-gray-300 md:text-xl lg:text-2xl">
-                    Empresas líderes de mercado de diferentes setores confiam em
-                    nossas soluções de dados e sistemas personalizados para
-                    superar desafios e conquistar resultados excepcionais.
-                </p>
-            </div>
-            <div className="mx-auto mt-20 grid w-max grid-cols-2 items-center justify-items-center gap-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
-                {partnersData.map((partner, index) => (
-                    <a
-                        key={index}
-                        className="card-bg grid h-[200px] w-[200px] place-content-center rounded-3xl border border-white/10 px-6"
-                    >
-                        <img
-                            src={partner.src}
-                            alt={partner.alt}
-                            className="w-full object-cover"
-                        />
-                    </a>
-                ))}
+
+                <div className="container flex flex-col items-center text-center">
+                    <h3 className="text-5xl font-bold drop-shadow-custom md:text-7xl lg:text-8xl">
+                        <span className="text-brand-blue">empresas</span> que
+                        confiam <br /> em nossas soluções
+                    </h3>
+                </div>
+
+                <div className="mx-auto mt-20 grid w-max grid-cols-2 items-center justify-items-center gap-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+                    {partnersData.map((partner, index) => (
+                        <a
+                            key={index}
+                            className="shadow-sm relative grid h-[150px] w-[200px] place-content-center rounded-xl border border-white/10 bg-gradient-to-br from-neutral-darkest/60 px-6 before:absolute before:inset-0 before:-z-10 before:backdrop-blur"
+                        >
+                            <img
+                                src={partner.src}
+                                alt={partner.alt}
+                                className="w-full object-cover"
+                            />
+                        </a>
+                    ))}
+                </div>
+
+                <div className="relative mx-auto grid h-max w-full max-w-xxl pt-16 md:pt-24 lg:grid-cols-3 lg:justify-items-center lg:pt-28">
+                    <div>
+                        <h3 className="flex items-center gap-4 text-3xl/none font-bold drop-shadow-custom">
+                            <span className="text-10xl text-brand-blue">
+                                +8
+                            </span>{' '}
+                            <span>
+                                países <br />
+                                atendidos
+                            </span>
+                        </h3>
+                    </div>
+                    <div>
+                        <h3 className="flex items-center gap-4 text-3xl/none font-bold drop-shadow-custom">
+                            <span className="text-10xl text-brand-blue">
+                                +80
+                            </span>{' '}
+                            clientes <br /> satisteitos
+                        </h3>
+                    </div>
+
+                    <div>
+                        <h3 className="flex items-center gap-4 text-3xl/none font-bold drop-shadow-custom">
+                            <span className="text-10xl text-brand-blue">
+                                +150
+                            </span>{' '}
+                            projetos <br /> concluídos
+                        </h3>
+                    </div>
+                </div>
             </div>
         </section>
     )

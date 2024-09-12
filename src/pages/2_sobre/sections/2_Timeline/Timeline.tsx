@@ -32,14 +32,20 @@ export const TimeLineCard: React.FC<TimeLineCardProps> = ({
                 </svg>
                 <div className="h-full w-[2px] bg-white"></div>
             </div>
-            <h4 className="mb-4 text-7xl font-bold text-brand-blue">{date}</h4>
-            <h5 className="mb-4 text-5xl font-medium normal-case">{title}</h5>
-            <p className="mb-8 text-justify lg:text-md">{description}</p>
+            <h4 className="mb-4 text-7xl font-bold text-brand-blue drop-shadow-custom">
+                {date}
+            </h4>
+            <h5 className="mb-4 text-5xl font-semibold normal-case drop-shadow-custom">
+                {title}
+            </h5>
+            <p className="mb-8 text-justify drop-shadow-custom lg:text-md">
+                {description}
+            </p>
             <div className="flex gap-2">
                 {badges.map((badge, index) => (
                     <div
                         key={index}
-                        className="flex items-center gap-2 rounded-3xl border border-white/10 px-5 py-3 shadow-custom"
+                        className="relative flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2 shadow-medium"
                     >
                         <img
                             className="h-auto w-4"

@@ -22,9 +22,8 @@ export default {
             ibm: ['IBM Plex Sans', 'sans-serif'],
             inter: ['Inter', 'sans-serif'],
         },
-
         container: {
-            center: true,
+            center: 'true',
             screens: {
                 sm: '100%',
                 md: '100%',
@@ -40,7 +39,9 @@ export default {
             md: '35rem',
             lg: '48rem',
             xl: '64rem',
-            xxl: '80rem',
+            '2xl': '80rem',
+            '3xl': '96rem',
+            '4xl': '120rem',
             full: '100%',
         },
         boxShadow: {

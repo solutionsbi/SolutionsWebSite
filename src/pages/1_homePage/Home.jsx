@@ -2,7 +2,7 @@ import Hero from './sections/1_Hero/Hero'
 import Solucoes from './sections/2_Solucoes/Solucoes'
 import Partners from './sections/3_Partners/Partners'
 import WorldMap from './sections/4_World/WorldMap'
-import Stats from './sections/5_Stats/Stats'
+import Valores from './sections/5_Stats/Valores'
 import Faq from './sections/6_Faq/Faq'
 import Cta from './sections/7_Cta/Cta'
 
@@ -13,7 +13,7 @@ export default function Home() {
             <Solucoes />
             <Partners />
             <WorldMap />
-            <Stats />
+            <Valores />
             <Faq />
             <Cta />
         </div>

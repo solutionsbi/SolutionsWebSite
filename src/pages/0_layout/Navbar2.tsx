@@ -40,9 +40,9 @@ export const Navbar2 = (props: Navbar2Props) => {
     const isMobile = useMediaQuery('(max-width: 991px)')
 
     return (
-        <nav className="relative flex min-h-[12vh] w-full items-center lg:px-[5%]">
-            <div className="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
-                <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
+        <nav className="relative flex h-[12vh] w-full items-center justify-center">
+            <div className="mt-[6vh] size-full items-center lg:mt-0 lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4">
+                <div className="flex items-center justify-between lg:px-0">
                     <Link to={`${logo.url}`}>
                         <img src={logo.src} alt={logo.alt} />
                     </Link>
@@ -104,7 +104,7 @@ export const Navbar2 = (props: Navbar2Props) => {
                             ) : (
                                 <a
                                     href={navLink.url}
-                                    className="block py-3 text-md lg:px-4 lg:py-2 lg:text-base 3xl:text-lg"
+                                    className="block py-3 text-md transition-all duration-300 ease-in-out hover:text-brand-blue lg:px-4 lg:py-2 lg:text-base 2xl:text-md"
                                 >
                                     {navLink.title}
                                 </a>
@@ -117,7 +117,7 @@ export const Navbar2 = (props: Navbar2Props) => {
                         <Button
                             asChild={true}
                             key={index}
-                            variant="outline"
+                            variant="default"
                             {...button}
                         >
                             <a href={button.url} target="_blank">
@@ -146,7 +146,7 @@ const SubMenu = ({
             onMouseLeave={() => !isMobile && setIsDropdownOpen(false)}
         >
             <button
-                className="flex w-full items-center justify-center gap-4 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:gap-2 lg:py-2 lg:pl-4 lg:text-base 3xl:text-lg"
+                className="flex w-full items-center justify-center gap-4 py-3 text-center text-md hover:text-brand-blue lg:w-auto lg:flex-none lg:justify-start lg:gap-2 lg:py-2 lg:pl-4 lg:text-base 2xl:text-md"
                 onClick={() => setIsDropdownOpen((prev) => !prev)}
             >
                 <span>{navLink.title}</span>
@@ -180,13 +180,13 @@ const SubMenu = ({
                             },
                         }}
                         transition={{ duration: 0.2 }}
-                        className="card-bg lg:absolute lg:z-50 lg:rounded-xl lg:border lg:border-border-alternative/10 lg:py-3 lg:[--y-close:25%]"
+                        className="lg:absolute lg:z-50 lg:rounded-lg lg:border-t-2 lg:border-t-brand-blue lg:bg-neutral-darkest/70 lg:py-3 lg:shadow-custom lg:backdrop-blur lg:[--y-close:25%]"
                     >
                         {navLink.subMenuLinks?.map((subMenuLink, index) => (
                             <Link
                                 key={index}
                                 to={subMenuLink.url}
-                                className="flex gap-3 py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+                                className="flex gap-3 py-3 text-center hover:text-brand-blue lg:px-4 lg:py-2 lg:text-left"
                             >
                                 <img src={subMenuLink.icon} alt="" />
                                 {subMenuLink.title}

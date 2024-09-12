@@ -42,6 +42,35 @@
         @apply relative px-[5%] py-16 md:py-24 lg:py-28;
     }
 
+    .gradient-border {
+        border-width: 1px; /* Adjust the border width as needed */
+        border-style: solid;
+        border-image: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0)
+            )
+            1;
+    }
+
+    .gradient-border:hover {
+        border-image: linear-gradient(
+                to right,
+                rgb(41, 96, 247, 1),
+                rgba(255, 255, 255, 0)
+            )
+            1;
+    }
+
+    [data-state='open'] .gradient-border {
+        border-image: linear-gradient(
+                to right,
+                rgb(41, 96, 247, 1),
+                rgba(255, 255, 255, 0)
+            )
+            1;
+    }
+
     .fixed-size {
         width: 100vw;
         height: 100vh;
