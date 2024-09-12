@@ -8,7 +8,7 @@ export default function Footer() {
             </div>
             <div className="container flex items-center justify-between border-t border-white/10 py-12">
                 <Link
-                    to="/privacy-policy"
+                    to="/politica-de-privacidade"
                     className="font-bold text-brand-blue underline"
                 >
                     Política de Privacidade
