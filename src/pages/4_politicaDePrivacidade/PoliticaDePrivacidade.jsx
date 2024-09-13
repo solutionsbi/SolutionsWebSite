@@ -1,152 +1,145 @@
 export default function PoliticaDePrivacidade() {
     return (
         <div>
-            <div className="container flex max-w-xl flex-col gap-10 px-[5%]">
+            <div className="container flex flex-col px-[5%]">
                 <header className="flex flex-col items-center gap-6 py-16 md:py-24 lg:py-28">
-                    <h1>Política de Privacidade</h1>
-                    <p className="lg:text-md">
+                    <h1 className="text-center">
+                        Política de <br /> Privacidade
+                    </h1>
+                    <p className="">
                         Última atualização: 12 de setembro de 2024
                     </p>
                 </header>
-                <section className="flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl">
-                        Coleta de Informações
-                    </h2>
-                    <p className="lg:text-md">
-                        Coletamos informações de identificação pessoal, como seu
-                        endereço de e-mail, quando você opta por se inscrever em
-                        nossa newsletter. Além disso, utilizamos tecnologias
-                        como cookies para coletar informações de navegação,
-                        incluindo, mas não se limitando a, endereço IP, tipo de
-                        navegador, páginas visitadas e tempo de permanência no
-                        site. Cookies: Os cookies são pequenos arquivos de dados
-                        armazenados no seu dispositivo. Eles nos ajudam a
-                        personalizar sua experiência, lembrar suas preferências
-                        e entender como você interage com nosso site.
-                    </p>
-                </section>
-                <section className="flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl">
-                        Uso das Informações
-                    </h2>
-                    <p className="lg:text-md">
-                        As informações que coletamos são usadas para os
-                        seguintes propósitos:
-                    </p>
-                    <ul>
-                        <li>
-                            Comunicações: Enviar newsletters, atualizações de
-                            produtos, ofertas especiais e outras informações
-                            relevantes para você.
-                        </li>
-                        <li>
-                            Melhoria de Serviços: Analisar como os usuários
-                            interagem com nosso site para melhorar nossos
-                            serviços e conteúdos.
-                        </li>
-                        <li>
-                            Personalização: Oferecer uma experiência
-                            personalizada com base nas suas preferências e
-                            interações anteriores no site.
-                        </li>
-                    </ul>
-                </section>
-                <section className="flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl">
-                        Compartilhamento de Informações
-                    </h2>
-                    <p className="lg:text-md">
-                        Nós não vendemos, trocamos ou alugamos suas informações
-                        pessoais para terceiros. Suas informações podem ser
-                        compartilhadas em circunstâncias limitadas:
-                    </p>
-                    <ul>
-                        <li>
-                            Com Provedores de Serviços: Compartilhamos
-                            informações com provedores de serviços confiáveis
-                            que nos auxiliam na operação do site, envio de
-                            newsletters ou análise de dados.
-                        </li>
-                        <li>
-                            Conformidade Legal: Podemos divulgar suas
-                            informações se exigido por lei ou em resposta a
-                            solicitações legais.
-                        </li>
-                    </ul>
-                </section>
-                <section className="flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl">
-                        Seus Direitos
-                    </h2>
-                    <p className="lg:text-md">Você tem o direito de:</p>
-                    <ul>
-                        <li>
-                            Optar por não participar: Você pode optar por não
-                            fornecer seu e-mail ou desativar cookies em seu
-                            navegador.
-                        </li>
-                        <li>
-                            Acessar e corrigir suas informações: Solicitar uma
-                            cópia das informações pessoais que temos sobre você
-                            e corrigir quaisquer erros.
-                        </li>
-                        <li>
-                            Cancelar inscrição: A qualquer momento, você pode
-                            cancelar sua inscrição na newsletter clicando no
-                            link de cancelamento em qualquer e-mail enviado por
-                            nós.
-                        </li>
-                    </ul>
-                </section>
-                <section className="flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl">
-                        Segurança das Informações
-                    </h2>
-                    <p className="lg:text-md">
-                        Adotamos medidas de segurança apropriadas para proteger
-                        suas informações pessoais contra acesso não autorizado,
-                        alteração, divulgação ou destruição. Estas medidas
-                        incluem criptografia, firewalls e controles de acesso.
-                        Apesar dos nossos esforços para proteger suas
-                        informações, nenhum método de transmissão ou
-                        armazenamento é completamente seguro, e não podemos
-                        garantir a segurança absoluta dos dados.
-                    </p>
-                </section>
-                <section className="flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl">
-                        Retenção de Dados
-                    </h2>
-                    <p className="lg:text-md">
-                        As informações pessoais que coletamos são mantidas pelo
-                        tempo necessário para cumprir os propósitos descritos
-                        nesta Política de Privacidade, a menos que um período de
-                        retenção mais longo seja exigido ou permitido por lei.
-                    </p>
-                </section>
-                <section className="flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl">
-                        Alterações na Política de Privacidade
-                    </h2>
-                    <p className="lg:text-md">
-                        Podemos atualizar esta Política de Privacidade
-                        periodicamente para refletir mudanças em nossas práticas
-                        ou por outros motivos operacionais, legais ou
-                        regulatórios. Recomendamos que você revise esta página
-                        regularmente para se manter informado sobre nossas
-                        práticas mais recentes.
-                    </p>
-                </section>
-                <section className="flex flex-col gap-4">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl">
-                        Contato
-                    </h2>
-                    <p className="lg:text-md">
-                        Se você tiver dúvidas, preocupações ou solicitações
-                        relacionadas a esta Política de Privacidade, entre em
-                        contato conosco através do e-mail: seuemail@dominio.com.
-                    </p>
-                </section>
+                <div className="mx-auto flex max-w-lg flex-col gap-12 pb-16 text-justify md:pb-24 lg:pb-28">
+                    <section className="flex flex-col gap-6">
+                        <h2 className="normal-case">Coleta de Informações</h2>
+                        <p className="">
+                            Nós coletamos informações pessoais, como o seu
+                            e-mail, quando você se inscreve na nossa newsletter.
+                            Além disso, utilizamos cookies e outras tecnologias
+                            para obter informações sobre a sua navegação no
+                            nosso site, incluindo o seu endereço IP, tipo de
+                            navegador utilizado, páginas acessadas e o tempo de
+                            permanência em cada uma delas. Os cookies, por sua
+                            vez, são pequenos arquivos de dados armazenados no
+                            seu dispositivo, e nos ajudam a personalizar a sua
+                            experiência, lembrar das suas preferências e
+                            entender como você interage com o site.
+                        </p>
+                    </section>
+                    <section className="flex flex-col gap-6">
+                        <h2 className="normal-case">Uso das Informações</h2>
+                        <p className="">
+                            As informações que coletamos têm como finalidade
+                            principal melhorar a sua experiência conosco.
+                            Utilizamos esses dados para enviar newsletters,
+                            atualizações de produtos e ofertas especiais que
+                            possam ser do seu interesse. Além disso, as
+                            informações nos ajudam a analisar a interação dos
+                            usuários com o site, permitindo-nos otimizar nossos
+                            serviços e conteúdos. Através dessas análises,
+                            conseguimos também personalizar a sua experiência no
+                            site, oferecendo um conteúdo mais relevante e
+                            adequado às suas preferências e histórico de
+                            navegação.
+                        </p>
+                    </section>
+                    <section className="flex flex-col gap-6">
+                        <h2 className="normal-case">
+                            Compartilhamento de Informações
+                        </h2>
+                        <p className="">
+                            Nós valorizamos a sua privacidade e, por isso, não
+                            vendemos, trocamos ou alugamos as suas informações
+                            pessoais para terceiros. No entanto, em algumas
+                            situações, podemos compartilhar esses dados com
+                            provedores de serviços que nos auxiliam na operação
+                            do site, no envio de newsletters ou na análise de
+                            dados. Esses provedores são parceiros de confiança
+                            que seguem normas rigorosas de privacidade e
+                            segurança. Em casos específicos, podemos ainda ser
+                            obrigados a divulgar suas informações para cumprir
+                            exigências legais ou em resposta a solicitações de
+                            autoridades competentes.
+                        </p>
+                    </section>
+                    <section className="flex flex-col gap-6">
+                        <h2 className="normal-case">Seus Direitos</h2>
+                        <p className="">
+                            Você tem total controle sobre as suas informações.
+                            Pode optar por não participar de nossas atividades
+                            de coleta de dados, desativando cookies no seu
+                            navegador ou optando por não fornecer o seu e-mail.
+                            Além disso, você tem o direito de acessar e corrigir
+                            as informações que temos sobre você. Se desejar,
+                            pode solicitar uma cópia dos seus dados pessoais e
+                            corrigir quaisquer erros que possam existir. Se, a
+                            qualquer momento, não quiser mais receber nossas
+                            newsletters, você pode cancelar a inscrição
+                            utilizando o link de cancelamento disponível em
+                            nossos e-mails.
+                        </p>
+                    </section>
+                    <section className="flex flex-col gap-6">
+                        <h2 className="normal-case">
+                            Segurança das Informações
+                        </h2>
+                        <p className="">
+                            Nós implementamos diversas medidas de segurança para
+                            proteger as suas informações pessoais contra acessos
+                            não autorizados, alterações, divulgações ou
+                            destruições. Utilizamos técnicas avançadas como
+                            criptografia, firewalls e controles de acesso para
+                            garantir a segurança dos seus dados. Apesar de todos
+                            os nossos esforços, é importante ressaltar que
+                            nenhum método de transmissão de dados pela internet
+                            ou armazenamento eletrônico é completamente seguro,
+                            e, portanto, não podemos garantir a segurança
+                            absoluta das informações.
+                        </p>
+                    </section>
+                    <section className="flex flex-col gap-6">
+                        <h2 className="normal-case">Retenção de Dados</h2>
+                        <p className="">
+                            Nós mantemos as informações pessoais que coletamos
+                            apenas pelo tempo necessário para cumprir os
+                            objetivos descritos nesta Política de Privacidade.
+                            No entanto, em alguns casos, a retenção dos dados
+                            pode ser estendida para cumprir exigências legais ou
+                            regulatórias específicas. Quando não forem mais
+                            necessárias para esses propósitos, as informações
+                            serão excluídas de forma segura.
+                        </p>
+                    </section>
+                    <section className="flex flex-col gap-6">
+                        <h2 className="normal-case">
+                            Alterações na Política de Privacidade
+                        </h2>
+                        <p className="">
+                            Reservamo-nos o direito de atualizar esta Política
+                            de Privacidade periodicamente para refletir mudanças
+                            em nossas práticas, inovações tecnológicas ou
+                            exigências legais. Recomendamos que você revise esta
+                            página regularmente para se manter informado sobre
+                            as nossas práticas mais recentes. Qualquer alteração
+                            significativa nesta política será comunicada de
+                            forma adequada, para garantir que você esteja ciente
+                            das mudanças.
+                        </p>
+                    </section>
+                    <section className="flex flex-col gap-6">
+                        <h2 className="normal-case">Contato</h2>
+                        <p className="">
+                            Se você tiver qualquer dúvida, preocupação ou
+                            solicitação relacionada a esta Política de
+                            Privacidade, entre em contato conosco pelo e-mail:
+                            seuemail@dominio.com. Estamos à disposição para
+                            esclarecer qualquer questão e garantir que você
+                            tenha uma experiência segura e satisfatória com o
+                            nosso serviço.
+                        </p>
+                    </section>
+                </div>
             </div>
         </div>
     )

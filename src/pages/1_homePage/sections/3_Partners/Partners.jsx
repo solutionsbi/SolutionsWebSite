@@ -50,13 +50,28 @@ export default function Partners() {
         },
     ]
 
+    const stats = [
+        {
+            number: '+8',
+            text: 'países \n atendidos',
+        },
+        {
+            number: '+80',
+            text: 'clientes \nsatisfeitos',
+        },
+        {
+            number: '+150',
+            text: 'projetos \nconcluídos',
+        },
+    ]
+
     return (
         <section className="page-section">
-            <div className="container">
+            <div className="container flex flex-col items-center">
                 <div className="absolute left-1/2 top-[50%] -z-50 mx-auto h-[110%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
                     <img
-                        src="/src/assets/images/Background/4.jpeg"
-                        className="mask-rect h-full w-full object-cover opacity-50"
+                        src="/src/assets/images/Background/22.jpeg"
+                        className="mask-rect h-full w-full object-cover opacity-100"
                     />
                 </div>
 
@@ -67,11 +82,11 @@ export default function Partners() {
                     </h3>
                 </div>
 
-                <div className="mx-auto mt-20 grid w-max grid-cols-2 items-center justify-items-center gap-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+                <div className="relative mx-auto grid w-max grid-cols-2 items-center justify-items-center gap-2 py-20 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                     {partnersData.map((partner, index) => (
                         <a
                             key={index}
-                            className="shadow-sm relative grid h-[150px] w-[200px] place-content-center rounded-xl border border-white/10 bg-gradient-to-br from-neutral-darkest/60 px-6 before:absolute before:inset-0 before:-z-10 before:backdrop-blur"
+                            className="relative grid h-[120px] w-[200px] place-content-center overflow-hidden rounded-[8px] border border-white/10 bg-gradient-to-br from-neutral-darkest/80 px-6 shadow-custom before:absolute before:inset-0 before:-z-10 before:backdrop-blur"
                         >
                             <img
                                 src={partner.src}
@@ -82,35 +97,20 @@ export default function Partners() {
                     ))}
                 </div>
 
-                <div className="relative mx-auto grid h-max w-full max-w-xxl pt-16 md:pt-24 lg:grid-cols-3 lg:justify-items-center lg:pt-28">
-                    <div>
-                        <h3 className="flex items-center gap-4 text-3xl/none font-bold drop-shadow-custom">
+                <div className="relative flex gap-10">
+                    {stats.map((stats, index) => (
+                        <h3
+                            key={index}
+                            className="flex items-center gap-4 whitespace-pre-line text-3xl/none font-bold drop-shadow-custom"
+                        >
                             <span className="text-10xl text-brand-blue">
-                                +8
+                                {stats.number}
                             </span>{' '}
-                            <span>
-                                países <br />
-                                atendidos
+                            <span className="border-l-2 border-brand-blue pl-5">
+                                {stats.text}
                             </span>
                         </h3>
-                    </div>
-                    <div>
-                        <h3 className="flex items-center gap-4 text-3xl/none font-bold drop-shadow-custom">
-                            <span className="text-10xl text-brand-blue">
-                                +80
-                            </span>{' '}
-                            clientes <br /> satisteitos
-                        </h3>
-                    </div>
-
-                    <div>
-                        <h3 className="flex items-center gap-4 text-3xl/none font-bold drop-shadow-custom">
-                            <span className="text-10xl text-brand-blue">
-                                +150
-                            </span>{' '}
-                            projetos <br /> concluídos
-                        </h3>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>

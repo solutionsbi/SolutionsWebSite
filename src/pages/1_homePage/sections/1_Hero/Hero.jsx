@@ -8,7 +8,7 @@ export default function Hero() {
             {/* Background video container */}
             <div className="absolute left-0 top-[0%] -z-50 h-[120vh] w-full">
                 <img
-                    src="/src/assets/images/Background/14.jpeg"
+                    src="/src/assets/images/Background/11.jpeg"
                     className="mask-rect h-full w-full object-cover"
                 />
                 {/* <video
@@ -23,7 +23,7 @@ export default function Hero() {
             <div className="container relative">
                 <div className="grid place-content-center py-16 text-center md:py-24 lg:py-28">
                     <div className="flex w-full flex-col items-center">
-                        <h1>
+                        <h1 className="mb-4">
                             soluções em{' '}
                             <span className="text-brand-blue">tecnologia</span>{' '}
                             <br />

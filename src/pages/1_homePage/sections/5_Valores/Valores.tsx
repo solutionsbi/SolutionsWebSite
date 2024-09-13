@@ -9,7 +9,7 @@ type CardProps = {
 
 export const Card: React.FC<CardProps> = ({ icon, title, description }) => {
     return (
-        <div className="relative flex flex-col rounded-r-3xl border-l-2 border-brand-blue bg-gradient-to-r from-neutral-darkest/70 to-neutral-darkest/0 p-10 before:absolute before:inset-0 before:-z-50 before:backdrop-blur-sm">
+        <div className="relative flex flex-col rounded-r-3xl border-l-2 border-brand-blue bg-gradient-to-r from-neutral-darkest/70 to-neutral-darkest/0 p-10 before:absolute before:inset-0 before:-z-50 before:backdrop-blur">
             <div className="flex items-center gap-6">
                 <img src={icon} alt="" className="h-10 w-10" />
                 <h4
@@ -48,8 +48,8 @@ export default function Valores() {
         <section className="page-section">
             <div className="absolute left-1/2 top-1/2 -z-50 mx-auto h-[120%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
                 <img
-                    src="/src/assets/images/Background/2.jpeg"
-                    className="mask-rect h-full w-full object-cover opacity-50"
+                    src="/src/assets/images/Background/24.jpeg"
+                    className="mask-rect h-full w-full object-cover opacity-100"
                 />
             </div>
             <div className="container">

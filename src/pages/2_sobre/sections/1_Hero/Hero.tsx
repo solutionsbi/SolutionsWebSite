@@ -3,7 +3,7 @@ export default function Hero() {
         <section className="relative px-[5%]">
             <div className="absolute left-0 top-[0%] -z-50 h-full w-full">
                 <img
-                    src="/src/assets/images/Background/19.jpeg"
+                    src="/src/assets/images/Background/14.jpeg"
                     className="mask-rect fixed-size opacity-100"
                 />
             </div>

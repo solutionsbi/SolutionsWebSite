@@ -18,8 +18,8 @@
         z-index: -1000;
         background: radial-gradient(
             ellipse at bottom,
-            #1b2735 0%,
-            #090a0f 100%
+            #1b2335 0%,
+            /* #1b2735 0%, */ #090a0f 100%
         );
     }
 
@@ -64,6 +64,17 @@
         border-image: linear-gradient(
                 to right,
                 rgb(41, 96, 247, 1),
+                rgba(255, 255, 255, 0)
+            )
+            1;
+    }
+
+    .gradient-border-diag {
+        border-width: 1px; /* Adjust the border width as needed */
+        border-style: solid;
+        border-image: linear-gradient(
+                150deg,
+                rgba(255, 255, 255, 0.1),
                 rgba(255, 255, 255, 0)
             )
             1;
