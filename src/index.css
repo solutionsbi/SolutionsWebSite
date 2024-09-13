@@ -50,7 +50,7 @@
     }
 
     .gradient-border {
-        border-width: 1px; /* Adjust the border width as needed */
+        border-width: 1px;
         border-style: solid;
         border-image: linear-gradient(
                 to right,
@@ -70,7 +70,7 @@
     }
 
     .gradient-border-diag {
-        border-width: 1px; /* Adjust the border width as needed */
+        border-width: 1px;
         border-style: solid;
         border-image: linear-gradient(
                 150deg,
