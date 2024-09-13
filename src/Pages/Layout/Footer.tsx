@@ -6,13 +6,22 @@ export default function Footer() {
             <div className="container">
                 <div className="grid justify-items-center gap-10 py-12 text-center md:grid-cols-2 md:text-start xl:grid-cols-4 xl:justify-items-start xl:gap-0 xl:text-start">
                     <div className="flex flex-col">
-                        <span className="mb-6 font-bold uppercase text-brand-blue">
-                            Feito com amor no Brasil
+                        <span className="mb-6 flex items-center gap-2 font-bold uppercase text-brand-blue">
+                            Feito com{' '}
+                            <span>
+                                <img
+                                    src="/src/assets/svg/icons/mdi_heart.svg"
+                                    alt="heart"
+                                    className="h-4 w-4"
+                                />
+                            </span>{' '}
+                            no Brasil
                         </span>
                         <span>
-                            A SolutionsBI é uma empresa de tecnologia que
-                            desenvolve soluções de Business Intelligence para
-                            empresas de todos os tamanhos.
+                            A SolutionsBI é uma empresa de tecnologia
+                            especializada em criar soluções personalizadas para
+                            empresas que desejam otimizar seus processos e
+                            aumentar sua eficiência.
                         </span>
                         <div className="mt-6 flex items-center justify-center gap-4 md:justify-start xl:justify-start">
                             <a href="">

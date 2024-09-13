@@ -35,7 +35,7 @@ export default function Home() {
                         nossos <span className="text-brand-blue">valores</span>
                     </>
                 }
-                background="/src/assets/images/Background/1.jpeg"
+                background="/src/assets/images/Background/25.jpeg"
                 description="Na SolutionsBI, acreditamos que a tecnologia pode transformar negócios e impactar positivamente a sociedade. Por isso, trabalhamos com dedicação, ética e transparência para oferecer soluções inovadoras e eficientes para os nossos clientes."
                 benefits={[
                     {

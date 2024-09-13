@@ -4,7 +4,7 @@ import { MoveRight } from 'lucide-react'
 export default function Cta() {
     return (
         <section className="relative px-[5%] py-16">
-            <div className="absolute left-1/2 top-1/2 -z-50 mx-auto h-[120%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
+            <div className="absolute left-1/2 top-1/2 -z-50 mx-auto h-[150%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
                 <img
                     src="/src/assets/images/Background/2.jpeg"
                     className="mask-rect h-full w-full object-cover"

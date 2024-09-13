@@ -25,7 +25,7 @@ export default function Beneficios({
             <div className="absolute left-1/2 top-1/2 -z-50 mx-auto h-[120%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
                 <img
                     src={background}
-                    className="mask-rect h-full w-full object-cover opacity-50"
+                    className="mask-rect h-full w-full object-cover opacity-100"
                 />
             </div>
             <div className="container">

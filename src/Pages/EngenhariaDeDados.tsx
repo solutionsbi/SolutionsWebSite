@@ -19,11 +19,11 @@ export default function EngenhariaDeDados() {
                 }
                 description="Ajudamos a sua empresa a coletar, armazenar e processar dados de forma eficiente e segura, garantindo que você tenha informações precisas e confiáveis para tomar decisões estratégicas."
                 cta1={{ text: 'Contrate agora', link: '#' }}
-                img="/src/assets/images/Solutions/engenharia-de-dados.jpeg"
+                img="/src/assets/images/Background/firefly/11.jpg"
             />
             <ComoFunciona
                 description={
-                    'Entenda cada etapa do processo que transforma seus dados brutos em insights valiosos e utilizáveis.'
+                    'Entenda cada etapa do processo que transforma \n seus dados brutos em insights valiosos e utilizáveis.'
                 }
                 steps={[
                     {
