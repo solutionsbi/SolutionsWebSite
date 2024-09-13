@@ -29,14 +29,12 @@ export default function Beneficios({
                 />
             </div>
             <div className="container">
-                <div className="container grid justify-items-center gap-20 lg:grid-cols-2">
+                <div className="container grid justify-items-center lg:grid-cols-2 lg:gap-20">
                     <div className="mb-16 flex w-full flex-col">
                         <div className="flex flex-col items-center text-center lg:items-start lg:text-start">
-                            <h2 className="mb-5 text-6xl font-bold text-text-alternative drop-shadow-custom md:mb-6 lg:text-8xl">
-                                {title}
-                            </h2>
-                            <p className="xl:text-lg">{description}</p>
-                            <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-10">
+                            <h2 className="mb-5 md:mb-6">{title}</h2>
+                            <p className="xl:text-md">{description}</p>
+                            <div className="mt-6 hidden items-center justify-center gap-x-4 md:mt-10 md:flex">
                                 <Button>
                                     <a
                                         href="#"
@@ -56,20 +54,19 @@ export default function Beneficios({
                         {benefits.map((benefit, index) => (
                             <div
                                 key={index}
-                                className="relative flex flex-col gap-6 border-l-[4px] border-brand-blue bg-gradient-to-r from-neutral-darkest/60 p-10 before:absolute before:inset-0 before:-z-10 before:backdrop-blur"
+                                className="relative flex flex-col gap-4 border-l-[4px] border-brand-blue bg-gradient-to-r from-neutral-darkest/60 px-8 py-6 before:absolute before:inset-0 before:-z-10 before:backdrop-blur"
                             >
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-5">
                                     <img
-                                        className="h-auto w-12"
+                                        className="h-10 w-10"
                                         src={benefit.icon}
                                         alt="step icon"
                                     />
-
-                                    <h3 className="whitespace-pre-line text-3xl/[1.15]">
+                                    <h3 className="whitespace-pre-line text-2xl/[1.15] lg:text-3xl/[1.15]">
                                         {benefit.title}
                                     </h3>
                                 </div>
-                                <div className="max-w-[90%] 2xl:text-md">
+                                <div className="max-w-[90%] text-neutral-200 2xl:text-md">
                                     <p>{benefit.description}</p>
                                 </div>
                             </div>

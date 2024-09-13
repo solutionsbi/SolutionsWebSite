@@ -1,14 +1,15 @@
-import Hero from '../../components/pages-sections/Hero'
-import ComoFunciona from '../../components/pages-sections/ComoFunciona'
-import Beneficios from '../../components/pages-sections/Beneficios'
-import Faq from '../../components/pages-sections/Faq'
-import Solucoes from '../../components/pages-sections/Solucoes'
-import Cta from '@/pages/1_homePage/sections/7_Cta/Cta'
+import Hero from './Sections/Hero'
+import ComoFunciona from './Sections/ComoFunciona'
+import Beneficios from './Sections/Beneficios'
+import Faq from './Sections/Faq'
+import Solucoes from './Sections/Solucoes'
+import Cta from './Sections/Cta'
 
 export default function WebsistesEcommerce() {
     return (
         <>
             <Hero
+                position="start"
                 title={
                     <>
                         <span className="text-brand-blue">Websites</span>
@@ -17,7 +18,7 @@ export default function WebsistesEcommerce() {
                     </>
                 }
                 description="Desenvolvemos websites e lojas virtuais personalizadas para ajudar a sua empresa a se destacar no mercado digital e impulsionar as vendas online."
-                cta1="Saiba mais"
+                cta1={{ text: 'Contrate agora', link: '#' }}
                 img="/src/assets/images/Solutions/websites-ecommerce.jpeg"
             />
             <ComoFunciona
@@ -84,7 +85,6 @@ export default function WebsistesEcommerce() {
                 ]}
             />
             <Faq
-                title="Perguntas Frequentes"
                 faqs={[
                     {
                         icon: '/src/assets/svg/services-cards-icons/websites-ecommerce.svg',

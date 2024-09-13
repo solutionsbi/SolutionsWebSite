@@ -77,16 +77,18 @@ export default function Partners() {
 
                 <div className="container flex flex-col items-center text-center">
                     <h2 className="">
-                        <span className="text-brand-blue">empresas</span> que
-                        confiam <br /> em nossas soluções
+                        <span className="text-brand-blue">empresas</span> que{' '}
+                        <br className="md:hidden" />
+                        confiam <br className="hidden md:inline-block" /> em
+                        nossas soluções
                     </h2>
                 </div>
 
-                <div className="relative mx-auto grid w-max grid-cols-2 items-center justify-items-center gap-2 py-20 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                <div className="relative mx-auto grid w-max grid-cols-2 items-center justify-items-center gap-2 py-16 md:grid-cols-3 lg:grid-cols-4 lg:py-20 xl:grid-cols-5">
                     {partnersData.map((partner, index) => (
                         <a
                             key={index}
-                            className="relative grid h-[120px] w-[200px] place-content-center overflow-hidden rounded-[8px] border border-white/10 bg-gradient-to-br from-neutral-darkest/80 px-6 shadow-custom before:absolute before:inset-0 before:-z-10 before:backdrop-blur"
+                            className="relative grid h-[120px] w-[160px] place-content-center overflow-hidden rounded-[8px] border border-white/10 bg-gradient-to-br from-neutral-darkest/80 px-6 shadow-custom before:absolute before:inset-0 before:-z-10 before:backdrop-blur md:w-[150px] lg:h-[150px] xl:w-[200px]"
                         >
                             <img
                                 src={partner.src}
@@ -97,16 +99,16 @@ export default function Partners() {
                     ))}
                 </div>
 
-                <div className="relative flex gap-10">
+                <div className="relative flex flex-wrap items-center justify-center gap-6 md:gap-16">
                     {stats.map((stats, index) => (
                         <h3
                             key={index}
-                            className="flex items-center gap-4 whitespace-pre-line text-3xl/none font-bold drop-shadow-custom"
+                            className="flex flex-col items-center gap-2 whitespace-pre-line text-center font-bold drop-shadow-custom lg:flex-row lg:gap-6 lg:text-start"
                         >
-                            <span className="text-10xl text-brand-blue">
+                            <span className="text-6xl text-brand-blue lg:text-10xl">
                                 {stats.number}
                             </span>{' '}
-                            <span className="border-l-2 border-brand-blue pl-5">
+                            <span className="border-brand-blue text-xl/[1.1] lg:text-3xl/[1.1]">
                                 {stats.text}
                             </span>
                         </h3>

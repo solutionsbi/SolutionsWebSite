@@ -3,12 +3,13 @@ import ComoFunciona from './Sections/ComoFunciona'
 import Beneficios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
-import Cta from '@/pages/1_homePage/sections/7_Cta/Cta'
+import Cta from './Sections/Cta'
 
 export default function InteligenciaArtificial() {
     return (
         <>
             <Hero
+                position="start"
                 title={
                     <>
                         <span className="text-brand-blue">Inteligência</span>
@@ -17,7 +18,7 @@ export default function InteligenciaArtificial() {
                     </>
                 }
                 description="Desenvolvemos soluções de Inteligência Artificial para ajudar a sua empresa a otimizar processos, aumentar a produtividade e impulsionar o crescimento."
-                cta1="Saiba mais"
+                cta1={{ text: 'Contrate agora', link: '#' }}
                 img="/src/assets/images/Solutions/inteligencia-artificial.jpeg"
             />
             <ComoFunciona
@@ -84,7 +85,6 @@ export default function InteligenciaArtificial() {
                 ]}
             />
             <Faq
-                title="Perguntas Frequentes"
                 faqs={[
                     {
                         icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',

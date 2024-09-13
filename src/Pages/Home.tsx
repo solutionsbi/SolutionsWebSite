@@ -2,7 +2,7 @@ import Hero from './Sections/Hero'
 import Solucoes from './Sections/Solucoes'
 import Partners from './Sections/Partners'
 import WorldMap from './Sections/WorldMap'
-import Valores from './Sections/Beneficios'
+import Benefícios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Cta from './Sections/Cta'
 
@@ -15,21 +15,26 @@ export default function Home() {
                     <>
                         Soluções em{' '}
                         <span className="text-brand-blue">tecnologia</span>
-                        <br /> para seu negócio
+                        <br className="hidden md:inline-block" /> para seu
+                        negócio
                     </>
                 }
                 description={
-                    'Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado. \nConheça nossos serviços e descubra como podemos ajudar a impulsionar o seu negócio.'
+                    'Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer,\n inovar e se destacar no mercado.Conheça nossos serviços e descubra \n como podemos ajudar a impulsionar o seu negócio.'
                 }
-                cta1="Impulsione seu negócio"
-                cta2="Saiba mais"
+                cta1={{ text: 'Impulsione seu negócio', link: '#' }}
+                cta2={{ text: 'Saiba mais', link: '/sobre' }}
                 img="/src/assets/images/Background/11.jpeg"
             />
             <Solucoes />
             <Partners />
             <WorldMap />
-            <Valores
-                title="Nossos Valores"
+            <Benefícios
+                title={
+                    <>
+                        nossos <span className="text-brand-blue">valores</span>
+                    </>
+                }
                 background="/src/assets/images/Background/1.jpeg"
                 description="Na SolutionsBI, acreditamos que a tecnologia pode transformar negócios e impactar positivamente a sociedade. Por isso, trabalhamos com dedicação, ética e transparência para oferecer soluções inovadoras e eficientes para os nossos clientes."
                 benefits={[
@@ -74,7 +79,7 @@ export default function Home() {
                         answer: 'A SolutionsBI pode trazer uma série de benefícios para a sua empresa, incluindo otimização de processos, melhor tomada de decisões, aumento da eficiência operacional, redução de custos, entre outros. Nossas soluções são projetadas para impulsionar o crescimento e o sucesso do seu negócio, oferecendo inovação, qualidade e excelência em todos os nossos serviços.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',
+                        icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',
                         question: 'Como começar a trabalhar com a SolutionsBI?',
                         answer: 'Para começar a trabalhar com a SolutionsBI, basta entrar em contato conosco através do nosso site ou por telefone. Nossa equipe de especialistas está pronta para ajudar a sua empresa a impulsionar o crescimento e o sucesso do seu negócio com soluções inovadoras e eficientes.',
                     },

@@ -3,12 +3,13 @@ import ComoFunciona from './Sections/ComoFunciona'
 import Beneficios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
-import Cta from '@/pages/1_homePage/sections/7_Cta/Cta'
+import Cta from './Sections/Cta'
 
 export default function BusinessIntelligence() {
     return (
         <>
             <Hero
+                position="start"
                 title={
                     <>
                         <span className="text-brand-blue">Business</span>
@@ -17,7 +18,7 @@ export default function BusinessIntelligence() {
                     </>
                 }
                 description="Transforme seus dados em insights valiosos e tome decisões estratégicas com base em informações confiáveis e atualizadas."
-                cta1="Saiba mais"
+                cta1={{ text: 'Contrate agora', link: '#' }}
                 img="/src/assets/images/Solutions/business-intelligence.jpeg"
             />
             <ComoFunciona
@@ -79,7 +80,6 @@ export default function BusinessIntelligence() {
                 ]}
             />
             <Faq
-                title="Perguntas Frequentes"
                 faqs={[
                     {
                         icon: '/src/assets/svg/services-cards-icons/business-intelligence.svg',

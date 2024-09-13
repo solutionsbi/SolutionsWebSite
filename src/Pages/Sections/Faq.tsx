@@ -20,32 +20,34 @@ export default function Faq({ faqs }: FaqProps) {
         <section className="page-section">
             <div className="container">
                 <div className="flex w-full flex-col items-center">
-                    <h2 className="mb-20">
+                    <h2 className="mb-14 text-center lg:mb-20">
                         <span className="text-brand-blue"> perguntas</span>{' '}
                         frequentes
                     </h2>
 
                     <Accordion
-                        type="multiple"
-                        className="mx-auto grid w-full max-w-xl items-start justify-stretch gap-4"
+                        type="single"
+                        className="mx-auto grid w-full max-w-[992px] items-start justify-stretch gap-4"
                     >
                         {faqs.map((faq, index) => (
                             <AccordionItem
                                 key={index}
                                 value={`item-${index}`}
-                                className="gradient-border hover:shadow-lg rounded-lg bg-gradient-to-br from-neutral-darkest/40 px-10 py-4 transition-all duration-300 ease-in-out hover:border-brand-blue"
+                                className="gradient-border rounded-lg bg-gradient-to-br from-neutral-darkest/40 transition-all duration-300 ease-in-out hover:border-brand-blue hover:shadow-lg"
                             >
-                                <AccordionTrigger className="md:py-5 md:text-md 3xl:py-7">
+                                <AccordionTrigger className="">
                                     <div className="flex items-center gap-6 text-left font-inter font-medium xl:text-lg">
                                         <img
                                             src={faq.icon}
                                             alt=""
-                                            className="h-8 w-8"
+                                            className="hidden h-8 w-8 md:block"
                                         />
-                                        <h3 className="">{faq.question}</h3>
+                                        <h3 className="font-inter font-medium normal-case lg:text-md xl:text-lg">
+                                            {faq.question}
+                                        </h3>
                                     </div>
                                 </AccordionTrigger>
-                                <AccordionContent className="max-w-[80%] text-neutral-200 md:pb-6 xl:text-md 3xl:text-md">
+                                <AccordionContent className="text-sm text-neutral-300 lg:text-base">
                                     {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>

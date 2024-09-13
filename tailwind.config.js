@@ -10,7 +10,7 @@ export default {
         },
         screens: {
             xs: '320px',
-            sm: '480px',
+            sm: '375px',
             md: '768px',
             lg: '992px',
             xl: '1280px',
@@ -33,7 +33,7 @@ export default {
             sm: '30rem',
             md: '35rem',
             lg: '48rem',
-            xl: '64rem',
+            xl: '60rem',
             '2xl': '80rem',
             '3xl': '96rem',
             '4xl': '120rem',

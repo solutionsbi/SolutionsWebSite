@@ -10,7 +10,7 @@ export default function PoliticaDePrivacidade() {
                         Última atualização: 12 de setembro de 2024
                     </p>
                 </header>
-                <div className="mx-auto flex max-w-lg flex-col gap-12 pb-16 text-justify md:pb-24 lg:pb-28">
+                <div className="mx-auto flex max-w-lg flex-col gap-12 pb-16 md:pb-24 lg:pb-28">
                     <section className="flex flex-col gap-6">
                         <h2 className="normal-case">Coleta de Informações</h2>
                         <p className="">

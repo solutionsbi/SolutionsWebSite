@@ -1,9 +1,9 @@
 export default function WorldMap() {
     return (
-        <section className="page-section overflow-hidden">
+        <section className="page-section">
             <div className="container">
                 <svg
-                    className="mx-auto h-full w-full max-w-xxl object-contain"
+                    className="max-w-xxl mx-auto h-full w-full object-contain"
                     width="100%"
                     height="100%"
                     viewBox="0 0 1440 850"

@@ -3,12 +3,13 @@ import ComoFunciona from './Sections/ComoFunciona'
 import Beneficios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
-import Cta from '@/pages/1_homePage/sections/7_Cta/Cta'
+import Cta from './Sections/Cta'
 
 export default function EngenhariaDeDados() {
     return (
         <div className="grid">
             <Hero
+                position="start"
                 title={
                     <>
                         <span className="text-brand-blue">Engenharia</span>
@@ -17,12 +18,12 @@ export default function EngenhariaDeDados() {
                     </>
                 }
                 description="Ajudamos a sua empresa a coletar, armazenar e processar dados de forma eficiente e segura, garantindo que você tenha informações precisas e confiáveis para tomar decisões estratégicas."
-                cta1="Saiba mais"
+                cta1={{ text: 'Contrate agora', link: '#' }}
                 img="/src/assets/images/Solutions/engenharia-de-dados.jpeg"
             />
             <ComoFunciona
                 description={
-                    'Entenda cada etapa do processo que transforma \n seus dados brutos em insights valiosos e utilizáveis.'
+                    'Entenda cada etapa do processo que transforma seus dados brutos em insights valiosos e utilizáveis.'
                 }
                 steps={[
                     {
@@ -73,7 +74,6 @@ export default function EngenhariaDeDados() {
                 ]}
             />
             <Faq
-                title="Perguntas Frequentes"
                 faqs={[
                     {
                         icon: '/src/assets/svg/services-cards-icons/engenharia-de-dados.svg',
@@ -100,15 +100,7 @@ export default function EngenhariaDeDados() {
                     },
                 ]}
             />
-            <Solucoes
-                title={
-                    <>
-                        <span className="text-brand-blue">explore todas</span>
-                        <br />
-                        as nossas Soluções
-                    </>
-                }
-            />
+            <Solucoes title={true} />
             <Cta />
         </div>
     )

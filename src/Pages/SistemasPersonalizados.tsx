@@ -3,12 +3,13 @@ import ComoFunciona from './Sections/ComoFunciona'
 import Beneficios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
-import Cta from '@/pages/1_homePage/sections/7_Cta/Cta'
+import Cta from './Sections/Cta'
 
 export default function SistemasPersonalizados() {
     return (
         <>
             <Hero
+                position="start"
                 title={
                     <>
                         <span className="text-brand-blue">Sistemas</span>
@@ -17,7 +18,7 @@ export default function SistemasPersonalizados() {
                     </>
                 }
                 description="Desenvolvemos soluções sob medida para atender às necessidades específicas da sua empresa, garantindo eficiência, segurança e escalabilidade."
-                cta1="Saiba mais"
+                cta1={{ text: 'Contrate agora', link: '#' }}
                 img="/src/assets/images/Solutions/sistemas-personalizados.jpeg"
             />
             <ComoFunciona
@@ -73,7 +74,6 @@ export default function SistemasPersonalizados() {
                 ]}
             />
             <Faq
-                title="Perguntas Frequentes"
                 faqs={[
                     {
                         icon: '/src/assets/svg/services-cards-icons/sistemas-personalizados.svg',

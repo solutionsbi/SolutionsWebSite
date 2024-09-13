@@ -3,12 +3,13 @@ import ComoFunciona from './Sections/ComoFunciona'
 import Beneficios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
-import Cta from '@/pages/1_homePage/sections/7_Cta/Cta'
+import Cta from './Sections/Cta'
 
 export default function TransformacaoDigital() {
     return (
         <>
             <Hero
+                position="start"
                 title={
                     <>
                         <span className="text-brand-blue">Transformação</span>
@@ -17,7 +18,7 @@ export default function TransformacaoDigital() {
                     </>
                 }
                 description="Ajudamos a sua empresa a se adaptar às mudanças tecnológicas e a transformar processos, produtos e serviços para atender às demandas do mercado atual."
-                cta1="Saiba mais"
+                cta1={{ text: 'Contrate agora', link: '#' }}
                 img="/src/assets/images/Solutions/transformacao-digital.jpeg"
             />
             <ComoFunciona
@@ -73,7 +74,6 @@ export default function TransformacaoDigital() {
                 ]}
             />
             <Faq
-                title="Perguntas Frequentes"
                 faqs={[
                     {
                         icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',

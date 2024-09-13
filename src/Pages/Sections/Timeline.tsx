@@ -32,20 +32,18 @@ export const TimeLineCard: React.FC<TimeLineCardProps> = ({
                 </svg>
                 <div className="h-full w-[2px] bg-white"></div>
             </div>
-            <h4 className="mb-4 text-7xl font-bold text-brand-blue drop-shadow-custom">
-                {date}
-            </h4>
-            <h5 className="mb-4 text-5xl font-semibold normal-case drop-shadow-custom">
+            <h3 className="mb-2 text-6xl text-brand-blue">{date}</h3>
+            <h4 className="mb-4 font-inter text-4xl font-semibold normal-case">
                 {title}
-            </h5>
-            <p className="mb-8 text-justify drop-shadow-custom lg:text-md">
+            </h4>
+            <p className="mb-8 drop-shadow-custom md:text-justify">
                 {description}
             </p>
             <div className="flex gap-2">
                 {badges.map((badge, index) => (
                     <div
                         key={index}
-                        className="relative flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2 shadow-medium"
+                        className="shadow-medium relative flex items-center gap-2 rounded-[5px] border border-white/10 px-4 py-3"
                     >
                         <img
                             className="h-auto w-4"
@@ -180,26 +178,16 @@ export default function Timeline() {
     return (
         <section className="page-section">
             <div className="container">
-                <div className="grid gap-16 lg:grid-cols-2 lg:gap-[10%]">
+                <div className="grid gap-16 md:grid-cols-2 lg:gap-[10%]">
                     <div className="flex w-full flex-col">
-                        <div className="mb-3 flex items-center gap-4 md:mb-4">
-                            <img
-                                src="/src/assets/svg/small-logo.png"
-                                alt=""
-                                className="h-auto w-6"
-                            />
-                            <h2 className="text-xl font-semibold uppercase drop-shadow-custom">
-                                NOSSA HISTÓRIA
-                            </h2>
-                        </div>
-                        <h3 className="mb-5 text-6xl font-semibold text-text-alternative drop-shadow-custom md:mb-6 lg:text-8xl">
+                        <h2 className="mb-5">
                             De uma{' '}
                             <span className="text-brand-blue">
                                 Visão <br className="" /> Inovadora
                             </span>{' '}
                             ao <br /> Impacto Global
-                        </h3>
-                        <p className="text-justify leading-normal drop-shadow-custom lg:text-lg">
+                        </h2>
+                        <p className="leading-normal drop-shadow-custom md:text-justify xl:text-md">
                             Fundada em 2019, a Solutions BI nasceu com a missão
                             de transformar dados em insights valiosos para
                             empresas de diversos setores. Desde o início, nosso

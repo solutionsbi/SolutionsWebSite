@@ -27,18 +27,21 @@ export default function ComoFunciona({
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-20 border-t-2 border-brand-blue bg-gradient-to-b from-neutral-darkest/70 px-10 pt-20">
+                    <div className="grid grid-cols-1 gap-12 border-t-2 border-brand-blue bg-gradient-to-b from-neutral-darkest/70 px-5 pt-12 lg:grid-cols-2 xl:gap-20 xl:px-20 xl:pt-20">
                         {steps.map((step, index) => (
-                            <div key={index} className="relative flex gap-10">
-                                <div className="h-max font-ibm text-10xl/none font-bold text-brand-blue">
-                                    {index + 1}
-                                </div>
-                                <div
-                                    className={`flex w-[800px] flex-col gap-3`}
-                                >
-                                    <h3 className="whitespace-pre-line text-3xl font-semibold drop-shadow-custom">
+                            <div
+                                key={index}
+                                className="relative flex flex-col gap-6"
+                            >
+                                <div className="flex h-max gap-6">
+                                    <span className="font-ibm text-8xl/none font-bold text-brand-blue">
+                                        {index + 1}
+                                    </span>
+                                    <h3 className="whitespace-pre-line text-2xl/tight drop-shadow-custom">
                                         {step.title}
                                     </h3>
+                                </div>
+                                <div className={`flex flex-col gap-3`}>
                                     <p className="text-justify text-base text-text-alternative drop-shadow-custom">
                                         {step.description}
                                     </p>

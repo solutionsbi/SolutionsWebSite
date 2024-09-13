@@ -1,14 +1,26 @@
-import Hero from './sections/1_Hero/Hero'
-import Timeline from './sections/2_Timeline/Timeline'
-import Solucoes from './sections/4_Solucoes/Solucoes'
-import Cta from '../1_homePage/sections/7_Cta/Cta'
+import Hero from './Sections/Hero'
+import Timeline from './Sections/Timeline'
+import Solucoes from './Sections/Solucoes'
+import Cta from './Sections/Cta'
 
 export default function Sobre() {
     return (
         <div className="grid">
-            <Hero />
+            <Hero
+                title={
+                    <>
+                        <span className="text-brand-blue">conheça a</span>{' '}
+                        <br /> solutions BI
+                    </>
+                }
+                description={
+                    'Saiba mais sobre nossa história e como tudo começou.'
+                }
+                img={'/src/assets/images/Background/14.jpeg'}
+                position="center"
+            />
             <Timeline />
-            <Solucoes />
+            <Solucoes title={true} />
             <Cta />
         </div>
     )
