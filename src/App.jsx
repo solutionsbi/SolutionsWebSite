@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ReactLenis, useLenis } from 'lenis/react'
 
 import Layout from './Pages/Layout/Layout'
 import Home from './Pages/Home'
@@ -13,42 +14,44 @@ import PoliticaDePrivacidade from './Pages/PoliticaDePrivacidade'
 
 function App() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<Home />} />
-                    <Route path="sobre" element={<Sobre />} />
-                    <Route
-                        path="engenharia-de-dados"
-                        element={<EgenhariaDeDados />}
-                    />
-                    <Route
-                        path="business-intelligence"
-                        element={<BusinessIntelligence />}
-                    />
-                    <Route
-                        path="sistemas-personalizados"
-                        element={<SistemasPersonalizados />}
-                    />
-                    <Route
-                        path="inteligencia-artificial"
-                        element={<InteligenciaArtificial />}
-                    />
-                    <Route
-                        path="transformacao-digital"
-                        element={<TransformacaoDigital />}
-                    />
-                    <Route
-                        path="websites-&-ecommerce"
-                        element={<WebsistesEcommerce />}
-                    />
-                    <Route
-                        path="politica-de-privacidade"
-                        element={<PoliticaDePrivacidade />}
-                    />
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        <ReactLenis root>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route index element={<Home />} />
+                        <Route path="sobre" element={<Sobre />} />
+                        <Route
+                            path="engenharia-de-dados"
+                            element={<EgenhariaDeDados />}
+                        />
+                        <Route
+                            path="business-intelligence"
+                            element={<BusinessIntelligence />}
+                        />
+                        <Route
+                            path="sistemas-personalizados"
+                            element={<SistemasPersonalizados />}
+                        />
+                        <Route
+                            path="inteligencia-artificial"
+                            element={<InteligenciaArtificial />}
+                        />
+                        <Route
+                            path="transformacao-digital"
+                            element={<TransformacaoDigital />}
+                        />
+                        <Route
+                            path="websites-&-ecommerce"
+                            element={<WebsistesEcommerce />}
+                        />
+                        <Route
+                            path="politica-de-privacidade"
+                            element={<PoliticaDePrivacidade />}
+                        />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </ReactLenis>
     )
 }
 
