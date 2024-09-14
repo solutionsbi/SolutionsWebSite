@@ -37,13 +37,15 @@ export default function Hero({
     // animations
     useGSAP(
         () => {
+            if (!container.current) return
+
             const splitH1 = new SplitType('#hero-heading')
             const splitP = new SplitType('#hero-description')
 
             // Initial animation when the section enters the screen
             const enterTl = gsap.timeline({
                 defaults: {
-                    duration: 1.5,
+                    duration: 1,
                     ease: 'power1.out',
                 },
                 scrollTrigger: {
@@ -55,37 +57,49 @@ export default function Hero({
 
             enterTl
                 .from('#section-bg', {
-                    y: 50,
+                    y: 20,
                     opacity: 0,
                     scale: 1.2,
+                    duration: 3,
                 })
                 .from(
                     splitH1.words,
                     {
-                        stagger: 0.2,
+                        stagger: 0.1,
                         opacity: 0,
                         x: -20,
                     },
-                    '-=1'
+                    '0.5'
                 )
                 .from(
                     splitP.lines,
                     {
-                        stagger: 0.2,
+                        stagger: 0.1,
                         opacity: 0,
-                        x: 20,
+                        y: 30,
                     },
-                    '-=1.3'
+                    '0.6'
                 )
-                .from(
-                    ['#hero-cta-1', '#hero-cta-2'],
+            if (cta1) {
+                enterTl.from(
+                    '#hero-cta-1',
                     {
                         opacity: 0,
-                        stagger: 0.2,
                         scale: 0.8,
                     },
-                    '-=1.3'
+                    '1.2'
                 )
+            }
+            if (cta2) {
+                enterTl.from(
+                    '#hero-cta-2',
+                    {
+                        opacity: 0,
+                        scale: 0.8,
+                    },
+                    '1.3'
+                )
+            }
 
             // Scrub animation for when the user starts to scroll down
             const scrubTl = gsap.timeline({

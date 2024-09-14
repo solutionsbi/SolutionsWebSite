@@ -12,7 +12,7 @@ const buttonVariants = cva(
                 default:
                     'bg-brand-blue text-white hover:bg-white hover:text-brand-blue',
                 outline:
-                    'border  before:backdrop-blur-lg overflow-hidden border-white/50 hover:bg-neutral-100 hover:text-neutral-900',
+                    'border overflow-hiddenborder-white/50 hover:bg-neutral-100 hover:text-neutral-900',
                 link: 'border-none bg-transparent hover:text-brand-blue',
             },
             size: {
