@@ -95,29 +95,29 @@ export default function Beneficios({
             enterTl.current = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top center',
+                    start: 'top 80%',
                     markers: false,
                 },
                 defaults: {
-                    duration: 1.5,
+                    duration: 1,
                     ease: 'power1.inOut',
                 },
                 onComplete: () => {
                     gsap.to(sectionBg, {
                         scrollTrigger: {
                             trigger: container.current,
-                            start: 'bottom 70%',
-                            end: 'bottom 10%',
-                            scrub: true,
-                            markers: true,
+                            start: 'bottom bottom',
+                            end: 'bottom top',
+                            scrub: 1,
+                            markers: false,
                         },
                         opacity: 0.8,
-                        scale: 0.8,
+                        scale: 1.1,
                     })
                 },
             })
 
-            enterTl.current.to(sectionBg, { opacity: 1, scale: 1, duration: 5 })
+            enterTl.current.to(sectionBg, { opacity: 1, scale: 1, duration: 4 })
             enterTl.current.to(sectionTitle, { opacity: 1, y: 0 }, '<+=1')
             enterTl.current.to(
                 sectionDescription,

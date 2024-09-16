@@ -38,6 +38,25 @@ export default function Hero({
         () => {
             if (!container.current) return
 
+            const sectionBg = container.current.querySelector('.section-bg')
+            const sectionTitle =
+                container.current.querySelector('.section-title')
+            const sectionDescription = container.current.querySelector(
+                '.section-description'
+            )
+            const sectionCta1 =
+                container.current.querySelector('.section-cta-1')
+            const sectionCta2 =
+                container.current.querySelector('.section-cta-2')
+
+            // console.group('Hero Section Elements')
+            // console.log('Section BG:', sectionBg)
+            // console.log('Section Title:', sectionTitle)
+            // console.log('Section Description:', sectionDescription)
+            // console.log('Section Cta 1:', sectionCta1)
+            // console.log('Section Cta 2:', sectionCta2)
+            // console.groupEnd()
+
             enterTl.current = gsap.timeline({
                 defaults: {
                     duration: 1,
@@ -59,58 +78,54 @@ export default function Hero({
                     })
 
                     scrubTl.current
-                        ?.to('#section-bg', {
+                        ?.to(sectionBg, {
                             y: 100,
                             scale: 1.1,
                         })
                         .to(
-                            '#hero-heading, #hero-description',
+                            sectionTitle,
                             {
                                 y: -50,
                                 opacity: 0.5,
                             },
                             '<'
                         )
-                        .to(
-                            ['#hero-cta-1', '#hero-cta-2'],
-                            {
-                                y: -30,
-                                opacity: 0.7,
-                            },
-                            '<'
-                        )
                 },
             })
 
-            gsap.set('#section-bg', {
+            gsap.set(sectionBg, {
                 scale: 1.2,
                 autoAlpha: 0,
             })
-            gsap.set('#hero-heading', {
+            gsap.set(sectionTitle, {
                 x: -20,
                 autoAlpha: 0,
             })
-            gsap.set('#hero-description', {
+            gsap.set(sectionDescription, {
                 y: 30,
                 autoAlpha: 0,
             })
-            gsap.set('#hero-cta-1', {
-                x: -20,
-                autoAlpha: 0,
-            })
-            gsap.set('#hero-cta-2', {
-                x: 20,
-                autoAlpha: 0,
-            })
+            if (cta1) {
+                gsap.set(sectionCta1, {
+                    x: -20,
+                    autoAlpha: 0,
+                })
+            }
+            if (cta2) {
+                gsap.set(sectionCta2, {
+                    x: 20,
+                    autoAlpha: 0,
+                })
+            }
 
             enterTl.current
-                ?.to('#section-bg', {
+                ?.to(sectionBg, {
                     autoAlpha: 1,
                     scale: 1,
                     duration: 3,
                 })
                 .to(
-                    '#hero-heading',
+                    sectionTitle,
                     {
                         autoAlpha: 1,
                         x: 0,
@@ -118,7 +133,7 @@ export default function Hero({
                     '-=2'
                 )
                 .to(
-                    '#hero-description',
+                    sectionDescription,
                     {
                         autoAlpha: 1,
                         y: 0,
@@ -127,7 +142,7 @@ export default function Hero({
                 )
             if (cta1) {
                 enterTl.current?.to(
-                    '#hero-cta-1',
+                    sectionCta1,
                     {
                         autoAlpha: 1,
                         x: 0,
@@ -137,7 +152,7 @@ export default function Hero({
             }
             if (cta2) {
                 enterTl.current?.to(
-                    '#hero-cta-2',
+                    sectionCta2,
                     {
                         autoAlpha: 1,
                         x: 0,
@@ -150,10 +165,7 @@ export default function Hero({
     )
     return (
         <section ref={container} className="relative px-[5%]">
-            <div
-                id="section-bg"
-                className="absolute left-0 top-0 -z-50 h-[88vh] w-full"
-            >
+            <div className="section-bg absolute left-0 top-0 -z-50 h-[88vh] w-full">
                 <img
                     src={img}
                     className="mask-rect h-full w-full object-cover"
@@ -164,20 +176,17 @@ export default function Hero({
                 <div
                     className={`flex flex-col ${position === 'start' && 'items-start'} ${position === 'center' && 'items-center text-center'}`}
                 >
-                    <h1 id="hero-heading" className="mb-4 whitespace-pre-line">
+                    <h1 className="section-title mb-4 whitespace-pre-line">
                         {title}
                     </h1>
 
-                    <p
-                        id="hero-description"
-                        className="max-w-[650px] text-sm drop-shadow-custom md:text-base xl:text-md"
-                    >
+                    <p className="section-description max-w-[650px] text-sm drop-shadow-custom md:text-base xl:text-md">
                         {description}
                     </p>
 
                     <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
                         {cta1 && (
-                            <Button id="hero-cta-1">
+                            <Button className="section-cta-1">
                                 <a
                                     href={cta1.link}
                                     target="_blank"
@@ -189,11 +198,7 @@ export default function Hero({
                         )}
 
                         {cta2 && (
-                            <Button
-                                id="hero-cta-2"
-                                variant="outline"
-                                className="hidden md:block"
-                            >
+                            <Button className="section-cta-2" variant="outline">
                                 <Link to={cta2.link}>{cta2.text}</Link>
                             </Button>
                         )}

@@ -259,8 +259,9 @@ export default function Carrossel() {
             )
 
             enterTl.current = gsap.timeline({
+                delay: 1,
                 defaults: {
-                    duration: 1,
+                    duration: 2,
                     ease: 'power1.out',
                 },
                 scrollTrigger: {

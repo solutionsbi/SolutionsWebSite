@@ -1,20 +1,71 @@
 import { Link } from 'react-router-dom'
+import { useRef } from 'react'
+import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Heart } from 'lucide-react'
+
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Footer() {
+    const container = useRef<HTMLElement>(null)
+    const sectionTl = useRef<gsap.core.Timeline | null>(null)
+
+    useGSAP(() => {
+        if (!container.current) return
+
+        const footerInfoGrid =
+            container.current.querySelector('.footer-info-grid')?.children
+        const additionalFooterContainer = container.current.querySelector(
+            '.additional-footer-container'
+        )?.children
+        gsap.set(footerInfoGrid ?? [], {
+            opacity: 0,
+            y: 20,
+        })
+        gsap.set(additionalFooterContainer ?? [], {
+            opacity: 0,
+            x: 20,
+        })
+
+        sectionTl.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: container.current,
+                start: 'top bottom',
+                markers: false,
+            },
+            defaults: {
+                duration: 1.5,
+                ease: 'power1.inOut',
+            },
+        })
+
+        sectionTl.current.to(footerInfoGrid ?? [], {
+            opacity: 1,
+            y: 0,
+            stagger: 0.5,
+        })
+
+        sectionTl.current.to(
+            additionalFooterContainer ?? [],
+            {
+                opacity: 1,
+                x: 0,
+                stagger: 0.5,
+            },
+            '<+=0.5'
+        )
+    })
     return (
-        <footer className="relative max-w-[1920px] bg-gradient-to-t from-neutral-darkest px-[5%] pt-16">
+        <footer
+            ref={container}
+            className="relative max-w-[1920px] bg-gradient-to-t from-neutral-darkest px-[5%] pt-16"
+        >
             <div className="container">
-                <div className="grid justify-items-center gap-10 py-12 text-center md:grid-cols-2 md:text-start xl:grid-cols-4 xl:justify-items-start xl:gap-0 xl:text-start">
+                <div className="footer-info-grid grid justify-items-center gap-10 py-12 text-center md:grid-cols-2 md:text-start xl:grid-cols-4 xl:justify-items-start xl:gap-0 xl:text-start">
                     <div className="flex flex-col">
                         <span className="mb-6 flex items-center gap-2 font-bold uppercase text-brand-blue">
-                            Feito com{' '}
-                            <span>
-                                <img
-                                    src="/src/assets/svg/icons/mdi_heart.svg"
-                                    alt="heart"
-                                    className="h-4 w-4"
-                                />
-                            </span>{' '}
+                            Feito com <Heart />
                             no Brasil
                         </span>
                         <span>
@@ -95,7 +146,7 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row">
+                <div className="additional-footer-container container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row">
                     <img
                         src="/src/assets/svg/logo.svg"
                         alt="solutionsbi logo"

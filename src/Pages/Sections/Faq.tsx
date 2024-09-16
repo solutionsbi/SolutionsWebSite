@@ -38,10 +38,10 @@ export default function Faq({ faqs }: FaqProps) {
                 container.current.querySelectorAll('.faq-item')
             )
 
-            console.group('FAQ Section Elements')
-            console.log('Section Title:', sectionTitle)
-            console.log('Section Faq:', sectionFaqs)
-            console.groupEnd()
+            // console.group('FAQ Section Elements')
+            // console.log('Section Title:', sectionTitle)
+            // console.log('Section Faq:', sectionFaqs)
+            // console.groupEnd()
 
             // set initial styles to prevent flashing of unstyled content
             gsap.set(sectionTitle, {
