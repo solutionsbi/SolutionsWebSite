@@ -1,4 +1,9 @@
 import Carrossel from '../../components/custom/CarrosselSoluções'
+import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 type SolucoesProps = {
     title?: boolean

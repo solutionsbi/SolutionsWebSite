@@ -5,10 +5,10 @@ FROM node:current
 WORKDIR /app
 
 # Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+COPY package.json package-lock.json ./
 
-# Install project dependencies using npm ci for a clean install
-RUN npm ci
+# Install all dependencies, including dev dependencies
+RUN npm install
 
 # Copy the rest of the application code to the container
 COPY . .

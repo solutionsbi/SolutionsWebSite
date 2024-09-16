@@ -13,11 +13,9 @@ import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
-import SplitType from 'split-type'
 import { binaryTextTransitionEffect } from '@/lib/binaryTextTransitionEffect'
 
-gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin)
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 type Service = {
     title: React.ReactNode
@@ -215,7 +213,7 @@ export function Card({ title, description, url, icon }: Card) {
             onMouseLeave={handleMouseLeave}
             ref={container}
             to={url}
-            className="relative flex h-[294px] select-none flex-col overflow-hidden border-t-2 border-brand-blue p-6 lg:h-[320px] lg:p-8 xl:h-[350px]"
+            className="service-card relative flex h-[294px] select-none flex-col overflow-hidden border-t-2 border-brand-blue p-6 lg:h-[320px] lg:p-8 xl:h-[350px]"
         >
             {/* card header */}
             <div className="flex items-center justify-between">
@@ -249,8 +247,37 @@ export function Card({ title, description, url, icon }: Card) {
 
 //component
 export default function Carrossel() {
+    const container = useRef<HTMLDivElement>(null)
+    const enterTl = useRef<gsap.core.Timeline | null>(null)
+
+    useGSAP(() => {
+        if (!container.current) return
+
+        const carouselCards = gsap.utils.toArray(
+            container.current.querySelectorAll('.service-card')
+        )
+
+        enterTl.current = gsap.timeline({
+            defaults: {
+                duration: 1,
+                ease: 'power1.out',
+            },
+            scrollTrigger: {
+                trigger: container.current,
+                start: 'top bottom',
+            },
+        })
+
+        enterTl.current.from(carouselCards, {
+            opacity: 0,
+            y: 100,
+            stagger: 0.1,
+        })
+    })
+
     return (
         <Carousel
+            ref={container}
             opts={{
                 align: 'start',
                 loop: true,

@@ -3,12 +3,9 @@ import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
-import SplitType from 'split-type'
-
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 
-gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin)
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 type Cta = {
     text: string
@@ -33,17 +30,15 @@ export default function Hero({
     position = 'center',
 }: HeroProps) {
     const container = useRef<HTMLElement>(null)
+    const enterTl = useRef<gsap.core.Timeline | null>(null)
+    const scrubTl = useRef<gsap.core.Timeline | null>(null)
 
     // animations
     useGSAP(
         () => {
             if (!container.current) return
 
-            const splitH1 = new SplitType('#hero-heading')
-            const splitP = new SplitType('#hero-description')
-
-            // Initial animation when the section enters the screen
-            const enterTl = gsap.timeline({
+            enterTl.current = gsap.timeline({
                 defaults: {
                     duration: 1,
                     ease: 'power1.out',
@@ -53,85 +48,103 @@ export default function Hero({
                     start: 'top bottom',
                     end: 'top center',
                 },
-            })
+                onComplete: () => {
+                    scrubTl.current = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: container.current,
+                            start: 'top 10%',
+                            end: 'bottom 10%',
+                            scrub: true,
+                        },
+                    })
 
-            enterTl
-                .from('#section-bg', {
-                    y: 20,
-                    opacity: 0,
-                    scale: 1.2,
-                    duration: 3,
-                })
-                .from(
-                    splitH1.words,
-                    {
-                        stagger: 0.1,
-                        opacity: 0,
-                        x: -20,
-                    },
-                    '0.5'
-                )
-                .from(
-                    splitP.lines,
-                    {
-                        stagger: 0.1,
-                        opacity: 0,
-                        y: 30,
-                    },
-                    '0.6'
-                )
-            if (cta1) {
-                enterTl.from(
-                    '#hero-cta-1',
-                    {
-                        opacity: 0,
-                        scale: 0.8,
-                    },
-                    '1.2'
-                )
-            }
-            if (cta2) {
-                enterTl.from(
-                    '#hero-cta-2',
-                    {
-                        opacity: 0,
-                        scale: 0.8,
-                    },
-                    '1.3'
-                )
-            }
-
-            // Scrub animation for when the user starts to scroll down
-            const scrubTl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: container.current,
-                    start: 'top 10%',
-                    end: 'bottom 10%',
-                    scrub: true,
+                    scrubTl.current
+                        ?.to('#section-bg', {
+                            y: 100,
+                            scale: 1.1,
+                        })
+                        .to(
+                            '#hero-heading, #hero-description',
+                            {
+                                y: -50,
+                                opacity: 0.5,
+                            },
+                            '<'
+                        )
+                        .to(
+                            ['#hero-cta-1', '#hero-cta-2'],
+                            {
+                                y: -30,
+                                opacity: 0.7,
+                            },
+                            '<'
+                        )
                 },
             })
 
-            scrubTl
-                .to('#section-bg', {
-                    y: 100,
-                    scale: 1.1,
+            gsap.set('#section-bg', {
+                scale: 1.2,
+                autoAlpha: 0,
+            })
+            gsap.set('#hero-heading', {
+                x: -20,
+                autoAlpha: 0,
+            })
+            gsap.set('#hero-description', {
+                y: 30,
+                autoAlpha: 0,
+            })
+            gsap.set('#hero-cta-1', {
+                x: -20,
+                autoAlpha: 0,
+            })
+            gsap.set('#hero-cta-2', {
+                x: 20,
+                autoAlpha: 0,
+            })
+
+            enterTl.current
+                ?.to('#section-bg', {
+                    autoAlpha: 1,
+                    scale: 1,
+                    duration: 3,
                 })
                 .to(
-                    '#hero-heading, #hero-description',
+                    '#hero-heading',
                     {
-                        y: -50,
-                        opacity: 0.5,
+                        autoAlpha: 1,
+                        x: 0,
                     },
-                    '<'
+                    '-=2'
                 )
                 .to(
-                    ['#hero-cta-1', '#hero-cta-2'],
+                    '#hero-description',
                     {
-                        y: -30,
-                        opacity: 0.7,
+                        autoAlpha: 1,
+                        y: 0,
                     },
-                    '<'
+                    '-=1.5'
                 )
+            if (cta1) {
+                enterTl.current?.to(
+                    '#hero-cta-1',
+                    {
+                        autoAlpha: 1,
+                        x: 0,
+                    },
+                    '-=1.1'
+                )
+            }
+            if (cta2) {
+                enterTl.current?.to(
+                    '#hero-cta-2',
+                    {
+                        autoAlpha: 1,
+                        x: 0,
+                    },
+                    '-=1.1'
+                )
+            }
         },
         { scope: container }
     )
