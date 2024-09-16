@@ -75,7 +75,6 @@ const stats = [
 export default function Partners() {
     const container = useRef<HTMLElement>(null)
     const enterTl = useRef<gsap.core.Timeline | null>(null)
-    const scrubTl = useRef<gsap.core.Timeline | null>(null)
 
     useGSAP(() => {
         // check if container exists
@@ -135,22 +134,21 @@ export default function Partners() {
             scrollTrigger: {
                 trigger: container.current,
                 start: 'top 70%',
-                markers: true,
+                markers: false,
             },
-            // onComplete: () => {
-            //     scrubTl.current = gsap.timeline({
-            //         scrollTrigger: {
-            //             trigger: container.current,
-            //             start: 'top center',
-            //             end: 'bottom center',
-            //             scrub: true,
-            //         },
-            //     })
-
-            //     scrubTl.current.to(container.current, {
-            //         opacity: 0,
-            //     })
-            // },
+            onComplete: () => {
+                gsap.to(sectionBg, {
+                    scale: 0.8,
+                    opacity: 0.5,
+                    scrollTrigger: {
+                        trigger: container.current,
+                        start: 'bottom 80%',
+                        end: 'bottom top',
+                        scrub: true,
+                        markers: false,
+                    },
+                })
+            },
         })
 
         // add animations to the timeline
