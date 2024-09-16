@@ -29,106 +29,114 @@ export default function Beneficios({
     const container = useRef<HTMLElement>(null)
     const enterTl = useRef<gsap.core.Timeline | null>(null)
 
-    useGSAP(() => {
-        // check if container exists
-        if (!container.current) return
+    useGSAP(
+        () => {
+            // check if container exists
+            if (!container.current) return
 
-        // get elements that will be animated from the container
-        const sectionBg = container.current.querySelector('.section-bg')
-        const sectionTitle = container.current.querySelector('.section-title')
-        const sectionDescription = container.current.querySelector(
-            '.section-description'
-        )
-        const sectionsCtas = gsap.utils.toArray(
-            container.current.querySelectorAll('.section-cta')
-        )
-        const sectionBenefits = gsap.utils.toArray(
-            container.current.querySelectorAll('.benefit-item')
-        )
-        const benefitIcons = gsap.utils.toArray(
-            container.current.querySelectorAll('.benefit-item img')
-        )
-        const benefitTitle = gsap.utils.toArray(
-            container.current.querySelectorAll('.benefit-item h3')
-        )
-        const benefitDescription = gsap.utils.toArray(
-            container.current.querySelectorAll('.benefit-item p')
-        )
+            // get elements that will be animated from the container
+            const sectionBg = container.current.querySelector('.section-bg')
+            const sectionTitle =
+                container.current.querySelector('.section-title')
+            const sectionDescription = container.current.querySelector(
+                '.section-description'
+            )
+            const sectionsCtas = gsap.utils.toArray(
+                container.current.querySelectorAll('.section-cta')
+            )
+            const sectionBenefits = gsap.utils.toArray(
+                container.current.querySelectorAll('.benefit-item')
+            )
+            const benefitIcons = gsap.utils.toArray(
+                container.current.querySelectorAll('.benefit-item img')
+            )
+            const benefitTitle = gsap.utils.toArray(
+                container.current.querySelectorAll('.benefit-item h3')
+            )
+            const benefitDescription = gsap.utils.toArray(
+                container.current.querySelectorAll('.benefit-item p')
+            )
 
-        console.group('Animation Elements')
-        console.log('Section Background:', sectionBg)
-        console.log('Section Title:', sectionTitle)
-        console.log('Section Description:', sectionDescription)
-        console.log('Section Benefits:', sectionBenefits)
-        console.log('Section CTA:', sectionsCtas)
-        console.log('Benefit Icons:', benefitIcons)
-        console.log('Benefit Titles:', benefitTitle)
-        console.log('Benefit Descriptions:', benefitDescription)
-        console.groupEnd()
+            // console.group('Animation Elements')
+            // console.log('Section Background:', sectionBg)
+            // console.log('Section Title:', sectionTitle)
+            // console.log('Section Description:', sectionDescription)
+            // console.log('Section Benefits:', sectionBenefits)
+            // console.log('Section CTA:', sectionsCtas)
+            // console.log('Benefit Icons:', benefitIcons)
+            // console.log('Benefit Titles:', benefitTitle)
+            // console.log('Benefit Descriptions:', benefitDescription)
+            // console.groupEnd()
 
-        // set initial styles to prevent flashing of unstyled content
-        gsap.set(sectionBg, {
-            opacity: 0,
-            scale: 0.8,
-        })
-        gsap.set(sectionTitle, {
-            opacity: 0,
-            y: 20,
-        })
-        gsap.set(sectionDescription, {
-            opacity: 0,
-            y: 20,
-        })
-        gsap.set(sectionBenefits, {
-            opacity: 0,
-            x: -20,
-        })
+            // set initial styles to prevent flashing of unstyled content
+            gsap.set(sectionBg, {
+                opacity: 0,
+                scale: 0.8,
+            })
+            gsap.set(sectionTitle, {
+                opacity: 0,
+                y: 20,
+            })
+            gsap.set(sectionDescription, {
+                opacity: 0,
+                y: 20,
+            })
+            gsap.set(sectionBenefits, {
+                opacity: 0,
+                x: -20,
+            })
 
-        gsap.set(sectionsCtas, {
-            opacity: 0,
-            x: 20,
-        })
+            gsap.set(sectionsCtas, {
+                opacity: 0,
+                x: 20,
+            })
 
-        // create timeline
-        enterTl.current = gsap.timeline({
-            scrollTrigger: {
-                trigger: container.current,
-                start: 'top center',
-                markers: false,
-            },
-            defaults: {
-                duration: 1.5,
-                ease: 'power1.inOut',
-            },
-            onComplete: () => {
-                gsap.to(sectionBg, {
-                    scrollTrigger: {
-                        trigger: container.current,
-                        start: 'bottom 70%',
-                        end: 'bottom 10%',
-                        scrub: true,
-                        markers: true,
-                    },
-                    opacity: 0.8,
-                    scale: 0.8,
-                })
-            },
-        })
+            // create timeline
+            enterTl.current = gsap.timeline({
+                scrollTrigger: {
+                    trigger: container.current,
+                    start: 'top center',
+                    markers: false,
+                },
+                defaults: {
+                    duration: 1.5,
+                    ease: 'power1.inOut',
+                },
+                onComplete: () => {
+                    gsap.to(sectionBg, {
+                        scrollTrigger: {
+                            trigger: container.current,
+                            start: 'bottom 70%',
+                            end: 'bottom 10%',
+                            scrub: true,
+                            markers: true,
+                        },
+                        opacity: 0.8,
+                        scale: 0.8,
+                    })
+                },
+            })
 
-        enterTl.current.to(sectionBg, { opacity: 1, scale: 1, duration: 5 })
-        enterTl.current.to(sectionTitle, { opacity: 1, y: 0 }, '<+=1')
-        enterTl.current.to(sectionDescription, { opacity: 1, y: 0 }, '<+=0.2')
-        enterTl.current.to(
-            sectionBenefits,
-            { opacity: 1, x: 0, stagger: 0.5 },
-            '<+=0.2'
-        )
-        enterTl.current.to(
-            sectionsCtas,
-            { opacity: 1, x: 0, stagger: 0.1 },
-            '<+=0.5'
-        )
-    })
+            enterTl.current.to(sectionBg, { opacity: 1, scale: 1, duration: 5 })
+            enterTl.current.to(sectionTitle, { opacity: 1, y: 0 }, '<+=1')
+            enterTl.current.to(
+                sectionDescription,
+                { opacity: 1, y: 0 },
+                '<+=0.2'
+            )
+            enterTl.current.to(
+                sectionBenefits,
+                { opacity: 1, x: 0, stagger: 0.5 },
+                '<+=0.2'
+            )
+            enterTl.current.to(
+                sectionsCtas,
+                { opacity: 1, x: 0, stagger: 0.1 },
+                '<+=0.5'
+            )
+        },
+        { scope: container }
+    )
 
     return (
         <section ref={container} className="page-section">

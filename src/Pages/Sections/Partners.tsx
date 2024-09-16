@@ -76,138 +76,147 @@ export default function Partners() {
     const container = useRef<HTMLElement>(null)
     const enterTl = useRef<gsap.core.Timeline | null>(null)
 
-    useGSAP(() => {
-        // check if container exists
-        if (!container.current) return
+    useGSAP(
+        () => {
+            // check if container exists
+            if (!container.current) return
 
-        // get elements that will be animated from the container
-        const sectionBg = container.current.querySelector('.section-bg')
-        const sectionTitle = container.current.querySelector('h2')
-        const sectionLogos = gsap.utils.toArray(
-            container.current.querySelectorAll('.partner-logo')
-        )
-        const sectionStats = gsap.utils.toArray(
-            container.current.querySelectorAll('.stats-item')
-        )
-        const sectionStatsPlus = gsap.utils.toArray<HTMLElement>(
-            container.current.querySelectorAll('.stats-item span:first-child')
-        )
-        const sectionStatsNumbers = gsap.utils.toArray<HTMLElement>(
-            container.current.querySelectorAll('.stats-item span:nth-child(2)')
-        )
-        const sectionStatsTexts = gsap.utils.toArray(
-            container.current.querySelectorAll('.stats-item span:nth-child(3)')
-        )
+            // get elements that will be animated from the container
+            const sectionBg = container.current.querySelector('.section-bg')
+            const sectionTitle = container.current.querySelector('h2')
+            const sectionLogos = gsap.utils.toArray(
+                container.current.querySelectorAll('.partner-logo')
+            )
+            const sectionStats = gsap.utils.toArray(
+                container.current.querySelectorAll('.stats-item')
+            )
+            const sectionStatsPlus = gsap.utils.toArray<HTMLElement>(
+                container.current.querySelectorAll(
+                    '.stats-item span:first-child'
+                )
+            )
+            const sectionStatsNumbers = gsap.utils.toArray<HTMLElement>(
+                container.current.querySelectorAll(
+                    '.stats-item span:nth-child(2)'
+                )
+            )
+            const sectionStatsTexts = gsap.utils.toArray(
+                container.current.querySelectorAll(
+                    '.stats-item span:nth-child(3)'
+                )
+            )
 
-        // set initial styles to prevent flashing of unstyled content
-        gsap.set(sectionBg, {
-            opacity: 0,
-            scale: 0.8,
-        })
-        gsap.set(sectionTitle, {
-            opacity: 0,
-            x: 50,
-        })
-        gsap.set(sectionLogos, {
-            opacity: 0,
-            y: 50,
-        })
-        gsap.set(sectionStatsPlus, {
-            opacity: 0,
-            scale: 0.8,
-        })
-        gsap.set(sectionStatsNumbers, {
-            opacity: 0,
-            y: 50,
-        })
-        gsap.set(sectionStatsTexts, {
-            opacity: 0,
-            x: 50,
-        })
-
-        // create a scrolltriggered timeline
-        enterTl.current = gsap.timeline({
-            defaults: {
-                duration: 1,
-                ease: 'power1.out',
-            },
-            scrollTrigger: {
-                trigger: container.current,
-                start: 'top 70%',
-                markers: false,
-            },
-            onComplete: () => {
-                gsap.to(sectionBg, {
-                    scale: 0.8,
-                    opacity: 0.5,
-                    scrollTrigger: {
-                        trigger: container.current,
-                        start: 'bottom 80%',
-                        end: 'bottom top',
-                        scrub: true,
-                        markers: false,
-                    },
-                })
-            },
-        })
-
-        // add animations to the timeline
-        enterTl.current
-            .to(sectionBg, {
-                opacity: 1,
-                scale: 1,
-                duration: 5,
+            // set initial styles to prevent flashing of unstyled content
+            gsap.set(sectionBg, {
+                opacity: 0,
+                scale: 0.8,
             })
-            .to(
-                sectionTitle,
-                {
-                    opacity: 1,
-                    y: 0,
+            gsap.set(sectionTitle, {
+                opacity: 0,
+                x: 50,
+            })
+            gsap.set(sectionLogos, {
+                opacity: 0,
+                y: 50,
+            })
+            gsap.set(sectionStatsPlus, {
+                opacity: 0,
+                scale: 0.8,
+            })
+            gsap.set(sectionStatsNumbers, {
+                opacity: 0,
+                y: 50,
+            })
+            gsap.set(sectionStatsTexts, {
+                opacity: 0,
+                x: 50,
+            })
+
+            // create a scrolltriggered timeline
+            enterTl.current = gsap.timeline({
+                defaults: {
+                    duration: 1,
+                    ease: 'power1.out',
                 },
-                '<+=1'
-            )
-            .to(
-                sectionLogos,
-                {
-                    opacity: 1,
-                    y: 0,
-                    stagger: 0.1,
+                scrollTrigger: {
+                    trigger: container.current,
+                    start: 'top 70%',
+                    markers: false,
                 },
-                '<+=0.2'
-            )
-            .to(
-                sectionStatsPlus,
-                {
+                onComplete: () => {
+                    gsap.to(sectionBg, {
+                        scale: 0.8,
+                        opacity: 0.5,
+                        scrollTrigger: {
+                            trigger: container.current,
+                            start: 'bottom 80%',
+                            end: 'bottom top',
+                            scrub: true,
+                            markers: false,
+                        },
+                    })
+                },
+            })
+
+            // add animations to the timeline
+            enterTl.current
+                .to(sectionBg, {
                     opacity: 1,
                     scale: 1,
-                    stagger: 0.1,
-                },
-                '<+=0.5'
-            )
-            .to(
-                sectionStatsNumbers,
-                {
-                    opacity: 1,
-                    y: 0,
-                    stagger: 0.1,
-                    onStart: () => {
-                        sectionStatsNumbers.forEach((element) => {
-                            animateCounting(element as HTMLElement)
-                        })
+                    duration: 5,
+                })
+                .to(
+                    sectionTitle,
+                    {
+                        opacity: 1,
+                        y: 0,
                     },
-                },
-                '<+=0.2'
-            )
-            .to(
-                sectionStatsTexts,
-                {
-                    opacity: 1,
-                    x: 0,
-                    stagger: 0.1,
-                },
-                '<+=0.2'
-            )
-    })
+                    '<+=1'
+                )
+                .to(
+                    sectionLogos,
+                    {
+                        opacity: 1,
+                        y: 0,
+                        stagger: 0.1,
+                    },
+                    '<+=0.2'
+                )
+                .to(
+                    sectionStatsPlus,
+                    {
+                        opacity: 1,
+                        scale: 1,
+                        stagger: 0.1,
+                    },
+                    '<+=0.5'
+                )
+                .to(
+                    sectionStatsNumbers,
+                    {
+                        opacity: 1,
+                        y: 0,
+                        stagger: 0.1,
+                        onStart: () => {
+                            sectionStatsNumbers.forEach((element) => {
+                                animateCounting(element as HTMLElement)
+                            })
+                        },
+                    },
+                    '<+=0.2'
+                )
+                .to(
+                    sectionStatsTexts,
+                    {
+                        opacity: 1,
+                        x: 0,
+                        stagger: 0.1,
+                    },
+                    '<+=0.2'
+                )
+        },
+        { scope: container }
+    )
 
     return (
         <section ref={container} className="page-section">

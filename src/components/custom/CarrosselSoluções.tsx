@@ -250,30 +250,33 @@ export default function Carrossel() {
     const container = useRef<HTMLDivElement>(null)
     const enterTl = useRef<gsap.core.Timeline | null>(null)
 
-    useGSAP(() => {
-        if (!container.current) return
+    useGSAP(
+        () => {
+            if (!container.current) return
 
-        const carouselCards = gsap.utils.toArray(
-            container.current.querySelectorAll('.service-card')
-        )
+            const carouselCards = gsap.utils.toArray(
+                container.current.querySelectorAll('.service-card')
+            )
 
-        enterTl.current = gsap.timeline({
-            defaults: {
-                duration: 1,
-                ease: 'power1.out',
-            },
-            scrollTrigger: {
-                trigger: container.current,
-                start: 'top bottom',
-            },
-        })
+            enterTl.current = gsap.timeline({
+                defaults: {
+                    duration: 1,
+                    ease: 'power1.out',
+                },
+                scrollTrigger: {
+                    trigger: container.current,
+                    start: 'top bottom',
+                },
+            })
 
-        enterTl.current.from(carouselCards, {
-            opacity: 0,
-            y: 100,
-            stagger: 0.1,
-        })
-    })
+            enterTl.current.from(carouselCards, {
+                opacity: 0,
+                y: 100,
+                stagger: 0.1,
+            })
+        },
+        { scope: container }
+    )
 
     return (
         <Carousel
