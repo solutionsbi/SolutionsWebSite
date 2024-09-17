@@ -118,13 +118,13 @@ export default function Cta() {
 
     return (
         <section ref={container} className="relative px-[5%] py-16">
-            <div className="section-bg absolute left-1/2 top-1/2 -z-50 mx-auto h-[150%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
+            <div className="section-bg absolute left-1/2 top-1/2 -z-50 mx-auto h-[120%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
                 <img
                     src="/src/assets/images/Background/2.jpeg"
                     className="mask-rect h-full w-full object-cover"
                 />
             </div>
-            <div className="shadow-custom container relative flex flex-col justify-between p-10 md:p-14 lg:flex-row lg:p-20">
+            <div className="shadow-custom container relative flex min-h-[50vh] flex-col justify-between p-10 md:p-14 lg:flex-row lg:p-20">
                 <div className="bottom-bar absolute bottom-0 left-0 h-[2px] w-full bg-brand-blue"></div>
                 <div className="container-bg absolute inset-0 -z-10 bg-gradient-to-tr from-neutral-darkest/60 backdrop-blur"></div>
                 <div className="flex flex-col">

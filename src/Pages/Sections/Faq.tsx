@@ -86,7 +86,7 @@ export default function Faq({ faqs }: FaqProps) {
 
     return (
         <section ref={container} className="page-section">
-            <div className="container">
+            <div className="container grid h-full items-center">
                 <div className="flex w-full flex-col items-center">
                     <h2 className="section-title mb-14 text-center lg:mb-20">
                         <span className="text-brand-blue"> perguntas</span>{' '}

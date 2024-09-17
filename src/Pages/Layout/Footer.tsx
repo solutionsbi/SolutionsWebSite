@@ -59,12 +59,12 @@ export default function Footer() {
     return (
         <footer
             ref={container}
-            className="relative max-w-[1920px] bg-gradient-to-t from-neutral-darkest px-[5%] pt-16"
+            className="relative mx-auto bg-gradient-to-t from-neutral-darkest px-[5%] pt-16"
         >
             <div className="container">
                 <div className="footer-info-grid grid justify-items-center gap-10 py-12 text-center md:grid-cols-2 md:text-start xl:grid-cols-4 xl:justify-items-start xl:gap-0 xl:text-start">
                     <div className="flex flex-col">
-                        <span className="mb-6 flex items-center gap-2 font-bold uppercase text-brand-blue">
+                        <span className="mb-6 flex items-center justify-center gap-2 font-bold uppercase text-brand-blue md:justify-start">
                             Feito com <Heart />
                             no Brasil
                         </span>

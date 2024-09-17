@@ -258,10 +258,14 @@ export default function Carrossel() {
                 container.current.querySelectorAll('.service-card')
             )
 
+            const carouselButtons = gsap.utils.toArray(
+                container.current.querySelectorAll('.carousel-button')
+            )
+
             enterTl.current = gsap.timeline({
                 delay: 1,
                 defaults: {
-                    duration: 2,
+                    duration: 1.5,
                     ease: 'power1.out',
                 },
                 scrollTrigger: {
@@ -273,8 +277,18 @@ export default function Carrossel() {
             enterTl.current.from(carouselCards, {
                 opacity: 0,
                 y: 100,
-                stagger: 0.1,
+                stagger: 0.5,
             })
+
+            enterTl.current.from(
+                carouselButtons,
+                {
+                    opacity: 0,
+                    x: (index: number) => (index === 0 ? 100 : -100),
+                    stagger: 0.5,
+                },
+                '<+=1.5'
+            )
         },
         { scope: container }
     )
@@ -287,8 +301,9 @@ export default function Carrossel() {
                 loop: true,
             }}
             plugins={[Autoplay({ delay: 8000 })]}
-            className="max-w-xxl mx-auto w-full"
+            className="flex w-full items-center justify-center gap-2"
         >
+            <CarouselPrevious className="carousel-button hidden px-2 md:block" />
             <CarouselContent className="">
                 {services.map((service: Service, index) => (
                     <CarouselItem
@@ -304,10 +319,7 @@ export default function Carrossel() {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <div className="mx-auto mt-16 flex w-max items-center gap-4">
-                <CarouselPrevious className="" />
-                <CarouselNext className="" />
-            </div>
+            <CarouselNext className="carousel-button hidden px-2 md:block" />
         </Carousel>
     )
 }

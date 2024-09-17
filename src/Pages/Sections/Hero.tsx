@@ -164,15 +164,15 @@ export default function Hero({
         { scope: container }
     )
     return (
-        <section ref={container} className="relative px-[5%]">
-            <div className="section-bg absolute left-0 top-0 -z-50 h-[88vh] w-full">
+        <section ref={container} className="relative h-[78vh] px-[5%]">
+            <div className="section-bg absolute left-0 top-[-12vh] -z-50 h-[100vh] w-full">
                 <img
                     src={img}
                     className="mask-rect h-full w-full object-cover"
                 />
             </div>
 
-            <div className="container relative h-full py-16 md:py-24 lg:py-28">
+            <div className="container relative grid h-full items-center">
                 <div
                     className={`flex flex-col ${position === 'start' && 'items-start'} ${position === 'center' && 'items-center text-center'}`}
                 >
@@ -184,7 +184,7 @@ export default function Hero({
                         {description}
                     </p>
 
-                    <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
+                    <div className="mt-6 flex flex-col items-center justify-center gap-2 gap-x-4 md:mt-8 md:flex-row">
                         {cta1 && (
                             <Button className="section-cta-1">
                                 <a

@@ -87,24 +87,24 @@ export default function Partners() {
             const sectionLogos = gsap.utils.toArray(
                 container.current.querySelectorAll('.partner-logo')
             )
-            const sectionStats = gsap.utils.toArray(
-                container.current.querySelectorAll('.stats-item')
-            )
             const sectionStatsPlus = gsap.utils.toArray<HTMLElement>(
-                container.current.querySelectorAll(
-                    '.stats-item span:first-child'
-                )
+                container.current.querySelectorAll('.plus')
             )
             const sectionStatsNumbers = gsap.utils.toArray<HTMLElement>(
-                container.current.querySelectorAll(
-                    '.stats-item span:nth-child(2)'
-                )
+                container.current.querySelectorAll('.stats-number')
             )
             const sectionStatsTexts = gsap.utils.toArray(
-                container.current.querySelectorAll(
-                    '.stats-item span:nth-child(3)'
-                )
+                container.current.querySelectorAll('.stats-text')
             )
+
+            // console.group('Section elements')
+            // console.log('sectionBg', sectionBg)
+            // console.log('sectionTitle', sectionTitle)
+            // console.log('sectionLogos', sectionLogos)
+            // console.log('sectionStatsPlus', sectionStatsPlus)
+            // console.log('sectionStatsNumbers', sectionStatsNumbers)
+            // console.log('sectionStatsTexts', sectionStatsTexts)
+            // console.groupEnd()
 
             // set initial styles to prevent flashing of unstyled content
             gsap.set(sectionBg, {
@@ -143,19 +143,6 @@ export default function Partners() {
                     start: 'top 70%',
                     markers: false,
                 },
-                onComplete: () => {
-                    gsap.to(sectionBg, {
-                        scale: 0.8,
-                        opacity: 0.5,
-                        scrollTrigger: {
-                            trigger: container.current,
-                            start: 'bottom 80%',
-                            end: 'bottom top',
-                            scrub: true,
-                            markers: false,
-                        },
-                    })
-                },
             })
 
             // add animations to the timeline
@@ -169,7 +156,7 @@ export default function Partners() {
                     sectionTitle,
                     {
                         opacity: 1,
-                        y: 0,
+                        x: 0,
                     },
                     '<+=1'
                 )
@@ -220,15 +207,15 @@ export default function Partners() {
 
     return (
         <section ref={container} className="page-section">
-            <div className="container flex flex-col items-center">
-                <div className="section-bg absolute left-1/2 top-[50%] -z-50 mx-auto h-[110%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
-                    <img
-                        src="/src/assets/images/Background/22.jpeg"
-                        className="mask-rect h-full w-full object-cover opacity-100"
-                    />
-                </div>
+            <div className="section-bg absolute left-1/2 top-1/2 -z-50 mx-auto h-full w-full translate-x-[-50%] translate-y-[-50%]">
+                <img
+                    src="/src/assets/images/Background/22.jpeg"
+                    className="mask-rect h-full w-full object-cover opacity-100"
+                />
+            </div>
 
-                <div className="container flex flex-col items-center text-center">
+            <div className="container flex h-full flex-col items-center justify-center">
+                <div className="container flex flex-col items-center justify-center text-center">
                     <h2 className="">
                         <span className="text-brand-blue">empresas</span> que{' '}
                         <br className="md:hidden" />
@@ -258,13 +245,15 @@ export default function Partners() {
                             key={index}
                             className="stats-item flex flex-col items-center whitespace-pre-line text-center font-bold drop-shadow-custom lg:flex-row lg:text-start"
                         >
-                            <span className="text-6xl text-brand-blue lg:text-10xl">
-                                +
+                            <span className="flex items-center gap-2">
+                                <span className="plus text-6xl text-brand-blue lg:text-10xl">
+                                    +
+                                </span>
+                                <span className="stats-number mr-2 text-6xl text-brand-blue lg:mr-6 lg:text-10xl">
+                                    {stats.number}
+                                </span>{' '}
                             </span>
-                            <span className="mr-2 text-6xl text-brand-blue lg:mr-6 lg:text-10xl">
-                                {stats.number}
-                            </span>{' '}
-                            <span className="text-xl/[1.1] lg:text-3xl/[1.1]">
+                            <span className="stats-text text-xl/[1.1] lg:text-3xl/[1.1]">
                                 {stats.text}
                             </span>
                         </h3>

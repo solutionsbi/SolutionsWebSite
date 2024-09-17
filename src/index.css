@@ -53,11 +53,12 @@
 }
 @layer utilities {
     .card-bg {
-        @apply relative rounded-3xl border border-white/10 bg-neutral-darkest/50 shadow-custom before:absolute before:inset-0 before:-z-50 before:rounded-3xl before:backdrop-blur;
+        @apply shadow-custom relative rounded-3xl border border-white/10 bg-neutral-darkest/50 before:absolute before:inset-0 before:-z-50 before:rounded-3xl before:backdrop-blur;
     }
 
     .page-section {
-        @apply relative px-[5%] py-16 md:py-24 lg:py-28;
+        @apply relative min-h-[88vh] px-[5%];
+        /* @apply relative px-[5%] py-16 md:py-24 lg:py-28; */
     }
 
     .gradient-border {

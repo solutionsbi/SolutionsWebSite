@@ -102,19 +102,6 @@ export default function Beneficios({
                     duration: 1,
                     ease: 'power1.inOut',
                 },
-                onComplete: () => {
-                    gsap.to(sectionBg, {
-                        scrollTrigger: {
-                            trigger: container.current,
-                            start: 'bottom bottom',
-                            end: 'bottom top',
-                            scrub: 1,
-                            markers: false,
-                        },
-                        opacity: 0.8,
-                        scale: 1.1,
-                    })
-                },
             })
 
             enterTl.current.to(sectionBg, { opacity: 1, scale: 1, duration: 4 })
@@ -146,8 +133,9 @@ export default function Beneficios({
                     className="mask-rect h-full w-full object-cover opacity-100"
                 />
             </div>
-            <div className="container">
-                <div className="container grid justify-items-center lg:grid-cols-2 lg:gap-20">
+
+            <div className="grid h-full items-center">
+                <div className="container grid items-center justify-items-center lg:grid-cols-2 lg:gap-20">
                     <div className="mb-16 flex w-full flex-col">
                         <div className="flex flex-col items-center text-center lg:items-start lg:text-start">
                             <h2 className="section-title mb-5 md:mb-6">
@@ -175,6 +163,7 @@ export default function Beneficios({
                             </div>
                         </div>
                     </div>
+
                     <div className="mx-auto grid gap-2">
                         {benefits.map((benefit, index) => (
                             <div
