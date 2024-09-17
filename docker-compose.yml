@@ -1,11 +1,14 @@
 services:
-    web: # Defines the "web" service that runs your React application.
-        build: . # Builds the Docker image using the Dockerfile in the current directory.
+    web:
+        build: .
         volumes:
-            - .:/app # Maps the current directory on your host machine to /app in the container.
-            - /app/node_modules # Prevents overwriting of node_modules in the container.
+            - .:/app
+            - node_modules:/app/node_modules
         ports:
-            - '3000:3000' # Maps port 3000 in the container to port 3000 on the host machine.
-        working_dir: /app # Sets the working directory inside the container to /app.
-        command: npm run dev -- --port 3000 --host # Starts the development server with specified port and host options.
+            - '3000:3000'
+        working_dir: /app
+        command: npm run dev -- --port 3000 --host
 
+volumes:
+    node_modules:
+    
