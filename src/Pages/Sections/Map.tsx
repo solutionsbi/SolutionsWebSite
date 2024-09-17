@@ -9,22 +9,46 @@ export const Map = () => {
     const tl = useRef<gsap.core.Timeline | null>(null)
     const { contextSafe } = useGSAP({ scope: container })
 
-    useGSAP(
-        () => {
-            const countryIcons =
-                gsap.utils.toArray(container.current?.querySelectorAll('.country-icon')
-                console.log('countryIcons', countryIcons))
+    // useGSAP(
+    //     () => {
+    //         const countries = gsap.utils.toArray(
+    //             container.current?.querySelectorAll('.country') || []
+    //         ) as SVGSetElement[]
+    //         const countryIcons = gsap.utils.toArray(
+    //             container.current?.querySelectorAll('.country-icon') || []
+    //         ) as SVGElement[]
+    //     },
+    //     { scope: container }
+    // )
 
-        },
-        { scope: container }
+    const animateCountryIcon = (icon: SVGElement) => {
+        gsap.to(icon, {
+            scale: 1.2,
+            duration: 0.3,
+            ease: 'power2.out',
+        })
+    }
+
+    const handleMouseEnter = contextSafe(
+        (event: React.MouseEvent<SVGElement>) => {
+            const icon = event.currentTarget
+            animateCountryIcon(icon)
+        }
     )
 
-    const handleMouseEnter = contextSafe(() => console.log('hello'))
-
-    const handleMouseLeave = contextSafe(() => console.log('bye'))
+    const handleMouseLeave = contextSafe(
+        (event: React.MouseEvent<SVGElement>) => {
+            const icon = event.currentTarget
+            gsap.to(icon, {
+                scale: 1,
+                duration: 0.3,
+                ease: 'power2.in',
+            })
+        }
+    )
 
     return (
-        <section className="mt-[12vh] h-[60vh] px-[5%] md:h-[88vh]">
+        <section className="mt-[12vh] h-[60vh] border px-[5%] md:h-[88vh]">
             <div className="container relative grid h-full w-full place-content-center">
                 <svg
                     ref={container}
@@ -2134,6 +2158,8 @@ export const Map = () => {
                             filter="url(#filter10_d_6777_731)"
                             id="brazil-icon"
                             className="country-icon"
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
                         >
                             <path
                                 d="M439 603.5C438.337 603.5 437.701 603.237 437.232 602.768C436.763 602.299 436.5 601.663 436.5 601C436.5 600.337 436.763 599.701 437.232 599.232C437.701 598.763 438.337 598.5 439 598.5C439.663 598.5 440.299 598.763 440.768 599.232C441.237 599.701 441.5 600.337 441.5 601C441.5 601.328 441.435 601.653 441.31 601.957C441.184 602.26 441 602.536 440.768 602.768C440.536 603 440.26 603.184 439.957 603.31C439.653 603.435 439.328 603.5 439 603.5ZM439 594C437.143 594 435.363 594.737 434.05 596.05C432.737 597.363 432 599.143 432 601C432 606.25 439 614 439 614C439 614 446 606.25 446 601C446 599.143 445.263 597.363 443.95 596.05C442.637 594.737 440.857 594 439 594Z"
