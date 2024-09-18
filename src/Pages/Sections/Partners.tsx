@@ -55,6 +55,17 @@ const partnersData = [
         src: '/src/assets/images/Partner Logos/swiss.png',
         alt: 'swiss',
     },
+    {
+        src: '/src/assets/images/Partner Logos/datasystem.png',
+    },
+    {
+        src: '/src/assets/images/Partner Logos/modazine.png',
+        alt: 'modanize',
+    },
+    {
+        src: '/src/assets/images/Partner Logos/vrsoftware.png',
+        alt: 'vrsoftware',
+    },
 ]
 
 const stats = [
