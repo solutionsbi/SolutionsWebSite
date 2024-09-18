@@ -1,10 +1,10 @@
 import PrimaryButton from '../../components/custom/PrimaryButton'
-import { MoveRight } from 'lucide-react'
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+import ctaImage from '@/assets/images/Background/2.jpeg'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Cta() {
@@ -116,7 +116,7 @@ export default function Cta() {
         <section ref={container} className="relative px-[5%] py-16">
             <div className="section-bg absolute left-1/2 top-1/2 -z-50 mx-auto h-[120%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
                 <img
-                    src="/src/assets/images/Background/2.jpeg"
+                    src={ctaImage}
                     className="mask-rect h-full w-full object-cover"
                 />
             </div>

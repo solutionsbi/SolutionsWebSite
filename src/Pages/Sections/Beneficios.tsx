@@ -7,10 +7,16 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
+import icon1 from '@/assets/svg/abstract-icons/icon1.svg'
+import icon2 from '@/assets/svg/abstract-icons/icon2.svg'
+import icon3 from '@/assets/svg/abstract-icons/icon3.svg'
+import icon4 from '@/assets/svg/abstract-icons/icon4.svg'
+
+const icons = [icon1, icon2, icon3, icon4]
+
 type Benefit = {
     title: string
     description: string
-    icon: string
 }
 
 type BeneficiosProps = {
@@ -159,8 +165,7 @@ export default function Beneficios({
                                 <div className="flex items-center gap-5">
                                     <img
                                         className="h-10 w-10 [&_*]:filter-none"
-                                        src={benefit.icon}
-                                        alt="step icon"
+                                        src={icons[index]}
                                     />
                                     <h3 className="whitespace-pre-line text-2xl/[1.15] lg:text-3xl/[1.15] [&_*]:filter-none">
                                         {benefit.title}

@@ -12,14 +12,21 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
-type FaqProps = {
-    faqs: Faq[]
-}
+import icon1 from '@/assets/svg/abstract-icons/icon1.svg'
+import icon2 from '@/assets/svg/abstract-icons/icon2.svg'
+import icon3 from '@/assets/svg/abstract-icons/icon3.svg'
+import icon4 from '@/assets/svg/abstract-icons/icon4.svg'
+import icon5 from '@/assets/svg/abstract-icons/icon5.svg'
+
+const icons = [icon1, icon2, icon3, icon4, icon5]
 
 type Faq = {
-    icon: string
     question: string
     answer: string
+}
+
+type FaqProps = {
+    faqs: Faq[]
 }
 
 export default function Faq({ faqs }: FaqProps) {
@@ -37,11 +44,6 @@ export default function Faq({ faqs }: FaqProps) {
             const sectionFaqs = gsap.utils.toArray(
                 container.current.querySelectorAll('.faq-item')
             )
-
-            // console.group('FAQ Section Elements')
-            // console.log('Section Title:', sectionTitle)
-            // console.log('Section Faq:', sectionFaqs)
-            // console.groupEnd()
 
             // set initial styles to prevent flashing of unstyled content
             gsap.set(sectionTitle, {
@@ -106,7 +108,7 @@ export default function Faq({ faqs }: FaqProps) {
                                     <AccordionTrigger className="">
                                         <div className="flex items-center gap-6 text-left font-inter font-medium xl:text-lg">
                                             <img
-                                                src={faq.icon}
+                                                src={icons[index]}
                                                 alt=""
                                                 className="hidden h-8 w-8 md:block"
                                             />

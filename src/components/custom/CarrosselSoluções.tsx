@@ -15,6 +15,13 @@ import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { binaryTextTransitionEffect } from '@/lib/binaryTextTransitionEffect'
 
+import edIcon from '@/assets/svg/tech-icons/ed-icon.svg'
+import biIcon from '@/assets/svg/tech-icons/bi-icon.svg'
+import sistemasIcon from '@/assets/svg/tech-icons/sistemas-icon.svg'
+import iaIcon from '@/assets/svg/tech-icons/ia-icon.svg'
+import transformacaoIcon from '@/assets/svg/tech-icons/transformacao-icon.svg'
+import sitesIcon from '@/assets/svg/tech-icons/sites-icon.svg'
+
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 type Service = {
@@ -42,7 +49,7 @@ const services: Service[] = [
         description:
             'Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa',
         url: '/engenharia-de-dados',
-        icon: '/src/assets/svg/tech-icons/carbon_data-vis-1.svg',
+        icon: edIcon,
     },
     {
         title: (
@@ -53,7 +60,7 @@ const services: Service[] = [
         description:
             'Transformamos dados em insights estratégicos, otimizando operações e decisões. O BI oferece uma visão clara do seu negócio, permitindo rápidas reações e novas oportunidades de crescimento.',
         url: '/business-intelligence',
-        icon: '/src/assets/svg/tech-icons/ep_data-line.svg',
+        icon: biIcon,
     },
     {
         title: (
@@ -64,7 +71,7 @@ const services: Service[] = [
         description:
             'Desenvolvemos sistemas personalizados para atender necessidades específicas. Desde aplicativos até plataformas complexas, transformamos ideias em ferramentas eficientes e escaláveis.',
         url: '/sistemas-personalizados',
-        icon: '/src/assets/svg/tech-icons/token_dweb.svg',
+        icon: sistemasIcon,
     },
     {
         title: (
@@ -75,7 +82,7 @@ const services: Service[] = [
         description:
             'Integrando IA, modernizamos processos e criamos novas oportunidades de crescimento, alinhando sua empresa às demandas do mercado digital e promovendo inovação contínua.',
         url: 'inteligencia-artificial',
-        icon: '/src/assets/svg/tech-icons/fluent_brain-circuit-20-regular.svg',
+        icon: iaIcon,
     },
     {
         title: (
@@ -86,7 +93,7 @@ const services: Service[] = [
         description:
             'Ajudamos sua empresa a se adaptar ao digital, modernizando processos e integrando tecnologias. Nossa abordagem cria novas oportunidades de crescimento e inovação alinhadas ao mercado.',
         url: 'transformacao-digital',
-        icon: '/src/assets/svg/tech-icons/simple-icons_circuitverse.svg',
+        icon: transformacaoIcon,
     },
     {
         title: (
@@ -97,7 +104,7 @@ const services: Service[] = [
         description:
             'Desenvolvemos websites e e-commerce que atraem e convertem visitantes. Nossas soluções oferecem uma experiência de usuário intuitiva, alinhada às melhores práticas de design e SEO.',
         url: 'websites-ecommerce',
-        icon: '/src/assets/svg/tech-icons/material-symbols_ads-click-rounded.svg',
+        icon: sitesIcon,
     },
 ]
 

@@ -5,6 +5,9 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
+import heroBg from '@/assets/images/Solutions/inteligencia-artificial.jpeg'
+import benefitsBg from '@/assets/images/Background/25.jpeg'
+
 export default function InteligenciaArtificial() {
     return (
         <>
@@ -23,7 +26,7 @@ export default function InteligenciaArtificial() {
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                 }}
-                img="/src/assets/images/Solutions/inteligencia-artificial.jpeg"
+                img={heroBg}
             />
             <ComoFunciona
                 description={
@@ -59,29 +62,25 @@ export default function InteligenciaArtificial() {
             />
             <Beneficios
                 title="Benefícios"
-                background="/src/assets/images/Background/1.jpeg"
+                background={benefitsBg}
                 description="Os benefícios da Inteligência Artificial são inúmeros e impactam positivamente diversos aspectos do seu negócio. Desde a automação de tarefas repetitivas até a personalização de serviços, a IA pode transformar a maneira como você opera e impulsionar o crescimento da sua empresa."
                 benefits={[
                     {
-                        icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',
                         title: 'Automação \nde Processos',
                         description:
                             'A IA pode automatizar tarefas repetitivas e manuais, liberando sua equipe para se concentrar em atividades de maior valor agregado.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',
                         title: 'Personalização \n de Serviços',
                         description:
                             'A IA pode analisar o comportamento do cliente e personalizar serviços e produtos de acordo com suas preferências e necessidades.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',
                         title: 'Otimização \nde Processos',
                         description:
                             'A IA pode identificar oportunidades de melhoria e otimizar processos internos, aumentando a eficiência e a produtividade da sua empresa.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',
                         title: 'Análise de \nDados Avançada',
                         description:
                             'A IA pode analisar grandes volumes de dados de forma rápida e precisa, fornecendo insights valiosos para o seu negócio.',
@@ -96,24 +95,20 @@ export default function InteligenciaArtificial() {
             <Faq
                 faqs={[
                     {
-                        icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',
                         question: 'O que é Inteligência Artificial?',
                         answer: 'A Inteligência Artificial é um campo da ciência da computação que se concentra no desenvolvimento de sistemas e tecnologias capazes de realizar tarefas que normalmente requerem inteligência humana, como aprendizado, raciocínio, percepção e tomada de decisões.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',
                         question:
                             'Como a Inteligência Artificial pode beneficiar a minha empresa?',
                         answer: 'A Inteligência Artificial pode beneficiar a sua empresa de diversas maneiras, desde a automação de processos e a personalização de serviços até a análise de dados avançada e a tomada de decisões mais assertivas. Ela pode ajudar a otimizar operações, aumentar a produtividade e impulsionar o crescimento do seu negócio.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',
                         question:
                             'Quais são os principais desafios na implementação de soluções de Inteligência Artificial?',
                         answer: 'Alguns dos principais desafios na implementação de soluções de Inteligência Artificial incluem a coleta e preparação de dados de qualidade, a escolha dos algoritmos certos para os modelos de IA, a integração com sistemas existentes e a garantia de segurança e privacidade dos dados.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/inteligencia-artificial.svg',
                         question:
                             'Como a Inteligência Artificial é utilizada em diferentes setores?',
                         answer: 'A Inteligência Artificial é utilizada em diversos setores, como saúde, finanças, varejo, manufatura, logística, entre outros. Ela pode ser aplicada para melhorar a eficiência operacional, personalizar serviços, prever tendências de mercado, otimizar processos e muito mais.',
