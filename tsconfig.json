@@ -15,7 +15,8 @@
 
         // A series of entries which re-map imports to lookup locations relative to the baseUrl.
         "paths": {
-            "@/*": ["./src/*"] // Alias for the src directory.
+            "@/*": ["./src/*"], // Alias for the src directory.
+            "@assets/*": ["./src/assets/*"]
         },
 
         // Specify ECMAScript target version.
@@ -64,7 +65,9 @@
         "jsx": "react-jsx",
 
         // Enable project references and incremental builds.
-        "composite": true
+        "composite": true,
+
+        "typeRoots": ["./node_modules/@types", "./src/types"]
     },
 
     // An array of glob patterns that specify the files to be included in the program.

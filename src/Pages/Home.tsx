@@ -6,6 +6,9 @@ import Benefícios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Cta from './Sections/Cta'
 
+// import heroImage from '../assets/images/Background/firefly/3.jpg'
+import heroImage from '@assets/images/Background/firefly/3.jpg'
+
 export default function Home() {
     return (
         <div className="grid">
@@ -27,7 +30,7 @@ export default function Home() {
                     href: '/sobre',
                     additionalText: 'Saiba mais',
                 }}
-                img="/src/assets/images/Background/11.jpeg"
+                img={heroImage}
             />
             <Solucoes />
             <Partners />
