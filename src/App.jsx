@@ -41,7 +41,7 @@ function App() {
                             element={<TransformacaoDigital />}
                         />
                         <Route
-                            path="websites-&-ecommerce"
+                            path="websites-e-ecommerce"
                             element={<WebsistesEcommerce />}
                         />
                         <Route

@@ -5,13 +5,13 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-    'inline-flex relative rounded-[5px] items-center justify-center whitespace-nowrap text-base 2xl:text-md font-medium disabled:pointer-events-none disabled:opacity-50 ',
+    'inline-flex relative rounded-[5px] items-center justify-center whitespace-nowrap text-base 2xl:text-md  disabled:pointer-events-none disabled:opacity-50 ',
     {
         variants: {
             variant: {
-                default: 'bg-brand-blue ',
-                outline: 'border-2 border-white/50',
-                link: 'border-none bg-transparent p-0',
+                default: 'bg-brand-blue font-medium',
+                outline: 'border-2 border-white/50 font-medium',
+                link: 'border-none bg-transparent p-0 ',
                 icon: 'hover:bg-white hover:text-brand-blue bg-brand-blue transition-colors duration-300 ease-in-out',
             },
             size: {

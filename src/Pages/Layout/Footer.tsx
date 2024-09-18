@@ -4,6 +4,7 @@ import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Heart } from 'lucide-react'
+import { GhostButton } from '@/components/custom/GhostButton'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
@@ -89,7 +90,10 @@ export default function Footer() {
                                     className="h-8 w-8"
                                 />
                             </a>
-                            <a href="">
+                            <a
+                                href="https://www.linkedin.com/in/solutions-bi-0208691a8/?original_referer=https%3A%2F%2Fwww%2Ebing%2Ecom%2F&originalSubdomain=br"
+                                target="_blank"
+                            >
                                 <img
                                     src="/src/assets/svg/linkedin-icon.svg"
                                     alt="linkedin"
@@ -104,26 +108,49 @@ export default function Footer() {
                         </span>
                         <ul className="flex flex-col gap-4">
                             <li>
-                                <Link to="produtos">Engenharia de Dados</Link>
+                                <GhostButton>
+                                    <Link
+                                        to="engenharia-de-dados"
+                                        className="font-normal"
+                                    >
+                                        Engenharia de Dados
+                                    </Link>
+                                </GhostButton>
                             </li>
                             <li>
-                                <Link to="produtos">Business Intelligence</Link>
+                                <GhostButton>
+                                    <Link to="business-intelligence">
+                                        Business Intelligence
+                                    </Link>
+                                </GhostButton>
                             </li>
                             <li>
-                                <Link to="produtos">
-                                    Sistemas Personalizados
-                                </Link>
+                                <GhostButton>
+                                    <Link to="sistemas-personalizados">
+                                        Sistemas Personalizados
+                                    </Link>
+                                </GhostButton>
                             </li>
                             <li>
-                                <Link to="produtos">
-                                    Inteligência Artificial
-                                </Link>
+                                <GhostButton>
+                                    <Link to="inteligencia-artificial">
+                                        Inteligência Artificial
+                                    </Link>
+                                </GhostButton>
                             </li>
                             <li>
-                                <Link to="produtos">Transformação Digital</Link>
+                                <GhostButton>
+                                    <Link to="transformacao-digital">
+                                        Transformação Digital
+                                    </Link>
+                                </GhostButton>
                             </li>
                             <li>
-                                <Link to="produtos">Websites e E-commerce</Link>
+                                <GhostButton>
+                                    <Link to="websites-e-ecommerce">
+                                        Websites e E-commerce
+                                    </Link>
+                                </GhostButton>
                             </li>
                         </ul>
                     </div>
@@ -131,10 +158,24 @@ export default function Footer() {
                         <span className="mb-6 font-bold uppercase text-brand-blue">
                             Contato
                         </span>
+
                         <ul className="flex flex-col gap-4">
-                            <li>contato@solutionsbi.com.br</li>
                             <li>
-                                <a href="">(19) 99323-0833</a>
+                                <GhostButton>
+                                    <a href="mailto:contato@solutionsbi.com.br">
+                                        contato@solutionsbi.com.br
+                                    </a>
+                                </GhostButton>
+                            </li>
+                            <li>
+                                <GhostButton>
+                                    <a
+                                        href="https://api.whatsapp.com/send?phone=5519993230833"
+                                        target="_blank"
+                                    >
+                                        (19) 99323-0833
+                                    </a>
+                                </GhostButton>
                             </li>
                             <li>
                                 Rua Treze de maio, 257 <br />
