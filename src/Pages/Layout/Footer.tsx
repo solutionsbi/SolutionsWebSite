@@ -6,6 +6,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Heart } from 'lucide-react'
 import { GhostButton } from '@/components/custom/GhostButton'
 
+import facebookIcon from '@/assets/svg/social-icons/facebook-icon.svg'
+import instagramIcon from '@/assets/svg/social-icons/instagram-icon.svg'
+import linkedinIcon from '@/assets/svg/social-icons/linkedin-icon.svg'
+import logo from '@/assets/svg/logo.svg'
+
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Footer() {
@@ -78,14 +83,14 @@ export default function Footer() {
                         <div className="mt-6 flex items-center justify-center gap-4 md:justify-start xl:justify-start">
                             <a href="">
                                 <img
-                                    src="/src/assets/svg/facebook-icon.svg"
+                                    src={facebookIcon}
                                     alt="facebook"
                                     className="h-8 w-8"
                                 />
                             </a>
                             <a href="">
                                 <img
-                                    src="/src/assets/svg/instagram-icon.svg"
+                                    src={instagramIcon}
                                     alt="instagram"
                                     className="h-8 w-8"
                                 />
@@ -95,7 +100,7 @@ export default function Footer() {
                                 target="_blank"
                             >
                                 <img
-                                    src="/src/assets/svg/linkedin-icon.svg"
+                                    src={linkedinIcon}
                                     alt="linkedin"
                                     className="h-8 w-8"
                                 />
@@ -188,10 +193,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="additional-footer-container container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row">
-                    <img
-                        src="/src/assets/svg/logo.svg"
-                        alt="solutionsbi logo"
-                    />
+                    <img src={logo} alt="solutionsbi logo" />
                     <div className="flex flex-col items-center gap-4 text-neutral-300 md:flex-row">
                         <p>Copyright © 2024 – SolutionsBI Brazil</p>
                         <Link

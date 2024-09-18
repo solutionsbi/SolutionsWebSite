@@ -3,6 +3,8 @@ import Timeline from './Sections/Timeline'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
+import heroImage from '@/assets/images/Background/14.jpeg'
+
 export default function Sobre() {
     return (
         <div className="grid">
@@ -16,7 +18,7 @@ export default function Sobre() {
                 description={
                     'Saiba mais sobre nossa história e como tudo começou.'
                 }
-                img={'/src/assets/images/Background/14.jpeg'}
+                img={heroImage}
                 position="center"
             />
             <Timeline />

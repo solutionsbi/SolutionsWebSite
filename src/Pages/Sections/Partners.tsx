@@ -3,74 +3,91 @@ import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { animateCounting } from '@/lib/animateCouting'
+import sectionBg from '@assets/images/Background/firefly/10.jpg'
+import samsumgLogo from '@assets/images/Partner Logos/samsung.svg'
+import ambevLogo from '@assets/images/Partner Logos/ambev.png'
+import abercrombieLogo from '@assets/images/Partner Logos/abercrombie.svg'
+import abrasceLogo from '@assets/images/Partner Logos/abrasce.png'
+import agropalmaLogo from '@assets/images/Partner Logos/agropalma.svg'
+import coplacanaLogo from '@assets/images/Partner Logos/coplacana.png'
+import galzeranoLogo from '@assets/images/Partner Logos/galzerano.png'
+import lifetimeLogo from '@assets/images/Partner Logos/lifetime.png'
+import medicalLogo from '@assets/images/Partner Logos/medical.png'
+import odontoclinicLogo from '@assets/images/Partner Logos/odontoclinic.png'
+import sanavitaLogo from '@assets/images/Partner Logos/sanavita.png'
+import swissLogo from '@assets/images/Partner Logos/swiss.png'
+import datasystemLogo from '@assets/images/Partner Logos/datasystem.png'
+import modazineLogo from '@assets/images/Partner Logos/modazine.png'
+import vrsoftwareLogo from '@assets/images/Partner Logos/vrsoftware.png'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 const partnersData = [
     {
-        src: '/src/assets/images/Partner Logos/samsung.svg',
+        src: samsumgLogo,
         alt: 'samsung',
     },
     {
-        src: '/src/assets/images/Partner Logos/ambev.png',
+        src: ambevLogo,
         alt: 'ambev',
     },
     {
-        src: '/src/assets/images/Partner Logos/abercrombie.svg',
+        src: abercrombieLogo,
         alt: 'abercrombie',
     },
     {
-        src: '/src/assets/images/Partner Logos/abrasce.png',
+        src: abrasceLogo,
         alt: 'abrasce',
     },
     {
-        src: '/src/assets/images/Partner Logos/agropalma.svg',
+        src: agropalmaLogo,
         alt: 'agropalma',
     },
     {
-        src: '/src/assets/images/Partner Logos/coplacana.png',
+        src: coplacanaLogo,
         alt: 'coplacana',
     },
     {
-        src: '/src/assets/images/Partner Logos/galzerano.png',
+        src: galzeranoLogo,
         alt: 'galzerano',
     },
     {
-        src: '/src/assets/images/Partner Logos/lifetime.png',
+        src: lifetimeLogo,
         alt: 'lifetime',
     },
     {
-        src: '/src/assets/images/Partner Logos/medical.png',
+        src: medicalLogo,
         alt: 'medical',
     },
     {
-        src: '/src/assets/images/Partner Logos/odontoclinic.png',
+        src: odontoclinicLogo,
         alt: 'odontoclinic',
     },
     {
-        src: '/src/assets/images/Partner Logos/sanavita.png',
+        src: sanavitaLogo,
         alt: 'sanavita',
     },
     {
-        src: '/src/assets/images/Partner Logos/swiss.png',
+        src: swissLogo,
         alt: 'swiss',
     },
     {
-        src: '/src/assets/images/Partner Logos/datasystem.png',
+        src: datasystemLogo,
+        alt: 'datasystem',
     },
     {
-        src: '/src/assets/images/Partner Logos/modazine.png',
-        alt: 'modanize',
+        src: modazineLogo,
+        alt: 'modazine',
     },
     {
-        src: '/src/assets/images/Partner Logos/vrsoftware.png',
+        src: vrsoftwareLogo,
         alt: 'vrsoftware',
     },
 ]
 
 const stats = [
     {
-        number: '8',
+        number: '9',
         text: 'países \n atendidos',
     },
     {
@@ -210,7 +227,7 @@ export default function Partners() {
         <section ref={container} className="page-section">
             <div className="section-bg absolute left-1/2 top-1/2 -z-50 mx-auto h-full w-full translate-x-[-50%] translate-y-[-50%]">
                 <img
-                    src="/src/assets/images/Background/firefly/10.jpg"
+                    src={sectionBg}
                     className="mask-rect h-full w-full object-cover opacity-100"
                 />
             </div>

@@ -5,6 +5,15 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
+import heroBg from '@/assets/images/Solutions/transformacao-digital.jpeg'
+import benefitsBg from '@/assets/images/Background/25.jpeg'
+import icon1 from '@/assets/svg/services-cards-icons/engenharia-de-dados.svg'
+import icon2 from '@/assets/svg/services-cards-icons/business-intelligence.svg'
+import icon3 from '@/assets/svg/services-cards-icons/sistemas-personalizados.svg'
+import icon4 from '@/assets/svg/services-cards-icons/inteligencia-artificial.svg'
+import icon5 from '@/assets/svg/services-cards-icons/transformacao-digital.svg'
+import icon6 from '@/assets/svg/services-cards-icons/engenharia-de-dados.svg'
+
 export default function TransformacaoDigital() {
     return (
         <>
@@ -23,7 +32,7 @@ export default function TransformacaoDigital() {
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                 }}
-                img="/src/assets/images/Solutions/transformacao-digital.jpeg"
+                img={heroBg}
             />
             <ComoFunciona
                 description={
@@ -54,26 +63,26 @@ export default function TransformacaoDigital() {
             />
             <Beneficios
                 title="Benefícios"
-                background="/src/assets/images/Background/1.jpeg"
+                background={benefitsBg}
                 description="Ao investir em Transformação Digital, você terá acesso a uma série de benefícios que podem ajudar a impulsionar o crescimento e o sucesso do seu negócio."
                 benefits={[
                     {
                         title: 'Inovação e \n Competitividade',
                         description:
                             'Mantenha-se inovador e competitivo no mercado, adaptando-se às mudanças tecnológicas e às demandas dos clientes.',
-                        icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',
+                        icon: icon1,
                     },
                     {
                         title: 'Eficiência e \n Agilidade',
                         description:
                             'Otimize processos, aumente a eficiência e a agilidade da sua empresa com soluções digitais e automatizadas.',
-                        icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',
+                        icon: icon2,
                     },
                     {
                         title: 'Experiência do \n Cliente',
                         description:
                             'Melhore a experiência do cliente com soluções digitais personalizadas e inovadoras, que atendam às suas necessidades e expectativas.',
-                        icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',
+                        icon: icon3,
                     },
                 ]}
                 cta={{
@@ -85,24 +94,24 @@ export default function TransformacaoDigital() {
             <Faq
                 faqs={[
                     {
-                        icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',
+                        icon: icon4,
                         question: 'O que é Transformação Digital?',
                         answer: 'Transformação Digital é o processo de adaptação e inovação de processos, produtos e serviços de uma empresa por meio da utilização de tecnologias digitais, com o objetivo de impulsionar o crescimento e o sucesso do negócio.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',
+                        icon: icon5,
                         question:
                             'Quais são os benefícios da Transformação Digital?',
                         answer: 'Os benefícios da Transformação Digital incluem inovação e competitividade, eficiência e agilidade, melhoria da experiência do cliente, entre outros. Ao investir em Transformação Digital, as empresas podem se adaptar às mudanças tecnológicas e às demandas do mercado, mantendo-se competitivas e inovadoras.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',
+                        icon: icon6,
                         question:
                             'Como a Transformação Digital pode ajudar a minha empresa?',
                         answer: 'A Transformação Digital pode ajudar a sua empresa a se adaptar às mudanças tecnológicas e às demandas do mercado, impulsionando o crescimento e o sucesso do seu negócio. Com soluções digitais e inovadoras, as empresas podem otimizar processos, aumentar a eficiência e a agilidade, e melhorar a experiência do cliente.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',
+                        icon: icon1,
                         question:
                             'Quais são as principais tendências de Transformação Digital?',
                         answer: 'Algumas das principais tendências de Transformação Digital incluem automação de processos, estratégia de dados, transformação digital de negócios, entre outras. Essas tendências estão mudando a forma como as empresas operam e se relacionam com os clientes, permitindo que sejam mais inovadoras, eficientes e competitivas no mercado.',

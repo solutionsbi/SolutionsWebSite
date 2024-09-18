@@ -5,6 +5,15 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
+import heroBg from '@/assets/images/Solutions/sistemas-personalizados.jpeg'
+import benefitsBg from '@/assets/images/Background/25.jpeg'
+import icon1 from '@/assets/svg/services-cards-icons/engenharia-de-dados.svg'
+import icon2 from '@/assets/svg/services-cards-icons/business-intelligence.svg'
+import icon3 from '@/assets/svg/services-cards-icons/sistemas-personalizados.svg'
+import icon4 from '@/assets/svg/services-cards-icons/inteligencia-artificial.svg'
+import icon5 from '@/assets/svg/services-cards-icons/transformacao-digital.svg'
+import icon6 from '@/assets/svg/services-cards-icons/website-ecommerce.svg'
+
 export default function SistemasPersonalizados() {
     return (
         <>
@@ -23,7 +32,7 @@ export default function SistemasPersonalizados() {
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                 }}
-                img="/src/assets/images/Solutions/sistemas-personalizados.jpeg"
+                img={heroBg}
             />
             <ComoFunciona
                 description={
@@ -54,7 +63,7 @@ export default function SistemasPersonalizados() {
             />
             <Beneficios
                 title="Benefícios"
-                background="/src/assets/images/Background/1.jpeg"
+                background={benefitsBg}
                 description="Ao investir em Sistemas Personalizados, você terá acesso a uma série de benefícios que podem ajudar a impulsionar o crescimento e o sucesso do seu negócio."
                 benefits={[
                     {
@@ -85,30 +94,30 @@ export default function SistemasPersonalizados() {
             <Faq
                 faqs={[
                     {
-                        icon: '/src/assets/svg/services-cards-icons/sistemas-personalizados.svg',
+                        icon: icon1,
                         question: 'O que são Sistemas Personalizados?',
                         answer: 'Sistemas Personalizados são soluções de software desenvolvidas sob medida para atender às necessidades específicas da sua empresa. Esses sistemas são projetados e desenvolvidos de acordo com os requisitos e objetivos do seu negócio, garantindo eficiência, segurança e escalabilidade.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/sistemas-personalizados.svg',
+                        icon: icon2,
                         question:
                             'Quais são os benefícios dos Sistemas Personalizados?',
                         answer: 'Os benefícios dos Sistemas Personalizados incluem eficiência e produtividade, segurança e confiabilidade, escalabilidade e flexibilidade, entre outros. Ao investir em sistemas personalizados, as empresas podem otimizar processos, aumentar a produtividade e impulsionar o crescimento do seu negócio.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/sistemas-personalizados.svg',
+                        icon: icon3,
                         question:
                             'Como os Sistemas Personalizados podem ajudar a minha empresa?',
                         answer: 'Os Sistemas Personalizados podem ajudar a sua empresa a superar desafios específicos, otimizar processos, aumentar a produtividade e impulsionar o crescimento do seu negócio. Com soluções personalizadas e eficientes, as empresas podem atender às suas necessidades de forma mais eficaz e obter vantagem competitiva no mercado.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/sistemas-personalizados.svg',
+                        icon: icon4,
                         question:
                             'Quais tecnologias são utilizadas no desenvolvimento de Sistemas Personalizados?',
                         answer: 'No desenvolvimento de Sistemas Personalizados, utilizamos uma variedade de tecnologias e ferramentas de desenvolvimento de software, como Java, .NET, Python, Ruby on Rails, entre outras. Essas tecnologias nos permitem criar soluções inovadoras e personalizadas para atender às necessidades específicas da sua empresa.',
                     },
                     {
-                        icon: '/src/assets/svg/services-cards-icons/sistemas-personalizados.svg',
+                        icon: icon5,
                         question:
                             'Como posso obter um Sistema Personalizado para a minha empresa?',
                         answer: 'Para obter um Sistema Personalizado para a sua empresa, entre em contato conosco para agendar uma reunião inicial e discutir os requisitos e objetivos do seu negócio. Com base nessas informações, nossa equipe de especialistas em desenvolvimento de software criará uma solução personalizada e inovadora para atender às suas necessidades.',
