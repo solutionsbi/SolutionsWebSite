@@ -136,16 +136,9 @@ export default function Cta() {
                 <div className="mt-16 self-end lg:mt-0">
                     <PrimaryButton
                         className="section-cta"
-                        animationDirection="horizontal"
-                    >
-                        <a
-                            href="https://api.whatsapp.com/send?phone=5519993230833"
-                            target="_blank"
-                            className="flex items-center gap-4 font-ibm text-md font-bold uppercase"
-                        >
-                            <MoveRight />
-                        </a>
-                    </PrimaryButton>
+                        text="Impulsionar Agora"
+                        href="https://api.whatsapp.com/send?phone=5519993230833"
+                    />
                 </div>
             </div>
         </section>

@@ -263,7 +263,7 @@ export default function Carrossel() {
             )
 
             enterTl.current = gsap.timeline({
-                delay: 1,
+                delay: 0.5,
                 defaults: {
                     duration: 1.5,
                     ease: 'power1.out',
