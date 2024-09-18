@@ -65,7 +65,7 @@ export const Map = () => {
     )
 
     return (
-        <section className="my-[12vh] h-[60vh] px-[5%] md:h-[88vh]">
+        <section className="my-[12vh] h-[60vh] px-[5%] md:h-[88vh] hidden md:block">
             <div className="container relative grid h-full w-full place-content-center">
                 <svg
                     ref={container}
