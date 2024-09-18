@@ -18,7 +18,11 @@ export default function SistemasPersonalizados() {
                     </>
                 }
                 description="Desenvolvemos soluções sob medida para atender às necessidades específicas da sua empresa, garantindo eficiência, segurança e escalabilidade."
-                cta1={{ text: 'Contrate agora', link: '#' }}
+                cta={
+                    <a href="#" target="_blank">
+                        Contrate agora
+                    </a>
+                }
                 img="/src/assets/images/Solutions/sistemas-personalizados.jpeg"
             />
             <ComoFunciona

@@ -116,10 +116,14 @@ export default function Header() {
                     </Button>
                     <PrimaryButton
                         className="hidden xl:flex"
-                        href="/contato"
                         additionalText="Fale Conosco"
                     >
-                        Agende uma Consultoria
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5519993230833"
+                            target="_blank"
+                        >
+                            Agende Uma Consultoria
+                        </a>
                     </PrimaryButton>
                 </div>
             </nav>

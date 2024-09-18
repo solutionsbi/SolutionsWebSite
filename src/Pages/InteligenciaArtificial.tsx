@@ -18,7 +18,11 @@ export default function InteligenciaArtificial() {
                     </>
                 }
                 description="Desenvolvemos soluções de Inteligência Artificial para ajudar a sua empresa a otimizar processos, aumentar a produtividade e impulsionar o crescimento."
-                cta1={{ text: 'Contrate agora', link: '#' }}
+                cta={
+                    <a href="#" target="_blank">
+                        Contrate agora
+                    </a>
+                }
                 img="/src/assets/images/Solutions/inteligencia-artificial.jpeg"
             />
             <ComoFunciona

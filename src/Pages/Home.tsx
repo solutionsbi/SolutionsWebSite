@@ -5,6 +5,7 @@ import { Map } from './Sections/Map'
 import Benefícios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Cta from './Sections/Cta'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     return (
@@ -22,7 +23,7 @@ export default function Home() {
                 description={
                     'Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer,\n inovar e se destacar no mercado.Conheça nossos serviços e descubra \n como podemos ajudar a impulsionar o seu negócio.'
                 }
-                cta1={{ text: 'Impulsione Seu Negócio', link: '#' }}
+                cta={<Link to="/sobre">Impulsione Seu Negócio</Link>}
                 img="/src/assets/images/Background/11.jpeg"
             />
             <Solucoes />

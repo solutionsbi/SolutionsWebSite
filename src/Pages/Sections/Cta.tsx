@@ -1,4 +1,4 @@
-import { Button } from '../../components/ui/button'
+import PrimaryButton from '../../components/custom/PrimaryButton'
 import { MoveRight } from 'lucide-react'
 import { useRef } from 'react'
 import { gsap } from 'gsap'
@@ -25,10 +25,6 @@ export default function Cta() {
             const sectionCta = container.current.querySelector('.section-cta')
             const sectionBottomBar =
                 container.current.querySelector('.bottom-bar')
-            // console.group('CTA Section Elements')
-            // console.log('Section Title:', sectionTitle)
-            // console.log('Section Cta:', sectionCta)
-            // console.groupEnd()
 
             // set initial styles to prevent flashing of unstyled content
             gsap.set(sectionBg, {
@@ -138,7 +134,10 @@ export default function Cta() {
                     </h3>
                 </div>
                 <div className="mt-16 self-end lg:mt-0">
-                    <Button className="section-cta">
+                    <PrimaryButton
+                        className="section-cta"
+                        animationDirection="horizontal"
+                    >
                         <a
                             href="https://api.whatsapp.com/send?phone=5519993230833"
                             target="_blank"
@@ -146,7 +145,7 @@ export default function Cta() {
                         >
                             <MoveRight />
                         </a>
-                    </Button>
+                    </PrimaryButton>
                 </div>
             </div>
         </section>

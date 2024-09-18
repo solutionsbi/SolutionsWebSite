@@ -18,7 +18,11 @@ export default function EngenhariaDeDados() {
                     </>
                 }
                 description="Ajudamos a sua empresa a coletar, armazenar e processar dados de forma eficiente e segura, garantindo que você tenha informações precisas e confiáveis para tomar decisões estratégicas."
-                cta1={{ text: 'Contrate agora', link: '#' }}
+                cta={
+                    <a href="#" target="_blank">
+                        Contrate agora
+                    </a>
+                }
                 img="/src/assets/images/Background/firefly/11.jpg"
             />
             <ComoFunciona

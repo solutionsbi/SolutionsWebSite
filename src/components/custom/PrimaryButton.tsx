@@ -25,24 +25,23 @@
 
 import React, { useRef } from 'react'
 import { Button } from '@/components/ui/button'
-import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 
 gsap.registerPlugin(useGSAP)
 
 interface PrimaryButtonProps {
-    href: string
     children: React.ReactNode
     className?: string
     additionalText?: string
+    animationDirection?: 'vertical' | 'horizontal'
 }
 
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({
-    href,
     children,
     className,
     additionalText,
+    animationDirection = 'vertical',
 }) => {
     const buttonRef = useRef<HTMLButtonElement>(null)
     const tl = useRef<gsap.core.Timeline | null>(null)
@@ -78,15 +77,23 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
             .to(
                 buttonText,
                 {
-                    // opacity: isEnter ? 0 : 1,
-                    y: isEnter ? '-100px' : 0,
+                    opacity: isEnter ? 0 : 1,
+                    y:
+                        isEnter && animationDirection === 'vertical'
+                            ? '-100px'
+                            : 0,
+                    x:
+                        isEnter && animationDirection === 'horizontal'
+                            ? '100px'
+                            : 0,
                 },
                 '<'
             )
             .to(
                 buttonText2,
                 {
-                    yPercent: isEnter ? -100 : 0,
+                    yPercent:
+                        isEnter && animationDirection === 'vertical' ? -100 : 0,
                     opacity: isEnter ? 1 : 0,
                 },
                 '<'
@@ -108,12 +115,18 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Link to={href} className="relative z-[20] flex overflow-hidden">
+            <div className="relative z-[20] flex overflow-hidden">
                 <span>{children}</span>
-                <span className="absolute left-1/2 -translate-x-1/2 translate-y-full">
+                <span
+                    className={`absolute ${
+                        animationDirection === 'vertical'
+                            ? 'left-1/2 -translate-x-1/2 translate-y-full'
+                            : 'left-0 -translate-x-full'
+                    }`}
+                >
                     {additionalText ? additionalText : children}
                 </span>
-            </Link>
+            </div>
 
             <div
                 className={`absolute left-1/2 top-1/2 z-[10] h-full w-full -translate-x-1/2 -translate-y-1/2 skew-x-12 scale-x-0 bg-brand-white`}

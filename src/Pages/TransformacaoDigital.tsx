@@ -18,7 +18,11 @@ export default function TransformacaoDigital() {
                     </>
                 }
                 description="Ajudamos a sua empresa a se adaptar às mudanças tecnológicas e a transformar processos, produtos e serviços para atender às demandas do mercado atual."
-                cta1={{ text: 'Contrate agora', link: '#' }}
+                cta={
+                    <a href="#" target="_blank">
+                        Contrate agora
+                    </a>
+                }
                 img="/src/assets/images/Solutions/transformacao-digital.jpeg"
             />
             <ComoFunciona

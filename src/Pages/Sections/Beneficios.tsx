@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import PrimaryButton from '@/components/custom/PrimaryButton'
 import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 import { gsap } from 'gsap'
@@ -56,17 +56,6 @@ export default function Beneficios({
             const benefitDescription = gsap.utils.toArray(
                 container.current.querySelectorAll('.benefit-item p')
             )
-
-            // console.group('Animation Elements')
-            // console.log('Section Background:', sectionBg)
-            // console.log('Section Title:', sectionTitle)
-            // console.log('Section Description:', sectionDescription)
-            // console.log('Section Benefits:', sectionBenefits)
-            // console.log('Section CTA:', sectionsCtas)
-            // console.log('Benefit Icons:', benefitIcons)
-            // console.log('Benefit Titles:', benefitTitle)
-            // console.log('Benefit Descriptions:', benefitDescription)
-            // console.groupEnd()
 
             // set initial styles to prevent flashing of unstyled content
             gsap.set(sectionBg, {
@@ -145,21 +134,9 @@ export default function Beneficios({
                                 {description}
                             </p>
                             <div className="mt-6 hidden items-center justify-center gap-x-4 md:mt-10 md:flex">
-                                <Button className="section-cta">
-                                    <a
-                                        href="#"
-                                        target="_blank"
-                                        className="drop-shadow-md"
-                                    >
-                                        Agende uma Consultoria
-                                    </a>
-                                </Button>
-                                <Button
-                                    variant="outline"
-                                    className="section-cta"
-                                >
-                                    <Link to="/sobre">Saiba mais</Link>
-                                </Button>
+                                <PrimaryButton className="section-cta">
+                                    Saiba Mais
+                                </PrimaryButton>
                             </div>
                         </div>
                     </div>

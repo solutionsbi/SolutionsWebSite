@@ -18,7 +18,11 @@ export default function BusinessIntelligence() {
                     </>
                 }
                 description="Transforme seus dados em insights valiosos e tome decisões estratégicas com base em informações confiáveis e atualizadas."
-                cta1={{ text: 'Contrate agora', link: '#' }}
+                cta={
+                    <a href="#" target="_blank">
+                        Contrate agora
+                    </a>
+                }
                 img="/src/assets/images/Solutions/business-intelligence.jpeg"
             />
             <ComoFunciona
