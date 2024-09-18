@@ -7,12 +7,6 @@ import Cta from './Sections/Cta'
 
 import heroBg from '@/assets/images/Solutions/websites-ecommerce.jpeg'
 import benefitsBg from '@/assets/images/Background/25.jpeg'
-import icon1 from '@/assets/svg/services-cards-icons/engenharia-de-dados.svg'
-import icon2 from '@/assets/svg/services-cards-icons/business-intelligence.svg'
-import icon3 from '@/assets/svg/services-cards-icons/sistemas-personalizados.svg'
-import icon4 from '@/assets/svg/services-cards-icons/inteligencia-artificial.svg'
-import icon5 from '@/assets/svg/services-cards-icons/transformacao-digital.svg'
-import icon6 from '@/assets/svg/services-cards-icons/websites-ecommerce.svg'
 
 export default function WebsistesEcommerce() {
     return (
@@ -72,19 +66,16 @@ export default function WebsistesEcommerce() {
                 description="Ter um website ou e-commerce bem estruturado e funcional pode trazer inúmeros benefícios para o seu negócio. Desde aumentar a visibilidade da sua marca até impulsionar as vendas online, uma presença digital sólida é essencial para se destacar no mercado atual."
                 benefits={[
                     {
-                        icon: 'src/assets/svg/services-cards-icons/websites-ecommerce.svg',
                         title: 'Presença Online',
                         description:
                             'Um website ou e-commerce bem desenvolvido é a porta de entrada para o seu negócio no mundo digital. Ele permite que os clientes encontrem informações sobre sua empresa, produtos e serviços a qualquer hora e de qualquer lugar, aumentando a visibilidade da sua marca.',
                     },
                     {
-                        icon: 'src/assets/svg/services-cards-icons/websites-ecommerce.svg',
                         title: 'Vendas Online',
                         description:
                             'Um e-commerce bem estruturado e funcional pode impulsionar as vendas online da sua empresa. Com um sistema de carrinho de compras, métodos de pagamento seguros e integração com redes sociais, você oferece uma experiência completa para os seus clientes, aumentando as conversões e o faturamento.',
                     },
                     {
-                        icon: 'src/assets/svg/services-cards-icons/websites-ecommerce.svg',
                         title: 'Otimização para \n Mecanismos de Busca',
                         description:
                             'Um website otimizado para mecanismos de busca (SEO) tem mais chances de ser encontrado pelos usuários nos resultados de pesquisa. Isso aumenta a visibilidade da sua marca, atrai tráfego qualificado para o seu site e melhora o posicionamento nos rankings, gerando mais oportunidades de negócio.',
@@ -99,25 +90,21 @@ export default function WebsistesEcommerce() {
             <Faq
                 faqs={[
                     {
-                        icon: icon1,
                         question:
                             'Qual é a diferença entre um website e um e-commerce?',
                         answer: 'Um website é uma plataforma online que apresenta informações sobre uma empresa, seus produtos e serviços. Ele pode ser usado para diversos fins, como divulgação institucional, geração de leads e relacionamento com clientes. Já um e-commerce é uma loja virtual que permite a venda de produtos ou serviços online. Ele possui funcionalidades específicas, como carrinho de compras, métodos de pagamento e integração com sistemas de gestão.',
                     },
                     {
-                        icon: icon2,
                         question:
                             'Por que ter um website ou e-commerce é importante para o meu negócio?',
                         answer: 'Ter um website ou e-commerce é essencial para qualquer negócio nos dias de hoje. Eles são a porta de entrada para a sua empresa no mundo digital, permitindo que os clientes encontrem informações sobre seus produtos e serviços a qualquer hora e de qualquer lugar. Além disso, um website bem estruturado e funcional pode aumentar a visibilidade da sua marca, impulsionar as vendas online e fortalecer o relacionamento com os clientes.',
                     },
                     {
-                        icon: icon3,
                         question:
                             'Como posso garantir que meu website ou e-commerce seja bem-sucedido?',
                         answer: 'Para garantir o sucesso do seu website ou e-commerce, é importante investir em um design responsivo e intuitivo, que proporcione uma experiência agradável para os usuários. Além disso, é fundamental integrar funcionalidades como carrinho de compras, métodos de pagamento seguros e análise de dados para otimizar a performance e impulsionar as vendas. Por fim, é essencial realizar testes e otimizações contínuas para garantir que o site funcione corretamente e esteja alinhado com os objetivos do seu negócio.',
                     },
                     {
-                        icon: icon4,
                         question:
                             'Como posso medir o desempenho do meu website ou e-commerce?',
                         answer: 'Para medir o desempenho do seu website ou e-commerce, você pode utilizar ferramentas de análise de dados, como o Google Analytics. Essas ferramentas fornecem informações detalhadas sobre o tráfego do site, o comportamento dos usuários, as conversões e o retorno sobre o investimento (ROI). Com base nesses dados, você pode identificar oportunidades de melhoria, otimizar a performance e tomar decisões estratégicas para impulsionar o crescimento do seu negócio.',

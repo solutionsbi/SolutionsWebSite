@@ -8,10 +8,6 @@ import Cta from './Sections/Cta'
 
 import heroImage from '@/assets/images/Background/11.jpeg'
 import benefitsImage from '@/assets/images/Background/firefly/6.jpg'
-import benefitIcon1 from '@/assets/svg/services-cards-icons/engenharia-de-dados.svg'
-import benefitIcon2 from '@/assets/svg/services-cards-icons/business-intelligence.svg'
-import benefitIcon3 from '@/assets/svg/services-cards-icons/sistemas-personalizados.svg'
-import benefitIcon4 from '@/assets/svg/services-cards-icons/inteligencia-artificial.svg'
 
 export default function Home() {
     return (
@@ -52,20 +48,17 @@ export default function Home() {
                         title: 'Inovação',
                         description:
                             'Buscamos constantemente por novas tecnologias e soluções inovadoras para oferecer o que há de melhor para os nossos clientes.',
-                        icon: benefitIcon2,
                     },
 
                     {
                         title: 'Dedicação',
                         description:
                             'Nos dedicamos integralmente aos projetos dos nossos clientes, buscando sempre superar as expectativas e entregar resultados excepcionais.',
-                        icon: benefitIcon1,
                     },
                     {
                         title: 'Qualidade',
                         description:
                             'Priorizamos a qualidade em tudo o que fazemos, desde o atendimento ao cliente até a entrega dos projetos, garantindo a excelência em todos os nossos serviços.',
-                        icon: benefitIcon3,
                     },
                 ]}
                 cta={{
@@ -77,24 +70,20 @@ export default function Home() {
             <Faq
                 faqs={[
                     {
-                        icon: benefitIcon1,
                         question:
                             'Como escolher a solução certa para minha empresa?',
                         answer: 'Para escolher a solução ideal, começamos com uma análise detalhada das necessidades do seu negócio. Entendemos seus desafios e objetivos para recomendar a solução que melhor se alinha às suas demandas. Quer você precise de otimização de processos, melhor tomada de decisões através de Business Intelligence, ou desenvolvimento de sistemas personalizados, nossas recomendações são baseadas em uma abordagem consultiva e personalizada, garantindo que a solução selecionada traga o máximo benefício para sua empresa.',
                     },
                     {
-                        icon: benefitIcon2,
                         question: 'Quais setores a SolutionsBI atende?',
                         answer: 'A SolutionsBI atende a empresas de diversos setores, incluindo varejo, saúde, educação, financeiro, entre outros. Nossas soluções são personalizadas para atender às necessidades específicas de cada cliente, independentemente do setor em que atuam.',
                     },
                     {
-                        icon: benefitIcon3,
                         question:
                             'Quais benefícios a SolutionsBI pode trazer para a minha empresa?',
                         answer: 'A SolutionsBI pode trazer uma série de benefícios para a sua empresa, incluindo otimização de processos, melhor tomada de decisões, aumento da eficiência operacional, redução de custos, entre outros. Nossas soluções são projetadas para impulsionar o crescimento e o sucesso do seu negócio, oferecendo inovação, qualidade e excelência em todos os nossos serviços.',
                     },
                     {
-                        icon: benefitIcon4,
                         question: 'Como começar a trabalhar com a SolutionsBI?',
                         answer: 'Para começar a trabalhar com a SolutionsBI, basta entrar em contato conosco através do nosso site ou por telefone. Nossa equipe de especialistas está pronta para ajudar a sua empresa a impulsionar o crescimento e o sucesso do seu negócio com soluções inovadoras e eficientes.',
                     },

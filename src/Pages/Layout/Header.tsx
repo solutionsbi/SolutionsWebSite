@@ -8,12 +8,12 @@ import { DropDownMenu } from '@/components/custom/DropDownMenu'
 import PrimaryButton from '@/components/custom/PrimaryButton'
 
 import logo from '@assets/svg/logo.svg'
-import engenhariaDeDadosIcon from '@assets/svg/tech-icons/carbon_data-vis-1.svg'
-import businessIntelligenceIcon from '@assets/svg/tech-icons/ep_data-line.svg'
-import sistemasPersonalizadosIcon from '@assets/svg/tech-icons/token_dweb.svg'
-import inteligenciaArtificialIcon from '@assets/svg/tech-icons/fluent_brain-circuit-20-regular.svg'
-import transformacaoDigitalIcon from '@assets/svg/tech-icons/simple-icons_circuitverse.svg'
-import websiteEcommerceIcon from '@assets/svg/tech-icons/material-symbols_ads-click-rounded.svg'
+import edIcon from '@/assets/svg/tech-icons/ed-icon.svg'
+import biIcon from '@/assets/svg/tech-icons/bi-icon.svg'
+import sistemasIcon from '@/assets/svg/tech-icons/sistemas-icon.svg'
+import iaIcon from '@/assets/svg/tech-icons/ia-icon.svg'
+import transformacaoIcon from '@/assets/svg/tech-icons/transformacao-icon.svg'
+import sitesIcon from '@/assets/svg/tech-icons/sites-icon.svg'
 
 export default function Header() {
     const isMobile = window.matchMedia('(max-width: 1279px)').matches
@@ -36,32 +36,32 @@ export default function Header() {
         {
             title: 'Engenharia de Dados',
             url: '/engenharia-de-dados',
-            icon: engenhariaDeDadosIcon,
+            icon: edIcon,
         },
         {
             title: 'Business Intelligence',
             url: '/business-intelligence',
-            icon: businessIntelligenceIcon,
+            icon: biIcon,
         },
         {
             title: 'Sistemas Personalizados',
             url: '/sistemas-personalizados',
-            icon: sistemasPersonalizadosIcon,
+            icon: sistemasIcon,
         },
         {
             title: 'Inteligência Artificial',
             url: '/inteligencia-artificial',
-            icon: inteligenciaArtificialIcon,
+            icon: iaIcon,
         },
         {
             title: 'Transformação Digital',
             url: '/transformacao-digital',
-            icon: transformacaoDigitalIcon,
+            icon: transformacaoIcon,
         },
         {
             title: 'Website e E-commerce',
             url: '/websites-e-ecommerce',
-            icon: websiteEcommerceIcon,
+            icon: sitesIcon,
         },
     ]
 

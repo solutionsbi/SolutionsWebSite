@@ -7,10 +7,6 @@ import Cta from './Sections/Cta'
 
 import heroBg from '@/assets/images/Solutions/engenharia-de-dados.jpeg'
 import benefitsBg from '@/assets/images/Background/25.jpeg'
-import icon1 from '@/assets/svg/services-cards-icons/engenharia-de-dados.svg'
-import icon2 from '@/assets/svg/services-cards-icons/business-intelligence.svg'
-import icon3 from '@/assets/svg/services-cards-icons/sistemas-personalizados.svg'
-import icon4 from '@/assets/svg/services-cards-icons/inteligencia-artificial.svg'
 
 export default function EngenhariaDeDados() {
     return (
@@ -73,43 +69,36 @@ export default function EngenhariaDeDados() {
                         title: 'Dados Precisos \n e Confiáveis',
                         description:
                             'Tenha acesso a informações precisas e confiáveis para tomar decisões estratégicas com segurança.',
-                        icon: icon1,
                     },
                     {
                         title: 'Tomada de Decisão \n Mais Rápida',
                         description:
                             'Com dados atualizados e insights valiosos, você poderá tomar decisões mais rápidas e eficientes.',
-                        icon: icon2,
                     },
                     {
                         title: 'Redução \n de Custos',
                         description:
                             'Ao automatizar processos e identificar oportunidades de otimização, você poderá reduzir custos e aumentar a eficiência operacional.',
-                        icon: icon3,
                     },
                 ]}
             />
             <Faq
                 faqs={[
                     {
-                        icon: icon1,
                         question: 'O que é engenharia de dados?',
                         answer: 'A engenharia de dados é uma disciplina que envolve coletar, armazenar e processar dados de forma eficiente e segura, garantindo que você tenha acesso a informações precisas e confiáveis para tomar decisões estratégicas.',
                     },
                     {
-                        icon: icon2,
                         question:
                             'Quais são os benefícios da engenharia de dados?',
                         answer: 'Ao investir em engenharia de dados, você terá acesso a informações precisas e confiáveis para tomar decisões estratégicas com segurança, poderá tomar decisões mais rápidas e eficientes, e reduzir custos e aumentar a eficiência operacional.',
                     },
                     {
-                        icon: icon3,
                         question:
                             'Como a engenharia de dados pode ajudar o meu negócio?',
                         answer: 'A engenharia de dados pode ajudar o seu negócio a coletar, armazenar e processar dados de forma eficiente e segura, garantindo que você tenha acesso a informações precisas e confiáveis para tomar decisões estratégicas.',
                     },
                     {
-                        icon: icon4,
                         question:
                             'Quais são os principais desafios da engenharia de dados?',
                         answer: 'Alguns dos principais desafios da engenharia de dados incluem lidar com grandes volumes de dados, garantir a segurança e privacidade dos dados, e garantir a qualidade e confiabilidade das informações coletadas.',

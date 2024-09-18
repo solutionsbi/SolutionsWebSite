@@ -7,12 +7,6 @@ import Cta from './Sections/Cta'
 
 import heroBg from '@/assets/images/Solutions/business-intelligence.jpeg'
 import benefitsBg from '@/assets/images/Background/25.jpeg'
-import icon1 from '@/assets/svg/services-cards-icons/engenharia-de-dados.svg'
-import icon2 from '@/assets/svg/services-cards-icons/business-intelligence.svg'
-import icon3 from '@/assets/svg/services-cards-icons/sistemas-personalizados.svg'
-import icon4 from '@/assets/svg/services-cards-icons/inteligencia-artificial.svg'
-import icon5 from '@/assets/svg/services-cards-icons/transformacao-digital.svg'
-import icon6 from '@/assets/svg/services-cards-icons/website-ecommerce.svg'
 
 export default function BusinessIntelligence() {
     return (
@@ -70,25 +64,21 @@ export default function BusinessIntelligence() {
                         title: 'Tomada de Decisão \n Estratégica',
                         description:
                             'Tome decisões mais assertivas e estratégicas com base em informações confiáveis e atualizadas.',
-                        icon: icon1,
                     },
                     {
                         title: 'Análises Avançadas \n e Personalizadas',
                         description:
                             'Acesse relatórios e dashboards personalizados com análises avançadas e insights valiosos para o seu negócio.',
-                        icon: icon2,
                     },
                     {
                         title: 'Acesso em \n Tempo  Real',
                         description:
                             'Tenha acesso a informações em tempo real, permitindo que as equipes tomem decisões rápidas e eficientes.',
-                        icon: icon3,
                     },
                     {
                         title: 'Visualização de \n Dados Intuitiva',
                         description:
                             'Visualize seus dados de forma intuitiva e interativa, facilitando a compreensão e interpretação das informações.',
-                        icon: icon4,
                     },
                 ]}
                 cta={{
@@ -100,29 +90,24 @@ export default function BusinessIntelligence() {
             <Faq
                 faqs={[
                     {
-                        icon: icon1,
                         question: 'O que é Business Intelligence?',
                         answer: 'Business Intelligence (BI) é um conjunto de práticas, tecnologias e ferramentas que permitem às empresas coletar, organizar, analisar e visualizar dados para tomar decisões estratégicas com base em informações confiáveis e atualizadas.',
                     },
                     {
-                        icon: icon2,
                         question:
                             'Quais são os benefícios do Business Intelligence?',
                         answer: 'Os benefícios do Business Intelligence incluem tomada de decisão estratégica, análises avançadas e personalizadas, acesso em tempo real, visualização de dados intuitiva, entre outros. Ao investir em BI, as empresas podem impulsionar o crescimento e o sucesso do seu negócio.',
                     },
                     {
-                        icon: icon3,
                         question:
                             'Como o Business Intelligence pode ajudar a minha empresa?',
                         answer: 'O Business Intelligence pode ajudar a sua empresa a transformar dados brutos em insights valiosos, permitindo que as equipes tomem decisões mais assertivas e estratégicas. Com acesso a informações confiáveis e atualizadas, as empresas podem identificar oportunidades de crescimento, otimizar processos e melhorar o desempenho operacional.',
                     },
                     {
-                        icon: icon4,
                         question: 'Quais ferramentas de BI vocês utilizam?',
                         answer: 'Utilizamos uma variedade de ferramentas de Business Intelligence, como Power BI, Tableau, QlikView, Looker, entre outras. Essas ferramentas nos permitem coletar, organizar, analisar e visualizar dados de forma eficiente e intuitiva, proporcionando insights valiosos para as empresas.',
                     },
                     {
-                        icon: icon5,
                         question:
                             'Como o BI se integra com meus sistemas atuais?',
                         answer: 'O Business Intelligence pode ser integrado com os sistemas atuais da sua empresa por meio de APIs, conectores e outras ferramentas de integração. Essa integração permite que os dados sejam extraídos, transformados e carregados de forma automatizada, garantindo que as informações estejam sempre atualizadas e acessíveis para análises avançadas.',
