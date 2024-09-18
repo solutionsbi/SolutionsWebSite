@@ -24,6 +24,8 @@ import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { Link } from 'react-router-dom'
 import { GhostButton } from './GhostButton'
+import { House } from 'lucide-react'
+import { FileQuestion } from 'lucide-react'
 
 gsap.registerPlugin(useGSAP)
 
@@ -47,6 +49,22 @@ export const DropDownMenu: React.FC<DropDownMenuProps> = ({
             className={`${isMobile && '-translate-x-full'} absolute bottom-0 left-0 h-max w-max translate-y-full overflow-hidden rounded-md border border-brand-blue bg-neutral-darkest/95 p-6 shadow-[0_0_10px_0_rgba(0,0,0,0.1)]`}
         >
             <ul className="flex flex-col gap-6">
+                {isMobile && (
+                    <div className="flex flex-col gap-3 border-b border-brand-blue pb-6">
+                        <li className="flex w-max items-center gap-3">
+                            <House />
+                            <GhostButton>
+                                <Link to="/">Início</Link>
+                            </GhostButton>
+                        </li>
+                        <li className="flex w-max items-center gap-3">
+                            <FileQuestion />
+                            <GhostButton>
+                                <Link to="/sobre">Sobre</Link>
+                            </GhostButton>
+                        </li>
+                    </div>
+                )}
                 {menuItems.map((menuItem, index) => (
                     <li key={index}>
                         <div className="flex items-center gap-3">

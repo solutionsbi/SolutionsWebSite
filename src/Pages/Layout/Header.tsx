@@ -7,7 +7,7 @@ import { GhostButton } from '@/components/custom/GhostButton'
 import { DropDownMenu } from '@/components/custom/DropDownMenu'
 import PrimaryButton from '@/components/custom/PrimaryButton'
 export default function Header() {
-    const isMobile = window.matchMedia('(max-width: 768px)').matches
+    const isMobile = window.matchMedia('(max-width: 1279px)').matches
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
     const [isDropdownOpen, setIsDropdownOpen] = React.useState(false)
 
@@ -100,7 +100,7 @@ export default function Header() {
                     </li>
                 </ul>
 
-                <div className="flex gap-4 justify-self-end">
+                <div className="col-start-3 flex gap-4 justify-self-end">
                     <Button
                         onClick={handleMobileMenuOpen}
                         className="relative p-0 xl:hidden"
