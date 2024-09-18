@@ -67,7 +67,11 @@
         // Enable project references and incremental builds.
         "composite": true,
 
-        "typeRoots": ["./node_modules/@types", "./src/types"]
+        // Specify additional type definitions.
+        "typeRoots": ["./node_modules/@types", "./src/types"],
+
+        // Specify additional types to be included.
+        "types": ["react", "react-dom"]
     },
 
     // An array of glob patterns that specify the files to be included in the program.
