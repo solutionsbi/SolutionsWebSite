@@ -18,11 +18,11 @@ export default function SistemasPersonalizados() {
                     </>
                 }
                 description="Desenvolvemos soluções sob medida para atender às necessidades específicas da sua empresa, garantindo eficiência, segurança e escalabilidade."
-                cta={
-                    <a href="#" target="_blank">
-                        Contrate agora
-                    </a>
-                }
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
                 img="/src/assets/images/Solutions/sistemas-personalizados.jpeg"
             />
             <ComoFunciona
@@ -76,6 +76,11 @@ export default function SistemasPersonalizados() {
                         icon: '/src/assets/svg/services-cards-icons/sistemas-personalizados.svg',
                     },
                 ]}
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
             />
             <Faq
                 faqs={[

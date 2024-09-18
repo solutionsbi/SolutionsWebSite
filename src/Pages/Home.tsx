@@ -5,7 +5,6 @@ import { Map } from './Sections/Map'
 import Benefícios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Cta from './Sections/Cta'
-import { Link } from 'react-router-dom'
 
 export default function Home() {
     return (
@@ -23,7 +22,11 @@ export default function Home() {
                 description={
                     'Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer,\n inovar e se destacar no mercado.Conheça nossos serviços e descubra \n como podemos ajudar a impulsionar o seu negócio.'
                 }
-                cta={<Link to="/sobre">Impulsione Seu Negócio</Link>}
+                cta={{
+                    text: 'Impulsione Seu Negócio',
+                    href: '/sobre',
+                    additionalText: 'Saiba mais',
+                }}
                 img="/src/assets/images/Background/11.jpeg"
             />
             <Solucoes />
@@ -58,6 +61,11 @@ export default function Home() {
                         icon: '/src/assets/svg/services-cards-icons/sistemas-personalizados.svg',
                     },
                 ]}
+                cta={{
+                    href: '/sobre',
+                    text: 'Saiba Mais',
+                    additionalText: 'Sobre Nós',
+                }}
             />
             <Faq
                 faqs={[

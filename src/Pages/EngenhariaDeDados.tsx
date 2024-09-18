@@ -18,11 +18,11 @@ export default function EngenhariaDeDados() {
                     </>
                 }
                 description="Ajudamos a sua empresa a coletar, armazenar e processar dados de forma eficiente e segura, garantindo que você tenha informações precisas e confiáveis para tomar decisões estratégicas."
-                cta={
-                    <a href="#" target="_blank">
-                        Contrate agora
-                    </a>
-                }
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
                 img="/src/assets/images/Background/firefly/11.jpg"
             />
             <ComoFunciona
@@ -53,6 +53,11 @@ export default function EngenhariaDeDados() {
                 ]}
             />
             <Beneficios
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
                 title="Benefícios"
                 background="/src/assets/images/Background/1.jpeg"
                 description="Ao investir em engenharia de dados, você terá acesso a uma série de benefícios que podem ajudar a impulsionar o crescimento e o sucesso do seu negócio."

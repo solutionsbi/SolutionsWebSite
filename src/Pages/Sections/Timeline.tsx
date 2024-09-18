@@ -176,7 +176,7 @@ const timeLineData: TimeLineCardProps[] = [
 
 export default function Timeline() {
     return (
-        <section className="page-section mb-24 md:mb-32 lg:mb-40">
+        <section className="page-section">
             <div className="container">
                 <div className="grid gap-16 md:grid-cols-2 lg:gap-[10%]">
                     <div className="flex w-full flex-col">

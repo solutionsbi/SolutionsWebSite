@@ -18,11 +18,11 @@ export default function WebsistesEcommerce() {
                     </>
                 }
                 description="Desenvolvemos websites e lojas virtuais personalizadas para ajudar a sua empresa a se destacar no mercado digital e impulsionar as vendas online."
-                cta={
-                    <a href="#" target="_blank">
-                        Contrate agora
-                    </a>
-                }
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
                 img="/src/assets/images/Solutions/websites-ecommerce.jpeg"
             />
             <ComoFunciona
@@ -87,6 +87,11 @@ export default function WebsistesEcommerce() {
                             'Com um website ou e-commerce, você pode coletar e analisar dados sobre o comportamento dos usuários, as preferências de compra e o desempenho das suas campanhas. Isso fornece insights valiosos para tomar decisões estratégicas, otimizar a experiência do cliente e impulsionar o crescimento do seu negócio.',
                     },
                 ]}
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
             />
             <Faq
                 faqs={[

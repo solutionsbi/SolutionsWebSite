@@ -2,13 +2,15 @@ import React, { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import PrimaryButton from '@/components/custom/PrimaryButton'
+import PrimaryButton, {
+    PrimaryButtonProps,
+} from '@/components/custom/PrimaryButton'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 type HeroProps = {
     title: React.ReactNode
     description: string
-    cta?: React.ReactNode
+    cta?: PrimaryButtonProps
     img: string
     position?: string
 }
@@ -156,10 +158,10 @@ export default function Hero({
                         <div className="mt-6 flex flex-col items-center justify-center gap-2 gap-x-4 md:mt-8 md:flex-row">
                             <PrimaryButton
                                 className="section-cta-1"
-                                additionalText={'Saiba mais'}
-                            >
-                                {cta}
-                            </PrimaryButton>
+                                href={cta.href}
+                                text={cta.text}
+                                additionalText={cta.additionalText}
+                            />
                         </div>
                     )}
                 </div>

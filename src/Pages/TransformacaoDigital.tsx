@@ -18,11 +18,11 @@ export default function TransformacaoDigital() {
                     </>
                 }
                 description="Ajudamos a sua empresa a se adaptar às mudanças tecnológicas e a transformar processos, produtos e serviços para atender às demandas do mercado atual."
-                cta={
-                    <a href="#" target="_blank">
-                        Contrate agora
-                    </a>
-                }
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
                 img="/src/assets/images/Solutions/transformacao-digital.jpeg"
             />
             <ComoFunciona
@@ -76,6 +76,11 @@ export default function TransformacaoDigital() {
                         icon: '/src/assets/svg/services-cards-icons/transformacao-digital.svg',
                     },
                 ]}
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
             />
             <Faq
                 faqs={[

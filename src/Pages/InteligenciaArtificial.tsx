@@ -18,11 +18,11 @@ export default function InteligenciaArtificial() {
                     </>
                 }
                 description="Desenvolvemos soluções de Inteligência Artificial para ajudar a sua empresa a otimizar processos, aumentar a produtividade e impulsionar o crescimento."
-                cta={
-                    <a href="#" target="_blank">
-                        Contrate agora
-                    </a>
-                }
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
                 img="/src/assets/images/Solutions/inteligencia-artificial.jpeg"
             />
             <ComoFunciona
@@ -87,6 +87,11 @@ export default function InteligenciaArtificial() {
                             'A IA pode analisar grandes volumes de dados de forma rápida e precisa, fornecendo insights valiosos para o seu negócio.',
                     },
                 ]}
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
             />
             <Faq
                 faqs={[

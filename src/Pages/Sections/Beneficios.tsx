@@ -7,17 +7,22 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
+type Benefit = {
+    title: string
+    description: string
+    icon: string
+}
+
 type BeneficiosProps = {
     title: React.ReactNode
     description: string
     benefits: Benefit[]
     background: string
-}
-
-type Benefit = {
-    title: string
-    description: string
-    icon: string
+    cta: {
+        text: string
+        href: string
+        additionalText: string
+    }
 }
 
 export default function Beneficios({
@@ -25,6 +30,7 @@ export default function Beneficios({
     description,
     benefits,
     background,
+    cta,
 }: BeneficiosProps) {
     const container = useRef<HTMLElement>(null)
     const enterTl = useRef<gsap.core.Timeline | null>(null)
@@ -134,9 +140,12 @@ export default function Beneficios({
                                 {description}
                             </p>
                             <div className="mt-6 hidden items-center justify-center gap-x-4 md:mt-10 md:flex">
-                                <PrimaryButton className="section-cta">
-                                    Saiba Mais
-                                </PrimaryButton>
+                                <PrimaryButton
+                                    className="section-cta"
+                                    href={cta.href}
+                                    text={cta.text}
+                                    additionalText={cta.additionalText}
+                                />
                             </div>
                         </div>
                     </div>

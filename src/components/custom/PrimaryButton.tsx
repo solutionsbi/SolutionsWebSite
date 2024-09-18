@@ -30,7 +30,7 @@ import { useGSAP } from '@gsap/react'
 
 gsap.registerPlugin(useGSAP)
 
-interface PrimaryButtonProps {
+export interface PrimaryButtonProps {
     className?: string
     text: string
     additionalText?: string

@@ -18,11 +18,11 @@ export default function BusinessIntelligence() {
                     </>
                 }
                 description="Transforme seus dados em insights valiosos e tome decisões estratégicas com base em informações confiáveis e atualizadas."
-                cta={
-                    <a href="#" target="_blank">
-                        Contrate agora
-                    </a>
-                }
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
                 img="/src/assets/images/Solutions/business-intelligence.jpeg"
             />
             <ComoFunciona
@@ -82,6 +82,11 @@ export default function BusinessIntelligence() {
                         icon: '/src/assets/svg/services-cards-icons/business-intelligence.svg',
                     },
                 ]}
+                cta={{
+                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    text: 'Agende Uma Consultoria',
+                    additionalText: 'Fale Conosco',
+                }}
             />
             <Faq
                 faqs={[
