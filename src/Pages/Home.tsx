@@ -22,8 +22,7 @@ export default function Home() {
                 description={
                     'Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer,\n inovar e se destacar no mercado.Conheça nossos serviços e descubra \n como podemos ajudar a impulsionar o seu negócio.'
                 }
-                cta1={{ text: 'Impulsione seu negócio', link: '#' }}
-                cta2={{ text: 'Saiba mais', link: '/sobre' }}
+                cta1={{ text: 'Impulsione Seu Negócio', link: '#' }}
                 img="/src/assets/images/Background/11.jpeg"
             />
             <Solucoes />
@@ -35,7 +34,7 @@ export default function Home() {
                         nossos <span className="text-brand-blue">valores</span>
                     </>
                 }
-                background="/src/assets/images/Background/24.jpeg"
+                background="/src/assets/images/Background/firefly/6.jpg"
                 description="Na SolutionsBI, acreditamos que a tecnologia pode transformar negócios e impactar positivamente a sociedade. Por isso, trabalhamos com dedicação, ética e transparência para oferecer soluções inovadoras e eficientes para os nossos clientes."
                 benefits={[
                     {

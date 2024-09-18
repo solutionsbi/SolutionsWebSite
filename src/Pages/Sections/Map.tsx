@@ -17,11 +17,6 @@ export const Map = () => {
                 container.current?.querySelectorAll('.country-icon') || []
             ) as SVGElement[]
 
-            console.group('Elementos do mapa:')
-            console.log('Countries: ', countries)
-            console.log('Country Icons: ', countryIcons)
-            console.groupEnd
-
             gsap.set([container.current, countryIcons], {
                 opacity: 0,
             })

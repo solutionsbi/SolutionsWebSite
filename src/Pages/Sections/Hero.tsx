@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
+import PrimaryButton from '@/components/custom/PrimaryButton'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 type Cta = {
@@ -48,14 +48,6 @@ export default function Hero({
                 container.current.querySelector('.section-cta-1')
             const sectionCta2 =
                 container.current.querySelector('.section-cta-2')
-
-            // console.group('Hero Section Elements')
-            // console.log('Section BG:', sectionBg)
-            // console.log('Section Title:', sectionTitle)
-            // console.log('Section Description:', sectionDescription)
-            // console.log('Section Cta 1:', sectionCta1)
-            // console.log('Section Cta 2:', sectionCta2)
-            // console.groupEnd()
 
             enterTl.current = gsap.timeline({
                 defaults: {
@@ -163,6 +155,7 @@ export default function Hero({
         },
         { scope: container }
     )
+
     return (
         <section ref={container} className="relative h-[78vh] px-[5%]">
             <div className="section-bg absolute left-0 top-[-12vh] -z-50 h-[100vh] w-full">
@@ -186,21 +179,22 @@ export default function Hero({
 
                     <div className="mt-6 flex flex-col items-center justify-center gap-2 gap-x-4 md:mt-8 md:flex-row">
                         {cta1 && (
-                            <Button className="section-cta-1">
-                                <a
-                                    href={cta1.link}
-                                    target="_blank"
-                                    className="drop-shadow-md"
-                                >
-                                    {cta1.text}
-                                </a>
-                            </Button>
+                            <PrimaryButton
+                                className="section-cta-1"
+                                href={cta1.link}
+                                additionalText={'Saiba mais'}
+                            >
+                                {cta1.text}
+                            </PrimaryButton>
                         )}
 
                         {cta2 && (
-                            <Button className="section-cta-2" variant="outline">
-                                <Link to={cta2.link}>{cta2.text}</Link>
-                            </Button>
+                            <PrimaryButton
+                                className="section-cta-2"
+                                href={cta2.link}
+                            >
+                                {cta2.text}
+                            </PrimaryButton>
                         )}
                     </div>
                 </div>

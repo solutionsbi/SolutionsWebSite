@@ -303,7 +303,10 @@ export default function Carrossel() {
             plugins={[Autoplay({ delay: 8000 })]}
             className="flex w-full items-center justify-center gap-2"
         >
-            <CarouselPrevious className="carousel-button hidden px-2 md:block" />
+            <CarouselPrevious
+                className="carousel-button hidden px-1 md:block"
+                variant="icon"
+            />
             <CarouselContent className="">
                 {services.map((service: Service, index) => (
                     <CarouselItem
@@ -319,7 +322,10 @@ export default function Carrossel() {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselNext className="carousel-button hidden px-2 md:block" />
+            <CarouselNext
+                className="carousel-button hidden px-1 md:block"
+                variant="icon"
+            />
         </Carousel>
     )
 }

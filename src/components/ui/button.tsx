@@ -5,21 +5,21 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-    'inline-flex relative before:absolute before:inset-0 rounded-[5px] before:-z-10 items-center justify-center whitespace-nowrap  text-base 3xl:text-lg font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 ',
+    'inline-flex relative rounded-[5px] items-center justify-center whitespace-nowrap text-base 2xl:text-md font-medium disabled:pointer-events-none disabled:opacity-50 ',
     {
         variants: {
             variant: {
-                default:
-                    'bg-brand-blue text-white hover:bg-white hover:text-brand-blue',
-                outline:
-                    'border overflow-hiddenborder-white/50 hover:bg-neutral-100 hover:text-neutral-900',
-                link: 'border-none bg-transparent hover:text-brand-blue',
+                default: 'bg-brand-blue ',
+                outline: 'border-2 border-white/50',
+                link: 'border-none bg-transparent p-0',
+                icon: 'hover:bg-white hover:text-brand-blue bg-brand-blue transition-colors duration-300 ease-in-out',
             },
             size: {
                 default: 'px-6 py-3',
                 sm: 'px-3 py-2',
                 lg: 'px-8 py-4',
-                icon: 'h-10 w-10',
+                custom: 'px-0 py-0',
+                icon: 'p-2',
             },
         },
         defaultVariants: {

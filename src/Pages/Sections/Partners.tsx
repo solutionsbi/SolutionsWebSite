@@ -96,16 +96,6 @@ export default function Partners() {
             const sectionStatsTexts = gsap.utils.toArray(
                 container.current.querySelectorAll('.stats-text')
             )
-
-            // console.group('Section elements')
-            // console.log('sectionBg', sectionBg)
-            // console.log('sectionTitle', sectionTitle)
-            // console.log('sectionLogos', sectionLogos)
-            // console.log('sectionStatsPlus', sectionStatsPlus)
-            // console.log('sectionStatsNumbers', sectionStatsNumbers)
-            // console.log('sectionStatsTexts', sectionStatsTexts)
-            // console.groupEnd()
-
             // set initial styles to prevent flashing of unstyled content
             gsap.set(sectionBg, {
                 opacity: 0,
@@ -209,7 +199,7 @@ export default function Partners() {
         <section ref={container} className="page-section">
             <div className="section-bg absolute left-1/2 top-1/2 -z-50 mx-auto h-full w-full translate-x-[-50%] translate-y-[-50%]">
                 <img
-                    src="/src/assets/images/Background/22.jpeg"
+                    src="/src/assets/images/Background/firefly/10.jpg"
                     className="mask-rect h-full w-full object-cover opacity-100"
                 />
             </div>
