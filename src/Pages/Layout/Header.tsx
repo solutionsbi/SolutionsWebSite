@@ -51,7 +51,7 @@ export default function Header() {
         },
         {
             title: 'Website e E-commerce',
-            url: '/websites-&-ecommerce',
+            url: '/websites-e-ecommerce',
             icon: '/src/assets/svg/tech-icons/material-symbols_ads-click-rounded.svg',
         },
     ]
@@ -116,15 +116,10 @@ export default function Header() {
                     </Button>
                     <PrimaryButton
                         className="hidden xl:flex"
+                        href="https://api.whatsapp.com/send?phone=5519993230833"
+                        text="Agende Uma Consultoria"
                         additionalText="Fale Conosco"
-                    >
-                        <a
-                            href="https://api.whatsapp.com/send?phone=5519993230833"
-                            target="_blank"
-                        >
-                            Agende Uma Consultoria
-                        </a>
-                    </PrimaryButton>
+                    />
                 </div>
             </nav>
         </header>
