@@ -151,7 +151,7 @@ export default function Beneficios({
                                     href={cta.href}
                                     text={cta.text}
                                     additionalText={cta.additionalText}
-                                    linkType="internal"
+                                    linkType="external"
                                 />
                             </div>
                         </div>
