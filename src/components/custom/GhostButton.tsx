@@ -6,7 +6,7 @@ import { useGSAP } from '@gsap/react'
 gsap.registerPlugin(useGSAP)
 
 export const GhostButton = ({ children }: { children: React.ReactNode }) => {
-    const container = useRef<HTMLButtonElement>(null)
+    const container = useRef<HTMLDivElement>(null)
 
     const { contextSafe } = useGSAP({ scope: container })
 
@@ -24,17 +24,18 @@ export const GhostButton = ({ children }: { children: React.ReactNode }) => {
     const handleMouseLeave = () => handleMouseEvent('0')
 
     return (
-        <Button
-            ref={container}
-            variant="link"
-            size="custom"
-            onClick={() => console.log('clicked!')}
-            className={'relative'}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-        >
-            {children}
+        <div ref={container} className="relative">
+            <Button
+                asChild
+                variant="link"
+                size="custom"
+                className={'relative'}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
+                {children}
+            </Button>
             <div className="bottom-line absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-brand-blue"></div>
-        </Button>
+        </div>
     )
 }
