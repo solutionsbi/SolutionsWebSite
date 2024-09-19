@@ -128,6 +128,7 @@ export default function Header() {
                         href="https://api.whatsapp.com/send?phone=5519993230833"
                         text="Agende Uma Consultoria"
                         additionalText="Fale Conosco"
+                        linkType="external"
                     />
                 </div>
             </nav>

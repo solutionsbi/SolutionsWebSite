@@ -29,6 +29,7 @@ export default function Home() {
                     text: 'Impulsione Seu Negócio',
                     href: '/sobre',
                     additionalText: 'Saiba mais',
+                    linkType: 'internal',
                 }}
                 img={heroImage}
             />

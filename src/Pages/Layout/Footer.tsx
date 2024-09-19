@@ -81,17 +81,13 @@ export default function Footer() {
                             aumentar sua eficiência.
                         </span>
                         <div className="mt-6 flex items-center justify-center gap-4 md:justify-start xl:justify-start">
-                            <a href="">
+                            <a
+                                href="https://www.facebook.com/solutionsbi.fb/"
+                                target="_blank"
+                            >
                                 <img
                                     src={facebookIcon}
                                     alt="facebook"
-                                    className="h-8 w-8"
-                                />
-                            </a>
-                            <a href="">
-                                <img
-                                    src={instagramIcon}
-                                    alt="instagram"
                                     className="h-8 w-8"
                                 />
                             </a>
@@ -167,7 +163,10 @@ export default function Footer() {
                         <ul className="flex flex-col gap-4">
                             <li>
                                 <GhostButton>
-                                    <a href="mailto:contato@solutionsbi.com.br">
+                                    <a
+                                        href="mailto:contato@solutionsbi.com.br"
+                                        target="_blank"
+                                    >
                                         contato@solutionsbi.com.br
                                     </a>
                                 </GhostButton>

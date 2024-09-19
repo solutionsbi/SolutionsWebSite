@@ -161,6 +161,7 @@ export default function Hero({
                                 href={cta.href}
                                 text={cta.text}
                                 additionalText={cta.additionalText}
+                                linkType={cta.linkType}
                             />
                         </div>
                     )}

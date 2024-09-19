@@ -24,6 +24,7 @@
  */
 
 import React, { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -35,6 +36,7 @@ export interface PrimaryButtonProps {
     text: string
     additionalText?: string
     href: string
+    linkType: 'internal' | 'external'
 }
 
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({
@@ -42,6 +44,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
     text,
     additionalText,
     href,
+    linkType,
 }) => {
     const buttonRef = useRef<HTMLButtonElement>(null)
     const tl = useRef<gsap.core.Timeline | null>(null)
@@ -109,20 +112,35 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <a href={href}>
-                {' '}
-                <span className="relative z-20 flex overflow-hidden">
-                    <span className="z-20">{text}</span>
-                    <span
-                        className={`absolute left-1/2 -translate-x-1/2 translate-y-full`}
-                    >
-                        {additionalText ? additionalText : text}
+            {linkType === 'external' ? (
+                <a href={href} target="_blank">
+                    <span className="relative z-20 flex overflow-hidden">
+                        <span className="z-20">{text}</span>
+                        <span
+                            className={`absolute left-1/2 -translate-x-1/2 translate-y-full`}
+                        >
+                            {additionalText ? additionalText : text}
+                        </span>
                     </span>
-                </span>
-                <span
-                    className={`absolute left-1/2 top-1/2 z-10 h-full w-full -translate-x-1/2 -translate-y-1/2 skew-x-12 scale-x-0 bg-brand-white`}
-                ></span>
-            </a>
+                    <span
+                        className={`absolute left-1/2 top-1/2 z-10 h-full w-full -translate-x-1/2 -translate-y-1/2 skew-x-12 scale-x-0 bg-brand-white`}
+                    ></span>
+                </a>
+            ) : (
+                <Link to={href}>
+                    <span className="relative z-20 flex overflow-hidden">
+                        <span className="z-20">{text}</span>
+                        <span
+                            className={`absolute left-1/2 -translate-x-1/2 translate-y-full`}
+                        >
+                            {additionalText ? additionalText : text}
+                        </span>
+                    </span>
+                    <span
+                        className={`absolute left-1/2 top-1/2 z-10 h-full w-full -translate-x-1/2 -translate-y-1/2 skew-x-12 scale-x-0 bg-brand-white`}
+                    ></span>
+                </Link>
+            )}
         </Button>
     )
 }
