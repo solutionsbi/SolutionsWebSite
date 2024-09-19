@@ -9,9 +9,10 @@ COPY package.json package-lock.json ./
 
 # Install all dependencies, including dev dependencies
 RUN npm install
+RUN npm install react @types/react --save-dev
 
-# Verify GSAP installation
-RUN npm list gsap && npm list @gsap/react
+# Verify GSAP installation and React
+RUN npm list gsap && npm list @gsap/react && npm list react
 
 # Copy the rest of the application code to the container
 COPY . .
