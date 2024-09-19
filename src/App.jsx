@@ -11,6 +11,7 @@ import InteligenciaArtificial from './Pages/InteligenciaArtificial'
 import TransformacaoDigital from './Pages/TransformacaoDigital'
 import WebsistesEcommerce from './Pages/WebsitesEcommerce'
 import PoliticaDePrivacidade from './Pages/PoliticaDePrivacidade'
+import NotFound from './Pages/NotFound'
 
 function App() {
     return (
@@ -48,6 +49,7 @@ function App() {
                             path="politica-de-privacidade"
                             element={<PoliticaDePrivacidade />}
                         />
+                        <Route path="*" element={<NotFound />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
