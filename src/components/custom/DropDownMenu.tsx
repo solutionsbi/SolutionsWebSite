@@ -26,6 +26,9 @@ import { Link } from 'react-router-dom'
 import { GhostButton } from './GhostButton'
 import { House } from 'lucide-react'
 import { FileQuestion } from 'lucide-react'
+import { Shield } from 'lucide-react'
+import facebookIcon from '@/assets/svg/social-icons/facebook-icon.svg'
+import linkedinIcon from '@/assets/svg/social-icons/linkedin-icon.svg'
 
 gsap.registerPlugin(useGSAP)
 
@@ -81,6 +84,18 @@ export const DropDownMenu: React.FC<DropDownMenuProps> = ({
                         </div>
                     </li>
                 ))}
+                {isMobile && (
+                    <div className="flex flex-col gap-3 border-t border-brand-blue pt-6">
+                        <li className="flex w-max items-center gap-3">
+                            <Shield />
+                            <GhostButton>
+                                <Link to="/politica-de-privacidade">
+                                    Política de Privacidade
+                                </Link>
+                            </GhostButton>
+                        </li>
+                    </div>
+                )}
             </ul>
         </div>
     )

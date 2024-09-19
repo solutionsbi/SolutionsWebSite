@@ -68,7 +68,7 @@ export default function ComoFunciona({
                 scrollTrigger: {
                     trigger: container.current,
                     start: 'top 80%',
-                    markers: true,
+                    markers: false,
                 },
                 defaults: {
                     duration: 1,
