@@ -270,10 +270,10 @@ export default function Carrossel() {
             )
 
             enterTl.current = gsap.timeline({
-                delay: 0.5,
                 defaults: {
-                    duration: 1.5,
-                    ease: 'power1.out',
+                    delay: 0.5,
+                    duration: 1.8,
+                    ease: 'power4.out',
                 },
                 scrollTrigger: {
                     trigger: container.current,
@@ -284,7 +284,7 @@ export default function Carrossel() {
             enterTl.current.from(carouselCards, {
                 opacity: 0,
                 y: 100,
-                stagger: 0.5,
+                stagger: 0.2,
             })
 
             enterTl.current.from(
@@ -296,6 +296,8 @@ export default function Carrossel() {
                 },
                 '<+=1.5'
             )
+
+            console.log(enterTl.current)
         },
         { scope: container }
     )

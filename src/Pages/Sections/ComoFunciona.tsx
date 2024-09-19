@@ -41,12 +41,6 @@ export default function ComoFunciona({
                 '.como-funciona-grid-line'
             )
 
-            // console.group('Como Funciona Section Elements')
-            // console.log('Section Title:', sectionTitle)
-            // console.log('Section Description:', sectionDescription)
-            // console.log('Como Funciona Grid Items:', comoFuncionaGridItems)
-            // console.groupEnd()
-
             gsap.set(sectionTitle, {
                 opacity: 0,
                 x: 20,
@@ -73,12 +67,12 @@ export default function ComoFunciona({
             sectionTl.current = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top 60%',
-                    markers: false,
+                    start: 'top 80%',
+                    markers: true,
                 },
                 defaults: {
-                    duration: 1.5,
-                    ease: 'power1.inOut',
+                    duration: 1,
+                    ease: 'power4.out',
                 },
             })
 
@@ -125,10 +119,7 @@ export default function ComoFunciona({
     )
 
     return (
-        <section
-            ref={container}
-            className="relative px-[5%] py-16 md:py-24 lg:py-28"
-        >
+        <section ref={container} className="page-section">
             <div className="container">
                 <div className="flex w-full flex-col items-center">
                     <div className="mb-20 flex flex-col items-center text-center">

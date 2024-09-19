@@ -45,42 +45,18 @@ export default function Hero({
             enterTl.current = gsap.timeline({
                 defaults: {
                     duration: 1,
-                    ease: 'power1.out',
+                    ease: 'power4.out',
                 },
                 scrollTrigger: {
                     trigger: container.current,
                     start: 'top bottom',
                     end: 'top center',
                 },
-                onComplete: () => {
-                    scrubTl.current = gsap.timeline({
-                        scrollTrigger: {
-                            trigger: container.current,
-                            start: 'top 10%',
-                            end: 'bottom 10%',
-                            scrub: true,
-                        },
-                    })
-
-                    scrubTl.current
-                        ?.to(sectionBg, {
-                            y: 100,
-                            scale: 1.1,
-                        })
-                        .to(
-                            sectionTitle,
-                            {
-                                y: -50,
-                                opacity: 0.5,
-                            },
-                            '<'
-                        )
-                },
             })
 
             gsap.set(sectionBg, {
-                scale: 1.2,
-                autoAlpha: 0,
+                autoAlpha: 0.8,
+                scale: 0.8,
             })
             gsap.set(sectionTitle, {
                 x: -20,
@@ -98,18 +74,22 @@ export default function Hero({
             }
 
             enterTl.current
-                ?.to(sectionBg, {
-                    autoAlpha: 1,
-                    scale: 1,
-                    duration: 3,
-                })
+                .to(
+                    sectionBg,
+                    {
+                        scale: 1,
+                        autoAlpha: 1,
+                        duration: 3,
+                    },
+                    '<'
+                )
                 .to(
                     sectionTitle,
                     {
                         autoAlpha: 1,
                         x: 0,
                     },
-                    '-=2'
+                    '<+=0.4'
                 )
                 .to(
                     sectionDescription,
@@ -117,7 +97,7 @@ export default function Hero({
                         autoAlpha: 1,
                         y: 0,
                     },
-                    '-=1.5'
+                    '<+=0.4'
                 )
             if (cta) {
                 enterTl.current?.to(
@@ -126,7 +106,7 @@ export default function Hero({
                         autoAlpha: 1,
                         x: 0,
                     },
-                    '-=1.1'
+                    '<+=0.4'
                 )
             }
         },
