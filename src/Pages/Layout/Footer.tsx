@@ -174,10 +174,10 @@ export default function Footer() {
                             <li>
                                 <GhostButton>
                                     <a
-                                        href="https://api.whatsapp.com/send?phone=5519993230833"
+                                        href="https://api.whatsapp.com/send?phone=5519983085819"
                                         target="_blank"
                                     >
-                                        (19) 99323-0833
+                                        +55 (19) 98308-5819
                                     </a>
                                 </GhostButton>
                             </li>

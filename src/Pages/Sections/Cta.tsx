@@ -137,7 +137,8 @@ export default function Cta() {
                     <PrimaryButton
                         className="section-cta"
                         text="Impulsionar Agora"
-                        href="https://api.whatsapp.com/send?phone=5519993230833"
+                        href="https://api.whatsapp.com/send?phone=5519983085819"
+                        linkType="external"
                     />
                 </div>
             </div>

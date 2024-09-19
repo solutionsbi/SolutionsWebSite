@@ -22,7 +22,7 @@ export default function TransformacaoDigital() {
                 }
                 description="Ajudamos a sua empresa a se adaptar às mudanças tecnológicas e a transformar processos, produtos e serviços para atender às demandas do mercado atual."
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',
@@ -78,7 +78,7 @@ export default function TransformacaoDigital() {
                     },
                 ]}
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',

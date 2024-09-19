@@ -22,7 +22,7 @@ export default function WebsistesEcommerce() {
                 }
                 description="Desenvolvemos websites e lojas virtuais personalizadas para ajudar a sua empresa a se destacar no mercado digital e impulsionar as vendas online."
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',
@@ -83,7 +83,7 @@ export default function WebsistesEcommerce() {
                     },
                 ]}
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',
