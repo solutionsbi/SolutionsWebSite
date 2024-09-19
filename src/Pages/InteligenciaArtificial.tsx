@@ -25,6 +25,7 @@ export default function InteligenciaArtificial() {
                     href: 'https://api.whatsapp.com/send?phone=5519993230833',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
+                    linkType: 'external',
                 }}
                 img={heroBg}
             />
@@ -90,6 +91,7 @@ export default function InteligenciaArtificial() {
                     href: 'https://api.whatsapp.com/send?phone=5519993230833',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
+                    linkType: 'external',
                 }}
             />
             <Faq

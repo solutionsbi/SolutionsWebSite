@@ -66,6 +66,7 @@ export default function Home() {
                     href: '/sobre',
                     text: 'Saiba Mais',
                     additionalText: 'Sobre Nós',
+                    linkType: 'internal',
                 }}
             />
             <Faq

@@ -1,5 +1,5 @@
 import PrimaryButton from '@/components/custom/PrimaryButton'
-import { Link } from 'react-router-dom'
+import { PrimaryButtonProps } from '@/components/custom/PrimaryButton'
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -24,11 +24,7 @@ type BeneficiosProps = {
     description: string
     benefits: Benefit[]
     background: string
-    cta: {
-        text: string
-        href: string
-        additionalText: string
-    }
+    cta: PrimaryButtonProps
 }
 
 export default function Beneficios({
@@ -151,7 +147,7 @@ export default function Beneficios({
                                     href={cta.href}
                                     text={cta.text}
                                     additionalText={cta.additionalText}
-                                    linkType="external"
+                                    linkType={cta.linkType}
                                 />
                             </div>
                         </div>
