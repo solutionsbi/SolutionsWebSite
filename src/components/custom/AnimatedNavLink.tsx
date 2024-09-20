@@ -30,7 +30,7 @@ const AnimatedNavLink: React.FC<AnimatedNavLinkProps> = ({
             <NavLink
                 {...props}
                 className={({ isActive }) =>
-                    isActive ? 'text-lg text-brand-blue' : ''
+                    isActive ? 'text-brand-blue' : ''
                 }
             >
                 {children}

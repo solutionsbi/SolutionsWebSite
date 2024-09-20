@@ -182,11 +182,17 @@ export default function Footer() {
                                 </GhostButton>
                             </li>
                             <li>
-                                Rua Treze de maio, 257 <br />
-                                2º andar | Sala 21 <br />
-                                Centro - Limeira/SP
-                                <br />
-                                Cep: 13480-082
+                                <a
+                                    className="hover:text-brand-blue"
+                                    href="https://www.google.com/maps/place/Rua+Treze+de+Maio,+257+-+Centro,+Limeira+-+SP,+13480-082/@-22.0643365,-47.4006336,17z/data=!3m1!4b1!4m6!3m5!1s0x94c98a6742248333:0x3283242822822222!8m2!3d-22.0643365!4d-47.3980589!16s%2Fg%2F11c5r4x6c1"
+                                    target="_blank"
+                                >
+                                    Rua Treze de maio, 257 <br />
+                                    2º andar | Sala 21 <br />
+                                    Centro - Limeira/SP
+                                    <br />
+                                    Cep: 13480-082
+                                </a>
                             </li>
                         </ul>
                     </div>
