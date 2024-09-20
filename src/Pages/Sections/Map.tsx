@@ -17,44 +17,54 @@ export const Map = () => {
                 container.current?.querySelectorAll('.country-icon') || []
             ) as SVGElement[]
 
-            gsap.set([container.current, countryIcons], {
-                opacity: 0,
+            gsap.set(container.current, {
+                autoAlpha: 0,
+                scale: 0.8,
             })
             gsap.set(countries, {
+                autoAlpha: 0,
                 fill: '#111111',
                 fillOpacity: '50%',
                 stroke: '#FFFFFF',
                 strokeOpacity: '10%',
             })
             gsap.set(countryIcons, {
+                autoAlpha: 0,
                 y: -20,
             })
 
             tl.current = gsap.timeline({
                 defaults: {
-                    duration: '1',
-                    ease: 'power1.inOut',
+                    duration: 0.5,
+                    ease: 'power4.out',
                 },
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top 80%',
+                    start: 'top bottom',
                     markers: false,
                 },
             })
 
             tl.current
                 .to([container.current], {
-                    opacity: 1,
+                    scale: 1,
+                    autoAlpha: 1,
+                    duration: 2,
                 })
-                .to(countries, {
-                    opacity: 1,
-                    fill: '#2960F7',
-                    fillOpacity: '1',
-                })
+                .to(
+                    countries,
+                    {
+                        autoAlpha: 1,
+                        fill: '#2960F7',
+                        fillOpacity: '1',
+                        stagger: 0.05,
+                    },
+                    '<+=0.2'
+                )
                 .to(
                     countryIcons,
                     {
-                        opacity: 1,
+                        autoAlpha: 1,
                         y: 0,
                         stagger: 0.2,
                     },
@@ -65,7 +75,7 @@ export const Map = () => {
     )
 
     return (
-        <section className="my-[12vh] h-[60vh] px-[5%] md:h-[88vh] hidden md:block">
+        <section className="my-[12vh] hidden h-[60vh] px-[5%] md:block md:h-[88vh]">
             <div className="container relative grid h-full w-full place-content-center">
                 <svg
                     ref={container}

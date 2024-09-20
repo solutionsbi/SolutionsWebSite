@@ -22,7 +22,7 @@ export default function EngenhariaDeDados() {
                 }
                 description="Ajudamos a sua empresa a coletar, armazenar e processar dados de forma eficiente e segura, garantindo que você tenha informações precisas e confiáveis para tomar decisões estratégicas."
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',
@@ -58,7 +58,7 @@ export default function EngenhariaDeDados() {
             />
             <Beneficios
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',

@@ -22,7 +22,7 @@ export default function InteligenciaArtificial() {
                 }
                 description="Desenvolvemos soluções de Inteligência Artificial para ajudar a sua empresa a otimizar processos, aumentar a produtividade e impulsionar o crescimento."
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',
@@ -88,7 +88,7 @@ export default function InteligenciaArtificial() {
                     },
                 ]}
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',

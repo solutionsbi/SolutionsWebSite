@@ -39,7 +39,10 @@ export default function Solucoes({ title = false }: SolucoesProps) {
         { scope: container }
     )
     return (
-        <section ref={container} className="overflow-hidden px-[5%]">
+        <section
+            ref={container}
+            className={`overflow-hidden px-[5%] ${title && 'py-24'}`}
+        >
             <div className="container">
                 <div className="flex flex-col gap-20">
                     {title && (

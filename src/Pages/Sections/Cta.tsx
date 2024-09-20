@@ -26,56 +26,65 @@ export default function Cta() {
             const sectionBottomBar =
                 container.current.querySelector('.bottom-bar')
 
-            // set initial styles to prevent flashing of unstyled content
+            // background animation
             gsap.set(sectionBg, {
-                opacity: 0,
+                autoAlpha: 1,
                 scale: 0.8,
             })
-            gsap.set(sectionContainerBg, {
-                transformOrigin: 'bottom',
-                opacity: 0,
-                scaleY: 0,
-            })
-            gsap.set(sectionTitle, {
-                opacity: 0,
-                x: 20,
-            })
-
-            gsap.set(sectionCta, {
-                opacity: 0,
-                scale: 0.8,
-                x: -20,
-            })
-            gsap.set(sectionBottomBar, {
-                opacity: 0,
-                scaleX: 0,
+            gsap.to(sectionBg, {
+                autoAlpha: 1,
+                scale: 1,
+                duration: 3,
+                scrollTrigger: {
+                    trigger: sectionBg,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: 1,
+                    markers: false,
+                },
             })
 
             // create timeline for section animation
             sectionTl.current = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top 70%',
+                    start: 'top bottom',
+                    markers: false,
                 },
                 defaults: {
-                    duration: 1.5,
-                    ease: 'power1.inOut',
+                    duration: 1,
+                    ease: 'power1.out',
                 },
+            })
+
+            // set initial styles to prevent flashing of unstyled content
+            gsap.set(sectionContainerBg, {
+                transformOrigin: 'bottom',
+                autoAlpha: 0,
+                scaleY: 0,
+            })
+            gsap.set(sectionTitle, {
+                autoAlpha: 0,
+                x: 20,
+            })
+
+            gsap.set(sectionCta, {
+                autoAlpha: 0,
+                scale: 0.8,
+                x: -20,
+            })
+            gsap.set(sectionBottomBar, {
+                autoAlpha: 0,
+                scaleX: 0,
             })
 
             // animate section elements
-            sectionTl.current.to(sectionBg, {
-                opacity: 1,
-                scale: 1,
-                duration: 3,
-            })
-
             sectionTl.current.to(
                 sectionBottomBar,
                 {
-                    opacity: 1,
+                    autoAlpha: 1,
                     scaleX: 1,
-                    duration: 2,
+                    duration: 1,
                 },
                 '<+=0.5'
             )
@@ -83,17 +92,16 @@ export default function Cta() {
             sectionTl.current.to(
                 sectionContainerBg,
                 {
-                    opacity: 1,
+                    autoAlpha: 1,
                     scaleY: 1,
-                    duration: 2,
                 },
-                '<'
+                '<+=0.5'
             )
 
             sectionTl.current.to(
                 sectionTitle,
                 {
-                    opacity: 1,
+                    autoAlpha: 1,
                     x: 0,
                 },
                 '<+=0.5'
@@ -102,7 +110,7 @@ export default function Cta() {
             sectionTl.current.to(
                 sectionCta,
                 {
-                    opacity: 1,
+                    autoAlpha: 1,
                     scale: 1,
                     x: 0,
                 },
@@ -137,7 +145,8 @@ export default function Cta() {
                     <PrimaryButton
                         className="section-cta"
                         text="Impulsionar Agora"
-                        href="https://api.whatsapp.com/send?phone=5519993230833"
+                        href="https://api.whatsapp.com/send?phone=5519983085819"
+                        linkType="external"
                     />
                 </div>
             </div>

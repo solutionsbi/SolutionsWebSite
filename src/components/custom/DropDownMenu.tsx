@@ -1,87 +1,136 @@
-/**
- * DropDownMenu Component
- *
- * What it is:
- * A reusable dropdown menu component that displays a list of menu items.
- *
- * What it does:
- * It renders a list of links based on the provided menu items.
- *
- * How it does it:
- * 1. It takes an array of menuItems as a prop.
- * 2. It maps over the menuItems array to create a list of Link components.
- * 3. Each Link is styled and positioned within a container div.
- *
- * How to use it:
- * <DropDownMenu menuItems={[
- *   { title: "Item 1", url: "/item1" },
- *   { title: "Item 2", url: "/item2" },
- *   ...
- * ]} />
- */
-import { useRef } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { Link } from 'react-router-dom'
 import { GhostButton } from './GhostButton'
 import { House } from 'lucide-react'
 import { FileQuestion } from 'lucide-react'
+import { Shield } from 'lucide-react'
+import { AlignJustify } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
+import facebookIcon from '@/assets/svg/social-icons/facebook-icon.svg'
+import linkedinIcon from '@/assets/svg/social-icons/linkedin-icon.svg'
+import edIcon from '@/assets/svg/tech-icons/ed-icon.svg'
+import biIcon from '@/assets/svg/tech-icons/bi-icon.svg'
+import sistemasIcon from '@/assets/svg/tech-icons/sistemas-icon.svg'
+import iaIcon from '@/assets/svg/tech-icons/ia-icon.svg'
+import transformacaoIcon from '@/assets/svg/tech-icons/transformacao-icon.svg'
+import sitesIcon from '@/assets/svg/tech-icons/sites-icon.svg'
+
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
 
 gsap.registerPlugin(useGSAP)
 
-interface menuItem {
-    title: string
-    url: string
-    icon?: string
+type DropDownMenuProps = {
+    isMobile: boolean
 }
 
-interface DropDownMenuProps {
-    menuItems: menuItem[]
-    isMobile?: boolean
-}
+export default function DropDownMenu({ isMobile }: DropDownMenuProps) {
+    const [isOpen, setIsOpen] = useState(false)
 
-export const DropDownMenu: React.FC<DropDownMenuProps> = ({
-    menuItems,
-    isMobile,
-}) => {
     return (
-        <div
-            className={`${isMobile && '-translate-x-full'} absolute bottom-0 left-0 h-max w-max translate-y-full overflow-hidden rounded-md border border-brand-blue bg-neutral-darkest/95 p-6 shadow-[0_0_10px_0_rgba(0,0,0,0.1)]`}
-        >
-            <ul className="flex flex-col gap-6">
-                {isMobile && (
-                    <div className="flex flex-col gap-3 border-b border-brand-blue pb-6">
-                        <li className="flex w-max items-center gap-3">
-                            <House />
-                            <GhostButton>
-                                <Link to="/">Início</Link>
-                            </GhostButton>
-                        </li>
-                        <li className="flex w-max items-center gap-3">
-                            <FileQuestion />
-                            <GhostButton>
-                                <Link to="/sobre">Sobre</Link>
-                            </GhostButton>
-                        </li>
+        <DropdownMenu onOpenChange={setIsOpen}>
+            <DropdownMenuTrigger>
+                {isMobile && <AlignJustify />}
+                {!isMobile && (
+                    <div
+                        className="group flex items-center gap-3"
+                        data-state={isOpen ? 'open' : 'closed'}
+                    >
+                        <span>Soluções</span>
+                        <ChevronDown className="transition-all duration-300 group-data-[state=open]:rotate-180" />
                     </div>
                 )}
-                {menuItems.map((menuItem, index) => (
-                    <li key={index}>
-                        <div className="flex items-center gap-3">
-                            {menuItem.icon && (
-                                <img
-                                    src={menuItem.icon}
-                                    alt={menuItem.title}
-                                    className="h-6 w-6"
-                                />
-                            )}
-                            <GhostButton>
-                                <Link to={menuItem.url}>{menuItem.title}</Link>
-                            </GhostButton>
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+                {isMobile && (
+                    <>
+                        {' '}
+                        <DropdownMenuItem className="flex items-center gap-2">
+                            <House className="h-4 w-4" />
+                            <Link to="/">Início</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem className="flex items-center gap-2">
+                            <FileQuestion className="h-4 w-4" />
+                            <Link to="/sobre">Sobre</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem className="flex items-center gap-2">
+                            <Shield className="h-4 w-4" />
+                            <Link to="/politica-de-privacidade">
+                                Política de Privacidade
+                            </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuSeparator />
+                    </>
+                )}
+                <DropdownMenuLabel>Soluções</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem className="flex items-center gap-2">
+                    <img
+                        src={edIcon}
+                        alt="Engenharia de Dados"
+                        className="h-4 w-4"
+                    />
+                    <Link to="/engenharia-de-dados">Engenharia de Dados</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="flex items-center gap-2">
+                    <img
+                        src={biIcon}
+                        alt="Business Intelligence"
+                        className="h-4 w-4"
+                    />
+                    <Link to="/business-intelligence">
+                        Business Intelligence
+                    </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="flex items-center gap-2">
+                    <img
+                        src={sistemasIcon}
+                        alt="Sistemas Personalizados"
+                        className="h-4 w-4"
+                    />
+                    <Link to="/sistemas-personalizados">
+                        Sistemas Personalizados
+                    </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="flex items-center gap-2">
+                    <img
+                        src={iaIcon}
+                        alt="Inteligência Artificial"
+                        className="h-4 w-4"
+                    />
+                    <Link to="/inteligencia-artificial">
+                        Inteligência Artificial
+                    </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="flex items-center gap-2">
+                    <img
+                        src={transformacaoIcon}
+                        alt="Transformação Digital"
+                        className="h-4 w-4"
+                    />
+                    <Link to="/transformacao-digital">
+                        Transformação Digital
+                    </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="flex items-center gap-2">
+                    <img
+                        src={sitesIcon}
+                        alt="Websites e E-commerce"
+                        className="h-4 w-4"
+                    />
+                    <Link to="/websites-e-ecommerce">
+                        Websites e E-commerce
+                    </Link>
+                </DropdownMenuItem>
+            </DropdownMenuContent>
+        </DropdownMenu>
     )
 }

@@ -47,40 +47,41 @@ export default function Faq({ faqs }: FaqProps) {
 
             // set initial styles to prevent flashing of unstyled content
             gsap.set(sectionTitle, {
-                opacity: 0,
-                x: 20,
+                autoAlpha: 0,
+                y: 100,
             })
             gsap.set(sectionFaqs, {
-                opacity: 0,
-                y: 50,
+                autoAlpha: 0,
+                y: -100,
             })
 
             // create timeline for section animation
             sectionTl.current = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top 70%',
+                    start: 'top bottom',
+                    markers: false,
                 },
                 defaults: {
-                    duration: 1.5,
-                    ease: 'power1.inOut',
+                    duration: 1,
+                    ease: 'power4.out',
                 },
             })
 
             // add animation to section elements
             sectionTl.current
                 .to(sectionTitle, {
-                    opacity: 1,
-                    x: 0,
+                    autoAlpha: 1,
+                    y: 0,
                 })
                 .to(
                     sectionFaqs,
                     {
-                        opacity: 1,
+                        autoAlpha: 1,
                         y: 0,
-                        stagger: 0.1,
+                        stagger: 0.2,
                     },
-                    '<+=0.5'
+                    '<+=0.2'
                 )
         },
         { scope: container }

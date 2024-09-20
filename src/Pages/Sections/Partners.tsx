@@ -124,82 +124,98 @@ export default function Partners() {
             const sectionStatsTexts = gsap.utils.toArray(
                 container.current.querySelectorAll('.stats-text')
             )
-            // set initial styles to prevent flashing of unstyled content
+
+            // background animation
             gsap.set(sectionBg, {
-                opacity: 0,
+                autoAlpha: 0,
                 scale: 0.8,
             })
-            gsap.set(sectionTitle, {
-                opacity: 0,
-                x: 50,
-            })
-            gsap.set(sectionLogos, {
-                opacity: 0,
-                y: 50,
-            })
-            gsap.set(sectionStatsPlus, {
-                opacity: 0,
-                scale: 0.8,
-            })
-            gsap.set(sectionStatsNumbers, {
-                opacity: 0,
-                y: 50,
-            })
-            gsap.set(sectionStatsTexts, {
-                opacity: 0,
-                x: 50,
+            gsap.to(sectionBg, {
+                autoAlpha: 1,
+                scale: 1,
+                duration: 2,
+                ease: 'power1.inOut',
+                scrollTrigger: {
+                    trigger: sectionBg,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    markers: false,
+                    scrub: 1,
+                },
             })
 
-            // create a scrolltriggered timeline
-            enterTl.current = gsap.timeline({
-                defaults: {
-                    duration: 1,
-                    ease: 'power1.out',
-                },
+            // title animation
+            gsap.set(sectionTitle, {
+                autoAlpha: 0,
+                y: -100,
+            })
+            gsap.to(sectionTitle, {
+                autoAlpha: 1,
+                y: 0,
+                duration: 1,
+                ease: 'power1.out',
                 scrollTrigger: {
-                    trigger: container.current,
-                    start: 'top 70%',
+                    trigger: sectionTitle,
+                    start: 'top 80%',
                     markers: false,
                 },
             })
 
-            // add animations to the timeline
-            enterTl.current
-                .to(sectionBg, {
-                    opacity: 1,
-                    scale: 1,
-                    duration: 5,
+            // logos animation
+            gsap.set(sectionLogos, {
+                autoAlpha: 0,
+                y: 50,
+            })
+            gsap.to(sectionLogos, {
+                autoAlpha: 1,
+                y: 0,
+                stagger: 0.1,
+                duration: 0.5,
+                ease: 'power1.inOut',
+                scrollTrigger: {
+                    trigger: '.logos-container',
+                    start: 'top 80%',
+                    markers: false,
+                },
+            })
+            // stats animation
+            gsap.set(sectionStatsPlus, {
+                autoAlpha: 0,
+                scale: 0.8,
+            })
+            gsap.set(sectionStatsNumbers, {
+                autoAlpha: 0,
+                y: 50,
+            })
+            gsap.set(sectionStatsTexts, {
+                autoAlpha: 0,
+                x: 50,
+            })
+            const statsTl = gsap
+                .timeline({
+                    scrollTrigger: {
+                        trigger: '.stats-container',
+                        start: 'top bottom',
+                        markers: false,
+                    },
+                    defaults: {
+                        duration: 0.8,
+                        ease: 'power4.out',
+                    },
                 })
                 .to(
-                    sectionTitle,
+                    sectionStatsPlus,
                     {
-                        opacity: 1,
-                        x: 0,
-                    },
-                    '<+=1'
-                )
-                .to(
-                    sectionLogos,
-                    {
-                        opacity: 1,
-                        y: 0,
+                        autoAlpha: 1,
+                        scale: 1,
                         stagger: 0.1,
                     },
                     '<+=0.2'
                 )
                 .to(
-                    sectionStatsPlus,
-                    {
-                        opacity: 1,
-                        scale: 1,
-                        stagger: 0.1,
-                    },
-                    '<+=0.5'
-                )
-                .to(
                     sectionStatsNumbers,
                     {
-                        opacity: 1,
+                        autoAlpha: 1,
                         y: 0,
                         stagger: 0.1,
                         onStart: () => {
@@ -213,7 +229,7 @@ export default function Partners() {
                 .to(
                     sectionStatsTexts,
                     {
-                        opacity: 1,
+                        autoAlpha: 1,
                         x: 0,
                         stagger: 0.1,
                     },
@@ -242,7 +258,7 @@ export default function Partners() {
                     </h2>
                 </div>
 
-                <div className="relative mx-auto grid w-max grid-cols-2 items-center justify-items-center gap-2 py-16 md:grid-cols-3 lg:grid-cols-4 lg:py-20 xl:grid-cols-5">
+                <div className="logos-container relative mx-auto grid w-max grid-cols-2 items-center justify-items-center gap-2 py-16 md:grid-cols-3 lg:grid-cols-4 lg:py-20 xl:grid-cols-5">
                     {partnersData.map((partner, index) => (
                         <div
                             key={index}
@@ -257,7 +273,7 @@ export default function Partners() {
                     ))}
                 </div>
 
-                <div className="relative flex flex-wrap items-center justify-center gap-6 md:gap-16">
+                <div className="stats-container relative flex flex-wrap items-center justify-center gap-6 md:gap-16">
                     {stats.map((stats, index) => (
                         <h3
                             key={index}

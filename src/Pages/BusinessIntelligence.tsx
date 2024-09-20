@@ -22,7 +22,7 @@ export default function BusinessIntelligence() {
                 }
                 description="Transforme seus dados em insights valiosos e tome decisões estratégicas com base em informações confiáveis e atualizadas."
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',
@@ -83,7 +83,7 @@ export default function BusinessIntelligence() {
                     },
                 ]}
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',

@@ -22,7 +22,7 @@ export default function SistemasPersonalizados() {
                 }
                 description="Desenvolvemos soluções sob medida para atender às necessidades específicas da sua empresa, garantindo eficiência, segurança e escalabilidade."
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',
@@ -78,7 +78,7 @@ export default function SistemasPersonalizados() {
                     },
                 ]}
                 cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: 'Agende Uma Consultoria',
                     additionalText: 'Fale Conosco',
                     linkType: 'external',

@@ -220,7 +220,7 @@ export function Card({ title, description, url, icon }: Card) {
             onMouseLeave={handleMouseLeave}
             ref={container}
             to={url}
-            className="service-card relative flex h-[294px] select-none flex-col overflow-hidden border-t-2 border-brand-blue p-6 lg:h-[320px] lg:p-8 xl:h-[350px]"
+            className="service-card relative flex h-[350px] select-none flex-col overflow-hidden border-t-2 border-brand-blue p-6 lg:p-8"
         >
             {/* card header */}
             <div className="flex items-center justify-between">
@@ -238,7 +238,7 @@ export function Card({ title, description, url, icon }: Card) {
             </div>
 
             {/* card footer */}
-            <div className="relative mt-10 flex w-full items-center justify-between overflow-hidden">
+            <div className="relative mt-auto flex h-max w-full items-center justify-between overflow-hidden">
                 <span className="text-md font-semibold uppercase text-neutral-100">
                     Saiba mais
                 </span>
@@ -270,10 +270,10 @@ export default function Carrossel() {
             )
 
             enterTl.current = gsap.timeline({
-                delay: 0.5,
                 defaults: {
-                    duration: 1.5,
-                    ease: 'power1.out',
+                    delay: 0.5,
+                    duration: 1.8,
+                    ease: 'power4.out',
                 },
                 scrollTrigger: {
                     trigger: container.current,
@@ -284,17 +284,18 @@ export default function Carrossel() {
             enterTl.current.from(carouselCards, {
                 opacity: 0,
                 y: 100,
-                stagger: 0.5,
+                stagger: 0.2,
             })
 
             enterTl.current.from(
                 carouselButtons,
                 {
                     opacity: 0,
+                    duration: 1,
                     x: (index: number) => (index === 0 ? 100 : -100),
-                    stagger: 0.5,
+                    stagger: 0.2,
                 },
-                '<+=1.5'
+                '<+=0.5'
             )
         },
         { scope: container }

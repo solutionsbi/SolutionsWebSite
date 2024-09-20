@@ -65,58 +65,68 @@ export default function Beneficios({
                 container.current.querySelectorAll('.benefit-item p')
             )
 
-            // set initial styles to prevent flashing of unstyled content
+            //background animation
             gsap.set(sectionBg, {
-                opacity: 0,
+                autoAlpha: 0,
                 scale: 0.8,
             })
+            gsap.to(sectionBg, {
+                autoAlpha: 1,
+                scale: 1,
+                scrollTrigger: {
+                    trigger: container.current,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    markers: false,
+                    scrub: 1,
+                },
+            })
+
             gsap.set(sectionTitle, {
-                opacity: 0,
+                autoAlpha: 0,
                 y: 20,
             })
             gsap.set(sectionDescription, {
-                opacity: 0,
+                autoAlpha: 0,
                 y: 20,
             })
             gsap.set(sectionBenefits, {
-                opacity: 0,
+                autoAlpha: 0,
                 x: -20,
             })
 
             gsap.set(sectionsCtas, {
-                opacity: 0,
+                autoAlpha: 0,
                 x: 20,
             })
 
-            // create timeline
             enterTl.current = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top 80%',
+                    start: 'top 90%',
                     markers: false,
                 },
                 defaults: {
-                    duration: 1,
-                    ease: 'power1.inOut',
+                    duration: 0.5,
+                    ease: 'power1.out',
                 },
             })
 
-            enterTl.current.to(sectionBg, { opacity: 1, scale: 1, duration: 4 })
-            enterTl.current.to(sectionTitle, { opacity: 1, y: 0 }, '<+=1')
+            enterTl.current.to(sectionTitle, { autoAlpha: 1, y: 0 }, '<+=1')
             enterTl.current.to(
                 sectionDescription,
-                { opacity: 1, y: 0 },
+                { autoAlpha: 1, y: 0 },
                 '<+=0.2'
             )
             enterTl.current.to(
                 sectionBenefits,
-                { opacity: 1, x: 0, stagger: 0.5 },
+                { autoAlpha: 1, x: 0, stagger: 0.5 },
                 '<+=0.2'
             )
             enterTl.current.to(
                 sectionsCtas,
-                { opacity: 1, x: 0, stagger: 0.1 },
-                '<+=0.5'
+                { autoAlpha: 1, x: 0, stagger: 0.1 },
+                '<+=0.2'
             )
         },
         { scope: container }
@@ -131,10 +141,10 @@ export default function Beneficios({
                 />
             </div>
 
-            <div className="grid h-full items-center">
-                <div className="container grid items-center justify-items-center lg:grid-cols-2 lg:gap-20">
+            <div className="grid h-full">
+                <div className="container grid justify-items-center lg:grid-cols-2 lg:gap-20">
                     <div className="mb-16 flex w-full flex-col">
-                        <div className="flex flex-col items-center text-center lg:items-start lg:text-start">
+                        <div className="flex flex-col text-center lg:items-start lg:text-start">
                             <h2 className="section-title mb-5 md:mb-6">
                                 {title}
                             </h2>
