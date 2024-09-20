@@ -113,8 +113,8 @@ export function MenuDeNavegaçãoPrincipal() {
                         to="/"
                         className={({ isActive }) =>
                             isActive
-                                ? 'active text-blue-500'
-                                : 'transition-colors duration-300 hover:text-blue-500'
+                                ? 'active text-brand-blue'
+                                : 'transition-colors duration-300 hover:text-brand-blue'
                         }
                     >
                         Início
@@ -126,8 +126,8 @@ export function MenuDeNavegaçãoPrincipal() {
                         to="/sobre"
                         className={({ isActive }) =>
                             isActive
-                                ? 'active text-blue-500'
-                                : 'transition-colors duration-300 hover:text-blue-500'
+                                ? 'active text-brand-blue'
+                                : 'transition-colors duration-300 hover:text-brand-blue'
                         }
                     >
                         Sobre
@@ -157,7 +157,7 @@ export function MenuDeNavegaçãoPrincipal() {
                         Contato
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="">
-                        <ul className="grid w-max gap-3 p-4 lg:grid-cols-[200px_250px]">
+                        <ul className="grid w-max gap-3 p-4 md:grid-cols-[200px_250px]">
                             <li className="">
                                 <NavigationMenuLink asChild>
                                     <div className="flex h-full w-full select-none flex-col justify-between rounded-md border-neutral-700 bg-brand-blue bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md">

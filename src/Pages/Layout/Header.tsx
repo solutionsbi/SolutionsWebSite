@@ -15,11 +15,11 @@ export default function Header() {
                     />
                 </NavLink>
 
-                <div className="hidden lg:flex lg:w-full">
+                <div className="hidden md:flex md:w-full">
                     <MenuDeNavegaçãoPrincipal />
                 </div>
 
-                <div className="block lg:hidden">
+                <div className="block md:hidden">
                     <MenuDeNavegaçãoMobile />
                 </div>
             </div>
