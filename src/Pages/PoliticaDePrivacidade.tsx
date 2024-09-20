@@ -14,34 +14,26 @@ export default function PoliticaDePrivacidade() {
                     <section className="flex flex-col gap-6">
                         <h2 className="normal-case">Coleta de Informações</h2>
                         <p className="">
-                            Nós coletamos informações pessoais, como o seu
-                            e-mail, quando você se inscreve na nossa newsletter.
-                            Além disso, utilizamos cookies e outras tecnologias
-                            para obter informações sobre a sua navegação no
-                            nosso site, incluindo o seu endereço IP, tipo de
-                            navegador utilizado, páginas acessadas e o tempo de
-                            permanência em cada uma delas. Os cookies, por sua
-                            vez, são pequenos arquivos de dados armazenados no
-                            seu dispositivo, e nos ajudam a personalizar a sua
-                            experiência, lembrar das suas preferências e
-                            entender como você interage com o site.
+                            Nós não coletamos informações pessoais diretamente
+                            dos usuários. No entanto, podemos obter informações
+                            anônimas sobre a sua navegação no nosso site,
+                            incluindo o seu endereço IP, tipo de navegador
+                            utilizado, páginas acessadas e o tempo de
+                            permanência em cada uma delas. Essas informações são
+                            coletadas de forma agregada e não permitem a
+                            identificação individual dos usuários.
                         </p>
                     </section>
                     <section className="flex flex-col gap-6">
                         <h2 className="normal-case">Uso das Informações</h2>
                         <p className="">
-                            As informações que coletamos têm como finalidade
-                            principal melhorar a sua experiência conosco.
-                            Utilizamos esses dados para enviar newsletters,
-                            atualizações de produtos e ofertas especiais que
-                            possam ser do seu interesse. Além disso, as
-                            informações nos ajudam a analisar a interação dos
-                            usuários com o site, permitindo-nos otimizar nossos
-                            serviços e conteúdos. Através dessas análises,
-                            conseguimos também personalizar a sua experiência no
-                            site, oferecendo um conteúdo mais relevante e
-                            adequado às suas preferências e histórico de
-                            navegação.
+                            As informações anônimas que coletamos têm como
+                            finalidade principal melhorar a sua experiência
+                            conosco. Utilizamos esses dados para analisar a
+                            interação dos usuários com o site, permitindo-nos
+                            otimizar nossos serviços e conteúdos. Através dessas
+                            análises, conseguimos melhorar a usabilidade e o
+                            desempenho do nosso site para todos os visitantes.
                         </p>
                     </section>
                     <section className="flex flex-col gap-6">
@@ -132,11 +124,28 @@ export default function PoliticaDePrivacidade() {
                         <p className="">
                             Se você tiver qualquer dúvida, preocupação ou
                             solicitação relacionada a esta Política de
-                            Privacidade, entre em contato conosco pelo e-mail:
-                            seuemail@dominio.com. Estamos à disposição para
-                            esclarecer qualquer questão e garantir que você
-                            tenha uma experiência segura e satisfatória com o
-                            nosso serviço.
+                            Privacidade, entre em contato conosco através de:
+                            <ul className="ml-4 list-disc py-2 pl-4">
+                                <li>
+                                    <a
+                                        href="mailto:contato@solutionsbi.com.br"
+                                        className="text-brand-blue underline"
+                                    >
+                                        contato@solutionsbi.com.br
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://api.whatsapp.com/send?phone=5519983085819"
+                                        className="text-brand-blue underline"
+                                    >
+                                        +55 (19) 98308-5819
+                                    </a>
+                                </li>
+                            </ul>
+                            Estamos à disposição para esclarecer qualquer
+                            questão e garantir que você tenha uma experiência
+                            segura e satisfatória com o nosso serviço.
                         </p>
                     </section>
                 </div>
