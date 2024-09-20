@@ -27,7 +27,7 @@ export default function Home() {
                 }
                 cta={{
                     text: 'Impulsione Seu Negócio',
-                    href: 'https://api.whatsapp.com/send?phone=5519993230833',
+                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     additionalText: 'Saiba mais',
                     linkType: 'external',
                 }}
