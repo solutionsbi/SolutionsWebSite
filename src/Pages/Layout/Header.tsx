@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { MenuDeNavegaçãoPrincipal } from '@/components/custom/MenuDeNavegaçãoPrincipal'
-// import { MenuDeNavegaçãoSecundária } from '@/components/custom/MenuDeNavegaçãoSecundária'
+import MenuDeNavegaçãoMobile from '@/components/custom/MenuDeNavegaçãoMobile'
 import logo from '@assets/svg/logo.svg'
 
 export default function Header() {
@@ -20,7 +20,7 @@ export default function Header() {
                 </div>
 
                 <div className="block lg:hidden">
-                    {/* <MenuDeNavegaçãoSecundária /> */}
+                    <MenuDeNavegaçãoMobile />
                 </div>
             </div>
         </header>

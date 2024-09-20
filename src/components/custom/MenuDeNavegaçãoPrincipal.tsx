@@ -27,7 +27,7 @@ import { MapPin } from 'lucide-react'
 import { Linkedin } from 'lucide-react'
 import { Facebook } from 'lucide-react'
 
-const informacoesDeServicos: {
+export const informacoesDeServicos: {
     title: string
     href: string
     description: string
@@ -77,7 +77,7 @@ const informacoesDeServicos: {
     },
 ]
 
-const informacoesDeContato: {
+export const informacoesDeContato: {
     title: string
     href: string
     description: string

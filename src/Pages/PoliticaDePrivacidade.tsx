@@ -125,24 +125,26 @@ export default function PoliticaDePrivacidade() {
                             Se você tiver qualquer dúvida, preocupação ou
                             solicitação relacionada a esta Política de
                             Privacidade, entre em contato conosco através de:
-                            <ul className="ml-4 list-disc py-2 pl-4">
-                                <li>
-                                    <a
-                                        href="mailto:contato@solutionsbi.com.br"
-                                        className="text-brand-blue underline"
-                                    >
-                                        contato@solutionsbi.com.br
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="https://api.whatsapp.com/send?phone=5519983085819"
-                                        className="text-brand-blue underline"
-                                    >
-                                        +55 (19) 98308-5819
-                                    </a>
-                                </li>
-                            </ul>
+                        </p>
+                        <ul className="ml-4 list-disc py-2 pl-4">
+                            <li>
+                                <a
+                                    href="mailto:contato@solutionsbi.com.br"
+                                    className="text-brand-blue underline"
+                                >
+                                    contato@solutionsbi.com.br
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=5519983085819"
+                                    className="text-brand-blue underline"
+                                >
+                                    +55 (19) 98308-5819
+                                </a>
+                            </li>
+                        </ul>
+                        <p>
                             Estamos à disposição para esclarecer qualquer
                             questão e garantir que você tenha uma experiência
                             segura e satisfatória com o nosso serviço.
