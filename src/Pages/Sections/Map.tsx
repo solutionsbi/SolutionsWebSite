@@ -17,16 +17,8 @@ export const Map = () => {
                 container.current?.querySelectorAll('.country-icon') || []
             ) as SVGElement[]
 
-            gsap.set(container.current, {
-                autoAlpha: 0,
-                scale: 0.8,
-            })
             gsap.set(countries, {
                 autoAlpha: 0,
-                fill: '#111111',
-                fillOpacity: '50%',
-                stroke: '#FFFFFF',
-                strokeOpacity: '10%',
             })
             gsap.set(countryIcons, {
                 autoAlpha: 0,
@@ -46,17 +38,11 @@ export const Map = () => {
             })
 
             tl.current
-                .to([container.current], {
-                    scale: 1,
-                    autoAlpha: 1,
-                    duration: 2,
-                })
                 .to(
                     countries,
                     {
                         autoAlpha: 1,
-                        fill: '#2960F7',
-                        fillOpacity: '1',
+
                         stagger: 0.05,
                     },
                     '<+=0.2'
