@@ -5,6 +5,7 @@ import { Map } from './Sections/Map'
 import Benefícios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Cta from './Sections/Cta'
+import TestTranslation from './Sections/TestTranslation'
 
 import heroImage from '@/assets/images/Background/11.jpeg'
 import benefitsImage from '@/assets/images/Background/firefly/6.jpg'
@@ -12,6 +13,7 @@ import benefitsImage from '@/assets/images/Background/firefly/6.jpg'
 export default function Home() {
     return (
         <div className="grid">
+            <TestTranslation />
             <Hero
                 position="center"
                 title={

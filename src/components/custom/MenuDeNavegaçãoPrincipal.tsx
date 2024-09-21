@@ -14,6 +14,8 @@ import {
     navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 
+import { LanguageSelector } from '@/components/custom/LanguageSelector'
+
 import edIcon from '@/assets/svg/tech-icons/ed-icon.svg'
 import biIcon from '@/assets/svg/tech-icons/bi-icon.svg'
 import sistemasIcon from '@/assets/svg/tech-icons/sistemas-icon.svg'
@@ -150,6 +152,10 @@ export function MenuDeNavegaçãoPrincipal() {
                             ))}
                         </ul>
                     </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <LanguageSelector />
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>

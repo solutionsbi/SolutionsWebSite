@@ -1,79 +1,27 @@
 {
-    // An array of file names to be included in the program.
-    "files": [],
-
-    // References to other tsconfig files for project references.
-    "references": [
-        {
-            "path": "./tsconfig.app.json" // Path to the referenced tsconfig file.
-        }
-    ],
-
     "compilerOptions": {
-        // Base directory to resolve non-relative module names.
-        "baseUrl": ".",
-
-        // A series of entries which re-map imports to lookup locations relative to the baseUrl.
+        "target": "es6", // Compile to ECMAScript 2015 (ES6)
+        "module": "esnext", // Use ES modules (import/export)
+        "lib": ["dom", "dom.iterable", "esnext"], // Include type definitions for DOM, DOM iterables, and ESNext
+        "jsx": "react-jsx", // Support JSX in .tsx files (React 17+ style)
+        "strict": true, // Enable all strict type-checking options
+        "esModuleInterop": true, // Allow default imports from modules with no default export
+        "skipLibCheck": true, // Skip type checking of declaration files
+        "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+        "moduleResolution": "node", // Resolve modules using Node.js style
+        "resolveJsonModule": true, // Allow importing .json files
+        "isolatedModules": true, // Ensure each file can be safely transpiled without relying on other imports
+        "noEmit": true, // Do not emit outputs (useful when using Babel for transpilation)
+        "baseUrl": ".", // Base directory to resolve non-relative module names
         "paths": {
-            "@/*": ["./src/*"], // Alias for the src directory.
-            "@assets/*": ["./src/assets/*"]
-        },
-
-        // Specify ECMAScript target version.
-        "target": "es5",
-
-        // Specify module code generation.
-        "module": "esnext",
-
-        // Specify library files to be included in the compilation.
-        "lib": ["dom", "dom.iterable", "esnext"],
-
-        // Allow JavaScript files to be compiled.
-        "allowJs": true,
-
-        // Skip type checking of all declaration files.
-        "skipLibCheck": true,
-
-        // Enables interoperability between CommonJS and ES Modules.
-        "esModuleInterop": true,
-
-        // Allow default imports from modules with no default export.
-        "allowSyntheticDefaultImports": true,
-
-        // Enable all strict type-checking options.
-        "strict": true,
-
-        // Ensure that casing is correct in imports.
-        "forceConsistentCasingInFileNames": true,
-
-        // Report errors for fallthrough cases in switch statements.
-        "noFallthroughCasesInSwitch": true,
-
-        // Specify module resolution strategy.
-        "moduleResolution": "node",
-
-        // Include modules imported with .json extension.
-        "resolveJsonModule": true,
-
-        // Ensure each file can be safely transpiled without relying on other imports.
-        "isolatedModules": true,
-
-        // Do not emit outputs.
-        "noEmit": true,
-
-        // Specify JSX code generation.
-        "jsx": "react-jsx",
-
-        // Enable project references and incremental builds.
-        "composite": true,
-
-        // Specify additional type definitions.
-        "typeRoots": ["./node_modules/@types", "./src/types"],
-
-        // Specify additional types to be included.
-        "types": ["react", "react-dom"]
+            "@/*": ["./src/*"], // Path alias for imports (e.g., @/components)
+            "@assets": ["./src/assets/*"], // Path alias for imports (e.g., @/components)
+            "@components": ["./src/components/*"], // Path alias for imports (e.g., @/components)
+            "@sections": ["./src/Pages/Sections/*"], // Path alias for imports (e.g., @/components)
+            "@pages": ["./src/Pages/*"] // Path alias for imports (e.g., @/components)
+        }
     },
 
-    // An array of glob patterns that specify the files to be included in the program.
-    "include": ["src"]
+    "include": ["src/**/*.ts", "src/**/*.tsx"], // Include all TypeScript and TSX files in the src directory
+    "exclude": ["node_modules"] // Exclude node_modules directory from compilation
 }
