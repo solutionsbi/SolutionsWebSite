@@ -1,5 +1,5 @@
 // Import necessary dependencies and components
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -71,7 +71,9 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
     // Function to toggle the menu animation
     const toggleTimeline = contextSafe(() => {
         if (tl.current) {
-            tl.current.reversed(!tl.current.reversed())
+            const newState = !tl.current.reversed()
+            tl.current.reversed(newState)
+            setIsMenuOpen(!newState)
         }
     })
 
@@ -81,8 +83,35 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
     const closeMenu = contextSafe(() => {
         if (tl.current && !tl.current.reversed()) {
             tl.current.reverse()
+            setIsMenuOpen(false)
         }
     })
+
+    // State to control the menu open/close
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    // Prevent scrolling when menu is open
+    useEffect(() => {
+        const body = document.body
+        if (isMenuOpen) {
+            body.style.overflow = 'hidden'
+            body.style.height = '100vh'
+            body.style.position = 'fixed'
+            body.style.width = '100%'
+        } else {
+            body.style.overflow = ''
+            body.style.height = ''
+            body.style.position = ''
+            body.style.width = ''
+        }
+
+        return () => {
+            body.style.overflow = ''
+            body.style.height = ''
+            body.style.position = ''
+            body.style.width = ''
+        }
+    }, [isMenuOpen])
 
     // Close menu when navigating away
     useEffect(() => {
@@ -101,16 +130,16 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
                 aria-label="Toggle mobile menu"
                 aria-expanded="false"
             >
-                <span className="menu-trigger-bar top h-0.5 w-7 bg-white"></span>
-                <span className="menu-trigger-bar middle h-0.5 w-7 bg-white"></span>
-                <span className="menu-trigger-bar bottom h-0.5 w-7 bg-white"></span>
+                <span className="menu-trigger-bar top h-0.5 w-7 rounded-lg bg-white"></span>
+                <span className="menu-trigger-bar middle h-0.5 w-7 rounded-lg bg-white"></span>
+                <span className="menu-trigger-bar bottom h-0.5 w-7 rounded-lg bg-white"></span>
             </button>
 
             {/* Side menu container */}
             <div
                 ref={sideMenuRef}
-                className="side-menu-container fixed right-0 top-[10vh] z-[9999] grid h-[90vh] w-full translate-x-full transform grid-cols-[1fr_3fr] gap-4 border-t border-brand-blue bg-neutral-darkest/80 p-6 backdrop-blur"
-                aria-hidden="true"
+                className="side-menu-container fixed inset-0 z-[9999] mt-[10vh] grid h-[90vh] w-full translate-x-full transform grid-cols-[1fr_3fr] gap-4 overflow-y-auto border-t border-brand-blue bg-neutral-darkest/80 p-6 backdrop-blur"
+                aria-hidden={!isMenuOpen}
             >
                 {/* Vertical bar for visual effect */}
                 <div
@@ -118,7 +147,7 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
                     role="presentation"
                 ></div>
                 {/* Navigation menu */}
-                <nav className="menu flex h-full w-full flex-col overflow-hidden text-sm font-normal">
+                <nav className="menu flex h-full w-full flex-col overflow-y-scroll text-sm font-normal">
                     {/* Institutional links */}
                     <section className="link-group-1 flex flex-col gap-4">
                         <h2 className="text-lg font-semibold">Institucional</h2>
