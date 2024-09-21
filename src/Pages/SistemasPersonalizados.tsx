@@ -112,7 +112,7 @@ export default function SistemasPersonalizados() {
                     },
                 ]}
             />
-            <Solucoes />
+            <Solucoes title={true} />
             <Cta />
         </>
     )

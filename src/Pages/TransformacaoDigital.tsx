@@ -107,7 +107,7 @@ export default function TransformacaoDigital() {
                     },
                 ]}
             />
-            <Solucoes />
+            <Solucoes title={true} />
             <Cta />
         </>
     )

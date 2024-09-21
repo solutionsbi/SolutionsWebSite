@@ -117,7 +117,7 @@ export default function InteligenciaArtificial() {
                     },
                 ]}
             />
-            <Solucoes />
+            <Solucoes title={true} />
             <Cta />
         </>
     )

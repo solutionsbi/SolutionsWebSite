@@ -113,7 +113,7 @@ export default function WebsistesEcommerce() {
                     },
                 ]}
             />
-            <Solucoes />
+            <Solucoes title={true} />
             <Cta />
         </>
     )

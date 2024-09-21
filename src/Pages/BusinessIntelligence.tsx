@@ -116,7 +116,7 @@ export default function BusinessIntelligence() {
                     },
                 ]}
             />
-            <Solucoes />
+            <Solucoes title={true} />
             <Cta />
         </>
     )
