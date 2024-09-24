@@ -1,4 +1,124 @@
 {
-    "greeting": "Hello",
-    "toggleLanguage": "Mudar para Português"
+    "paginas": {
+        "home": {
+            "sections": {
+                "hero": {
+                    "title": {
+                        "part1": "Solutions in",
+                        "part2": "technology",
+                        "part3": "for your business"
+                    },
+                    "description": "At SolutionsBI, we offer technology solutions to help your company grow, innovate, and stand out in the market. Learn about our services and discover how we can help boost your business.",
+                    "cta": {
+                        "text": "Boost Your Business",
+                        "additionalText": "Learn more"
+                    }
+                },
+                "benefits": {
+                    "title": {
+                        "part1": "Our",
+                        "part2": "Values"
+                    },
+                    "description": "At SolutionsBI, we offer technology solutions to help your company grow, innovate, and stand out in the market. Learn about our services and discover how we can help boost your business.",
+                    "cta": {
+                        "text": "Boost Your Business",
+                        "additionalText": "Learn more"
+                    },
+                    "cards": [
+                        {
+                            "title": "Mission",
+                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                        },
+                        {
+                            "title": "Vision",
+                            "description": "Our vision is to be the best technology company in Brazil and to be recognized internationally."
+                        },
+                        {
+                            "title": "Values",
+                            "description": "Our values are honesty, transparency, ethics, and quality."
+                        }
+                    ]
+                },
+                "faq": {
+                    "title": {
+                        "part1": "Frequently",
+                        "part2": "Asked Questions"
+                    },
+                    "cards": [
+                        {
+                            "question": "How can I hire SolutionsBI's services?",
+                            "answer": "To hire our services, contact us through our phone number or email."
+                        },
+                        {
+                            "question": "What are SolutionsBI's business hours?",
+                            "answer": "Our business hours are Monday to Friday, from 8 AM to 6 PM."
+                        },
+                        {
+                            "question": "Does SolutionsBI offer technical support?",
+                            "answer": "Yes, we offer technical support for our clients."
+                        },
+                        {
+                            "question": "Does SolutionsBI offer any discount for students?",
+                            "answer": "Yes, we offer a discount for students."
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "components": {
+        "solutions": {
+            "title": "Our Solutions",
+            "description": "We offer a wide range of solutions to help your company grow, innovate, and stand out in the market.",
+            "solutionsCarousel": {
+                "solutionsCards": [
+                    {
+                        "title": {
+                            "part1": "Data",
+                            "part2": "Engineering"
+                        },
+                        "description": "We offer complete data engineering solutions, from collection to large volume analysis, supporting strategic decisions and promoting continuous innovation in your company."
+                    },
+                    {
+                        "title": {
+                            "part1": "Business",
+                            "part2": "Intelligence"
+                        },
+                        "description": "We transform data into strategic insights, optimizing operations and decisions. BI provides a clear view of your business, allowing quick reactions and new growth opportunities."
+                    },
+                    {
+                        "title": {
+                            "part1": "Custom",
+                            "part2": "Systems"
+                        },
+                        "description": "We develop customized systems to meet the specific needs of each client, ensuring efficiency and agility in task execution."
+                    },
+                    {
+                        "title": {
+                            "part1": "Artificial",
+                            "part2": "Intelligence"
+                        },
+                        "description": "We offer artificial intelligence solutions to help your company grow, innovate, and stand out in the market."
+                    },
+                    {
+                        "title": {
+                            "part1": "Digital",
+                            "part2": "Transformation"
+                        },
+                        "description": "We offer digital transformation solutions to help your company grow, innovate, and stand out in the market."
+                    },
+                    {
+                        "title": {
+                            "part1": "Websites",
+                            "part2": "and E-commerce"
+                        },
+                        "description": "We offer websites and e-commerce solutions to help your company grow, innovate, and stand out in the market."
+                    }
+                ],
+                "cta": {
+                    "text": "Learn more"
+                }
+            }
+        }
+    }
 }

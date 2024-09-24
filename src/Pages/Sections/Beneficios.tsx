@@ -14,7 +14,7 @@ import icon4 from '@/assets/svg/abstract-icons/icon4.svg'
 
 const icons = [icon1, icon2, icon3, icon4]
 
-type Benefit = {
+export type Benefit = {
     title: string
     description: string
 }

@@ -20,7 +20,7 @@ import icon5 from '@/assets/svg/abstract-icons/icon5.svg'
 
 const icons = [icon1, icon2, icon3, icon4, icon5]
 
-type Faq = {
+export type Faq = {
     question: string
     answer: string
 }

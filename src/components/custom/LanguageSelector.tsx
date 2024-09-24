@@ -17,20 +17,20 @@ export function LanguageSelector() {
 
     return (
         <Select value={i18n.language} onValueChange={changeLanguage}>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger>
                 <SelectValue placeholder="Language" />
             </SelectTrigger>
             <SelectContent>
-                <SelectItem value="pt-BR">
+                <SelectItem value="pt">
                     <div className="flex items-center">
                         <FlagIcon code="BR" size={16} className="mr-2" />
-                        Português
+                        Pt
                     </div>
                 </SelectItem>
-                <SelectItem value="en-US">
+                <SelectItem value="en">
                     <div className="flex items-center">
                         <FlagIcon code="US" size={16} className="mr-2" />
-                        English
+                        Eng
                     </div>
                 </SelectItem>
             </SelectContent>

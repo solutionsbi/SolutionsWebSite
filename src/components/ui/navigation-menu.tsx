@@ -30,22 +30,24 @@ import { cn } from '@/lib/utils'
  * 3. Customize styles using the provided className props or by modifying the cva functions.
  */
 
-// NavigationMenu is the root component that wraps the entire navigation structure.
-// It provides context for all child components and handles the overall positioning.
+// Add this type definition if it's not already present
+type NavigationMenuProps = React.ComponentPropsWithoutRef<
+    typeof NavigationMenuPrimitive.Root
+> & {
+    align?: 'left' | 'right'
+}
+
 const NavigationMenu = React.forwardRef<
     React.ElementRef<typeof NavigationMenuPrimitive.Root>,
-    React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root>
->(({ className, children, ...props }, ref) => (
+    NavigationMenuProps
+>(({ className, children, align = 'right', ...props }, ref) => (
     <NavigationMenuPrimitive.Root
         ref={ref}
-        className={cn(
-            'relative z-10 flex w-full items-center justify-end',
-            className
-        )}
+        className={cn('relative z-10 flex w-full items-center', className)}
         {...props}
     >
         {children}
-        <NavigationMenuViewport />
+        <NavigationMenuViewport align={align} />
     </NavigationMenuPrimitive.Root>
 ))
 NavigationMenu.displayName = NavigationMenuPrimitive.Root.displayName
@@ -58,10 +60,7 @@ const NavigationMenuList = React.forwardRef<
 >(({ className, ...props }, ref) => (
     <NavigationMenuPrimitive.List
         ref={ref}
-        className={cn(
-            'group flex w-full flex-1 list-none items-center justify-center gap-10 space-x-1',
-            className
-        )}
+        className={cn('group flex list-none items-center', className)}
         {...props}
     />
 ))
@@ -119,16 +118,27 @@ NavigationMenuContent.displayName = NavigationMenuPrimitive.Content.displayName
 // It's a simple wrapper around the Radix UI Link primitive.
 const NavigationMenuLink = NavigationMenuPrimitive.Link
 
-// NavigationMenuViewport is the container that holds all the visible navigation menu content.
-// It handles the sizing and positioning of the dropdown menus.
+// Add this type definition at the top of the file
+type NavigationMenuViewportProps = React.ComponentPropsWithoutRef<
+    typeof NavigationMenuPrimitive.Viewport
+> & {
+    align?: 'left' | 'right'
+}
+
 const NavigationMenuViewport = React.forwardRef<
     React.ElementRef<typeof NavigationMenuPrimitive.Viewport>,
-    React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
->(({ className, ...props }, ref) => (
-    <div className={cn('absolute right-0 top-full flex justify-end')}>
+    NavigationMenuViewportProps
+>(({ className, align = 'right', ...props }, ref) => (
+    <div
+        className={cn(
+            'absolute top-full flex',
+            align === 'right' ? 'right-0' : 'left-0'
+        )}
+    >
         <NavigationMenuPrimitive.Viewport
             className={cn(
-                'relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-top-right overflow-hidden rounded-md border border-neutral-200/10 bg-neutral-darkest/70 shadow-lg backdrop-blur data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 md:w-[var(--radix-navigation-menu-viewport-width)]',
+                'relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border border-neutral-200/10 bg-neutral-darkest/70 shadow-lg backdrop-blur data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-50 md:w-[var(--radix-navigation-menu-viewport-width)]',
+                `origin-top-${align}`,
                 className
             )}
             ref={ref}

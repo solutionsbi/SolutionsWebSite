@@ -1,4 +1,4 @@
-import Carrossel from '../../components/custom/CarrosselSoluções'
+import Carrossel from '../../components/custom/SolutionsCarousel'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'

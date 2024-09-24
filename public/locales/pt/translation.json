@@ -1,4 +1,124 @@
 {
-    "greeting": "Olá",
-    "toggleLanguage": "Switch to English"
+    "paginas": {
+        "home": {
+            "sections": {
+                "hero": {
+                    "title": {
+                        "part1": "Soluções em",
+                        "part2": "tecnologia",
+                        "part3": "para seu negócio"
+                    },
+                    "description": "Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado.Conheça nossos serviços e descubra como podemos ajudar a impulsionar o seu negócio.",
+                    "cta": {
+                        "text": "Impulsione Seu Negócio",
+                        "additionalText": "Saiba mais"
+                    }
+                },
+                "benefits": {
+                    "title": {
+                        "part1": "Nossos",
+                        "part2": "Valores"
+                    },
+                    "description": "Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado.Conheça nossos serviços e descubra como podemos ajudar a impulsionar o seu negócio.",
+                    "cta": {
+                        "text": "Impulsione Seu Negócio",
+                        "additionalText": "Saiba mais"
+                    },
+                    "cards": [
+                        {
+                            "title": "Missão",
+                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                        },
+                        {
+                            "title": "Visão",
+                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                        },
+                        {
+                            "title": "Valores",
+                            "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                        }
+                    ]
+                },
+                "faq": {
+                    "title": {
+                        "part1": "Perguntas",
+                        "part2": "Frequentes"
+                    },
+                    "cards": [
+                        {
+                            "question": "Como posso contratar os serviços da SolutionsBI?",
+                            "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                        },
+                        {
+                            "question": "Quais são os horários de atendimento da SolutionsBI?",
+                            "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                        },
+                        {
+                            "question": "SolutionsBI oferece suporte técnico?",
+                            "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                        },
+                        {
+                            "question": "SolutionsBI possui algum desconto para estudantes?",
+                            "answer": "Sim, oferecemos desconto para estudantes."
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "components": {
+        "solutions": {
+            "title": "Nossas Soluções",
+            "description": "Oferecemos uma ampla gama de soluções para ajudar sua empresa a crescer, inovar e se destacar no mercado.",
+            "solutionsCarousel": {
+                "solutionsCards": [
+                    {
+                        "title": {
+                            "part1": "Engenharia",
+                            "part2": "de Dados"
+                        },
+                        "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                    },
+                    {
+                        "title": {
+                            "part1": "Business",
+                            "part2": "Intelligence"
+                        },
+                        "description": "Transformamos dados em insights estratégicos, otimizando operações e decisões. O BI oferece uma visão clara do seu negócio, permitindo rápidas reações e novas oportunidades de crescimento."
+                    },
+                    {
+                        "title": {
+                            "part1": "Sistemas",
+                            "part2": "Personalizados"
+                        },
+                        "description": "Desenvolvemos sistemas personalizados para atender às necessidades específicas de cada cliente, garantindo eficiência e agilidade na execução de tarefas."
+                    },
+                    {
+                        "title": {
+                            "part1": "Inteligência",
+                            "part2": "Artificial"
+                        },
+                        "description": "Oferecemos soluções de inteligência artificial para ajudar sua empresa a crescer, inovar e se destacar no mercado."
+                    },
+                    {
+                        "title": {
+                            "part1": "Transformação",
+                            "part2": "Digital"
+                        },
+                        "description": "Oferecemos soluções de transformação digital para ajudar sua empresa a crescer, inovar e se destacar no mercado."
+                    },
+                    {
+                        "title": {
+                            "part1": "Sites",
+                            "part2": "e E-commerce"
+                        },
+                        "description": "Oferecemos soluções de sites e e-commerce para ajudar sua empresa a crescer, inovar e se destacar no mercado."
+                    }
+                ],
+                "cta": {
+                    "text": "Saiba mais"
+                }
+            }
+        }
+    }
 }
