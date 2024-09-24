@@ -4,7 +4,6 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 gsap.registerPlugin(useGSAP)
-import { informacoesDeServicos } from './MenuDeNavegaçãoPrincipal'
 import { Phone, Mail, House, Shield, FileQuestion } from 'lucide-react'
 
 const MenuDeNavegaçãoMobile: React.FC = () => {

@@ -1,7 +1,9 @@
 import { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import { animateCounting } from '@/lib/animateCouting'
 import sectionBg from '@assets/images/Background/firefly/10.jpg'
 import samsumgLogo from '@assets/images/Partner Logos/samsung.svg'
@@ -22,7 +24,7 @@ import vrsoftwareLogo from '@assets/images/Partner Logos/vrsoftware.png'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
-const partnersData = [
+const partnersLogos = [
     {
         src: samsumgLogo,
         alt: 'samsung',
@@ -85,24 +87,10 @@ const partnersData = [
     },
 ]
 
-const stats = [
-    {
-        number: '9',
-        text: 'países \n atendidos',
-    },
-    {
-        number: '80',
-        text: 'clientes \nsatisfeitos',
-    },
-    {
-        number: '150',
-        text: 'projetos \nconcluídos',
-    },
-]
-
 export default function Partners() {
     const container = useRef<HTMLElement>(null)
-    const enterTl = useRef<gsap.core.Timeline | null>(null)
+    const tl = useRef<gsap.core.Timeline | null>(null)
+    const { t } = useTranslation()
 
     useGSAP(
         () => {
@@ -191,7 +179,7 @@ export default function Partners() {
                 autoAlpha: 0,
                 x: 50,
             })
-            const statsTl = gsap
+            tl.current = gsap
                 .timeline({
                     scrollTrigger: {
                         trigger: '.stats-container',
@@ -239,6 +227,10 @@ export default function Partners() {
         { scope: container }
     )
 
+    const partnersData = t('pages.home.sections.partners', {
+        returnObjects: true,
+    }) as Record<string, any>
+
     return (
         <section ref={container} className="page-section">
             <div className="section-bg absolute left-1/2 top-1/2 -z-50 mx-auto h-full w-full translate-x-[-50%] translate-y-[-50%]">
@@ -251,15 +243,16 @@ export default function Partners() {
             <div className="container flex h-full flex-col items-center justify-center">
                 <div className="container flex flex-col items-center justify-center text-center">
                     <h2 className="">
-                        <span className="text-brand-blue">empresas</span> que{' '}
-                        <br className="md:hidden" />
-                        confiam <br className="hidden md:inline-block" /> em
-                        nossas soluções
+                        <span className="text-brand-blue">
+                            {partnersData.title.part1}
+                        </span>{' '}
+                        {partnersData.title.part2} <br />
+                        {partnersData.title.part3}
                     </h2>
                 </div>
 
                 <div className="logos-container relative mx-auto grid w-max grid-cols-2 items-center justify-items-center gap-2 py-16 md:grid-cols-3 lg:grid-cols-4 lg:py-20 xl:grid-cols-5">
-                    {partnersData.map((partner, index) => (
+                    {partnersLogos.map((partner, index) => (
                         <div
                             key={index}
                             className="partner-logo shadow-custom relative grid h-[120px] w-[160px] place-content-center overflow-hidden rounded-[8px] border border-white/10 bg-gradient-to-br from-neutral-darkest/90 px-6 backdrop-blur md:w-[150px] lg:h-[150px] xl:w-[200px]"
@@ -274,7 +267,7 @@ export default function Partners() {
                 </div>
 
                 <div className="stats-container relative flex flex-wrap items-center justify-center gap-6 md:gap-16">
-                    {stats.map((stats, index) => (
+                    {partnersData.stats.map((stats: any, index: number) => (
                         <h3
                             key={index}
                             className="stats-item flex flex-col items-center whitespace-pre-line text-center font-bold drop-shadow-custom lg:flex-row lg:text-start"
@@ -284,11 +277,13 @@ export default function Partners() {
                                     +
                                 </span>
                                 <span className="stats-number mr-2 text-6xl text-brand-blue lg:mr-6 lg:text-10xl">
-                                    {stats.number}
+                                    {stats.value}
                                 </span>{' '}
                             </span>
                             <span className="stats-text text-xl/[1.1] lg:text-3xl/[1.1]">
-                                {stats.text}
+                                {stats.text.part1}
+                                <br />
+                                {stats.text.part2}
                             </span>
                         </h3>
                     ))}

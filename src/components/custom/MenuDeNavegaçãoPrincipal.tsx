@@ -1,9 +1,8 @@
-'use client'
-
 import * as React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-
+import { NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
+
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -13,16 +12,15 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
-
 import { LanguageSelector } from '@/components/custom/LanguageSelector'
 
 import logo from '@assets/svg/logo.svg'
-import edIcon from '@/assets/svg/tech-icons/ed-icon.svg'
-import biIcon from '@/assets/svg/tech-icons/bi-icon.svg'
-import sistemasIcon from '@/assets/svg/tech-icons/sistemas-icon.svg'
-import iaIcon from '@/assets/svg/tech-icons/ia-icon.svg'
-import transformacaoIcon from '@/assets/svg/tech-icons/transformacao-icon.svg'
-import sitesIcon from '@/assets/svg/tech-icons/sites-icon.svg'
+import iconEngenhariaDeDados from '@/assets/svg/tech-icons/ed-icon.svg'
+import iconBusinessIntelligence from '@/assets/svg/tech-icons/bi-icon.svg'
+import iconSistemasPersonalizados from '@/assets/svg/tech-icons/sistemas-icon.svg'
+import iconInteligenciaArtificial from '@/assets/svg/tech-icons/ia-icon.svg'
+import iconTransformacaoDigital from '@/assets/svg/tech-icons/transformacao-icon.svg'
+import iconWebsitesEEcommerces from '@/assets/svg/tech-icons/sites-icon.svg'
 
 import { Phone } from 'lucide-react'
 import { Mail } from 'lucide-react'
@@ -30,84 +28,50 @@ import { MapPin } from 'lucide-react'
 import { Linkedin } from 'lucide-react'
 import { Facebook } from 'lucide-react'
 
-export const informacoesDeServicos: {
-    title: string
-    href: string
-    description: string
-    icon: string
-}[] = [
-    {
-        title: 'Engenharia \nde Dados',
-        href: '/engenharia-de-dados',
-        description:
-            'Soluções em Engenharia de Dados para otimizar a gestão de dados e impulsionar a eficiência operacional.',
-        icon: edIcon,
-    },
-    {
-        title: 'Business \n Intelligence',
-        href: '/business-intelligence',
-        description:
-            'Transforme seus dados em insights estratégicos com nossa solução de Business Intelligence.',
-        icon: biIcon,
-    },
-    {
-        title: 'Sistemas \npersonalizados',
-        href: '/sistemas-personalizados',
-        description:
-            'Desenvolvemos sistemas personalizados para atender às necessidades específicas de sua empresa.',
-        icon: sistemasIcon,
-    },
-    {
-        title: 'Inteligência \n Artificial',
-        href: '/inteligencia-artificial',
-        description:
-            'Utilizamos a Inteligência Artificial para otimizar processos e aumentar a eficiência operacional.',
-        icon: iaIcon,
-    },
-    {
-        title: 'Transformação \n Digital',
-        href: '/transformacao-digital',
-        description:
-            'Modernize sua infraestrutura com nossa solução de Transformacão Digital.',
-        icon: transformacaoIcon,
-    },
-    {
-        title: 'Websites e \n E-commerce',
-        href: '/websites-e-ecommerce',
-        description:
-            'Estabeleça uma presença online forte com nossa solução de Websites e E-commerce.',
-        icon: sitesIcon,
-    },
-]
-
-export const informacoesDeContato: {
-    title: string
-    href: string
-    description: string
-    icon: React.ElementType
-}[] = [
-    {
-        title: 'WhatsApp',
-        href: 'https://api.whatsapp.com/send?phone=5519983085819',
-        description: '+55 (19) 98308-5819',
-        icon: Phone,
-    },
-    {
-        title: 'Email',
-        href: 'mailto:contato@solutionsbi.com.br',
-        description: 'contato@solutionsbi.com.br',
-        icon: Mail,
-    },
-    {
-        title: 'Localização',
-        href: 'https://www.google.com/maps/place/Rua+Treze+de+Maio,+257+-+Centro,+Limeira+-+SP,+13480-082/@-22.0643365,-47.4006336,17z/data=!3m1!4b1!4m6!3m5!1s0x94c98a6742248333:0x3283242822822222!8m2!3d-22.0643365!4d-47.3980589!16s%2Fg%2F11c5r4x6c1',
-        description:
-            'Rua Treze de maio, 257 \n 2º andar | Sala 21 \n Centro - Limeira/SP \n Cep: 13480-082',
-        icon: MapPin,
-    },
-]
-
 export function MenuDeNavegaçãoPrincipal() {
+    const { t } = useTranslation()
+    const solutionsData = t('pages.solutions', {
+        returnObjects: true,
+    }) as Record<string, any>
+
+    const contactInfoArray: {
+        title: string
+        href: string
+        description: string
+        icon: React.ElementType
+    }[] = [
+        {
+            title: t('contactInfo.whatsapp'),
+            href: 'https://api.whatsapp.com/send?phone=5519983085819',
+            description: '+55 (19) 98308-5819',
+            icon: Phone,
+        },
+        {
+            title: t('contactInfo.email'),
+            href: 'mailto:contato@solutionsbi.com.br',
+            description: 'contato@solutionsbi.com.br',
+            icon: Mail,
+        },
+        {
+            title: t('contactInfo.location'),
+            href: 'https://www.google.com/maps/place/Rua+Treze+de+Maio,+257+-+Centro,+Limeira+-+SP,+13480-082/@-22.0643365,-47.4006336,17z/data=!3m1!4b1!4m6!3m5!1s0x94c98a6742248333:0x3283242822822222!8m2!3d-22.0643365!4d-47.3980589!16s%2Fg%2F11c5r4x6c1',
+            description:
+                'Rua Treze de maio, 257 \n 2º andar | Sala 21 \n Centro - Limeira/SP \n Cep: 13480-082',
+            icon: MapPin,
+        },
+    ]
+
+    const solutionsDataArray = Object.values(solutionsData)
+
+    const iconsArray = [
+        iconEngenhariaDeDados,
+        iconBusinessIntelligence,
+        iconSistemasPersonalizados,
+        iconInteligenciaArtificial,
+        iconTransformacaoDigital,
+        iconWebsitesEEcommerces,
+    ]
+
     return (
         <nav className="w-full">
             <div className="flex h-full items-center justify-between px-4 py-2">
@@ -133,7 +97,7 @@ export function MenuDeNavegaçãoPrincipal() {
                                             : 'transition-colors duration-300 hover:text-brand-blue'
                                     }
                                 >
-                                    Início
+                                    {t('layout.header.menu.home')}
                                 </NavLink>
                             </NavigationMenuItem>
 
@@ -146,26 +110,28 @@ export function MenuDeNavegaçãoPrincipal() {
                                             : 'transition-colors duration-300 hover:text-brand-blue'
                                     }
                                 >
-                                    Sobre
+                                    {t('layout.header.menu.about')}
                                 </NavLink>
                             </NavigationMenuItem>
 
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger>
-                                    Soluções
+                                    {t('layout.header.menu.services')}
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
                                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                                        {informacoesDeServicos.map(
-                                            (component) => (
+                                        {solutionsDataArray.map(
+                                            (component, index) => (
                                                 <ListItem
-                                                    key={component.title}
+                                                    key={index}
                                                     title={component.title}
-                                                    href={component.href}
-                                                    icon={component.icon}
-                                                >
-                                                    {component.description}
-                                                </ListItem>
+                                                    description={
+                                                        component.description
+                                                            .short
+                                                    }
+                                                    href={component.url}
+                                                    icon={iconsArray[index]}
+                                                />
                                             )
                                         )}
                                     </ul>
@@ -184,27 +150,22 @@ export function MenuDeNavegaçãoPrincipal() {
 
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className="rounded-md bg-brand-blue px-5 py-3 hover:text-white data-[active]:text-white data-[state=open]:text-white">
-                                    Contato
+                                    {t('layout.header.menu.contact.title')}
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent className="">
                                     <ul className="grid w-max gap-3 p-4 md:grid-cols-[200px_250px]">
                                         <li className="">
                                             <NavigationMenuLink asChild>
-                                                <div className="flex h-full w-full select-none flex-col justify-between rounded-md border-neutral-700 bg-brand-blue bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md">
+                                                <div className="flex h-full w-full select-none flex-col rounded-md border-neutral-700 bg-brand-blue bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md">
                                                     <div className="mb-2 text-lg font-medium">
                                                         Solutions BI
                                                     </div>
                                                     <p className="text-sm font-normal leading-tight text-neutral-200">
-                                                        A SolutionsBI é uma
-                                                        empresa de tecnologia
-                                                        especializada em criar
-                                                        soluções personalizadas
-                                                        para empresas que
-                                                        desejam otimizar seus
-                                                        processos e aumentar sua
-                                                        eficiência.
+                                                        {t(
+                                                            'layout.header.menu.contact.description'
+                                                        )}
                                                     </p>
-                                                    <div className="mt-4 flex gap-4 border-t border-white/10 pt-4">
+                                                    <div className="mt-auto flex gap-4 border-t border-white/10 pt-4">
                                                         <a
                                                             className=""
                                                             href="https://www.facebook.com/solutionsbi.fb/"
@@ -228,7 +189,7 @@ export function MenuDeNavegaçãoPrincipal() {
                                             </NavigationMenuLink>
                                         </li>
                                         <div className="flex h-full flex-col justify-between">
-                                            {informacoesDeContato.map(
+                                            {contactInfoArray.map(
                                                 (component) => (
                                                     <ListItemExternal
                                                         key={component.title}
@@ -257,9 +218,10 @@ const ListItem = React.forwardRef<
     Omit<React.ComponentPropsWithoutRef<'a'>, 'href'> & {
         href: string
         icon?: string
-        title: string
+        title: { part1: string; part2: string }
+        description: string
     }
->(({ className, title, children, icon, href, ...props }, ref) => {
+>(({ className, title, description, icon, href, ...props }, ref) => {
     return (
         <li className="group rounded-md hover:bg-brand-blue">
             <NavLink
@@ -276,21 +238,22 @@ const ListItem = React.forwardRef<
                 {...props}
             >
                 <div className="flex items-center gap-1">
-                    {icon && (
-                        <img
-                            src={icon}
-                            alt=""
-                            width={26}
-                            height={26}
-                            className="mr-2"
-                        />
-                    )}
+                    <img
+                        src={icon}
+                        alt=""
+                        width={26}
+                        height={26}
+                        className="mr-2"
+                    />
+
                     <div className="whitespace-pre-line font-medium leading-tight">
-                        {title}
+                        {title.part1}
+                        <br />
+                        {title.part2}
                     </div>
                 </div>
                 <p className="text-sm font-normal leading-snug text-neutral-300 group-hover:text-white">
-                    {children}
+                    {description}
                 </p>
             </NavLink>
         </li>

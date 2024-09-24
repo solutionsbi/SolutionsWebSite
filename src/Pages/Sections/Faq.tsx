@@ -5,6 +5,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion'
 
+import { useTranslation } from 'react-i18next'
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -30,6 +31,7 @@ type FaqProps = {
 }
 
 export default function Faq({ faqs }: FaqProps) {
+    const { t } = useTranslation()
     const container = useRef<HTMLElement>(null)
     const sectionTl = useRef<gsap.core.Timeline | null>(null)
 
@@ -92,8 +94,12 @@ export default function Faq({ faqs }: FaqProps) {
             <div className="container grid h-full items-center">
                 <div className="flex w-full flex-col items-center">
                     <h2 className="section-title mb-14 text-center lg:mb-20">
-                        <span className="text-brand-blue"> perguntas</span>{' '}
-                        frequentes
+                        <span className="text-brand-blue">
+                            {' '}
+                            {t('pages.home.sections.faq.title.part1')}
+                        </span>{' '}
+                        <br />
+                        {t('pages.home.sections.faq.title.part2')}
                     </h2>
 
                     <Accordion

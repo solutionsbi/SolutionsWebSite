@@ -1,4 +1,5 @@
 import PrimaryButton from '../../components/custom/PrimaryButton'
+import { useTranslation, Trans } from 'react-i18next'
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -8,6 +9,7 @@ import ctaImage from '@/assets/images/Background/2.jpeg'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Cta() {
+    const { t } = useTranslation()
     const container = useRef<HTMLElement>(null)
     const sectionTl = useRef<gsap.core.Timeline | null>(null)
 
@@ -133,18 +135,20 @@ export default function Cta() {
                 <div className="container-bg absolute inset-0 -z-10 bg-gradient-to-tr from-neutral-darkest/60 backdrop-blur"></div>
                 <div className="flex flex-col">
                     <h3 className="section-title text-5xl font-bold md:text-7xl lg:text-8xl">
-                        fale com um de <br className="hidden md:inline-block" />{' '}
-                        nossos{' '}
-                        <span className="text-brand-blue">especialistas</span>{' '}
-                        <br className="hidden md:inline-block" /> e{' '}
-                        <span className="text-brand-blue">impulsione</span> já{' '}
-                        <br className="hidden md:inline-block" /> o seu negócio
+                        <Trans
+                            i18nKey="pages.home.sections.cta.title"
+                            components={{
+                                span: <span className="text-brand-blue" />,
+                                br: <br />,
+                            }}
+                        />
                     </h3>
                 </div>
                 <div className="mt-16 self-end lg:mt-0">
                     <PrimaryButton
                         className="section-cta"
-                        text="Impulsionar Agora"
+                        text={t('buttons.impulsione-seu-negocio')}
+                        additionalText={t('buttons.fale-com-um-especialista')}
                         href="https://api.whatsapp.com/send?phone=5519983085819"
                         linkType="external"
                     />

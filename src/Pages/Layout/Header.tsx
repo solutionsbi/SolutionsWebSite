@@ -10,9 +10,9 @@ export default function Header() {
                     <MenuDeNavegaçãoPrincipal />
                 </div>
 
-                <div className="block md:hidden">
+                {/* <div className="block md:hidden">
                     <MenuDeNavegaçãoMobile />
-                </div>
+                </div> */}
             </div>
         </header>
     )

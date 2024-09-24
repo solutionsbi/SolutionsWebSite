@@ -7,6 +7,13 @@ import { MoveRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { binaryTextTransitionEffect } from '@/lib/binaryTextTransitionEffect'
 
+import iconEngenhariaDeDados from '@/assets/svg/tech-icons/ed-icon.svg'
+import iconBusinessIntelligence from '@/assets/svg/tech-icons/bi-icon.svg'
+import iconSistemasPersonalizados from '@/assets/svg/tech-icons/sistemas-icon.svg'
+import iconInteligenciaArtificial from '@/assets/svg/tech-icons/ia-icon.svg'
+import iconTransformacaoDigital from '@/assets/svg/tech-icons/transformacao-icon.svg'
+import iconWebsitesEEcommerces from '@/assets/svg/tech-icons/sites-icon.svg'
+
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 type SolutionCardProps = {
@@ -129,6 +136,15 @@ export function SolutionCard({
 
     const { t } = useTranslation()
 
+    const iconMapping: Record<string, string> = {
+        'icon-engenharia-de-dados': iconEngenhariaDeDados,
+        'icon-business-intelligence': iconBusinessIntelligence,
+        'icon-sistemas-personalizados': iconSistemasPersonalizados,
+        'icon-inteligencia-artificial': iconInteligenciaArtificial,
+        'icon-transformacao-digital': iconTransformacaoDigital,
+        'icon-websites-e-ecommerces': iconWebsitesEEcommerces,
+    }
+
     return (
         <Link
             onMouseEnter={handleMouseEnter}
@@ -142,7 +158,7 @@ export function SolutionCard({
                 <h3 className="whitespace-pre-line text-2xl/[1.1] font-bold">
                     {title.part1} <br /> {title.part2}
                 </h3>
-                <img className="h-12 w-12" src={icon} alt="" />
+                <img className="h-12 w-12" src={iconMapping[icon]} alt="" />
             </div>
 
             {/* card content */}
@@ -155,7 +171,7 @@ export function SolutionCard({
             {/* card footer */}
             <div className="relative mt-auto flex h-max w-full items-center justify-between overflow-hidden">
                 <span className="text-md font-semibold uppercase text-neutral-100">
-                    {t('components.solutions.solutionsCarousel.cta.text')}
+                    {t('buttons.saiba-mais')}
                 </span>
                 <MoveRight size={24} className="" />
             </div>

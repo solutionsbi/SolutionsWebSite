@@ -15,24 +15,32 @@
                     }
                 },
                 "partners": {
-                    "title": "Nossos Parceiros",
-                    "description": "Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado.Conheça nossos serviços e descubra como podemos ajudar a impulsionar o seu negócio.",
+                    "title": {
+                        "part1": "empresas",
+                        "part2": "que confiam",
+                        "part3": "em nossas soluções"
+                    },
                     "stats": [
                         {
-                            "value": 100,
-                            "description": "Projetos Concluídos"
+                            "value": 9,
+                            "text": {
+                                "part1": "países",
+                                "part2": "atendidos"
+                            }
                         },
                         {
-                            "value": 100,
-                            "description": "Projetos Concluídos"
+                            "value": 80,
+                            "text": {
+                                "part1": "clientes",
+                                "part2": "satisfeitos"
+                            }
                         },
                         {
-                            "value": 100,
-                            "description": "Projetos Concluídos"
-                        },
-                        {
-                            "value": 100,
-                            "description": "Projetos Concluídos"
+                            "value": 150,
+                            "text": {
+                                "part1": "projetos",
+                                "part2": "concluídos"
+                            }
                         }
                     ]
                 },
@@ -86,12 +94,7 @@
                     ]
                 },
                 "cta": {
-                    "title": "Impulsione Seu Negócio",
-                    "description": "Saiba mais",
-                    "cta": {
-                        "text": "Impulsione Seu Negócio",
-                        "altText": "Saiba mais"
-                    }
+                    "title": "fale com um de <br/> nossos <span>especialistas</span><br/>e <span>impulsione</span> já <br/> o seu negócio"
                 }
             }
         },
@@ -554,8 +557,8 @@
             },
             "websites-e-ecommerces": {
                 "title": {
-                    "part1": "Websites",
-                    "part2": "e E-commerces"
+                    "part1": "Websites e",
+                    "part2": "E-commerces"
                 },
                 "description": {
                     "short": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
@@ -649,5 +652,61 @@
                 }
             }
         }
+    },
+    "layout": {
+        "header": {
+            "menu": {
+                "home": "Início",
+                "about": "Sobre",
+                "services": "Soluções",
+                "contact": {
+                    "title": "Contato",
+                    "description": "Entre em contato com a SolutionsBI para saber mais sobre nossos serviços e soluções.",
+                    "location": "Localização"
+                }
+            }
+        },
+        "footer": {
+            "columns": {
+                "1": {
+                    "title": {
+                        "part1": "Feito com",
+                        "part2": "no Brasil"
+                    },
+                    "description": "A SolutionsBI é uma empresa de tecnologia especializada em criar soluções personalizadas para empresas que desejam otimizar seus processos e aumentar sua eficiência."
+                },
+                "2": {
+                    "title": "Soluções",
+                    "options": {
+                        "1": "Engenharia de Dados",
+                        "2": "Business Intelligence",
+                        "3": "Sistemas Personalizados",
+                        "4": "Inteligência Artificial",
+                        "5": "Transformação Digital",
+                        "6": "Websites e E-commerces"
+                    }
+                },
+                "3": {
+                    "title": "Contato"
+                }
+            },
+            "copyright": "© 2024 SolutionsBI. Todos os direitos reservados.",
+            "privacy-policy": "Política de Privacidade"
+        }
+    },
+    "buttons": {
+        "saiba-mais": "Saiba mais",
+        "impulsione-seu-negocio": "Impulsione Seu Negócio",
+        "entre-em-contato": "Entre em Contato",
+        "solicitar-demonstracao": "Solicitar Demonstração",
+        "fale-com-um-especialista": "Fale com um especialista",
+        "fale-conosco": "Fale Conosco"
+    },
+    "contactInfo": {
+        "whatsapp": "WhatsApp",
+        "email": "Email",
+        "location": "Localização",
+        "linkedin": "Linkedin",
+        "facebook": "Facebook"
     }
 }

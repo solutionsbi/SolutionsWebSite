@@ -22,15 +22,15 @@ export function LanguageSelector() {
             </SelectTrigger>
             <SelectContent>
                 <SelectItem value="pt">
-                    <div className="flex items-center">
-                        <FlagIcon code="BR" size={16} className="mr-2" />
-                        Pt
+                    <div className="flex items-center gap-1">
+                        <FlagIcon code="BR" size={24} className="mr-2" />
+                        PT
                     </div>
                 </SelectItem>
                 <SelectItem value="en">
-                    <div className="flex items-center">
-                        <FlagIcon code="US" size={16} className="mr-2" />
-                        Eng
+                    <div className="flex items-center gap-1">
+                        <FlagIcon code="US" size={24} className="mr-2" />
+                        ENG
                     </div>
                 </SelectItem>
             </SelectContent>

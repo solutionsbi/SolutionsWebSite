@@ -5,9 +5,9 @@ import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Heart } from 'lucide-react'
 import { GhostButton } from '@/components/custom/GhostButton'
+import { useTranslation } from 'react-i18next'
 
 import facebookIcon from '@/assets/svg/social-icons/facebook-icon.svg'
-import instagramIcon from '@/assets/svg/social-icons/instagram-icon.svg'
 import linkedinIcon from '@/assets/svg/social-icons/linkedin-icon.svg'
 import logo from '@/assets/svg/logo.svg'
 
@@ -16,7 +16,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger)
 export default function Footer() {
     const container = useRef<HTMLElement>(null)
     const sectionTl = useRef<gsap.core.Timeline | null>(null)
-
+    const { t } = useTranslation()
     useGSAP(() => {
         if (!container.current) return
 
@@ -71,15 +71,10 @@ export default function Footer() {
                 <div className="footer-info-grid grid justify-items-center gap-10 py-12 text-center md:grid-cols-2 md:text-start xl:grid-cols-4 xl:justify-items-start xl:gap-0 xl:text-start">
                     <div className="flex flex-col">
                         <span className="mb-6 flex items-center justify-center gap-2 font-bold uppercase text-brand-blue md:justify-start">
-                            Feito com <Heart />
-                            no Brasil
+                            {t('layout.footer.columns.1.title.part1')} <Heart />
+                            {t('layout.footer.columns.1.title.part2')}
                         </span>
-                        <span>
-                            A SolutionsBI é uma empresa de tecnologia
-                            especializada em criar soluções personalizadas para
-                            empresas que desejam otimizar seus processos e
-                            aumentar sua eficiência.
-                        </span>
+                        <span>{t('layout.footer.columns.1.description')}</span>
                         <div className="mt-6 flex items-center justify-center gap-4 md:justify-start xl:justify-start">
                             <a
                                 href="https://www.facebook.com/solutionsbi.fb/"
@@ -105,7 +100,7 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col lg:col-start-2 xl:col-start-3 xl:justify-self-end xl:border-l xl:border-white/10 xl:pl-10">
                         <span className="mb-6 font-bold uppercase text-brand-blue">
-                            Soluções
+                            {t('layout.footer.columns.2.title')}
                         </span>
                         <ul className="flex flex-col gap-4">
                             <li>
@@ -114,42 +109,42 @@ export default function Footer() {
                                         to="engenharia-de-dados"
                                         className="font-normal"
                                     >
-                                        Engenharia de Dados
+                                        {t('layout.footer.columns.2.options.1')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
                                     <Link to="business-intelligence">
-                                        Business Intelligence
+                                        {t('layout.footer.columns.2.options.2')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
                                     <Link to="sistemas-personalizados">
-                                        Sistemas Personalizados
+                                        {t('layout.footer.columns.2.options.3')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
                                     <Link to="inteligencia-artificial">
-                                        Inteligência Artificial
+                                        {t('layout.footer.columns.2.options.4')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
                                     <Link to="transformacao-digital">
-                                        Transformação Digital
+                                        {t('layout.footer.columns.2.options.5')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
                                     <Link to="websites-e-ecommerce">
-                                        Websites e E-commerce
+                                        {t('layout.footer.columns.2.options.6')}
                                     </Link>
                                 </GhostButton>
                             </li>
@@ -157,7 +152,7 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col md:col-start-2 lg:col-start-3 xl:col-start-4 xl:justify-self-end xl:border-l xl:border-white/10 xl:pl-10">
                         <span className="mb-6 font-bold uppercase text-brand-blue">
-                            Contato
+                            {t('layout.footer.columns.3.title')}
                         </span>
 
                         <ul className="flex flex-col gap-4">
@@ -200,12 +195,12 @@ export default function Footer() {
                 <div className="additional-footer-container container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row">
                     <img src={logo} alt="solutionsbi logo" />
                     <div className="flex flex-col items-center gap-4 text-neutral-300 md:flex-row">
-                        <p>Copyright © 2024 – SolutionsBI Brazil</p>
+                        <p>{t('layout.footer.copyright')}</p>
                         <Link
                             to="politica-de-privacidade"
                             className="underline hover:text-brand-blue"
                         >
-                            Política de Privacidade
+                            {t('layout.footer.privacy-policy')}
                         </Link>
                     </div>
                 </div>
