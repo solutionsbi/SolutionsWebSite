@@ -105,14 +105,12 @@ export default function Timeline() {
                     <div className="flex w-full flex-col">
                         <h2 className="mb-5">
                             <Trans
-                                i18nKey={t(
-                                    'pages.about.sections.timeline.title'
-                                )}
+                                i18nKey={'pages.about.sections.timeline.title'}
                                 components={{
                                     span: <span className="text-brand-blue" />,
                                     br: <br />,
                                 }}
-                            ></Trans>
+                            />
                         </h2>
                         <p className="leading-normal drop-shadow-custom xl:text-md">
                             {translatedTimeLineData.description}

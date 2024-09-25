@@ -142,556 +142,562 @@
             }
         },
         "solutions": {
-            "engenharia-de-dados": {
-                "title": {
-                    "part1": "Engenharia",
-                    "part2": "de Dados"
-                },
-                "description": {
-                    "short": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "medium": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "long": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
-                },
-                "url": "/engenharia-de-dados",
-                "icon": "icon-engenharia-de-dados",
-                "background": "bg-engenharia-de-dados",
-                "how-it-works": {
-                    "title": "Como Funciona",
-                    "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "steps": [
-                        {
-                            "title": "Coleta de Dados",
-                            "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
-                        },
-                        {
-                            "title": "Processamento de Dados",
-                            "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Análise de Dados",
-                            "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Visualização de Dados",
-                            "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Disponibilização de Dados",
-                            "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Nossos Benefícios",
-                    "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "cards": [
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        },
-                        {
-                            "title": "Valores",
-                            "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                        },
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        },
-                        {
-                            "title": "Valores",
-                            "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Perguntas Frequentes",
-                    "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "questions": [
-                        {
-                            "question": "Como posso contratar os serviços da SolutionsBI?",
-                            "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
-                        },
-                        {
-                            "question": "Quais são os horários de atendimento da SolutionsBI?",
-                            "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
-                        },
-                        {
-                            "question": "SolutionsBI oferece suporte técnico?",
-                            "answer": "Sim, oferecemos suporte técnico para nossos clientes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        }
-                    ]
-                }
+            "title": {
+                "part1": "explore todas",
+                "part2": "as nossas soluções"
             },
-            "business-intelligence": {
-                "title": {
-                    "part1": "Business",
-                    "part2": "Intelligence"
+            "items": {
+                "engenharia-de-dados": {
+                    "title": {
+                        "part1": "Engenharia",
+                        "part2": "de Dados"
+                    },
+                    "description": {
+                        "short": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "medium": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "long": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                    },
+                    "url": "/engenharia-de-dados",
+                    "icon": "icon-engenharia-de-dados",
+                    "background": "bg-engenharia-de-dados",
+                    "how-it-works": {
+                        "title": "Como Funciona",
+                        "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "steps": [
+                            {
+                                "title": "Coleta de Dados",
+                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                            },
+                            {
+                                "title": "Processamento de Dados",
+                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Análise de Dados",
+                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Visualização de Dados",
+                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Disponibilização de Dados",
+                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Nossos Benefícios",
+                        "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "cards": [
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            },
+                            {
+                                "title": "Valores",
+                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                            },
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            },
+                            {
+                                "title": "Valores",
+                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Perguntas Frequentes",
+                        "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "questions": [
+                            {
+                                "question": "Como posso contratar os serviços da SolutionsBI?",
+                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                            },
+                            {
+                                "question": "Quais são os horários de atendimento da SolutionsBI?",
+                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                            },
+                            {
+                                "question": "SolutionsBI oferece suporte técnico?",
+                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            }
+                        ]
+                    }
                 },
-                "description": {
-                    "short": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "medium": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "long": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                "business-intelligence": {
+                    "title": {
+                        "part1": "Business",
+                        "part2": "Intelligence"
+                    },
+                    "description": {
+                        "short": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "medium": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "long": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                    },
+                    "url": "/business-intelligence",
+                    "icon": "icon-business-intelligence",
+                    "background": "bg-business-intelligence",
+                    "how-it-works": {
+                        "title": "Como Funciona",
+                        "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "steps": [
+                            {
+                                "title": "Coleta de Dados",
+                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                            },
+                            {
+                                "title": "Processamento de Dados",
+                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Análise de Dados",
+                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Visualização de Dados",
+                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Disponibilização de Dados",
+                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Nossos Benefícios",
+                        "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "cards": [
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            },
+                            {
+                                "title": "Valores",
+                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Perguntas Frequentes",
+                        "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "questions": [
+                            {
+                                "question": "Como posso contratar os serviços da SolutionsBI?",
+                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                            },
+                            {
+                                "question": "Quais são os horários de atendimento da SolutionsBI?",
+                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                            },
+                            {
+                                "question": "SolutionsBI oferece suporte técnico?",
+                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            }
+                        ]
+                    }
                 },
-                "url": "/business-intelligence",
-                "icon": "icon-business-intelligence",
-                "background": "bg-business-intelligence",
-                "how-it-works": {
-                    "title": "Como Funciona",
-                    "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "steps": [
-                        {
-                            "title": "Coleta de Dados",
-                            "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
-                        },
-                        {
-                            "title": "Processamento de Dados",
-                            "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Análise de Dados",
-                            "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Visualização de Dados",
-                            "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Disponibilização de Dados",
-                            "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
-                        }
-                    ]
+                "sistemas-personalizados": {
+                    "title": {
+                        "part1": "Sistemas",
+                        "part2": "Personalizados"
+                    },
+                    "description": {
+                        "short": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "medium": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "long": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                    },
+                    "url": "/sistemas-personalizados",
+                    "icon": "icon-sistemas-personalizados",
+                    "background": "bg-sistemas-personalizados",
+                    "how-it-works": {
+                        "title": "Como Funciona",
+                        "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "steps": [
+                            {
+                                "title": "Coleta de Dados",
+                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                            },
+                            {
+                                "title": "Processamento de Dados",
+                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Análise de Dados",
+                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Visualização de Dados",
+                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Disponibilização de Dados",
+                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Nossos Benefícios",
+                        "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "cards": [
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            },
+                            {
+                                "title": "Valores",
+                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                            },
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Perguntas Frequentes",
+                        "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "questions": [
+                            {
+                                "question": "Como posso contratar os serviços da SolutionsBI?",
+                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                            },
+                            {
+                                "question": "Quais são os horários de atendimento da SolutionsBI?",
+                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                            },
+                            {
+                                "question": "SolutionsBI oferece suporte técnico?",
+                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            }
+                        ]
+                    }
                 },
-                "benefits": {
-                    "title": "Nossos Benefícios",
-                    "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "cards": [
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        },
-                        {
-                            "title": "Valores",
-                            "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                        }
-                    ]
+                "inteligencia-artificial": {
+                    "title": {
+                        "part1": "Inteligência",
+                        "part2": "Artificial"
+                    },
+                    "description": {
+                        "short": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "medium": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "long": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                    },
+                    "url": "/inteligencia-artificial",
+                    "icon": "icon-inteligencia-artificial",
+                    "background": "bg-inteligencia-artificial",
+                    "how-it-works": {
+                        "title": "Como Funciona",
+                        "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "steps": [
+                            {
+                                "title": "Coleta de Dados",
+                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                            },
+                            {
+                                "title": "Processamento de Dados",
+                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Análise de Dados",
+                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Visualização de Dados",
+                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Disponibilização de Dados",
+                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Nossos Benefícios",
+                        "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "cards": [
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            },
+                            {
+                                "title": "Valores",
+                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                            },
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Perguntas Frequentes",
+                        "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "questions": [
+                            {
+                                "question": "Como posso contratar os serviços da SolutionsBI?",
+                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                            },
+                            {
+                                "question": "Quais são os horários de atendimento da SolutionsBI?",
+                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                            },
+                            {
+                                "question": "SolutionsBI oferece suporte técnico?",
+                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            }
+                        ]
+                    }
                 },
-                "faqs": {
-                    "title": "Perguntas Frequentes",
-                    "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "questions": [
-                        {
-                            "question": "Como posso contratar os serviços da SolutionsBI?",
-                            "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
-                        },
-                        {
-                            "question": "Quais são os horários de atendimento da SolutionsBI?",
-                            "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
-                        },
-                        {
-                            "question": "SolutionsBI oferece suporte técnico?",
-                            "answer": "Sim, oferecemos suporte técnico para nossos clientes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        }
-                    ]
-                }
-            },
-            "sistemas-personalizados": {
-                "title": {
-                    "part1": "Sistemas",
-                    "part2": "Personalizados"
+                "transformacao-digital": {
+                    "title": {
+                        "part1": "Transformação",
+                        "part2": "Digital"
+                    },
+                    "description": {
+                        "short": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "medium": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "long": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                    },
+                    "url": "/transformacao-digital",
+                    "icon": "icon-transformacao-digital",
+                    "background": "bg-transformacao-digital",
+                    "how-it-works": {
+                        "title": "Como Funciona",
+                        "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "steps": [
+                            {
+                                "title": "Coleta de Dados",
+                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                            },
+                            {
+                                "title": "Processamento de Dados",
+                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Análise de Dados",
+                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Visualização de Dados",
+                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Disponibilização de Dados",
+                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Nossos Benefícios",
+                        "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "cards": [
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            },
+                            {
+                                "title": "Valores",
+                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                            },
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Perguntas Frequentes",
+                        "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "questions": [
+                            {
+                                "question": "Como posso contratar os serviços da SolutionsBI?",
+                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                            },
+                            {
+                                "question": "Quais são os horários de atendimento da SolutionsBI?",
+                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                            },
+                            {
+                                "question": "SolutionsBI oferece suporte técnico?",
+                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            }
+                        ]
+                    }
                 },
-                "description": {
-                    "short": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "medium": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "long": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
-                },
-                "url": "/sistemas-personalizados",
-                "icon": "icon-sistemas-personalizados",
-                "background": "bg-sistemas-personalizados",
-                "how-it-works": {
-                    "title": "Como Funciona",
-                    "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "steps": [
-                        {
-                            "title": "Coleta de Dados",
-                            "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
-                        },
-                        {
-                            "title": "Processamento de Dados",
-                            "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Análise de Dados",
-                            "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Visualização de Dados",
-                            "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Disponibilização de Dados",
-                            "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Nossos Benefícios",
-                    "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "cards": [
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        },
-                        {
-                            "title": "Valores",
-                            "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                        },
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Perguntas Frequentes",
-                    "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "questions": [
-                        {
-                            "question": "Como posso contratar os serviços da SolutionsBI?",
-                            "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
-                        },
-                        {
-                            "question": "Quais são os horários de atendimento da SolutionsBI?",
-                            "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
-                        },
-                        {
-                            "question": "SolutionsBI oferece suporte técnico?",
-                            "answer": "Sim, oferecemos suporte técnico para nossos clientes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        }
-                    ]
-                }
-            },
-            "inteligencia-artificial": {
-                "title": {
-                    "part1": "Inteligência",
-                    "part2": "Artificial"
-                },
-                "description": {
-                    "short": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "medium": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "long": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
-                },
-                "url": "/inteligencia-artificial",
-                "icon": "icon-inteligencia-artificial",
-                "background": "bg-inteligencia-artificial",
-                "how-it-works": {
-                    "title": "Como Funciona",
-                    "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "steps": [
-                        {
-                            "title": "Coleta de Dados",
-                            "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
-                        },
-                        {
-                            "title": "Processamento de Dados",
-                            "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Análise de Dados",
-                            "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Visualização de Dados",
-                            "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Disponibilização de Dados",
-                            "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Nossos Benefícios",
-                    "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "cards": [
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        },
-                        {
-                            "title": "Valores",
-                            "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                        },
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Perguntas Frequentes",
-                    "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "questions": [
-                        {
-                            "question": "Como posso contratar os serviços da SolutionsBI?",
-                            "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
-                        },
-                        {
-                            "question": "Quais são os horários de atendimento da SolutionsBI?",
-                            "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
-                        },
-                        {
-                            "question": "SolutionsBI oferece suporte técnico?",
-                            "answer": "Sim, oferecemos suporte técnico para nossos clientes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        }
-                    ]
-                }
-            },
-            "transformacao-digital": {
-                "title": {
-                    "part1": "Transformação",
-                    "part2": "Digital"
-                },
-                "description": {
-                    "short": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "medium": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "long": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
-                },
-                "url": "/transformacao-digital",
-                "icon": "icon-transformacao-digital",
-                "background": "bg-transformacao-digital",
-                "how-it-works": {
-                    "title": "Como Funciona",
-                    "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "steps": [
-                        {
-                            "title": "Coleta de Dados",
-                            "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
-                        },
-                        {
-                            "title": "Processamento de Dados",
-                            "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Análise de Dados",
-                            "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Visualização de Dados",
-                            "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Disponibilização de Dados",
-                            "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Nossos Benefícios",
-                    "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "cards": [
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        },
-                        {
-                            "title": "Valores",
-                            "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                        },
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Perguntas Frequentes",
-                    "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "questions": [
-                        {
-                            "question": "Como posso contratar os serviços da SolutionsBI?",
-                            "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
-                        },
-                        {
-                            "question": "Quais são os horários de atendimento da SolutionsBI?",
-                            "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
-                        },
-                        {
-                            "question": "SolutionsBI oferece suporte técnico?",
-                            "answer": "Sim, oferecemos suporte técnico para nossos clientes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        }
-                    ]
-                }
-            },
-            "websites-e-ecommerces": {
-                "title": {
-                    "part1": "Websites e",
-                    "part2": "E-commerces"
-                },
-                "description": {
-                    "short": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "medium": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "long": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
-                },
-                "url": "/websites-e-ecommerces",
-                "icon": "icon-websites-e-ecommerces",
-                "background": "bg-websites-e-ecommerces",
-                "how-it-works": {
-                    "title": "Como Funciona",
-                    "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "steps": [
-                        {
-                            "title": "Coleta de Dados",
-                            "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
-                        },
-                        {
-                            "title": "Processamento de Dados",
-                            "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Análise de Dados",
-                            "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Visualização de Dados",
-                            "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
-                        },
-                        {
-                            "title": "Disponibilização de Dados",
-                            "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Nossos Benefícios",
-                    "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "cards": [
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        },
-                        {
-                            "title": "Valores",
-                            "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                        },
-                        {
-                            "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                        },
-                        {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Perguntas Frequentes",
-                    "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                    "questions": [
-                        {
-                            "question": "Como posso contratar os serviços da SolutionsBI?",
-                            "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
-                        },
-                        {
-                            "question": "Quais são os horários de atendimento da SolutionsBI?",
-                            "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
-                        },
-                        {
-                            "question": "SolutionsBI oferece suporte técnico?",
-                            "answer": "Sim, oferecemos suporte técnico para nossos clientes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        },
-                        {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
-                        }
-                    ]
+                "websites-e-ecommerces": {
+                    "title": {
+                        "part1": "Websites e",
+                        "part2": "E-commerces"
+                    },
+                    "description": {
+                        "short": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "medium": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "long": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                    },
+                    "url": "/websites-e-ecommerces",
+                    "icon": "icon-websites-e-ecommerces",
+                    "background": "bg-websites-e-ecommerces",
+                    "how-it-works": {
+                        "title": "Como Funciona",
+                        "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "steps": [
+                            {
+                                "title": "Coleta de Dados",
+                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                            },
+                            {
+                                "title": "Processamento de Dados",
+                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Análise de Dados",
+                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Visualização de Dados",
+                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                            },
+                            {
+                                "title": "Disponibilização de Dados",
+                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Nossos Benefícios",
+                        "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "cards": [
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            },
+                            {
+                                "title": "Valores",
+                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                            },
+                            {
+                                "title": "Missão",
+                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            },
+                            {
+                                "title": "Visão",
+                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Perguntas Frequentes",
+                        "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "questions": [
+                            {
+                                "question": "Como posso contratar os serviços da SolutionsBI?",
+                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                            },
+                            {
+                                "question": "Quais são os horários de atendimento da SolutionsBI?",
+                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                            },
+                            {
+                                "question": "SolutionsBI oferece suporte técnico?",
+                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            },
+                            {
+                                "question": "SolutionsBI possui algum desconto para estudantes?",
+                                "answer": "Sim, oferecemos desconto para estudantes."
+                            }
+                        ]
+                    }
                 }
             }
         }
@@ -771,14 +777,6 @@
         "contact": {
             "title": "Contato",
             "location": "Localização"
-        }
-    },
-    "components": {
-        "solucoes": {
-            "title": {
-                "part1": "explore todas",
-                "part2": "as nossas soluções"
-            }
         }
     }
 }

@@ -65,7 +65,7 @@ export default function SolutionsCarousel() {
         { scope: container }
     )
 
-    const servicesData = t('pages.solutions', {
+    const servicesData = t('pages.solutions.items', {
         returnObjects: true,
     }) as Record<string, any>
 

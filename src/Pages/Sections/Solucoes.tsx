@@ -52,10 +52,10 @@ export default function Solucoes({ title = false }: SolucoesProps) {
                         <div className="flex flex-col text-center">
                             <h2 className="section-title">
                                 <span className="text-brand-blue">
-                                    {t('components.solucoes.title.part1')}
+                                    {t('pages.solutions.title.part1')}
                                 </span>{' '}
                                 <br />
-                                {t('components.solucoes.title.part2')}
+                                {t('pages.solutions.title.part2')}
                             </h2>
                         </div>
                     )}

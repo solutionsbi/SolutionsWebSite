@@ -142,556 +142,563 @@
             }
         },
         "solutions": {
-            "engenharia-de-dados": {
-                "title": {
-                    "part1": "Data",
-                    "part2": "Engineering"
-                },
-                "description": {
-                    "short": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "medium": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "long": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company."
-                },
-                "url": "/engenharia-de-dados",
-                "icon": "icon-engenharia-de-dados",
-                "background": "bg-engenharia-de-dados",
-                "how-it-works": {
-                    "title": "How It Works",
-                    "description": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "steps": [
-                        {
-                            "title": "Data Collection",
-                            "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
-                        },
-                        {
-                            "title": "Data Processing",
-                            "description": "Data processing to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Analysis",
-                            "description": "Data analysis to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Visualization",
-                            "description": "Data visualization to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Availability",
-                            "description": "Data availability to ensure data quality and consistency."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Our Benefits",
-                    "description": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "cards": [
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        },
-                        {
-                            "title": "Values",
-                            "description": "Our values are honesty, transparency, ethics, and quality."
-                        },
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        },
-                        {
-                            "title": "Values",
-                            "description": "Our values are honesty, transparency, ethics, and quality."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Frequently Asked Questions",
-                    "description": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "questions": [
-                        {
-                            "question": "How can I hire SolutionsBI services?",
-                            "answer": "To hire our services, contact us through our phone number or email."
-                        },
-                        {
-                            "question": "What are SolutionsBI's service hours?",
-                            "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer technical support?",
-                            "answer": "Yes, we offer technical support to our clients."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        }
-                    ]
-                }
+            "title": {
+                "part1": "explore all",
+                "part2": "our solutions"
             },
-            "business-intelligence": {
-                "title": {
-                    "part1": "Business",
-                    "part2": "Intelligence"
+
+            "items": {
+                "engenharia-de-dados": {
+                    "title": {
+                        "part1": "Data",
+                        "part2": "Engineering"
+                    },
+                    "description": {
+                        "short": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "medium": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "long": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company."
+                    },
+                    "url": "/engenharia-de-dados",
+                    "icon": "icon-engenharia-de-dados",
+                    "background": "bg-engenharia-de-dados",
+                    "how-it-works": {
+                        "title": "How It Works",
+                        "description": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "steps": [
+                            {
+                                "title": "Data Collection",
+                                "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
+                            },
+                            {
+                                "title": "Data Processing",
+                                "description": "Data processing to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Analysis",
+                                "description": "Data analysis to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Visualization",
+                                "description": "Data visualization to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Availability",
+                                "description": "Data availability to ensure data quality and consistency."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Our Benefits",
+                        "description": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "cards": [
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            },
+                            {
+                                "title": "Values",
+                                "description": "Our values are honesty, transparency, ethics, and quality."
+                            },
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            },
+                            {
+                                "title": "Values",
+                                "description": "Our values are honesty, transparency, ethics, and quality."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Frequently Asked Questions",
+                        "description": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "questions": [
+                            {
+                                "question": "How can I hire SolutionsBI services?",
+                                "answer": "To hire our services, contact us through our phone number or email."
+                            },
+                            {
+                                "question": "What are SolutionsBI's service hours?",
+                                "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer technical support?",
+                                "answer": "Yes, we offer technical support to our clients."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            }
+                        ]
+                    }
                 },
-                "description": {
-                    "short": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "medium": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "long": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company."
+                "business-intelligence": {
+                    "title": {
+                        "part1": "Business",
+                        "part2": "Intelligence"
+                    },
+                    "description": {
+                        "short": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "medium": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "long": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company."
+                    },
+                    "url": "/business-intelligence",
+                    "icon": "icon-business-intelligence",
+                    "background": "bg-business-intelligence",
+                    "how-it-works": {
+                        "title": "How It Works",
+                        "description": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "steps": [
+                            {
+                                "title": "Data Collection",
+                                "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
+                            },
+                            {
+                                "title": "Data Processing",
+                                "description": "Data processing to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Analysis",
+                                "description": "Data analysis to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Visualization",
+                                "description": "Data visualization to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Availability",
+                                "description": "Data availability to ensure data quality and consistency."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Our Benefits",
+                        "description": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "cards": [
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            },
+                            {
+                                "title": "Values",
+                                "description": "Our values are honesty, transparency, ethics, and quality."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Frequently Asked Questions",
+                        "description": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "questions": [
+                            {
+                                "question": "How can I hire SolutionsBI services?",
+                                "answer": "To hire our services, contact us through our phone number or email."
+                            },
+                            {
+                                "question": "What are SolutionsBI's service hours?",
+                                "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer technical support?",
+                                "answer": "Yes, we offer technical support to our clients."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            }
+                        ]
+                    }
                 },
-                "url": "/business-intelligence",
-                "icon": "icon-business-intelligence",
-                "background": "bg-business-intelligence",
-                "how-it-works": {
-                    "title": "How It Works",
-                    "description": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "steps": [
-                        {
-                            "title": "Data Collection",
-                            "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
-                        },
-                        {
-                            "title": "Data Processing",
-                            "description": "Data processing to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Analysis",
-                            "description": "Data analysis to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Visualization",
-                            "description": "Data visualization to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Availability",
-                            "description": "Data availability to ensure data quality and consistency."
-                        }
-                    ]
+                "sistemas-personalizados": {
+                    "title": {
+                        "part1": "Custom",
+                        "part2": "Systems"
+                    },
+                    "description": {
+                        "short": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "medium": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "long": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company."
+                    },
+                    "url": "/sistemas-personalizados",
+                    "icon": "icon-sistemas-personalizados",
+                    "background": "bg-sistemas-personalizados",
+                    "how-it-works": {
+                        "title": "How It Works",
+                        "description": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "steps": [
+                            {
+                                "title": "Data Collection",
+                                "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
+                            },
+                            {
+                                "title": "Data Processing",
+                                "description": "Data processing to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Analysis",
+                                "description": "Data analysis to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Visualization",
+                                "description": "Data visualization to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Availability",
+                                "description": "Data availability to ensure data quality and consistency."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Our Benefits",
+                        "description": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "cards": [
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            },
+                            {
+                                "title": "Values",
+                                "description": "Our values are honesty, transparency, ethics, and quality."
+                            },
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Frequently Asked Questions",
+                        "description": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "questions": [
+                            {
+                                "question": "How can I hire SolutionsBI services?",
+                                "answer": "To hire our services, contact us through our phone number or email."
+                            },
+                            {
+                                "question": "What are SolutionsBI's service hours?",
+                                "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer technical support?",
+                                "answer": "Yes, we offer technical support to our clients."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            }
+                        ]
+                    }
                 },
-                "benefits": {
-                    "title": "Our Benefits",
-                    "description": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "cards": [
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        },
-                        {
-                            "title": "Values",
-                            "description": "Our values are honesty, transparency, ethics, and quality."
-                        }
-                    ]
+                "inteligencia-artificial": {
+                    "title": {
+                        "part1": "Artificial",
+                        "part2": "Intelligence"
+                    },
+                    "description": {
+                        "short": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "medium": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "long": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company."
+                    },
+                    "url": "/inteligencia-artificial",
+                    "icon": "icon-inteligencia-artificial",
+                    "background": "bg-inteligencia-artificial",
+                    "how-it-works": {
+                        "title": "How It Works",
+                        "description": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "steps": [
+                            {
+                                "title": "Data Collection",
+                                "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
+                            },
+                            {
+                                "title": "Data Processing",
+                                "description": "Data processing to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Analysis",
+                                "description": "Data analysis to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Visualization",
+                                "description": "Data visualization to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Availability",
+                                "description": "Data availability to ensure data quality and consistency."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Our Benefits",
+                        "description": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "cards": [
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            },
+                            {
+                                "title": "Values",
+                                "description": "Our values are honesty, transparency, ethics, and quality."
+                            },
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Frequently Asked Questions",
+                        "description": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "questions": [
+                            {
+                                "question": "How can I hire SolutionsBI services?",
+                                "answer": "To hire our services, contact us through our phone number or email."
+                            },
+                            {
+                                "question": "What are SolutionsBI's service hours?",
+                                "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer technical support?",
+                                "answer": "Yes, we offer technical support to our clients."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            }
+                        ]
+                    }
                 },
-                "faqs": {
-                    "title": "Frequently Asked Questions",
-                    "description": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "questions": [
-                        {
-                            "question": "How can I hire SolutionsBI services?",
-                            "answer": "To hire our services, contact us through our phone number or email."
-                        },
-                        {
-                            "question": "What are SolutionsBI's service hours?",
-                            "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer technical support?",
-                            "answer": "Yes, we offer technical support to our clients."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        }
-                    ]
-                }
-            },
-            "sistemas-personalizados": {
-                "title": {
-                    "part1": "Custom",
-                    "part2": "Systems"
+                "transformacao-digital": {
+                    "title": {
+                        "part1": "Digital",
+                        "part2": "Transformation"
+                    },
+                    "description": {
+                        "short": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "medium": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "long": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company."
+                    },
+                    "url": "/transformacao-digital",
+                    "icon": "icon-transformacao-digital",
+                    "background": "bg-transformacao-digital",
+                    "how-it-works": {
+                        "title": "How It Works",
+                        "description": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "steps": [
+                            {
+                                "title": "Data Collection",
+                                "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
+                            },
+                            {
+                                "title": "Data Processing",
+                                "description": "Data processing to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Analysis",
+                                "description": "Data analysis to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Visualization",
+                                "description": "Data visualization to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Availability",
+                                "description": "Data availability to ensure data quality and consistency."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Our Benefits",
+                        "description": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "cards": [
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            },
+                            {
+                                "title": "Values",
+                                "description": "Our values are honesty, transparency, ethics, and quality."
+                            },
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Frequently Asked Questions",
+                        "description": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "questions": [
+                            {
+                                "question": "How can I hire SolutionsBI services?",
+                                "answer": "To hire our services, contact us through our phone number or email."
+                            },
+                            {
+                                "question": "What are SolutionsBI's service hours?",
+                                "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer technical support?",
+                                "answer": "Yes, we offer technical support to our clients."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            }
+                        ]
+                    }
                 },
-                "description": {
-                    "short": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "medium": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "long": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company."
-                },
-                "url": "/sistemas-personalizados",
-                "icon": "icon-sistemas-personalizados",
-                "background": "bg-sistemas-personalizados",
-                "how-it-works": {
-                    "title": "How It Works",
-                    "description": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "steps": [
-                        {
-                            "title": "Data Collection",
-                            "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
-                        },
-                        {
-                            "title": "Data Processing",
-                            "description": "Data processing to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Analysis",
-                            "description": "Data analysis to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Visualization",
-                            "description": "Data visualization to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Availability",
-                            "description": "Data availability to ensure data quality and consistency."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Our Benefits",
-                    "description": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "cards": [
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        },
-                        {
-                            "title": "Values",
-                            "description": "Our values are honesty, transparency, ethics, and quality."
-                        },
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Frequently Asked Questions",
-                    "description": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "questions": [
-                        {
-                            "question": "How can I hire SolutionsBI services?",
-                            "answer": "To hire our services, contact us through our phone number or email."
-                        },
-                        {
-                            "question": "What are SolutionsBI's service hours?",
-                            "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer technical support?",
-                            "answer": "Yes, we offer technical support to our clients."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        }
-                    ]
-                }
-            },
-            "inteligencia-artificial": {
-                "title": {
-                    "part1": "Artificial",
-                    "part2": "Intelligence"
-                },
-                "description": {
-                    "short": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "medium": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "long": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company."
-                },
-                "url": "/inteligencia-artificial",
-                "icon": "icon-inteligencia-artificial",
-                "background": "bg-inteligencia-artificial",
-                "how-it-works": {
-                    "title": "How It Works",
-                    "description": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "steps": [
-                        {
-                            "title": "Data Collection",
-                            "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
-                        },
-                        {
-                            "title": "Data Processing",
-                            "description": "Data processing to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Analysis",
-                            "description": "Data analysis to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Visualization",
-                            "description": "Data visualization to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Availability",
-                            "description": "Data availability to ensure data quality and consistency."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Our Benefits",
-                    "description": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "cards": [
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        },
-                        {
-                            "title": "Values",
-                            "description": "Our values are honesty, transparency, ethics, and quality."
-                        },
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Frequently Asked Questions",
-                    "description": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "questions": [
-                        {
-                            "question": "How can I hire SolutionsBI services?",
-                            "answer": "To hire our services, contact us through our phone number or email."
-                        },
-                        {
-                            "question": "What are SolutionsBI's service hours?",
-                            "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer technical support?",
-                            "answer": "Yes, we offer technical support to our clients."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        }
-                    ]
-                }
-            },
-            "transformacao-digital": {
-                "title": {
-                    "part1": "Digital",
-                    "part2": "Transformation"
-                },
-                "description": {
-                    "short": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "medium": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "long": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company."
-                },
-                "url": "/transformacao-digital",
-                "icon": "icon-transformacao-digital",
-                "background": "bg-transformacao-digital",
-                "how-it-works": {
-                    "title": "How It Works",
-                    "description": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "steps": [
-                        {
-                            "title": "Data Collection",
-                            "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
-                        },
-                        {
-                            "title": "Data Processing",
-                            "description": "Data processing to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Analysis",
-                            "description": "Data analysis to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Visualization",
-                            "description": "Data visualization to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Availability",
-                            "description": "Data availability to ensure data quality and consistency."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Our Benefits",
-                    "description": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "cards": [
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        },
-                        {
-                            "title": "Values",
-                            "description": "Our values are honesty, transparency, ethics, and quality."
-                        },
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Frequently Asked Questions",
-                    "description": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "questions": [
-                        {
-                            "question": "How can I hire SolutionsBI services?",
-                            "answer": "To hire our services, contact us through our phone number or email."
-                        },
-                        {
-                            "question": "What are SolutionsBI's service hours?",
-                            "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer technical support?",
-                            "answer": "Yes, we offer technical support to our clients."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        }
-                    ]
-                }
-            },
-            "websites-e-ecommerces": {
-                "title": {
-                    "part1": "Websites and",
-                    "part2": "E-commerces"
-                },
-                "description": {
-                    "short": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "medium": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "long": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company."
-                },
-                "url": "/websites-e-ecommerces",
-                "icon": "icon-websites-e-ecommerces",
-                "background": "bg-websites-e-ecommerces",
-                "how-it-works": {
-                    "title": "How It Works",
-                    "description": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "steps": [
-                        {
-                            "title": "Data Collection",
-                            "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
-                        },
-                        {
-                            "title": "Data Processing",
-                            "description": "Data processing to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Analysis",
-                            "description": "Data analysis to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Visualization",
-                            "description": "Data visualization to ensure data quality and consistency."
-                        },
-                        {
-                            "title": "Data Availability",
-                            "description": "Data availability to ensure data quality and consistency."
-                        }
-                    ]
-                },
-                "benefits": {
-                    "title": "Our Benefits",
-                    "description": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "cards": [
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        },
-                        {
-                            "title": "Values",
-                            "description": "Our values are honesty, transparency, ethics, and quality."
-                        },
-                        {
-                            "title": "Mission",
-                            "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
-                        },
-                        {
-                            "title": "Vision",
-                            "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
-                        }
-                    ]
-                },
-                "faqs": {
-                    "title": "Frequently Asked Questions",
-                    "description": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                    "questions": [
-                        {
-                            "question": "How can I hire SolutionsBI services?",
-                            "answer": "To hire our services, contact us through our phone number or email."
-                        },
-                        {
-                            "question": "What are SolutionsBI's service hours?",
-                            "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer technical support?",
-                            "answer": "Yes, we offer technical support to our clients."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        },
-                        {
-                            "question": "Does SolutionsBI offer any discounts for students?",
-                            "answer": "Yes, we offer discounts for students."
-                        }
-                    ]
+                "websites-e-ecommerces": {
+                    "title": {
+                        "part1": "Websites and",
+                        "part2": "E-commerces"
+                    },
+                    "description": {
+                        "short": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "medium": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "long": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company."
+                    },
+                    "url": "/websites-e-ecommerces",
+                    "icon": "icon-websites-e-ecommerces",
+                    "background": "bg-websites-e-ecommerces",
+                    "how-it-works": {
+                        "title": "How It Works",
+                        "description": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "steps": [
+                            {
+                                "title": "Data Collection",
+                                "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
+                            },
+                            {
+                                "title": "Data Processing",
+                                "description": "Data processing to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Analysis",
+                                "description": "Data analysis to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Visualization",
+                                "description": "Data visualization to ensure data quality and consistency."
+                            },
+                            {
+                                "title": "Data Availability",
+                                "description": "Data availability to ensure data quality and consistency."
+                            }
+                        ]
+                    },
+                    "benefits": {
+                        "title": "Our Benefits",
+                        "description": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "cards": [
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            },
+                            {
+                                "title": "Values",
+                                "description": "Our values are honesty, transparency, ethics, and quality."
+                            },
+                            {
+                                "title": "Mission",
+                                "description": "Our mission is to offer technology solutions to help your company grow, innovate, and stand out in the market."
+                            },
+                            {
+                                "title": "Vision",
+                                "description": "Our vision is to be the best technology company in Brazil and be recognized internationally."
+                            }
+                        ]
+                    },
+                    "faqs": {
+                        "title": "Frequently Asked Questions",
+                        "description": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "questions": [
+                            {
+                                "question": "How can I hire SolutionsBI services?",
+                                "answer": "To hire our services, contact us through our phone number or email."
+                            },
+                            {
+                                "question": "What are SolutionsBI's service hours?",
+                                "answer": "Our service hours are Monday to Friday, from 8 am to 6 pm."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer technical support?",
+                                "answer": "Yes, we offer technical support to our clients."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            },
+                            {
+                                "question": "Does SolutionsBI offer any discounts for students?",
+                                "answer": "Yes, we offer discounts for students."
+                            }
+                        ]
+                    }
                 }
             }
         }
@@ -772,14 +779,6 @@
         "contact": {
             "title": "Contact",
             "location": "Location"
-        }
-    },
-    "components": {
-        "solucoes": {
-            "title": {
-                "part1": "explore all",
-                "part2": "our solutions"
-            }
         }
     }
 }

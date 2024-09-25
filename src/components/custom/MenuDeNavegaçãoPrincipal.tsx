@@ -30,7 +30,7 @@ import { Facebook } from 'lucide-react'
 
 export function MenuDeNavegaçãoPrincipal() {
     const { t } = useTranslation()
-    const solutionsData = t('pages.solutions', {
+    const solutionsData = t('pages.solutions.items', {
         returnObjects: true,
     }) as Record<string, any>
 
