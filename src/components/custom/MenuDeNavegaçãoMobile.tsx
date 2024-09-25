@@ -1,10 +1,20 @@
 // Import necessary dependencies and components
+import { useTranslation } from 'react-i18next'
 import React, { useRef, useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
-gsap.registerPlugin(useGSAP)
 import { Phone, Mail, House, Shield, FileQuestion } from 'lucide-react'
+import { LanguageSelector } from '@/components/custom/LanguageSelector'
+gsap.registerPlugin(useGSAP)
+
+import logo from '@assets/svg/logo.svg'
+import iconEngenhariaDeDados from '@/assets/svg/tech-icons/ed-icon.svg'
+import iconBusinessIntelligence from '@/assets/svg/tech-icons/bi-icon.svg'
+import iconSistemasPersonalizados from '@/assets/svg/tech-icons/sistemas-icon.svg'
+import iconInteligenciaArtificial from '@/assets/svg/tech-icons/ia-icon.svg'
+import iconTransformacaoDigital from '@/assets/svg/tech-icons/transformacao-icon.svg'
+import iconWebsitesEEcommerces from '@/assets/svg/tech-icons/sites-icon.svg'
 
 const MenuDeNavegaçãoMobile: React.FC = () => {
     // Create refs for DOM elements and GSAP timeline
@@ -119,20 +129,41 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
         }
     }, [navigate])
 
+    // Get solutions data from translation
+    const { t } = useTranslation()
+    const mobileMenuTranslations = t('mobileNavigationMenu', {
+        returnObjects: true,
+    }) as Record<string, any>
+
     return (
-        <nav ref={containerRef} className="mobile-navigation">
-            {/* Menu trigger button */}
-            <button
-                ref={triggerRef}
-                className="menu-trigger group flex flex-col gap-[5px]"
-                onClick={toggleTimeline}
-                aria-label="Toggle mobile menu"
-                aria-expanded="false"
-            >
-                <span className="menu-trigger-bar top h-0.5 w-7 rounded-lg bg-white"></span>
-                <span className="menu-trigger-bar middle h-0.5 w-7 rounded-lg bg-white"></span>
-                <span className="menu-trigger-bar bottom h-0.5 w-7 rounded-lg bg-white"></span>
-            </button>
+        <nav
+            ref={containerRef}
+            className="mobile-navigation flex h-full items-center"
+        >
+            <div className="flex w-full items-center justify-between">
+                <NavLink to="/">
+                    <img
+                        src={logo}
+                        alt="Solutions BI"
+                        className="h-10 w-auto"
+                    />
+                </NavLink>
+
+                <LanguageSelector />
+
+                {/* Menu trigger button */}
+                <button
+                    ref={triggerRef}
+                    className="menu-trigger group flex flex-col gap-[5px]"
+                    onClick={toggleTimeline}
+                    aria-label="Toggle mobile menu"
+                    aria-expanded="false"
+                >
+                    <span className="menu-trigger-bar top h-0.5 w-7 rounded-lg bg-white"></span>
+                    <span className="menu-trigger-bar middle h-0.5 w-7 rounded-lg bg-white"></span>
+                    <span className="menu-trigger-bar bottom h-0.5 w-7 rounded-lg bg-white"></span>
+                </button>
+            </div>
 
             {/* Side menu container */}
             <div
@@ -149,36 +180,53 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
                 <nav className="menu flex h-full w-full flex-col overflow-y-scroll text-sm font-normal">
                     {/* Institutional links */}
                     <section className="link-group-1 flex flex-col gap-4">
-                        <h2 className="text-lg font-semibold">Institucional</h2>
+                        <h2 className="text-lg">
+                            {mobileMenuTranslations.institutional.title}
+                        </h2>
                         <ul className="flex flex-col gap-4">
                             <li>
                                 <NavLink
                                     to="/"
-                                    className="ml-3 flex items-center gap-2"
+                                    className="flex items-center gap-2"
                                 >
                                     <House size={20} aria-hidden="true" />
-                                    <span>Home</span>
+                                    <span>
+                                        {
+                                            mobileMenuTranslations.institutional
+                                                .home
+                                        }
+                                    </span>
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink
                                     to="/sobre"
-                                    className="ml-3 flex items-center gap-2"
+                                    className="flex items-center gap-2"
                                 >
                                     <FileQuestion
                                         size={20}
                                         aria-hidden="true"
                                     />
-                                    <span>Sobre</span>
+                                    <span>
+                                        {
+                                            mobileMenuTranslations.institutional
+                                                .about
+                                        }
+                                    </span>
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink
                                     to="/politica-de-privacidade"
-                                    className="ml-3 flex items-center gap-2"
+                                    className="flex items-center gap-2"
                                 >
                                     <Shield size={20} aria-hidden="true" />
-                                    <span>Políticas de Privacidade</span>
+                                    <span>
+                                        {
+                                            mobileMenuTranslations.institutional
+                                                .privacyPolicy
+                                        }
+                                    </span>
                                 </NavLink>
                             </li>
                         </ul>
@@ -186,35 +234,137 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
 
                     {/* Solutions links */}
                     <section className="link-group-2 my-6 flex flex-col gap-4 border-y border-white/10 py-6">
-                        <h2 className="text-lg font-semibold">Soluções</h2>
+                        <h2 className="text-lg">
+                            {mobileMenuTranslations.solutions.title}
+                        </h2>
                         <ul className="flex flex-col gap-4">
-                            {informacoesDeServicos.map((servico) => (
-                                <li key={servico.href}>
-                                    <NavLink
-                                        to={servico.href}
-                                        className="ml-3 flex items-center gap-2"
-                                    >
-                                        <img
-                                            src={servico.icon}
-                                            alt=""
-                                            className="h-6 w-6"
-                                            aria-hidden="true"
-                                        />
-                                        <span>{servico.title}</span>
-                                    </NavLink>
-                                </li>
-                            ))}
+                            <li>
+                                <NavLink
+                                    to="/engenharia-de-dados"
+                                    className="flex items-center gap-2"
+                                >
+                                    <img
+                                        src={iconEngenhariaDeDados}
+                                        alt=""
+                                        className="h-6 w-6"
+                                        aria-hidden="true"
+                                    />
+                                    <span>
+                                        {
+                                            mobileMenuTranslations.solutions
+                                                .dataEngineering
+                                        }
+                                    </span>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/business-intelligence"
+                                    className="flex items-center gap-2"
+                                >
+                                    <img
+                                        src={iconBusinessIntelligence}
+                                        alt=""
+                                        className="h-6 w-6"
+                                        aria-hidden="true"
+                                    />
+                                    <span>
+                                        {
+                                            mobileMenuTranslations.solutions
+                                                .businessIntelligence
+                                        }
+                                    </span>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/custom-systems"
+                                    className="flex items-center gap-2"
+                                >
+                                    <img
+                                        src={iconSistemasPersonalizados}
+                                        alt=""
+                                        className="h-6 w-6"
+                                        aria-hidden="true"
+                                    />
+                                    <span>
+                                        {
+                                            mobileMenuTranslations.solutions
+                                                .customSystems
+                                        }
+                                    </span>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/artificial-intelligence"
+                                    className="flex items-center gap-2"
+                                >
+                                    <img
+                                        src={iconInteligenciaArtificial}
+                                        alt=""
+                                        className="h-6 w-6"
+                                        aria-hidden="true"
+                                    />
+                                    <span>
+                                        {
+                                            mobileMenuTranslations.solutions
+                                                .artificialIntelligence
+                                        }
+                                    </span>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/digital-transformation"
+                                    className="flex items-center gap-2"
+                                >
+                                    <img
+                                        src={iconTransformacaoDigital}
+                                        alt=""
+                                        className="h-6 w-6"
+                                        aria-hidden="true"
+                                    />
+                                    <span>
+                                        {
+                                            mobileMenuTranslations.solutions
+                                                .digitalTransformation
+                                        }
+                                    </span>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/websites-e-ecommerces"
+                                    className="flex items-center gap-2"
+                                >
+                                    <img
+                                        src={iconWebsitesEEcommerces}
+                                        alt=""
+                                        className="h-6 w-6"
+                                        aria-hidden="true"
+                                    />
+                                    <span>
+                                        {
+                                            mobileMenuTranslations.solutions
+                                                .websitesEcommerces
+                                        }
+                                    </span>
+                                </NavLink>
+                            </li>
                         </ul>
                     </section>
 
                     {/* Contact links */}
                     <section className="link-group-3 flex flex-col gap-4">
-                        <h2 className="text-lg font-semibold">Contato</h2>
+                        <h2 className="text-lg">
+                            {mobileMenuTranslations.contact.title}
+                        </h2>
                         <ul className="flex flex-col gap-4">
                             <li>
                                 <NavLink
                                     to="https://api.whatsapp.com/send?phone=5519983085819"
-                                    className="ml-3 flex items-center gap-2"
+                                    className="flex items-center gap-2"
                                 >
                                     <Phone size={20} aria-hidden="true" />
                                     <span className="text-sm">
@@ -225,7 +375,7 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
                             <li>
                                 <NavLink
                                     to="mailto:contato@solutionsbi.com.br"
-                                    className="ml-3 flex items-center gap-2"
+                                    className="flex items-center gap-2"
                                 >
                                     <Mail size={20} aria-hidden="true" />
                                     <span className="text-sm">

@@ -98,6 +98,49 @@
                 }
             }
         },
+        "about": {
+            "sections": {
+                "hero": {
+                    "title": {
+                        "part1": "conheça a",
+                        "part2": " Solutions BI"
+                    },
+                    "description": "Saiba mais sobre nossa história e como tudo começou."
+                },
+                "timeline": {
+                    "title": "de uma <span>visão</span> <br/> <span>inovadora</span> ao <br/> impacto global",
+                    "description": "Fundada em 2019, a Solutions BI nasceu com a missão de transformar dados em insights valiosos para empresas de diversos setores. Desde o início, nosso foco tem sido capacitar nossos clientes com soluções tecnológicas de ponta, permitindo que tomem decisões mais informadas e estratégicas. Com o passar dos anos, crescemos e expandimos nossa atuação globalmente, entregando mais de 150 projetos em 9 países diferentes, sempre mantendo um compromisso com a excelência e a inovação.",
+                    "clients": "Clientes",
+                    "projects": "Projetos",
+                    "events": [
+                        {
+                            "title": "Do Início à Escalabilidade",
+                            "description": "Tudo começou em 2019 com a impressão de alguns cartões de apresentação e o primeiro projeto com um cliente do RJ. Esse mesmo voltaria a ser nosso cliente em 2023. Nosso primeiro parceiro se juntou ao time trazendo outros projetos para darmos continuidade no crescimento."
+                        },
+                        {
+                            "title": "Da Diversificação à uma Nova Empresa",
+                            "description": "Nós diversificamos nossos serviços atuando em setores como TI, Medicina, Industrias e Logística. A SolutionsBI tem sua firma aberta perante a lei, consolida seus clientes e contrata seu primeiro colaborador."
+                        },
+                        {
+                            "title": "Globalização",
+                            "description": "Estamos agora presentes em projetos em 4 continentes diferentes aumentando nosso time e parcerias."
+                        },
+                        {
+                            "title": "Crescimento",
+                            "description": "A SolutionsBI está agora presente em grandes projetos Nacionais e Internacionais. Temos um time consolidado e engajado. Nesse ponto já atuamos em projetos no Brasil, Inglaterra, Alemanha, Portugal, USA, Uruguai e Barbados."
+                        },
+                        {
+                            "title": "Amadurecimento",
+                            "description": "Nessa fase criamos processos internos para gestão financeira, contratação, pessoas, crescimento profissional e marketing. Participamos ativamente de projetos da cidade e fechamos uma parceria internacional exclusiva."
+                        },
+                        {
+                            "title": "Tração",
+                            "description": "Buscando um crescimento exponencial, diversificamos nossos serviços, criamos nossos produtos e investimos em recursos para aumentar ainda mais a qualidade de nosso atendimento perante nossos clientes."
+                        }
+                    ]
+                }
+            }
+        },
         "solutions": {
             "engenharia-de-dados": {
                 "title": {
@@ -708,5 +751,34 @@
         "location": "Localização",
         "linkedin": "Linkedin",
         "facebook": "Facebook"
+    },
+    "mobileNavigationMenu": {
+        "institutional": {
+            "title": "Institucional",
+            "home": "Início",
+            "about": "Sobre",
+            "privacyPolicy": "Política de Privacidade"
+        },
+        "solutions": {
+            "title": "Soluções",
+            "dataEngineering": "Engenharia de Dados",
+            "businessIntelligence": "Business Intelligence",
+            "customSystems": "Sistemas Personalizados",
+            "artificialIntelligence": "Inteligência Artificial",
+            "digitalTransformation": "Transformação Digital",
+            "websitesEcommerces": "Websites e E-commerces"
+        },
+        "contact": {
+            "title": "Contato",
+            "location": "Localização"
+        }
+    },
+    "components": {
+        "solucoes": {
+            "title": {
+                "part1": "explore todas",
+                "part2": "as nossas soluções"
+            }
+        }
     }
 }

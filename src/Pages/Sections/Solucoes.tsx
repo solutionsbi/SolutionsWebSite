@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 import Carrossel from '../../components/custom/SolutionsCarousel'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -11,6 +13,7 @@ type SolucoesProps = {
 }
 
 export default function Solucoes({ title = false }: SolucoesProps) {
+    const { t } = useTranslation()
     const container = useRef<HTMLDivElement>(null)
 
     useGSAP(
@@ -49,10 +52,10 @@ export default function Solucoes({ title = false }: SolucoesProps) {
                         <div className="flex flex-col text-center">
                             <h2 className="section-title">
                                 <span className="text-brand-blue">
-                                    explore todas
+                                    {t('components.solucoes.title.part1')}
                                 </span>{' '}
                                 <br />
-                                as nossas solucões
+                                {t('components.solucoes.title.part2')}
                             </h2>
                         </div>
                     )}

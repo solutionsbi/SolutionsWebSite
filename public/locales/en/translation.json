@@ -98,6 +98,49 @@
                 }
             }
         },
+        "about": {
+            "sections": {
+                "hero": {
+                    "title": {
+                        "part1": "get to know",
+                        "part2": " Solutions BI"
+                    },
+                    "description": "Learn more about our history and how it all started."
+                },
+                "timeline": {
+                    "title": "from an <span>innovative</span> <br/> <span>vision</span> to <br/> global impact",
+                    "description": "Founded in 2019, Solutions BI was born with the mission of transforming data into valuable insights for companies across various sectors. From the beginning, our focus has been on empowering our clients with cutting-edge technological solutions, enabling them to make more informed and strategic decisions. Over the years, we have grown and expanded our operations globally, delivering more than 150 projects in 9 different countries, always maintaining a commitment to excellence and innovation.",
+                    "clients": "Clients",
+                    "projects": "Projects",
+                    "events": [
+                        {
+                            "title": "From the Beginning to Scalability",
+                            "description": "It all started in 2019 with the printing of some business cards and the first project with a client from RJ. This same client would return to us in 2023. Our first partner joined the team, bringing other projects to continue our growth."
+                        },
+                        {
+                            "title": "From Diversification to a New Company",
+                            "description": "We diversified our services, operating in sectors such as IT, Medicine, Industries, and Logistics. SolutionsBI is legally established as a company, consolidates its clients, and hires its first employee."
+                        },
+                        {
+                            "title": "Globalization",
+                            "description": "We are now present in projects on 4 different continents, increasing our team and partnerships."
+                        },
+                        {
+                            "title": "Growth",
+                            "description": "SolutionsBI is now present in major National and International projects. We have a consolidated and engaged team. At this point, we are already working on projects in Brazil, England, Germany, Portugal, USA, Uruguay, and Barbados."
+                        },
+                        {
+                            "title": "Maturation",
+                            "description": "In this phase, we created internal processes for financial management, hiring, people, professional growth, and marketing. We actively participate in city projects and close an exclusive international partnership."
+                        },
+                        {
+                            "title": "Traction",
+                            "description": "Seeking exponential growth, we diversify our services, create our products, and invest in resources to further increase the quality of our service to our clients."
+                        }
+                    ]
+                }
+            }
+        },
         "solutions": {
             "engenharia-de-dados": {
                 "title": {
@@ -708,5 +751,35 @@
         "location": "Location",
         "linkedin": "Linkedin",
         "facebook": "Facebook"
+    },
+    "mobileNavigationMenu": {
+        "institutional": {
+            "title": "Institutional",
+            "home": "Home",
+            "about": "About",
+            "privacyPolicy": "Privacy Policy"
+        },
+
+        "solutions": {
+            "title": "Solutions",
+            "dataEngineering": "Data Engineering",
+            "businessIntelligence": "Business Intelligence",
+            "customSystems": "Custom Systems",
+            "artificialIntelligence": "Artificial Intelligence",
+            "digitalTransformation": "Digital Transformation",
+            "websitesEcommerces": "Websites and E-commerces"
+        },
+        "contact": {
+            "title": "Contact",
+            "location": "Location"
+        }
+    },
+    "components": {
+        "solucoes": {
+            "title": {
+                "part1": "explore all",
+                "part2": "our solutions"
+            }
+        }
     }
 }
