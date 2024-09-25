@@ -47,7 +47,7 @@ export default function Home() {
             <Benefícios
                 title={
                     <>
-                        {homeData.sections.benefits.title.part1}{' '}
+                        {homeData.sections.benefits.title.part1} <br />
                         <span className="text-brand-blue">
                             {homeData.sections.benefits.title.part2}
                         </span>

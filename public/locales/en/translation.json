@@ -157,7 +157,7 @@
                     },
                     "description": {
                         "short": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
-                        "medium": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "medium": "We offer complete data engineering solutions, from collection and storage to processing and analysis of large volumes of data, supporting strategic decisions and promoting continuous innovation in your company.",
                         "long": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company."
                     },
                     "url": "/engenharia-de-dados",
@@ -336,7 +336,7 @@
                     },
                     "description": {
                         "short": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
-                        "medium": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "medium": "We design and develop custom systems that meet the specific needs of your business. From web and mobile applications to complex platforms, our developers transform ideas into efficient and scalable tools.",
                         "long": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company."
                     },
                     "url": "/sistemas-personalizados",

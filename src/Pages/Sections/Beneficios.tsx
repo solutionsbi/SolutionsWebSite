@@ -141,49 +141,45 @@ export default function Beneficios({
                 />
             </div>
 
-            <div className="grid h-full">
-                <div className="container grid justify-items-center lg:grid-cols-2 lg:gap-20">
-                    <div className="mb-16 flex w-full flex-col">
-                        <div className="flex flex-col text-center lg:items-start lg:text-start">
-                            <h2 className="section-title mb-5 md:mb-6">
-                                {title}
-                            </h2>
-                            <p className="section-description xl:text-md">
-                                {description}
-                            </p>
-                            <div className="mt-6 hidden items-center justify-center gap-x-4 md:mt-10 md:flex">
-                                <PrimaryButton
-                                    className="section-cta"
-                                    href={cta.href}
-                                    text={cta.text}
-                                    additionalText={cta.additionalText}
-                                    linkType={cta.linkType}
-                                />
-                            </div>
+            <div className="container grid w-max items-center justify-items-center gap-10 lg:grid-cols-2">
+                <div className="mb-16 flex w-full max-w-md flex-col">
+                    <div className="flex flex-col text-center lg:items-start lg:text-start">
+                        <h2 className="section-title mb-5 md:mb-6">{title}</h2>
+                        <p className="section-description xl:text-md">
+                            {description}
+                        </p>
+                        <div className="mt-6 hidden items-center justify-center gap-x-4 md:mt-10 md:flex">
+                            <PrimaryButton
+                                className="section-cta"
+                                href={cta.href}
+                                text={cta.text}
+                                additionalText={cta.additionalText}
+                                linkType={cta.linkType}
+                            />
                         </div>
                     </div>
+                </div>
 
-                    <div className="mx-auto grid gap-2">
-                        {benefits.map((benefit, index) => (
-                            <div
-                                key={index}
-                                className="benefit-item relative flex flex-col gap-4 border-l-[4px] border-brand-blue bg-gradient-to-r from-neutral-darkest/60 px-8 py-6 backdrop-blur"
-                            >
-                                <div className="flex items-center gap-5">
-                                    <img
-                                        className="h-10 w-10 [&_*]:filter-none"
-                                        src={icons[index]}
-                                    />
-                                    <h3 className="whitespace-pre-line text-2xl/[1.15] lg:text-3xl/[1.15] [&_*]:filter-none">
-                                        {benefit.title}
-                                    </h3>
-                                </div>
-                                <div className="max-w-[90%] text-neutral-200 2xl:text-md [&_*]:filter-none">
-                                    <p>{benefit.description}</p>
-                                </div>
+                <div className="mx-auto grid gap-2">
+                    {benefits.map((benefit, index) => (
+                        <div
+                            key={index}
+                            className="benefit-item relative flex max-w-md flex-col gap-4 border-l-2 border-brand-blue bg-gradient-to-r from-neutral-darkest/60 px-8 py-6 backdrop-blur"
+                        >
+                            <div className="flex items-center gap-2">
+                                <img
+                                    className="h-8 w-8 [&_*]:filter-none"
+                                    src={icons[index]}
+                                />
+                                <h3 className="whitespace-pre-line text-2xl/[1.15] [&_*]:filter-none">
+                                    {benefit.title}
+                                </h3>
                             </div>
-                        ))}
-                    </div>
+                            <div className="max-w-[90%] text-neutral-200 2xl:text-md [&_*]:filter-none">
+                                <p>{benefit.description}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

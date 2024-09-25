@@ -46,10 +46,10 @@
                 },
                 "benefits": {
                     "title": {
-                        "part1": "Nossos",
-                        "part2": "Valores"
+                        "part1": "Vantagens",
+                        "part2": "Exclusivas"
                     },
-                    "description": "Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado.Conheça nossos serviços e descubra como podemos ajudar a impulsionar o seu negócio.",
+                    "description": "Descubra como nossos serviços impulsionam seu negócio: Desenvolvimento Web, Aplicativos e Business Intelligence para o seu sucesso sem limites!",
                     "cta": {
                         "text": "Impulsione Seu Negócio",
                         "additionalText": "Saiba mais"
@@ -57,7 +57,7 @@
                     "cards": [
                         {
                             "title": "Missão",
-                            "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                            "description": "Acreditamos em um ambiente extremamente colaborativo onde mais que colegas de trabalho, fazemos amigos na SolutionsBI. Para isso o respeito mutuo é a regra Nº1 internamente. Saber os limites de liberdade com cada um é essencial para sempre termos um ambiente leve, agradável e descontraído."
                         },
                         {
                             "title": "Visão",
@@ -156,9 +156,9 @@
                         "part2": "de Dados"
                     },
                     "description": {
-                        "short": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "medium": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "long": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                        "short": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise, apoiando decisões estratégicas e promovendo a inovação em sua empresa.",
+                        "medium": "Oferecemos soluções completas em engenharia de dados, desde a coleta e armazenamento até o processamento e análise de grandes volumes de dados, apoiando decisões estratégicas e promovendo a inovação contínua em sua empresa.",
+                        "long": "Oferecemos soluções completas em engenharia de dados, abrangendo todas as etapas, desde a coleta e armazenamento até o processamento e análise de grandes volumes de dados. Nossas soluções garantem que sua empresa tenha as informações necessárias para apoiar decisões estratégicas, otimizar operações e promover a inovação contínua, mantendo-a competitiva e preparada para os desafios futuros."
                     },
                     "url": "/engenharia-de-dados",
                     "icon": "icon-engenharia-de-dados",
@@ -255,9 +255,9 @@
                         "part2": "Intelligence"
                     },
                     "description": {
-                        "short": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "medium": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "long": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                        "short": "Com nossas soluções de BI, transformamos dados em insights que otimizam operações, antecipam tendências e melhoram a tomada de decisões para impulsionar o crescimento.",
+                        "medium": "Com nossas soluções de BI, transformamos dados em vantagem competitiva. Organizamos suas informações e geramos insights que antecipam tendências, otimizam operações e melhoram a tomada de decisões. O BI oferece uma visão clara do seu negócio, permitindo reações rápidas e exploração de novas oportunidades de crescimento.",
+                        "long": "Com nossas soluções de BI, transformamos dados em vantagem competitiva. Organizamos suas informações e geramos insights valiosos que antecipam tendências, otimizam operações e melhoram a tomada de decisões. O BI oferece uma visão clara e abrangente do seu negócio, permitindo reações rápidas a mudanças e a exploração de novas oportunidades de crescimento, garantindo que sua empresa esteja sempre à frente no mercado."
                     },
                     "url": "/business-intelligence",
                     "icon": "icon-business-intelligence",
@@ -335,9 +335,9 @@
                         "part2": "Personalizados"
                     },
                     "description": {
-                        "short": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "medium": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "long": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                        "short": "Projetamos e desenvolvemos sistemas personalizados que atendem às necessidades do seu negócio, transformando ideias em soluções eficientes e escaláveis.",
+                        "medium": "Projetamos e desenvolvemos sistemas personalizados que atendem as necessidades específicas do seu negócio. Desde aplicativos web e móveis até plataformas complexas, nossos desenvolvedores transformam ideias em ferramentas eficientes e escaláveis.",
+                        "long": "Projetamos e desenvolvemos sistemas personalizados que atendem às necessidades específicas do seu negócio. Desde aplicativos web e móveis até plataformas complexas, nossos desenvolvedores transformam suas ideias em ferramentas eficientes e escaláveis, garantindo que sua empresa tenha as soluções tecnológicas sob medida para crescer e prosperar."
                     },
                     "url": "/sistemas-personalizados",
                     "icon": "icon-sistemas-personalizados",
@@ -423,9 +423,9 @@
                         "part2": "Artificial"
                     },
                     "description": {
-                        "short": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "medium": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "long": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                        "short": "Utilizamos IA para automatizar processos, analisar dados e melhorar decisões, ajudando sua empresa a prever tendências, personalizar experiências e aumentar a eficiência.",
+                        "medium": "Utilizamos a Inteligência Artificial para criar soluções que automatizam processos, analisam grandes volumes de dados e aprimoram a tomada de decisões. Com nossas soluções de IA, sua empresa pode prever tendências, personalizar experiências e aumentar a eficiência operacional, tornando-se mais competitiva no mercado.",
+                        "long": "Utilizamos a Inteligência Artificial para criar soluções que automatizam processos, analisam grandes volumes de dados e aprimoram a tomada de decisões. Com nossas soluções de IA, sua empresa pode prever tendências, personalizar experiências e aumentar a eficiência operacional, tornando-se mais competitiva no mercado e pronta para enfrentar os desafios do futuro."
                     },
                     "url": "/inteligencia-artificial",
                     "icon": "icon-inteligencia-artificial",
@@ -519,9 +519,9 @@
                         "part2": "Digital"
                     },
                     "description": {
-                        "short": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "medium": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "long": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                        "short": "Ajudamos sua empresa a prosperar na era digital, modernizando processos e integrando tecnologias inovadoras para melhorar a eficiência e criar novas oportunidades.",
+                        "medium": "Ajudamos sua empresa a se adaptar e prosperar na era digital, modernizando processos e integrando tecnologias inovadoras. Nossa abordagem de transformação digital não só melhora a eficiência, mas também cria novas oportunidades de crescimento e inovação, alinhando sua empresa às demandas do mercado atual.",
+                        "long": "Ajudamos sua empresa a se adaptar e prosperar na era digital, modernizando processos e integrando tecnologias inovadoras. Nossa abordagem de transformação digital não apenas aumenta a eficiência, mas também abre novas oportunidades de crescimento e inovação, alinhando sua empresa às demandas do mercado atual e preparando-a para o futuro."
                     },
                     "url": "/transformacao-digital",
                     "icon": "icon-transformacao-digital",
@@ -615,9 +615,9 @@
                         "part2": "E-commerces"
                     },
                     "description": {
-                        "short": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "medium": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
-                        "long": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa."
+                        "short": "Criamos websites e plataformas de e-commerce que atraem visitantes e convertem vendas, com foco em UX, design e SEO para fortalecer sua presença online.",
+                        "medium": "Desenvolvemos websites e plataformas de e-commerce que não apenas atraem visitantes, mas também convertem vendas. Nossas soluções são projetadas para oferecer uma experiência de usuário intuitiva e fluida, alinhada às melhores práticas de design e SEO, garantindo que sua presença online seja forte e eficaz.",
+                        "long": "Desenvolvemos websites e plataformas de e-commerce que não apenas atraem visitantes, mas também convertem vendas. Nossas soluções são projetadas para proporcionar uma experiência de usuário intuitiva e fluida, seguindo as melhores práticas de design e SEO. Isso garante que sua presença online seja forte, eficaz e capaz de gerar resultados concretos."
                     },
                     "url": "/websites-e-ecommerces",
                     "icon": "icon-websites-e-ecommerces",
