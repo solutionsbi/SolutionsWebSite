@@ -146,8 +146,11 @@
                 "part1": "explore todas",
                 "part2": "as nossas soluções"
             },
+            "howItWorks": {
+                "title": "Como Funciona"
+            },
             "items": {
-                "engenharia-de-dados": {
+                "engenhariaDeDados": {
                     "title": {
                         "part1": "Engenharia",
                         "part2": "de Dados"
@@ -160,28 +163,31 @@
                     "url": "/engenharia-de-dados",
                     "icon": "icon-engenharia-de-dados",
                     "background": "bg-engenharia-de-dados",
-                    "how-it-works": {
-                        "title": "Como Funciona",
+                    "howItWorks": {
+                        "title": {
+                            "part1": "Como",
+                            "part2": "Funciona"
+                        },
                         "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "steps": [
                             {
-                                "title": "Coleta de Dados",
+                                "title": "Coleta \n de Dados",
                                 "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
                             },
                             {
-                                "title": "Processamento de Dados",
+                                "title": "Processamento \n de Dados",
                                 "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
                             },
                             {
-                                "title": "Análise de Dados",
+                                "title": "Análise \n de Dados",
                                 "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
                             },
                             {
-                                "title": "Visualização de Dados",
+                                "title": "Visualização \n de Dados",
                                 "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
                             },
                             {
-                                "title": "Disponibilização de Dados",
+                                "title": "Disponibilização \n de Dados",
                                 "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
                             }
                         ]
@@ -243,7 +249,7 @@
                         ]
                     }
                 },
-                "business-intelligence": {
+                "businessIntelligence": {
                     "title": {
                         "part1": "Business",
                         "part2": "Intelligence"
@@ -256,7 +262,7 @@
                     "url": "/business-intelligence",
                     "icon": "icon-business-intelligence",
                     "background": "bg-business-intelligence",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "Como Funciona",
                         "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "steps": [
@@ -323,7 +329,7 @@
                         ]
                     }
                 },
-                "sistemas-personalizados": {
+                "sistemasPersonalizados": {
                     "title": {
                         "part1": "Sistemas",
                         "part2": "Personalizados"
@@ -336,7 +342,7 @@
                     "url": "/sistemas-personalizados",
                     "icon": "icon-sistemas-personalizados",
                     "background": "bg-sistemas-personalizados",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "Como Funciona",
                         "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "steps": [
@@ -411,7 +417,7 @@
                         ]
                     }
                 },
-                "inteligencia-artificial": {
+                "inteligenciaArtificial": {
                     "title": {
                         "part1": "Inteligência",
                         "part2": "Artificial"
@@ -424,7 +430,7 @@
                     "url": "/inteligencia-artificial",
                     "icon": "icon-inteligencia-artificial",
                     "background": "bg-inteligencia-artificial",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "Como Funciona",
                         "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "steps": [
@@ -507,7 +513,7 @@
                         ]
                     }
                 },
-                "transformacao-digital": {
+                "transformacaoDigital": {
                     "title": {
                         "part1": "Transformação",
                         "part2": "Digital"
@@ -520,7 +526,7 @@
                     "url": "/transformacao-digital",
                     "icon": "icon-transformacao-digital",
                     "background": "bg-transformacao-digital",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "Como Funciona",
                         "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "steps": [
@@ -603,7 +609,7 @@
                         ]
                     }
                 },
-                "websites-e-ecommerces": {
+                "websitesEcommerces": {
                     "title": {
                         "part1": "Websites e",
                         "part2": "E-commerces"
@@ -616,7 +622,7 @@
                     "url": "/websites-e-ecommerces",
                     "icon": "icon-websites-e-ecommerces",
                     "background": "bg-websites-e-ecommerces",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "Como Funciona",
                         "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "steps": [
@@ -698,6 +704,43 @@
                             }
                         ]
                     }
+                }
+            }
+        },
+        "privacyPolicy": {
+            "title": "Política de \nPrivacidade",
+            "description": "Última atualização: 12 de setembro de 2024",
+            "sections": [
+                {
+                    "title": "Coleta de Informações",
+                    "description": "Nós não coletamos informações pessoais diretamente dos usuários. No entanto, podemos obter informações anônimas sobre a sua navegação no nosso site, incluindo o seu endereço IP, tipo de navegador utilizado, páginas acessadas e o tempo de permanência em cada uma delas. Essas informações são coletadas de forma agregada e não permitem a identificação individual dos usuários."
+                },
+                {
+                    "title": "Uso das Informações",
+                    "description": "As informações anônimas que coletamos têm como finalidade principal melhorar a sua experiência conosco. Utilizamos esses dados para analisar a interação dos usuários com o site, permitindo-nos otimizar nossos serviços e conteúdos. Através dessas análises, conseguimos melhorar a usabilidade e o desempenho do nosso site para todos os visitantes."
+                },
+                {
+                    "title": "Seus Direitos",
+                    "description": "Você tem total controle sobre as suas informações. Pode optar por não participar de nossas atividades de coleta de dados, desativando cookies no seu navegador ou optando por não fornecer o seu e-mail. Além disso, você tem o direito de acessar e corrigir as informações que temos sobre você. Se desejar, pode solicitar uma cópia dos seus dados pessoais e corrigir quaisquer erros que possam existir. Se, a qualquer momento, não quiser mais receber nossas newsletters, você pode cancelar a inscrição utilizando o link de cancelamento disponível em nossos e-mails."
+                },
+                {
+                    "title": "Segurança das Informações",
+                    "description": "Nós implementamos diversas medidas de segurança para proteger as suas informações pessoais contra acessos não autorizados, alterações, divulgações ou destruições. Utilizamos técnicas avançadas como criptografia, firewalls e controles de acesso para garantir a segurança dos seus dados. Apesar de todos os nossos esforços, é importante ressaltar que nenhum método de transmissão de dados pela internet ou armazenamento eletrônico é completamente seguro, e, portanto, não podemos garantir a segurança absoluta das informações."
+                },
+                {
+                    "title": "Retenção de Dados",
+                    "description": "Nós mantemos as informações pessoais que coletamos apenas pelo tempo necessário para cumprir os objetivos descritos nesta Política de Privacidade. No entanto, em alguns casos, a retenção dos dados pode ser estendida para cumprir exigências legais ou regulatórias específicas. Quando não forem mais necessárias para esses propósitos, as informações serão excluídas de forma segura."
+                },
+                {
+                    "title": "Alterações na Política de Privacidade",
+                    "description": "Reservamo-nos o direito de atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas, inovações tecnológicas ou exigências legais. Recomendamos que você revise esta página regularmente para se manter informado sobre as nossas práticas mais recentes. Qualquer alteração significativa nesta política será comunicada de forma adequada, para garantir que você esteja ciente das mudanças."
+                }
+            ],
+            "contact": {
+                "title": "Contato",
+                "description": {
+                    "part1": "Se você tiver qualquer dúvida, preocupação ou solicitação relacionada a esta Política de Privacidade, entre em contato conosco através de:",
+                    "part2": "Estamos à disposição para esclarecer qualquer questão e garantir que você tenha uma experiência segura e satisfatória com o nosso serviço."
                 }
             }
         }
@@ -744,6 +787,7 @@
         }
     },
     "buttons": {
+        "agende-uma-consultoria": "Agende Uma Consultoria",
         "saiba-mais": "Saiba mais",
         "impulsione-seu-negocio": "Impulsione Seu Negócio",
         "entre-em-contato": "Entre em Contato",

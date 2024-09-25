@@ -146,9 +146,11 @@
                 "part1": "explore all",
                 "part2": "our solutions"
             },
-
+            "howItWorks": {
+                "title": "How It Works"
+            },
             "items": {
-                "engenharia-de-dados": {
+                "engenhariaDeDados": {
                     "title": {
                         "part1": "Data",
                         "part2": "Engineering"
@@ -161,28 +163,31 @@
                     "url": "/engenharia-de-dados",
                     "icon": "icon-engenharia-de-dados",
                     "background": "bg-engenharia-de-dados",
-                    "how-it-works": {
-                        "title": "How It Works",
+                    "howItWorks": {
+                        "title": {
+                            "part1": "How",
+                            "part2": "It Works"
+                        },
                         "description": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
                         "steps": [
                             {
-                                "title": "Data Collection",
+                                "title": "Data \n Collection",
                                 "description": "Data collection from various sources, such as ERP systems, CRM, databases, among others."
                             },
                             {
-                                "title": "Data Processing",
+                                "title": "Data \n Processing",
                                 "description": "Data processing to ensure data quality and consistency."
                             },
                             {
-                                "title": "Data Analysis",
+                                "title": "Data \n Analysis",
                                 "description": "Data analysis to ensure data quality and consistency."
                             },
                             {
-                                "title": "Data Visualization",
+                                "title": "Data \n Visualization",
                                 "description": "Data visualization to ensure data quality and consistency."
                             },
                             {
-                                "title": "Data Availability",
+                                "title": "Data \n Availability",
                                 "description": "Data availability to ensure data quality and consistency."
                             }
                         ]
@@ -244,7 +249,7 @@
                         ]
                     }
                 },
-                "business-intelligence": {
+                "businessIntelligence": {
                     "title": {
                         "part1": "Business",
                         "part2": "Intelligence"
@@ -257,7 +262,7 @@
                     "url": "/business-intelligence",
                     "icon": "icon-business-intelligence",
                     "background": "bg-business-intelligence",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "How It Works",
                         "description": "We offer complete business intelligence solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
                         "steps": [
@@ -324,7 +329,7 @@
                         ]
                     }
                 },
-                "sistemas-personalizados": {
+                "sistemasPersonalizados": {
                     "title": {
                         "part1": "Custom",
                         "part2": "Systems"
@@ -337,7 +342,7 @@
                     "url": "/sistemas-personalizados",
                     "icon": "icon-sistemas-personalizados",
                     "background": "bg-sistemas-personalizados",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "How It Works",
                         "description": "We offer complete custom systems solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
                         "steps": [
@@ -412,7 +417,7 @@
                         ]
                     }
                 },
-                "inteligencia-artificial": {
+                "inteligenciaArtificial": {
                     "title": {
                         "part1": "Artificial",
                         "part2": "Intelligence"
@@ -425,7 +430,7 @@
                     "url": "/inteligencia-artificial",
                     "icon": "icon-inteligencia-artificial",
                     "background": "bg-inteligencia-artificial",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "How It Works",
                         "description": "We offer complete artificial intelligence solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
                         "steps": [
@@ -508,7 +513,7 @@
                         ]
                     }
                 },
-                "transformacao-digital": {
+                "transformacaoDigital": {
                     "title": {
                         "part1": "Digital",
                         "part2": "Transformation"
@@ -521,7 +526,7 @@
                     "url": "/transformacao-digital",
                     "icon": "icon-transformacao-digital",
                     "background": "bg-transformacao-digital",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "How It Works",
                         "description": "We offer complete digital transformation solutions, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
                         "steps": [
@@ -604,7 +609,7 @@
                         ]
                     }
                 },
-                "websites-e-ecommerces": {
+                "websitesEcommerces": {
                     "title": {
                         "part1": "Websites and",
                         "part2": "E-commerces"
@@ -617,7 +622,7 @@
                     "url": "/websites-e-ecommerces",
                     "icon": "icon-websites-e-ecommerces",
                     "background": "bg-websites-e-ecommerces",
-                    "how-it-works": {
+                    "howItWorks": {
                         "title": "How It Works",
                         "description": "We offer complete solutions in websites and e-commerces, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
                         "steps": [
@@ -699,6 +704,43 @@
                             }
                         ]
                     }
+                }
+            }
+        },
+        "privacyPolicy": {
+            "title": "Privacy Policy",
+            "description": "Last updated: September 12, 2024",
+            "sections": [
+                {
+                    "title": "Information Collection",
+                    "description": "We do not collect personal information directly from users. However, we may obtain anonymous information about your browsing on our site, including your IP address, browser type used, pages accessed, and time spent on each of them. This information is collected in aggregate form and does not allow individual identification of users."
+                },
+                {
+                    "title": "Use of Information",
+                    "description": "The anonymous information we collect is primarily intended to improve your experience with us. We use this data to analyze user interaction with the site, allowing us to optimize our services and content. Through these analyses, we can improve the usability and performance of our site for all visitors."
+                },
+                {
+                    "title": "Your Rights",
+                    "description": "You have full control over your information. You can choose not to participate in our data collection activities by disabling cookies in your browser or choosing not to provide your email. Additionally, you have the right to access and correct the information we have about you. If you wish, you can request a copy of your personal data and correct any errors that may exist. If, at any time, you no longer wish to receive our newsletters, you can unsubscribe using the unsubscribe link available in our emails."
+                },
+                {
+                    "title": "Information Security",
+                    "description": "We implement various security measures to protect your personal information against unauthorized access, alterations, disclosures, or destructions. We use advanced techniques such as encryption, firewalls, and access controls to ensure the security of your data. Despite all our efforts, it's important to note that no method of data transmission over the internet or electronic storage is completely secure, and therefore we cannot guarantee the absolute security of information."
+                },
+                {
+                    "title": "Data Retention",
+                    "description": "We retain the personal information we collect only for as long as necessary to fulfill the purposes described in this Privacy Policy. However, in some cases, data retention may be extended to comply with specific legal or regulatory requirements. When no longer needed for these purposes, the information will be securely deleted."
+                },
+                {
+                    "title": "Changes to the Privacy Policy",
+                    "description": "We reserve the right to update this Privacy Policy periodically to reflect changes in our practices, technological innovations, or legal requirements. We recommend that you review this page regularly to stay informed about our most recent practices. Any significant changes to this policy will be communicated appropriately to ensure that you are aware of the changes."
+                }
+            ],
+            "contact": {
+                "title": "Contact",
+                "description": {
+                    "part1": "If you have any questions, concerns, or requests related to this Privacy Policy, please contact us through:",
+                    "part2": "We are available to clarify any questions and ensure that you have a safe and satisfactory experience with our service."
                 }
             }
         }
@@ -745,6 +787,7 @@
         }
     },
     "buttons": {
+        "agende-uma-consultoria": "Schedule a Consultation",
         "saiba-mais": "Learn more",
         "impulsione-seu-negocio": "Boost Your Business",
         "entre-em-contato": "Contact Us",

@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -118,17 +120,18 @@ export default function ComoFunciona({
         { scope: container }
     )
 
+    const { t } = useTranslation()
+
     return (
         <section ref={container} className="page-section">
             <div className="container">
                 <div className="flex w-full flex-col items-center">
                     <div className="mb-20 flex flex-col items-center text-center">
                         <h2 className="section-title mb-4">
-                            <span className="text-brand-blue">como</span>{' '}
-                            funciona
+                            {t('pages.solutions.howItWorks.title')}
                         </h2>
 
-                        <p className="section-description whitespace-pre-line drop-shadow-custom md:text-md xl:text-xl">
+                        <p className="section-description max-w-md whitespace-pre-line drop-shadow-custom md:text-md xl:text-xl">
                             {description}
                         </p>
                     </div>
