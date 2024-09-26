@@ -151,7 +151,7 @@ export function SolutionCard({
             onMouseLeave={handleMouseLeave}
             ref={container}
             to={url}
-            className="service-card relative flex h-[380px] select-none flex-col overflow-hidden border-t-2 border-brand-blue p-6 lg:p-8"
+            className="service-card relative flex h-[330px] select-none flex-col overflow-hidden border-t-2 border-brand-blue p-6 lg:p-8"
         >
             {/* card header */}
             <div className="flex items-center justify-between">
