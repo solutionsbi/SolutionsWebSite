@@ -26,7 +26,7 @@ export default function Home() {
                     <>
                         {homeData.sections.hero.title.part1}{' '}
                         <span className="text-brand-blue">
-                            {homeData.sections.hero.title.part2}
+                            {homeData.sections.hero.title.part2}{' '}
                         </span>
                         <br className="hidden md:inline-block" />
                         {homeData.sections.hero.title.part3}
@@ -61,8 +61,8 @@ export default function Home() {
                 }))}
                 cta={{
                     href: '/sobre',
-                    text: 'Saiba Mais',
-                    additionalText: 'Sobre Nós',
+                    text: t('buttons.saiba-mais'),
+                    additionalText: t('buttons.sobre-nos'),
                     linkType: 'internal',
                 }}
             />

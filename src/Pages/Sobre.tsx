@@ -24,6 +24,7 @@ export default function Sobre() {
                 description={t('pages.about.sections.hero.description')}
                 img={heroImage}
                 position="center"
+                className="h-[50vh]"
             />
             <Timeline />
             <Solucoes title={true} />

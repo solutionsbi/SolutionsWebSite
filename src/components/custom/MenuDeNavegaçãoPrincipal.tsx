@@ -42,7 +42,7 @@ export function MenuDeNavegaçãoPrincipal() {
     }[] = [
         {
             title: t('contactInfo.whatsapp'),
-            href: 'https://api.whatsapp.com/send?phone=5519983085819',
+            href: 'https://api.whatsapp.com/send?phone=5519983085819&text=Olá!%20estou%20interessado%20em%20saber%20mais%20sobre%20as%20suas%20solu%C3%A7%C3%B5es%20para%20neg%C3%B3cios.',
             description: '+55 (19) 98308-5819',
             icon: Phone,
         },
@@ -87,7 +87,7 @@ export function MenuDeNavegaçãoPrincipal() {
 
                 <div className="flex justify-center">
                     <NavigationMenu align="left" className="items-center">
-                        <NavigationMenuList className="gap-10">
+                        <NavigationMenuList className="gap-12 lg:text-md">
                             <NavigationMenuItem>
                                 <NavLink
                                     to="/"

@@ -8,7 +8,7 @@
                         "part2": "tecnologia",
                         "part3": "para seu negócio"
                     },
-                    "description": "Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado.Conheça nossos serviços e descubra como podemos ajudar a impulsionar o seu negócio.",
+                    "description": "Na SolutionsBI, oferecemos soluções em tecnologia para ajudar a sua empresa a crescer,\n inovar e se destacar no mercado.Conheça nossos serviços e descubra \n como podemos ajudar a impulsionar o seu negócio.",
                     "cta": {
                         "text": "Impulsione Seu Negócio",
                         "additionalText": "Saiba mais"
@@ -46,26 +46,26 @@
                 },
                 "benefits": {
                     "title": {
-                        "part1": "Vantagens",
-                        "part2": "Exclusivas"
+                        "part1": "nossos",
+                        "part2": "valores"
                     },
-                    "description": "Descubra como nossos serviços impulsionam seu negócio: Desenvolvimento Web, Aplicativos e Business Intelligence para o seu sucesso sem limites!",
+                    "description": "Na SolutionsBI, acreditamos que a tecnologia pode transformar negócios e impactar positivamente a sociedade. Por isso, trabalhamos com dedicação, ética e transparência para oferecer soluções inovadoras e eficientes para os nossos clientes.",
                     "cta": {
                         "text": "Impulsione Seu Negócio",
                         "additionalText": "Saiba mais"
                     },
                     "cards": [
                         {
-                            "title": "Missão",
-                            "description": "Acreditamos em um ambiente extremamente colaborativo onde mais que colegas de trabalho, fazemos amigos na SolutionsBI. Para isso o respeito mutuo é a regra Nº1 internamente. Saber os limites de liberdade com cada um é essencial para sempre termos um ambiente leve, agradável e descontraído."
+                            "title": "Inovação",
+                            "description": "Buscamos constantemente por novas tecnologias e soluções inovadoras para oferecer o que há de melhor para os nossos clientes."
                         },
                         {
-                            "title": "Visão",
-                            "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                            "title": "Dedicação",
+                            "description": "Nos dedicamos integralmente aos projetos dos nossos clientes, buscando sempre superar as expectativas e entregar resultados excepcionais."
                         },
                         {
-                            "title": "Valores",
-                            "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                            "title": "Qualidade",
+                            "description": "Priorizamos a qualidade em tudo o que fazemos, desde o atendimento ao cliente até a entrega dos projetos, garantindo a excelência em todos os nossos serviços."
                         }
                     ]
                 },
@@ -76,20 +76,20 @@
                     },
                     "questions": [
                         {
-                            "question": "Como posso contratar os serviços da SolutionsBI?",
-                            "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                            "question": "Como escolher a solução certa para minha empresa?",
+                            "answer": "Para escolher a solução ideal, começamos com uma análise detalhada das necessidades do seu negócio. Entendemos seus desafios e objetivos para recomendar a solução que melhor se alinha às suas demandas. Quer você precise de otimização de processos, melhor tomada de decisões através de Business Intelligence, ou desenvolvimento de sistemas personalizados, nossas recomendações são baseadas em uma abordagem consultiva e personalizada, garantindo que a solução selecionada traga o máximo benefício para sua empresa."
                         },
                         {
-                            "question": "Quais são os horários de atendimento da SolutionsBI?",
-                            "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                            "question": "Quais setores a SolutionsBI atende?",
+                            "answer": "A SolutionsBI atende a empresas de diversos setores, incluindo varejo, saúde, educação, financeiro, entre outros. Nossas soluções são personalizadas para atender às necessidades específicas de cada cliente, independentemente do setor em que atuam.."
                         },
                         {
-                            "question": "SolutionsBI oferece suporte técnico?",
-                            "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                            "question": "Quais benefícios a SolutionsBI pode trazer para a minha empresa?",
+                            "answer": "A SolutionsBI pode trazer uma série de benefícios para a sua empresa, incluindo otimização de processos, melhor tomada de decisões, aumento da eficiência operacional, redução de custos, entre outros. Nossas soluções são projetadas para impulsionar o crescimento e o sucesso do seu negócio, oferecendo inovação, qualidade e excelência em todos os nossos serviços."
                         },
                         {
-                            "question": "SolutionsBI possui algum desconto para estudantes?",
-                            "answer": "Sim, oferecemos desconto para estudantes."
+                            "question": "Como começar a trabalhar com a SolutionsBI?",
+                            "answer": "Para começar a trabalhar com a SolutionsBI, basta entrar em contato conosco através do nosso site ou por telefone. Nossa equipe de especialistas está pronta para ajudar a sua empresa a impulsionar o crescimento e o sucesso do seu negócio com soluções inovadoras e eficientes."
                         }
                     ]
                 },
@@ -110,7 +110,7 @@
                 "timeline": {
                     "title": "de uma <span>visão</span> <br/> <span>inovadora</span> ao <br/> impacto global",
                     "description": "Fundada em 2019, a Solutions BI nasceu com a missão de transformar dados em insights valiosos para empresas de diversos setores. Desde o início, nosso foco tem sido capacitar nossos clientes com soluções tecnológicas de ponta, permitindo que tomem decisões mais informadas e estratégicas. Com o passar dos anos, crescemos e expandimos nossa atuação globalmente, entregando mais de 150 projetos em 9 países diferentes, sempre mantendo um compromisso com a excelência e a inovação.",
-                    "clients": "Clientes",
+                    "employees": "Colaboradores",
                     "projects": "Projetos",
                     "events": [
                         {
@@ -156,7 +156,7 @@
                         "part2": "de Dados"
                     },
                     "description": {
-                        "short": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise, apoiando decisões estratégicas e promovendo a inovação em sua empresa.",
+                        "short": "Transforme dados em insights poderosos e otimize a tomada de decisões com nossas soluções de ponta.",
                         "medium": "Oferecemos soluções completas em engenharia de dados, desde a coleta e armazenamento até o processamento e análise de grandes volumes de dados, apoiando decisões estratégicas e promovendo a inovação contínua em sua empresa.",
                         "long": "Oferecemos soluções completas em engenharia de dados, abrangendo todas as etapas, desde a coleta e armazenamento até o processamento e análise de grandes volumes de dados. Nossas soluções garantem que sua empresa tenha as informações necessárias para apoiar decisões estratégicas, otimizar operações e promover a inovação contínua, mantendo-a competitiva e preparada para os desafios futuros."
                     },
@@ -168,57 +168,41 @@
                             "part1": "Como",
                             "part2": "Funciona"
                         },
-                        "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "description": "Entenda cada etapa do processo que transforma seus dados brutos em insights valiosos e utilizáveis.",
                         "steps": [
                             {
-                                "title": "Coleta \n de Dados",
-                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                                "title": "Coleta e \nArmazenamento",
+                                "description": "Começamos pela coleta de dados brutos de diversas fontes, sejam internas ou externas. Esses dados são então armazenados em um ambiente seguro e escalável, garantindo que estejam sempre acessíveis e protegidos."
                             },
                             {
-                                "title": "Processamento \n de Dados",
-                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Processamento \ne Limpeza",
+                                "description": "Os dados armazenados passam por um processo de limpeza, onde são eliminadas inconsistências e duplicações. Em seguida, são processados para garantir que estejam prontos para análises avançadas, transformando-os em informações organizadas e estruturadas."
                             },
                             {
-                                "title": "Análise \n de Dados",
-                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Modelagem e \nEstruturação",
+                                "description": "Após o processamento, os dados são modelados e estruturados em bancos de dados otimizados para consultas rápidas e eficientes. Esse processo garante que as informações estejam prontas para serem usadas em relatórios, dashboards e análises estratégicas."
                             },
                             {
-                                "title": "Visualização \n de Dados",
-                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
-                            },
-                            {
-                                "title": "Disponibilização \n de Dados",
-                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Integração \ne Acesso",
+                                "description": "Por fim, os dados estruturados são integrados aos sistemas de BI (Business Intelligence) e outras ferramentas analíticas da empresa, permitindo que as equipes acessem insights valiosos de forma intuitiva e em tempo real."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "Nossos Benefícios",
-                        "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "title": "As Vantagens de uma Engenharia de Dados Eficiente",
+                        "description": "Investir em uma engenharia de dados eficaz traz inúmeros benefícios para o seu negócio. Através de uma estrutura robusta e otimizada, sua empresa poderá tomar decisões mais assertivas, automatizar processos e se adaptar facilmente ao crescimento, garantindo competitividade e sucesso no mercado.",
                         "cards": [
                             {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                                "title": "Decisões Baseadas \nem Dados Confiáveis",
+                                "description": "Com uma arquitetura de dados sólida, você obtém informações precisas e confiáveis, essenciais para tomar decisões estratégicas com confiança."
                             },
                             {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "Otimização \nde Processos",
+                                "description": "Dados bem estruturados permitem a automação e otimização de processos, economizando tempo e recursos enquanto aumenta a eficiência."
                             },
                             {
-                                "title": "Valores",
-                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                            },
-                            {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                            },
-                            {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
-                            },
-                            {
-                                "title": "Valores",
-                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                                "title": "Escalabilidade \ne Crescimento",
+                                "description": "Uma base de dados robusta permite que sua empresa cresça e se adapte facilmente às novas demandas, sem comprometer a qualidade das informações."
                             }
                         ]
                     },
@@ -227,24 +211,24 @@
                         "description": "Oferecemos soluções completas em engenharia de dados, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "questions": [
                             {
-                                "question": "Como posso contratar os serviços da SolutionsBI?",
-                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                                "question": "O que é Engenharia de Dados e por que é importante para minha empresa?",
+                                "answer": "Engenharia de Dados é o processo de coletar, organizar, estruturar e gerenciar grandes volumes de dados para transformá-los em informações úteis e acessíveis. É fundamental para empresas porque cria uma base sólida para análises precisas e eficientes, permitindo que decisões sejam tomadas com base em dados confiáveis. Além disso, a Engenharia de Dados melhora a automação de processos, a eficiência operacional e a capacidade de escalar e adaptar o negócio conforme ele cresce e se transforma."
                             },
                             {
-                                "question": "Quais são os horários de atendimento da SolutionsBI?",
-                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                                "question": "Como a Engenharia de Dados pode melhorar a tomada de decisões no meu negócio?",
+                                "answer": "A Engenharia de Dados organiza os dados de forma estruturada, permitindo análises rápidas e precisas. Com isso, você pode tomar decisões mais informadas, baseadas em insights relevantes que refletem a realidade do negócio."
                             },
                             {
-                                "question": "SolutionsBI oferece suporte técnico?",
-                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                                "question": "Qual é a diferença entre Engenharia de Dados e Análise de Dados?",
+                                "answer": "A Engenharia de Dados é responsável por preparar, organizar e gerenciar os dados, enquanto a Análise de Dados utiliza esses dados preparados para extrair insights e tendências, auxiliando na tomada de decisões."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "É possível integrar a Engenharia de Dados com nossos sistemas atuais?",
+                                "answer": "Sim, a Engenharia de Dados pode ser integrada aos sistemas existentes da sua empresa, garantindo que as informações coletadas de diversas fontes sejam organizadas e analisadas de forma eficaz, sem interrupções nos processos atuais."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "Como a segurança dos meus dados é garantida durante o processo?",
+                                "answer": "Garantimos a segurança dos seus dados utilizando criptografia, controle de acesso rigoroso e monitoramento contínuo durante todo o processo de Engenharia de Dados, seguindo as melhores práticas e regulamentações de proteção de dados."
                             }
                         ]
                     }
@@ -255,54 +239,54 @@
                         "part2": "Intelligence"
                     },
                     "description": {
-                        "short": "Com nossas soluções de BI, transformamos dados em insights que otimizam operações, antecipam tendências e melhoram a tomada de decisões para impulsionar o crescimento.",
-                        "medium": "Com nossas soluções de BI, transformamos dados em vantagem competitiva. Organizamos suas informações e geramos insights que antecipam tendências, otimizam operações e melhoram a tomada de decisões. O BI oferece uma visão clara do seu negócio, permitindo reações rápidas e exploração de novas oportunidades de crescimento.",
+                        "short": "Obtenha uma visão clara do seu negócio e tome decisões estratégicas baseadas em dados.",
+                        "medium": "Transforme seus dados em insights estratégicos e tome decisões mais inteligentes. Nossas soluções de BI organizam e analisam suas informações, ajudando você a identificar tendências, otimizar processos e explorar novas oportunidades de crescimento.",
                         "long": "Com nossas soluções de BI, transformamos dados em vantagem competitiva. Organizamos suas informações e geramos insights valiosos que antecipam tendências, otimizam operações e melhoram a tomada de decisões. O BI oferece uma visão clara e abrangente do seu negócio, permitindo reações rápidas a mudanças e a exploração de novas oportunidades de crescimento, garantindo que sua empresa esteja sempre à frente no mercado."
                     },
                     "url": "/business-intelligence",
                     "icon": "icon-business-intelligence",
                     "background": "bg-business-intelligence",
                     "howItWorks": {
-                        "title": "Como Funciona",
-                        "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "title": "O Processo Completo de BUSINESS INTELLIGENCE",
+                        "description": "Descubra como transformamos grandes volumes de dados em insights acionáveis que impulsionam a estratégia do seu negócio.",
                         "steps": [
                             {
-                                "title": "Coleta de Dados",
-                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                                "title": "Coleta e \nIntegração",
+                                "description": "Nosso processo de Business Intelligence começa com a coleta de dados provenientes de diversas fontes internas e externas. Integramos esses dados em uma única plataforma, garantindo que todas as informações relevantes estejam disponíveis em um único lugar para fácil acesso e análise."
                             },
                             {
-                                "title": "Processamento de Dados",
-                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Limpeza e \nPreparação",
+                                "description": " Após a coleta, os dados passam por um rigoroso processo de limpeza e preparação. Eliminamos inconsistências, duplicatas e dados incompletos, garantindo que as informações utilizadas sejam precisas e confiáveis para a tomada de decisão."
                             },
                             {
-                                "title": "Análise de Dados",
-                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                                "title": " Análise e \nModelagem",
+                                "description": "Com os dados preparados, aplicamos técnicas avançadas de análise e modelagem. Utilizamos ferramentas de BI para identificar padrões, tendências e oportunidades ocultas que podem ser exploradas para aumentar a eficiência e a lucratividade do seu negócio."
                             },
                             {
-                                "title": "Visualização de Dados",
-                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Visualização e Relatórios Personalizados",
+                                "description": "Os resultados da análise são transformados em relatórios visuais claros e intuitivos. Criamos dashboards personalizados que permitem aos decisores visualizar rapidamente os indicadores-chave de desempenho (KPIs), facilitando a tomada de decisões estratégicas em tempo real."
                             },
                             {
-                                "title": "Disponibilização de Dados",
-                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Implementação de Soluções e Monitoramento Contínuo",
+                                "description": "Após a implementação das soluções recomendadas, monitoramos continuamente os dados para garantir que as estratégias de BI estejam gerando os resultados esperados. Ajustes e otimizações são feitos conforme necessário, garantindo que sua empresa esteja sempre um passo à frente."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "Nossos Benefícios",
-                        "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "title": "AS VANTAGENS DE IMPLEMENTAR \nBUSINESS INTELLIGENCE",
+                        "description": "Adotar uma solução de Business Intelligence em sua empresa oferece uma série de benefícios estratégicos. Desde a otimização dos processos de tomada de decisão até a identificação de novas oportunidades de mercado, o BI capacita sua organização a agir com precisão e agilidade, garantindo vantagem competitiva em um mercado cada vez mais orientado por dados.",
                         "cards": [
                             {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                                "title": "TOMADA DE DECIÇÕES \nINFORMADA",
+                                "description": "Com Business Intelligence, você baseia suas decisões em dados concretos e insights precisos, reduzindo a margem de erro e aumentando a eficiência operacional."
                             },
                             {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "IDENTIFICAÇÃO DE \nOPORTUNIDADES",
+                                "description": "Descubra novas oportunidades de mercado e otimize suas operações identificando tendências e padrões que antes passavam despercebidos."
                             },
                             {
-                                "title": "Valores",
-                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
+                                "title": "MELHORIA \nCONTÍNUA",
+                                "description": "Através do monitoramento contínuo e ajustes constantes, o BI permite que sua empresa esteja sempre em evolução, adaptando-se rapidamente às mudanças do mercado."
                             }
                         ]
                     },
@@ -311,20 +295,24 @@
                         "description": "Oferecemos soluções completas em business intelligence, desde a coleta até a análise de grandes volumes, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "questions": [
                             {
-                                "question": "Como posso contratar os serviços da SolutionsBI?",
-                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                                "question": "O que é Business Intelligence e como ele pode ajudar meu negócio?",
+                                "answer": "Business Intelligence (BI) é um processo que envolve a coleta, análise e transformação de dados em informações acionáveis. Ele ajuda as empresas a tomar decisões informadas, otimizar operações e descobrir novas oportunidades de crescimento."
                             },
                             {
-                                "question": "Quais são os horários de atendimento da SolutionsBI?",
-                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                                "question": "Preciso de uma grande quantidade de dados para utilizar BI?",
+                                "answer": "ão, o BI pode ser utilizado em empresas de todos os tamanhos. O importante é a qualidade dos dados e a análise estratégica que se faz a partir deles."
                             },
                             {
-                                "question": "SolutionsBI oferece suporte técnico?",
-                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                                "question": "Quais ferramentas de BI vocês utilizam?",
+                                "answer": "Utilizamos ferramentas como Power BI, Tableau e Google Data Studio, adaptadas às necessidades específicas de cada cliente."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "Quanto tempo leva para ver resultados com BI?",
+                                "answer": "O tempo pode variar, mas geralmente os primeiros insights aparecem dentro de semanas após a implementação, permitindo decisões rápidas e melhorias contínuas."
+                            },
+                            {
+                                "question": "Como o BI se integra com meus sistemas atuais?",
+                                "answer": "O BI pode ser integrado com a maioria dos sistemas existentes, extraindo dados de ERPs, CRMs, e bancos de dados para gerar relatórios e insights em tempo real."
                             }
                         ]
                     }
@@ -335,8 +323,8 @@
                         "part2": "Personalizados"
                     },
                     "description": {
-                        "short": "Projetamos e desenvolvemos sistemas personalizados que atendem às necessidades do seu negócio, transformando ideias em soluções eficientes e escaláveis.",
-                        "medium": "Projetamos e desenvolvemos sistemas personalizados que atendem as necessidades específicas do seu negócio. Desde aplicativos web e móveis até plataformas complexas, nossos desenvolvedores transformam ideias em ferramentas eficientes e escaláveis.",
+                        "short": "Desenvolvemos soluções sob medida para impulsionar a eficiência e o crescimento do seu negócio.",
+                        "medium": "Desenvolvemos sistemas personalizados que atendem às necessidades exclusivas do seu negócio. Desde aplicativos web e móveis até plataformas complexas, oferecemos soluções eficientes e escaláveis para apoiar o crescimento da sua empresa.",
                         "long": "Projetamos e desenvolvemos sistemas personalizados que atendem às necessidades específicas do seu negócio. Desde aplicativos web e móveis até plataformas complexas, nossos desenvolvedores transformam suas ideias em ferramentas eficientes e escaláveis, garantindo que sua empresa tenha as soluções tecnológicas sob medida para crescer e prosperar."
                     },
                     "url": "/sistemas-personalizados",
@@ -347,50 +335,42 @@
                         "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "steps": [
                             {
-                                "title": "Coleta de Dados",
-                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                                "title": "ANÁLISE DE REQUISITOS \nE CONSULTORIA",
+                                "description": "Começamos com uma análise detalhada das necessidades do seu negócio. Nossos especialistas trabalham junto com sua equipe para entender os desafios, objetivos e requisitos específicos, garantindo que o sistema a ser desenvolvido seja perfeitamente alinhado às suas metas."
                             },
                             {
-                                "title": "Processamento de Dados",
-                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Design e \nPrototipagem",
+                                "description": " Com base nos requisitos levantados, nossa equipe de design cria protótipos interativos que ilustram como o sistema funcionará e se integrará aos seus processos. Essa fase permite ajustes e refinamentos antes do início do desenvolvimento real."
                             },
                             {
-                                "title": "Análise de Dados",
-                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Desenvolvimento \nÁgil e Iterativo",
+                                "description": "Utilizamos metodologias ágeis para o desenvolvimento do sistema, o que significa que você verá entregas incrementais e poderá fornecer feedback em cada etapa. Isso garante que o sistema final seja exatamente o que você imaginou e que ele seja entregue no prazo."
                             },
                             {
-                                "title": "Visualização de Dados",
-                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Integração e \nTestes",
+                                "description": "Após o desenvolvimento, integramos o novo sistema com suas plataformas e ferramentas existentes. Realizamos testes rigorosos para garantir que tudo funcione perfeitamente e que o sistema atenda a todos os requisitos de desempenho e segurança."
                             },
                             {
-                                "title": "Disponibilização de Dados",
-                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Implantação e \nSuporte Contínuo",
+                                "description": "Depois de aprovado, o sistema é implantado em sua infraestrutura, com todo o suporte necessário para garantir uma transição suave. Oferecemos também suporte contínuo para ajustes, atualizações e otimizações conforme necessário."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "Nossos Benefícios",
-                        "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "title": "AS VANTAGENS \nDE UM SISTEMA PERSONALIZADO",
+                        "description": "Investir em sistemas personalizados traz inúmeros benefícios para o seu negócio. Ao criar uma solução sob medida, sua empresa ganha em eficiência operacional, flexibilidade para mudanças futuras e uma vantagem competitiva significativa.",
                         "cards": [
                             {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                                "title": "eficiência \noperacional",
+                                "description": "Sistemas que se encaixam perfeitamente nas suas operações reduzem gargalos e aumentam a produtividade."
                             },
                             {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "flexibilidade \ne escalabilidade",
+                                "description": "Sistemas personalizados podem crescer e evoluir junto com o seu negócio, permitindo ajustes rápidos às mudanças do mercado."
                             },
                             {
-                                "title": "Valores",
-                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                            },
-                            {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                            },
-                            {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "segurança e \nconfiabilidade",
+                                "description": "Desenvolvimento focado nas suas necessidades específicas garante um alto nível de segurança e confiabilidade."
                             }
                         ]
                     },
@@ -399,20 +379,24 @@
                         "description": "Oferecemos soluções completas em sistemas personalizados, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "questions": [
                             {
-                                "question": "Como posso contratar os serviços da SolutionsBI?",
-                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                                "question": "Quanto tempo leva para desenvolver um sistema personalizado?",
+                                "answer": "O tempo de desenvolvimento pode variar dependendo da complexidade do projeto, mas utilizamos metodologias ágeis para garantir entregas rápidas e ajustáveis conforme o feedback do cliente."
                             },
                             {
-                                "question": "Quais são os horários de atendimento da SolutionsBI?",
-                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                                "question": "Como vocês garantem que o sistema atenderá minhas necessidades?",
+                                "answer": "Trabalhamos em colaboração com você desde o início, realizando uma análise detalhada das suas necessidades e objetivos, garantindo que o sistema seja desenvolvido de acordo com seus requisitos específicos."
                             },
                             {
-                                "question": "SolutionsBI oferece suporte técnico?",
-                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                                "question": "E se eu precisar de ajustes no sistema após a entrega?",
+                                "answer": "Oferecemos suporte contínuo após a entrega, garantindo que ajustes e atualizações possam ser feitos conforme sua necessidade evolui."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "Vocês podem integrar o novo sistema com minhas plataformas atuais?",
+                                "answer": "Sim, nossos sistemas são desenvolvidos com flexibilidade, permitindo fácil integração com as plataformas e softwares existentes na sua empresa."
+                            },
+                            {
+                                "question": "Quais tecnologias vocês utilizam no desenvolvimento de sistemas personalizados?",
+                                "answer": "Utilizamos uma ampla variedade de tecnologias modernas, incluindo linguagens de programação como JavaScript, Python, frameworks como React e Node.js, além de plataformas de banco de dados como SQL e NoSQL, dependendo das necessidades do projeto."
                             }
                         ]
                     }
@@ -423,62 +407,54 @@
                         "part2": "Artificial"
                     },
                     "description": {
-                        "short": "Utilizamos IA para automatizar processos, analisar dados e melhorar decisões, ajudando sua empresa a prever tendências, personalizar experiências e aumentar a eficiência.",
-                        "medium": "Utilizamos a Inteligência Artificial para criar soluções que automatizam processos, analisam grandes volumes de dados e aprimoram a tomada de decisões. Com nossas soluções de IA, sua empresa pode prever tendências, personalizar experiências e aumentar a eficiência operacional, tornando-se mais competitiva no mercado.",
+                        "short": "Automatize processos e personalize a experiência do cliente com IA.",
+                        "medium": "Automatize processos, analise grandes volumes de dados e melhore a tomada de decisões com nossas soluções de Inteligência Artificial. Aumente a eficiência operacional, personalize experiências e torne sua empresa mais competitiva e preparada para o futuro.",
                         "long": "Utilizamos a Inteligência Artificial para criar soluções que automatizam processos, analisam grandes volumes de dados e aprimoram a tomada de decisões. Com nossas soluções de IA, sua empresa pode prever tendências, personalizar experiências e aumentar a eficiência operacional, tornando-se mais competitiva no mercado e pronta para enfrentar os desafios do futuro."
                     },
                     "url": "/inteligencia-artificial",
                     "icon": "icon-inteligencia-artificial",
                     "background": "bg-inteligencia-artificial",
                     "howItWorks": {
-                        "title": "Como Funciona",
-                        "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "title": "Integração de ia: Passo a Passo para o Sucesso",
+                        "description": "Nossa abordagem à Inteligência Artificial é projetada para integrar tecnologias de ponta que solucionam desafios específicos do seu negócio, elevando seu desempenho a novos patamares.",
                         "steps": [
                             {
-                                "title": "Coleta de Dados",
-                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                                "title": "Diagnóstico e Identificação \nde Oportunidades",
+                                "description": "O primeiro passo é entender profundamente os desafios e necessidades do seu negócio. Realizamos uma análise detalhada para identificar áreas onde a Inteligência Artificial pode gerar maior impacto, seja na automação de processos, personalização de serviços ou na tomada de decisões mais assertivas."
                             },
                             {
-                                "title": "Processamento de Dados",
-                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Desenvolvimento e \nTreinamento de Modelos de AI",
+                                "description": "Com base no diagnóstico, desenvolvemos modelos de IA personalizados que são treinados com seus dados específicos. Nossos especialistas em machine learning ajustam os algoritmos para garantir que os modelos aprendam e se adaptem de forma precisa, proporcionando resultados alinhados aos objetivos da sua empresa."
                             },
                             {
-                                "title": "Análise de Dados",
-                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Implementação \ne Integração",
+                                "description": "Após o desenvolvimento e testes rigorosos, integramos a solução de IA em seus sistemas existentes. Garantimos que a tecnologia funcione de forma harmoniosa com suas operações atuais, maximizando os benefícios sem interrupções."
                             },
                             {
-                                "title": "Visualização de Dados",
-                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Monitoramento e \nOtimização Contínua",
+                                "description": "A Inteligência Artificial não é estática; por isso, monitoramos continuamente o desempenho dos modelos implementados, realizando ajustes e otimizações conforme necessário para garantir que eles continuem a oferecer valor ao longo do tempo."
                             },
                             {
-                                "title": "Disponibilização de Dados",
-                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Expansão e \nEscalabilidade",
+                                "description": "À medida que sua empresa cresce, as soluções de IA são escaláveis para acompanhar a expansão. Podemos adaptar e ampliar os modelos de AI para novos cenários e demandas, garantindo que você continue a colher os benefícios à medida que suas necessidades evoluem."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "Nossos Benefícios",
-                        "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "title": "As Vantagens de Implementar Inteligência Artificial",
+                        "description": "Implementar Inteligência Artificial em seu negócio traz uma série de benefícios estratégicos, transformando dados em insights e automação em eficiência operacional.",
                         "cards": [
                             {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                                "title": "Automação Inteligente",
+                                "description": "Aumente a eficiência ao automatizar tarefas repetitivas e liberar sua equipe para se concentrar em atividades estratégicas."
                             },
                             {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "Tomada de Decisões Baseada em Dados",
+                                "description": "Utilize algoritmos avançados para analisar grandes volumes de dados, proporcionando insights que apoiam decisões mais informadas e precisas."
                             },
                             {
-                                "title": "Valores",
-                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                            },
-                            {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                            },
-                            {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "Personalização em Escala",
+                                "description": "Ofereça experiências personalizadas aos seus clientes, aumentando a satisfação e a fidelidade por meio de interações mais relevantes e precisas."
                             }
                         ]
                     },
@@ -487,28 +463,24 @@
                         "description": "Oferecemos soluções completas em inteligência artificial, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "questions": [
                             {
-                                "question": "Como posso contratar os serviços da SolutionsBI?",
-                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                                "question": "O que é Inteligência Artificial e como ela pode beneficiar minha empresa?",
+                                "answer": "A Inteligência Artificial permite que máquinas realizem tarefas que normalmente exigiriam inteligência humana. Ela pode beneficiar sua empresa automatizando processos, melhorando a tomada de decisões, analisando grandes volumes de dados e personalizando a experiência do cliente."
                             },
                             {
-                                "question": "Quais são os horários de atendimento da SolutionsBI?",
-                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                                "question": "Minha empresa é pequena. Posso implementar IA?",
+                                "answer": "Sim, a IA pode ser implementada em empresas de todos os tamanhos. Mesmo pequenas empresas podem se beneficiar da automação de tarefas e da análise de dados para otimizar processos e melhorar a eficiência."
                             },
                             {
-                                "question": "SolutionsBI oferece suporte técnico?",
-                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                                "question": "Como vocês garantem que os modelos de IA sejam precisos?",
+                                "answer": "Utilizamos técnicas avançadas de validação e monitoramento contínuo dos modelos de IA para garantir que eles mantenham alta precisão. Também realizamos testes rigorosos com dados reais para melhorar a eficácia dos modelos."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "É difícil integrar a IA com meus sistemas atuais?",
+                                "answer": " Não, nossa equipe trabalha para garantir uma integração suave com seus sistemas existentes, desenvolvendo soluções de IA personalizadas que se adaptam facilmente à sua infraestrutura."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
-                            },
-                            {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "Quais setores podem se beneficiar da Inteligência Artificial?",
+                                "answer": "A IA pode beneficiar setores como saúde, finanças, varejo, manufatura, marketing, e muitos outros, melhorando a eficiência operacional, personalizando experiências e otimizando a tomada de decisões."
                             }
                         ]
                     }
@@ -519,8 +491,8 @@
                         "part2": "Digital"
                     },
                     "description": {
-                        "short": "Ajudamos sua empresa a prosperar na era digital, modernizando processos e integrando tecnologias inovadoras para melhorar a eficiência e criar novas oportunidades.",
-                        "medium": "Ajudamos sua empresa a se adaptar e prosperar na era digital, modernizando processos e integrando tecnologias inovadoras. Nossa abordagem de transformação digital não só melhora a eficiência, mas também cria novas oportunidades de crescimento e inovação, alinhando sua empresa às demandas do mercado atual.",
+                        "short": "Modernize sua empresa e crie novas oportunidades com tecnologias inovadoras.",
+                        "medium": "Ajudamos sua empresa a prosperar na era digital, modernizando processos e integrando tecnologias inovadoras. Nossa transformação digital melhora a eficiência e cria novas oportunidades de crescimento, preparando sua empresa para atender às demandas do mercado atual.",
                         "long": "Ajudamos sua empresa a se adaptar e prosperar na era digital, modernizando processos e integrando tecnologias inovadoras. Nossa abordagem de transformação digital não apenas aumenta a eficiência, mas também abre novas oportunidades de crescimento e inovação, alinhando sua empresa às demandas do mercado atual e preparando-a para o futuro."
                     },
                     "url": "/transformacao-digital",
@@ -528,53 +500,45 @@
                     "background": "bg-transformacao-digital",
                     "howItWorks": {
                         "title": "Como Funciona",
-                        "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "description": "Descubra como levamos sua empresa para o próximo nível, integrando tecnologia em todas as áreas do seu negócio para impulsionar crescimento e competitividade.",
                         "steps": [
                             {
-                                "title": "Coleta de Dados",
-                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                                "title": "Avaliação e \nDiagnóstico Digital",
+                                "description": "O processo começa com uma análise abrangente da situação atual da sua empresa, incluindo a avaliação de infraestrutura, processos, e capacidades tecnológicas. Identificamos áreas que podem ser otimizadas e desenvolvemos uma estratégia digital alinhada aos seus objetivos de negócio."
                             },
                             {
-                                "title": "Processamento de Dados",
-                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Planejamento e \nRoadmap Digital",
+                                "description": " Com base no diagnóstico, criamos um plano detalhado de Transformação Digital, que inclui a priorização de iniciativas, recursos necessários e um cronograma para implementação. Este roadmap garante que cada etapa seja executada com eficiência e foco nos resultados."
                             },
                             {
-                                "title": "Análise de Dados",
-                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Implementação de \nSoluções Digitais",
+                                "description": "Passamos para a implementação das soluções tecnológicas, que podem incluir automação de processos, migração para a nuvem, integração de sistemas, e muito mais. Trabalhamos em estreita colaboração com sua equipe para garantir uma transição suave e minimizar interrupções nas operações."
                             },
                             {
-                                "title": "Visualização de Dados",
-                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Capacitação e\n Treinamento",
+                                "description": "A transformação digital não é apenas sobre tecnologia; é também sobre pessoas. Oferecemos treinamento e capacitação para sua equipe, garantindo que todos estejam preparados para maximizar o uso das novas ferramentas e processos."
                             },
                             {
-                                "title": "Disponibilização de Dados",
-                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Monitoramento e\n Ajustes Contínuos",
+                                "description": "Após a implementação, monitoramos o desempenho das soluções implantadas e realizamos ajustes conforme necessário. Nosso objetivo é garantir que sua empresa colha os benefícios da transformação digital de forma contínua, mantendo-se competitiva no mercado."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "Nossos Benefícios",
-                        "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "title": "Os Benefícios da Transformação Digital",
+                        "description": "A transformação digital oferece uma série de vantagens que podem impulsionar o sucesso do seu negócio no cenário atual e futuro.",
                         "cards": [
                             {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                                "title": "Eficiência \nOperacional",
+                                "description": "Automatize processos manuais, reduza erros e aumente a produtividade com soluções digitais integradas."
                             },
                             {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "Experiência do \nCliente Melhorada",
+                                "description": "Ofereça uma experiência mais personalizada e ágil aos seus clientes, melhorando a satisfação e a fidelidade."
                             },
                             {
-                                "title": "Valores",
-                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                            },
-                            {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                            },
-                            {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "Tomada de Decisão \nInformada",
+                                "description": "Utilize dados em tempo real para tomar decisões estratégicas e responder rapidamente às mudanças do mercado."
                             }
                         ]
                     },
@@ -583,28 +547,24 @@
                         "description": "Oferecemos soluções completas em transformação digital, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "questions": [
                             {
-                                "question": "Como posso contratar os serviços da SolutionsBI?",
-                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                                "question": "O que é Transformação Digital?",
+                                "answer": "A Transformação Digital é o processo de integrar tecnologias digitais em todas as áreas de um negócio, mudando fundamentalmente como você opera e entrega valor aos clientes."
                             },
                             {
-                                "question": "Quais são os horários de atendimento da SolutionsBI?",
-                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                                "question": "Minha empresa precisa ser grande para iniciar a Transformação Digital?",
+                                "answer": "Não, empresas de qualquer porte podem adotar a Transformação Digital, ajustando as soluções conforme suas necessidades e capacidades."
                             },
                             {
-                                "question": "SolutionsBI oferece suporte técnico?",
-                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                                "question": "Quanto tempo leva para completar a Transformação Digital?",
+                                "answer": "O tempo varia conforme a complexidade do projeto e as áreas envolvidas, mas é possível realizar de forma contínua e gradual."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "E se minha equipe não estiver pronta para essas mudanças?",
+                                "answer": "Oferecemos treinamentos e suporte para garantir que sua equipe se adapte e utilize as novas tecnologias de forma eficiente."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
-                            },
-                            {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "Que tipo de tecnologia é utilizada na Transformação Digital?",
+                                "answer": "Utilizamos diversas tecnologias, como automação, inteligência artificial, computação em nuvem e ferramentas de análise de dados, dependendo das necessidades da sua empresa."
                             }
                         ]
                     }
@@ -615,8 +575,8 @@
                         "part2": "E-commerces"
                     },
                     "description": {
-                        "short": "Criamos websites e plataformas de e-commerce que atraem visitantes e convertem vendas, com foco em UX, design e SEO para fortalecer sua presença online.",
-                        "medium": "Desenvolvemos websites e plataformas de e-commerce que não apenas atraem visitantes, mas também convertem vendas. Nossas soluções são projetadas para oferecer uma experiência de usuário intuitiva e fluida, alinhada às melhores práticas de design e SEO, garantindo que sua presença online seja forte e eficaz.",
+                        "short": "CSites e plataformas que maximizam conversões e fortalecem sua presença online.",
+                        "medium": "Criamos websites e e-commerces que atraem visitantes e aumentam as conversões. Nossas soluções focam em uma experiência de usuário fluida, design intuitivo e otimização SEO, fortalecendo sua presença digital.",
                         "long": "Desenvolvemos websites e plataformas de e-commerce que não apenas atraem visitantes, mas também convertem vendas. Nossas soluções são projetadas para proporcionar uma experiência de usuário intuitiva e fluida, seguindo as melhores práticas de design e SEO. Isso garante que sua presença online seja forte, eficaz e capaz de gerar resultados concretos."
                     },
                     "url": "/websites-e-ecommerces",
@@ -624,53 +584,49 @@
                     "background": "bg-websites-e-ecommerces",
                     "howItWorks": {
                         "title": "Como Funciona",
-                        "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "description": "Descubra como transformamos sua presença digital, criando websites e plataformas de e-commerce que são otimizados para desempenho, segurança e conversão.",
                         "steps": [
                             {
-                                "title": "Coleta de Dados",
-                                "description": "Coleta de dados de diversas fontes, como sistemas ERP, CRM, bancos de dados, entre outros."
+                                "title": "Análise de Necessidades \ne Definição de Objetivos",
+                                "description": " Nosso processo começa com uma compreensão profunda das suas necessidades e objetivos de negócios. Trabalhamos junto com você para definir as metas do projeto, seja para aumentar a visibilidade online, melhorar a experiência do usuário ou aumentar as vendas."
                             },
                             {
-                                "title": "Processamento de Dados",
-                                "description": "Processamento de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Planejamento e \nEstruturação",
+                                "description": "Com os objetivos claros, criamos um plano detalhado para o desenvolvimento do seu website ou e-commerce. Esta etapa inclui a definição da arquitetura da informação, wireframes e protótipos, garantindo que a estrutura do site atenda às necessidades dos usuários e suporte seus objetivos de negócio."
                             },
                             {
-                                "title": "Análise de Dados",
-                                "description": "Análise de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Design Responsivo \ne UX/UI",
+                                "description": "Nossa equipe de design cria interfaces atraentes e funcionais, sempre focando na experiência do usuário (UX/UI). Garantimos que seu website ou e-commerce seja totalmente responsivo, proporcionando uma navegação fluida em qualquer dispositivo, seja desktop, tablet ou mobile."
                             },
                             {
-                                "title": "Visualização de Dados",
-                                "description": "Visualização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Desenvolvimento \ne Integração",
+                                "description": "Utilizando as mais recentes tecnologias e práticas de codificação, desenvolvemos seu website ou plataforma de e-commerce com foco em desempenho, segurança e escalabilidade. Integramos funcionalidades essenciais, como sistemas de pagamento, gestão de estoque, e ferramentas de análise."
                             },
                             {
-                                "title": "Disponibilização de Dados",
-                                "description": "Disponibilização de dados para garantir a qualidade e a consistência dos dados."
+                                "title": "Testes \ne Otimização",
+                                "description": "Antes do lançamento, realizamos uma série de testes rigorosos para garantir que tudo funcione perfeitamente. Isso inclui testes de funcionalidade, usabilidade, segurança e velocidade. Fazemos ajustes finos para otimizar a experiência do usuário e garantir que o site esteja pronto para converter visitantes em clientes."
+                            },
+                            {
+                                "title": "Lançamento e \nSuporte Continuado",
+                                "description": "Após a aprovação final, lançamos o site ou a plataforma de e-commerce, garantindo uma transição suave. Além disso, oferecemos suporte contínuo para manutenção, atualizações e otimizações, garantindo que seu site continue a oferecer resultados excepcionais."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "Nossos Benefícios",
-                        "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
+                        "title": "Por que Escolher Nossas Soluções \nde Websites e \nE-commerce",
+                        "description": "Criar um website ou plataforma de e-commerce com nossa equipe oferece inúmeras vantagens para o seu negócio, impulsionando sua presença online e aumentando suas vendas.",
                         "cards": [
                             {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
+                                "title": "Design Personalizado",
+                                "description": "Sites e plataformas de e-commerce criados especificamente para atender às necessidades únicas do seu negócio."
                             },
                             {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "Experiência do Usuário Otimizada",
+                                "description": "Interfaces intuitivas e navegabilidade fluida que melhoram a satisfação do cliente e incentivam a conversão."
                             },
                             {
-                                "title": "Valores",
-                                "description": "Nossos valores são a honestidade, a transparência, a ética e a qualidade."
-                            },
-                            {
-                                "title": "Missão",
-                                "description": "Nossa missão é oferecer soluções em tecnologia para ajudar a sua empresa a crescer, inovar e se destacar no mercado."
-                            },
-                            {
-                                "title": "Visão",
-                                "description": "Nossa visão é ser a melhor empresa de tecnologia do Brasil e ser reconhecida internacionalmente."
+                                "title": "SEO e Performance",
+                                "description": "Desenvolvimento otimizado para motores de busca, garantindo que seu site seja facilmente encontrado online e carregue rapidamente."
                             }
                         ]
                     },
@@ -679,28 +635,24 @@
                         "description": "Oferecemos soluções completas em websites e e-commerces, desde a concepção até a implementação, apoiando decisões estratégicas e promovendo inovação contínua na sua empresa.",
                         "questions": [
                             {
-                                "question": "Como posso contratar os serviços da SolutionsBI?",
-                                "answer": "Para contratar nossos serviços, entre em contato conosco através do nosso número de telefone ou e-mail."
+                                "question": "Quanto tempo leva para desenvolver um website ou e-commerce?",
+                                "answer": "O tempo de desenvolvimento varia de acordo com a complexidade do projeto, mas geralmente leva de 4 a 12 semanas. Fornecemos um cronograma detalhado após a fase de planejamento."
                             },
                             {
-                                "question": "Quais são os horários de atendimento da SolutionsBI?",
-                                "answer": "Nossos horários de atendimento são de segunda a sexta-feira, das 8h às 18h."
+                                "question": "O que significa \"design responsivo\"?",
+                                "answer": "Design responsivo garante que o site se adapte perfeitamente a qualquer dispositivo, seja celular, tablet ou desktop, proporcionando uma ótima experiência ao usuário."
                             },
                             {
-                                "question": "SolutionsBI oferece suporte técnico?",
-                                "answer": "Sim, oferecemos suporte técnico para nossos clientes."
+                                "question": "Vocês oferecem suporte após o lançamento do site?",
+                                "answer": "Sim, oferecemos suporte técnico contínuo após o lançamento para garantir que seu site funcione sem problemas."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "Posso atualizar o conteúdo do meu site por conta própria?",
+                                "answer": "Sim, fornecemos sistemas de gerenciamento de conteúdo (CMS) fáceis de usar para que você possa atualizar o conteúdo do site de forma independente."
                             },
                             {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
-                            },
-                            {
-                                "question": "SolutionsBI possui algum desconto para estudantes?",
-                                "answer": "Sim, oferecemos desconto para estudantes."
+                                "question": "Como vocês garantem que o site será seguro?",
+                                "answer": "Implementamos medidas de segurança como criptografia SSL, firewalls e práticas de desenvolvimento seguras para proteger seu site contra ameaças online."
                             }
                         ]
                     }
@@ -793,7 +745,9 @@
         "entre-em-contato": "Entre em Contato",
         "solicitar-demonstracao": "Solicitar Demonstração",
         "fale-com-um-especialista": "Fale com um especialista",
-        "fale-conosco": "Fale Conosco"
+        "fale-conosco": "Fale Conosco",
+        "saiba-mais-sobre-nos": "Saiba Mais Sobre Nós",
+        "sobre-nos": "Sobre Nós"
     },
     "contactInfo": {
         "whatsapp": "WhatsApp",

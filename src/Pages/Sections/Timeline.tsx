@@ -5,16 +5,16 @@ type TimeLineCardProps = {
     date: string
     title: string
     description: string
-    clients: number
     projects: number
+    employees: number
 }
 
 export const TimeLineCard: React.FC<TimeLineCardProps> = ({
     date,
     title,
     description,
-    clients,
     projects,
+    employees,
 }) => {
     const { t } = useTranslation()
 
@@ -40,18 +40,18 @@ export const TimeLineCard: React.FC<TimeLineCardProps> = ({
             <p className="mb-8 drop-shadow-custom">{description}</p>
             <div className="flex gap-2">
                 <div className="shadow-medium relative flex w-max items-center gap-3 rounded-[5px] border border-white/10 px-4 py-3">
-                    <UserPlus className="h-auto w-6" />
-                    <span className="text-sm lg:text-base">
-                        {t('pages.about.sections.timeline.clients')}
-                    </span>
-                    <span className="text-sm lg:text-base">{clients}</span>
-                </div>
-                <div className="shadow-medium relative flex w-max items-center gap-3 rounded-[5px] border border-white/10 px-4 py-3">
                     <Database className="h-auto w-6" />
                     <span className="text-sm lg:text-base">
                         {t('pages.about.sections.timeline.projects')}
                     </span>
                     <span className="text-sm lg:text-base">{projects}</span>
+                </div>
+                <div className="shadow-medium relative flex w-max items-center gap-3 rounded-[5px] border border-white/10 px-4 py-3">
+                    <UserPlus className="h-auto w-6" />
+                    <span className="text-sm lg:text-base">
+                        {t('pages.about.sections.timeline.employees')}
+                    </span>
+                    <span className="text-sm lg:text-base">{employees}</span>
                 </div>
             </div>
         </div>
@@ -61,33 +61,33 @@ export const TimeLineCard: React.FC<TimeLineCardProps> = ({
 const stats = [
     {
         date: '2019',
-        clients: 17,
-        projects: 5,
+        projects: 17,
+        employees: 5,
     },
     {
         date: '2020',
-        clients: 15,
-        projects: 5,
+        projects: 15,
+        employees: 5,
     },
     {
         date: '2021',
-        clients: 28,
-        projects: 8,
+        projects: 28,
+        employees: 8,
     },
     {
         date: '2022',
-        clients: 50,
-        projects: 12,
+        projects: 50,
+        employees: 12,
     },
     {
         date: '2023',
-        clients: 64,
-        projects: 12,
+        projects: 64,
+        employees: 12,
     },
     {
         date: '2024',
-        clients: 150,
-        projects: 12,
+        projects: 150,
+        employees: 12,
     },
 ]
 
@@ -124,8 +124,8 @@ export default function Timeline() {
                                     title={year.title}
                                     description={year.description}
                                     date={stats[index].date}
-                                    clients={stats[index].clients}
                                     projects={stats[index].projects}
+                                    employees={stats[index].employees}
                                 />
                             )
                         )}

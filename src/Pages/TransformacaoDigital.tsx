@@ -30,7 +30,7 @@ export default function TransformacaoDigital() {
                         {translations.title.part2}
                     </>
                 }
-                description={translations.description.long}
+                description={translations.description.medium}
                 cta={{
                     href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: t('buttons.agende-uma-consultoria'),

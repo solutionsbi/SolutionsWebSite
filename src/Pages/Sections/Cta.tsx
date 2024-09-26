@@ -147,9 +147,9 @@ export default function Cta() {
                 <div className="mt-16 self-end lg:mt-0">
                     <PrimaryButton
                         className="section-cta"
-                        text={t('buttons.impulsione-seu-negocio')}
-                        additionalText={t('buttons.fale-com-um-especialista')}
-                        href="https://api.whatsapp.com/send?phone=5519983085819"
+                        text={t('buttons.agende-uma-consultoria')}
+                        additionalText={t('buttons.saiba-mais')}
+                        href="https://api.whatsapp.com/send?phone=5519983085819&text=Olá!%20estou%20interessado%20em%20saber%20mais%20sobre%20as%20suas%20solu%C3%A7%C3%B5es%20para%20neg%C3%B3cios."
                         linkType="external"
                     />
                 </div>

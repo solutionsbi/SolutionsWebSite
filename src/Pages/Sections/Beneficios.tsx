@@ -141,10 +141,12 @@ export default function Beneficios({
                 />
             </div>
 
-            <div className="container grid w-max items-center justify-items-center gap-10 lg:grid-cols-2">
-                <div className="mb-16 flex w-full max-w-md flex-col">
+            <div className="container grid justify-items-center gap-10 lg:grid-cols-2">
+                <div className="mb-16 flex w-full flex-col lg:max-w-md">
                     <div className="flex flex-col text-center lg:items-start lg:text-start">
-                        <h2 className="section-title mb-5 md:mb-6">{title}</h2>
+                        <h2 className="section-title mb-5 whitespace-pre-line md:mb-6">
+                            {title}
+                        </h2>
                         <p className="section-description xl:text-md">
                             {description}
                         </p>
@@ -160,13 +162,13 @@ export default function Beneficios({
                     </div>
                 </div>
 
-                <div className="mx-auto grid gap-2">
+                <div className="mx-auto grid gap-6">
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
-                            className="benefit-item relative flex max-w-md flex-col gap-4 border-l-2 border-brand-blue bg-gradient-to-r from-neutral-darkest/60 px-8 py-6 backdrop-blur"
+                            className="benefit-item relative flex w-full max-w-md flex-col gap-4 border-l-2 border-brand-blue bg-gradient-to-r from-neutral-darkest/50 px-8 py-6 shadow-[-5px_5px_10px_1px_rgba(0,0,0,0.2)] backdrop-blur"
                         >
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-3">
                                 <img
                                     className="h-8 w-8 [&_*]:filter-none"
                                     src={icons[index]}
@@ -175,7 +177,7 @@ export default function Beneficios({
                                     {benefit.title}
                                 </h3>
                             </div>
-                            <div className="max-w-[90%] text-neutral-200 2xl:text-md [&_*]:filter-none">
+                            <div className="text-neutral-200 2xl:text-md [&_*]:filter-none">
                                 <p>{benefit.description}</p>
                             </div>
                         </div>

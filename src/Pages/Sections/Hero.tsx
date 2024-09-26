@@ -13,6 +13,7 @@ type HeroProps = {
     cta?: PrimaryButtonProps
     img: string
     position?: string
+    className?: string
 }
 
 export default function Hero({
@@ -21,6 +22,7 @@ export default function Hero({
     cta,
     img,
     position = 'center',
+    ...props
 }: HeroProps) {
     const container = useRef<HTMLElement>(null)
     const enterTl = useRef<gsap.core.Timeline | null>(null)
@@ -114,7 +116,10 @@ export default function Hero({
     )
 
     return (
-        <section ref={container} className="relative h-[78vh] px-[5%]">
+        <section
+            ref={container}
+            className={`relative h-[78vh] px-[5%] ${props.className}`}
+        >
             <div className="section-bg absolute left-0 top-[-12vh] -z-50 h-[100vh] w-full">
                 <img
                     src={img}
@@ -138,7 +143,9 @@ export default function Hero({
                         <div className="mt-6 flex flex-col items-center justify-center gap-2 gap-x-4 md:mt-8 md:flex-row">
                             <PrimaryButton
                                 className="section-cta-1"
-                                href={cta.href}
+                                href={
+                                    'https://api.whatsapp.com/send?phone=5519983085819&text=Olá!%20estou%20interessado%20em%20saber%20mais%20sobre%20as%20suas%20solu%C3%A7%C3%B5es%20para%20neg%C3%B3cios.'
+                                }
                                 text={cta.text}
                                 additionalText={cta.additionalText}
                                 linkType={cta.linkType}

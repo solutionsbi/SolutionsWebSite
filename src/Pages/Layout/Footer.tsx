@@ -143,7 +143,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <GhostButton>
-                                    <Link to="websites-e-ecommerce">
+                                    <Link to="websites-e-ecommerces">
                                         {t('layout.footer.columns.2.options.6')}
                                     </Link>
                                 </GhostButton>
@@ -169,7 +169,7 @@ export default function Footer() {
                             <li>
                                 <GhostButton>
                                     <a
-                                        href="https://api.whatsapp.com/send?phone=5519983085819"
+                                        href="https://api.whatsapp.com/send?phone=5519983085819&text=Olá!%20estou%20interessado%20em%20saber%20mais%20sobre%20as%20suas%20solu%C3%A7%C3%B5es%20para%20neg%C3%B3cios."
                                         target="_blank"
                                     >
                                         +55 (19) 98308-5819
@@ -195,7 +195,9 @@ export default function Footer() {
                 <div className="additional-footer-container container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row">
                     <img src={logo} alt="solutionsbi logo" />
                     <div className="flex flex-col items-center gap-4 text-neutral-300 md:flex-row">
-                        <p>{t('layout.footer.copyright')}</p>
+                        <p className="text-center md:text-start">
+                            {t('layout.footer.copyright')}
+                        </p>
                         <Link
                             to="politica-de-privacidade"
                             className="underline hover:text-brand-blue"

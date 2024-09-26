@@ -136,25 +136,25 @@ export default function ComoFunciona({
                         </p>
                     </div>
 
-                    <div className="como-funciona-grid relative grid grid-cols-1 gap-12 px-5 pt-12 lg:grid-cols-2 xl:gap-20 xl:px-20 xl:pt-20">
-                        <div className="como-funciona-grid-bg absolute left-0 top-0 h-full w-full bg-gradient-to-b from-neutral-darkest/70 to-transparent backdrop-blur" />
-                        <div className="como-funciona-grid-line absolute left-0 top-0 h-[3px] w-full bg-brand-blue" />
+                    <div className="como-funciona-grid relative grid grid-cols-1 gap-8 px-5 pt-12 lg:grid-cols-2 xl:gap-12 xl:px-20 xl:py-20">
+                        <div className="como-funciona-grid-bg absolute left-0 top-0 h-full w-full bg-gradient-to-b from-neutral-darkest/70 backdrop-blur" />
+                        <div className="como-funciona-grid-line absolute left-0 top-0 h-[2px] w-full rounded-full bg-brand-blue shadow-[0px_5px_10px_5px_rgba(0,0,0,0.2)]" />
 
                         {steps.map((step, index) => (
                             <div
                                 key={index}
-                                className="como-funciona-grid-item relative flex flex-col gap-6"
+                                className="como-funciona-grid-item relative flex flex-col gap-6 rounded-lg bg-gradient-to-br from-neutral-darkest/50 p-10 shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)]"
                             >
                                 <div className="flex h-max gap-6">
-                                    <span className="font-ibm text-8xl/none font-bold text-brand-blue">
+                                    <span className="font-ibm text-10xl/none font-bold text-brand-blue">
                                         {index + 1}
                                     </span>
-                                    <h3 className="whitespace-pre-line text-2xl/tight drop-shadow-custom">
+                                    <h3 className="whitespace-pre-line border-l-2 border-brand-blue pl-6 text-2xl/tight drop-shadow-custom">
                                         {step.title}
                                     </h3>
                                 </div>
                                 <div className={`flex flex-col gap-3`}>
-                                    <p className="text-justify text-base text-text-alternative drop-shadow-custom">
+                                    <p className="text-base text-text-alternative drop-shadow-custom">
                                         {step.description}
                                     </p>
                                 </div>
