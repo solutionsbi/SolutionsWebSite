@@ -1,13 +1,15 @@
 import PrimaryButton from '../../components/custom/PrimaryButton'
-import { MoveRight } from 'lucide-react'
+import { useTranslation, Trans } from 'react-i18next'
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+import ctaImage from '@/assets/images/Background/2.jpeg'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Cta() {
+    const { t } = useTranslation()
     const container = useRef<HTMLElement>(null)
     const sectionTl = useRef<gsap.core.Timeline | null>(null)
 
@@ -26,56 +28,65 @@ export default function Cta() {
             const sectionBottomBar =
                 container.current.querySelector('.bottom-bar')
 
-            // set initial styles to prevent flashing of unstyled content
+            // background animation
             gsap.set(sectionBg, {
-                opacity: 0,
+                autoAlpha: 1,
                 scale: 0.8,
             })
-            gsap.set(sectionContainerBg, {
-                transformOrigin: 'bottom',
-                opacity: 0,
-                scaleY: 0,
-            })
-            gsap.set(sectionTitle, {
-                opacity: 0,
-                x: 20,
-            })
-
-            gsap.set(sectionCta, {
-                opacity: 0,
-                scale: 0.8,
-                x: -20,
-            })
-            gsap.set(sectionBottomBar, {
-                opacity: 0,
-                scaleX: 0,
+            gsap.to(sectionBg, {
+                autoAlpha: 1,
+                scale: 1,
+                duration: 3,
+                scrollTrigger: {
+                    trigger: sectionBg,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: 1,
+                    markers: false,
+                },
             })
 
             // create timeline for section animation
             sectionTl.current = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top 70%',
+                    start: 'top bottom',
+                    markers: false,
                 },
                 defaults: {
-                    duration: 1.5,
-                    ease: 'power1.inOut',
+                    duration: 1,
+                    ease: 'power1.out',
                 },
+            })
+
+            // set initial styles to prevent flashing of unstyled content
+            gsap.set(sectionContainerBg, {
+                transformOrigin: 'bottom',
+                autoAlpha: 0,
+                scaleY: 0,
+            })
+            gsap.set(sectionTitle, {
+                autoAlpha: 0,
+                x: 20,
+            })
+
+            gsap.set(sectionCta, {
+                autoAlpha: 0,
+                scale: 0.8,
+                x: -20,
+            })
+            gsap.set(sectionBottomBar, {
+                autoAlpha: 0,
+                scaleX: 0,
             })
 
             // animate section elements
-            sectionTl.current.to(sectionBg, {
-                opacity: 1,
-                scale: 1,
-                duration: 3,
-            })
-
             sectionTl.current.to(
                 sectionBottomBar,
                 {
-                    opacity: 1,
+                    autoAlpha: 1,
                     scaleX: 1,
-                    duration: 2,
+                    duration: 1,
                 },
                 '<+=0.5'
             )
@@ -83,17 +94,16 @@ export default function Cta() {
             sectionTl.current.to(
                 sectionContainerBg,
                 {
-                    opacity: 1,
+                    autoAlpha: 1,
                     scaleY: 1,
-                    duration: 2,
                 },
-                '<'
+                '<+=0.5'
             )
 
             sectionTl.current.to(
                 sectionTitle,
                 {
-                    opacity: 1,
+                    autoAlpha: 1,
                     x: 0,
                 },
                 '<+=0.5'
@@ -102,7 +112,7 @@ export default function Cta() {
             sectionTl.current.to(
                 sectionCta,
                 {
-                    opacity: 1,
+                    autoAlpha: 1,
                     scale: 1,
                     x: 0,
                 },
@@ -116,7 +126,7 @@ export default function Cta() {
         <section ref={container} className="relative px-[5%] py-16">
             <div className="section-bg absolute left-1/2 top-1/2 -z-50 mx-auto h-[120%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
                 <img
-                    src="/src/assets/images/Background/2.jpeg"
+                    src={ctaImage}
                     className="mask-rect h-full w-full object-cover"
                 />
             </div>
@@ -125,19 +135,22 @@ export default function Cta() {
                 <div className="container-bg absolute inset-0 -z-10 bg-gradient-to-tr from-neutral-darkest/60 backdrop-blur"></div>
                 <div className="flex flex-col">
                     <h3 className="section-title text-5xl font-bold md:text-7xl lg:text-8xl">
-                        fale com um de <br className="hidden md:inline-block" />{' '}
-                        nossos{' '}
-                        <span className="text-brand-blue">especialistas</span>{' '}
-                        <br className="hidden md:inline-block" /> e{' '}
-                        <span className="text-brand-blue">impulsione</span> já{' '}
-                        <br className="hidden md:inline-block" /> o seu negócio
+                        <Trans
+                            i18nKey="pages.home.sections.cta.title"
+                            components={{
+                                span: <span className="text-brand-blue" />,
+                                br: <br />,
+                            }}
+                        />
                     </h3>
                 </div>
                 <div className="mt-16 self-end lg:mt-0">
                     <PrimaryButton
                         className="section-cta"
-                        text="Impulsionar Agora"
-                        href="https://api.whatsapp.com/send?phone=5519993230833"
+                        text={t('buttons.agende-uma-consultoria')}
+                        additionalText={t('buttons.saiba-mais')}
+                        href="https://api.whatsapp.com/send?phone=5519983085819&text=Olá!%20estou%20interessado%20em%20saber%20mais%20sobre%20as%20suas%20solu%C3%A7%C3%B5es%20para%20neg%C3%B3cios."
+                        linkType="external"
                     />
                 </div>
             </div>

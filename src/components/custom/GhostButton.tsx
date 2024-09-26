@@ -5,36 +5,51 @@ import { useGSAP } from '@gsap/react'
 
 gsap.registerPlugin(useGSAP)
 
-export const GhostButton = ({ children }: { children: React.ReactNode }) => {
-    const container = useRef<HTMLButtonElement>(null)
+interface GhostButtonProps {
+    children: React.ReactNode
+    isActive?: boolean
+    className?: string
+}
+
+export const GhostButton = ({
+    children,
+    isActive = false,
+    className = '',
+}: GhostButtonProps) => {
+    const container = useRef<HTMLDivElement>(null)
 
     const { contextSafe } = useGSAP({ scope: container })
 
     const handleMouseEvent = contextSafe((scaleX: string) => {
-        const buttonBottomLine =
-            container.current?.querySelector('.bottom-line')
-        gsap.to(buttonBottomLine!, {
-            scaleX: scaleX,
-            ease: 'power4.inOut',
-            duration: 0.3,
-        })
+        if (!isActive) {
+            const buttonBottomLine =
+                container.current?.querySelector('.bottom-line')
+            gsap.to(buttonBottomLine!, {
+                scaleX: scaleX,
+                ease: 'power4.inOut',
+                duration: 0.3,
+            })
+        }
     })
 
     const handleMouseEnter = () => handleMouseEvent('1')
     const handleMouseLeave = () => handleMouseEvent('0')
 
     return (
-        <Button
-            ref={container}
-            variant="link"
-            size="custom"
-            onClick={() => console.log('clicked!')}
-            className={'relative'}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-        >
-            {children}
-            <div className="bottom-line absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-brand-blue"></div>
-        </Button>
+        <div ref={container} className="relative">
+            <Button
+                asChild
+                variant="link"
+                size="custom"
+                className={`relative ${className}`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
+                {children}
+            </Button>
+            <div
+                className={`bottom-line absolute bottom-0 left-0 h-0.5 w-full origin-left bg-brand-blue ${isActive ? 'scale-x-100' : 'scale-x-0'}`}
+            ></div>
+        </div>
     )
 }

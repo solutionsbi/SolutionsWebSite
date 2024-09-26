@@ -11,6 +11,7 @@ import InteligenciaArtificial from './Pages/InteligenciaArtificial'
 import TransformacaoDigital from './Pages/TransformacaoDigital'
 import WebsistesEcommerce from './Pages/WebsitesEcommerce'
 import PoliticaDePrivacidade from './Pages/PoliticaDePrivacidade'
+import NotFound from './Pages/NotFound'
 
 function App() {
     return (
@@ -41,13 +42,14 @@ function App() {
                             element={<TransformacaoDigital />}
                         />
                         <Route
-                            path="websites-e-ecommerce"
+                            path="websites-e-ecommerces"
                             element={<WebsistesEcommerce />}
                         />
                         <Route
                             path="politica-de-privacidade"
                             element={<PoliticaDePrivacidade />}
                         />
+                        <Route path="*" element={<NotFound />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

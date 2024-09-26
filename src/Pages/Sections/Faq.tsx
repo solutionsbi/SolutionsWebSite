@@ -5,6 +5,7 @@ import {
     AccordionTrigger,
 } from '@/components/ui/accordion'
 
+import { useTranslation } from 'react-i18next'
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -12,17 +13,25 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
-type FaqProps = {
-    faqs: Faq[]
-}
+import icon1 from '@/assets/svg/abstract-icons/icon1.svg'
+import icon2 from '@/assets/svg/abstract-icons/icon2.svg'
+import icon3 from '@/assets/svg/abstract-icons/icon3.svg'
+import icon4 from '@/assets/svg/abstract-icons/icon4.svg'
+import icon5 from '@/assets/svg/abstract-icons/icon5.svg'
 
-type Faq = {
-    icon: string
+const icons = [icon1, icon2, icon3, icon4, icon5]
+
+export type Faq = {
     question: string
     answer: string
 }
 
+type FaqProps = {
+    faqs: Faq[]
+}
+
 export default function Faq({ faqs }: FaqProps) {
+    const { t } = useTranslation()
     const container = useRef<HTMLElement>(null)
     const sectionTl = useRef<gsap.core.Timeline | null>(null)
 
@@ -38,47 +47,43 @@ export default function Faq({ faqs }: FaqProps) {
                 container.current.querySelectorAll('.faq-item')
             )
 
-            // console.group('FAQ Section Elements')
-            // console.log('Section Title:', sectionTitle)
-            // console.log('Section Faq:', sectionFaqs)
-            // console.groupEnd()
-
             // set initial styles to prevent flashing of unstyled content
             gsap.set(sectionTitle, {
-                opacity: 0,
-                x: 20,
+                autoAlpha: 0,
+                y: 100,
             })
             gsap.set(sectionFaqs, {
-                opacity: 0,
-                y: 50,
+                autoAlpha: 0,
+                y: -100,
             })
 
             // create timeline for section animation
             sectionTl.current = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top 70%',
+                    start: 'top bottom',
+                    markers: false,
                 },
                 defaults: {
-                    duration: 1.5,
-                    ease: 'power1.inOut',
+                    duration: 1,
+                    ease: 'power4.out',
                 },
             })
 
             // add animation to section elements
             sectionTl.current
                 .to(sectionTitle, {
-                    opacity: 1,
-                    x: 0,
+                    autoAlpha: 1,
+                    y: 0,
                 })
                 .to(
                     sectionFaqs,
                     {
-                        opacity: 1,
+                        autoAlpha: 1,
                         y: 0,
-                        stagger: 0.1,
+                        stagger: 0.2,
                     },
-                    '<+=0.5'
+                    '<+=0.2'
                 )
         },
         { scope: container }
@@ -89,8 +94,12 @@ export default function Faq({ faqs }: FaqProps) {
             <div className="container grid h-full items-center">
                 <div className="flex w-full flex-col items-center">
                     <h2 className="section-title mb-14 text-center lg:mb-20">
-                        <span className="text-brand-blue"> perguntas</span>{' '}
-                        frequentes
+                        <span className="text-brand-blue">
+                            {' '}
+                            {t('pages.home.sections.faq.title.part1')}
+                        </span>{' '}
+                        <br />
+                        {t('pages.home.sections.faq.title.part2')}
                     </h2>
 
                     <Accordion
@@ -106,7 +115,7 @@ export default function Faq({ faqs }: FaqProps) {
                                     <AccordionTrigger className="">
                                         <div className="flex items-center gap-6 text-left font-inter font-medium xl:text-lg">
                                             <img
-                                                src={faq.icon}
+                                                src={icons[index]}
                                                 alt=""
                                                 className="hidden h-8 w-8 md:block"
                                             />

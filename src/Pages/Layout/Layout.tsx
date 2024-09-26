@@ -15,9 +15,9 @@ export default function Layout() {
     }, [location.pathname])
 
     return (
-        <div className="mx-auto overflow-hidden">
+        <div>
             <Header />
-            <main className="mt-[10vh]">
+            <main>
                 <Outlet />
             </main>
             <Footer />

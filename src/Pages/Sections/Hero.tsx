@@ -13,6 +13,7 @@ type HeroProps = {
     cta?: PrimaryButtonProps
     img: string
     position?: string
+    className?: string
 }
 
 export default function Hero({
@@ -21,6 +22,7 @@ export default function Hero({
     cta,
     img,
     position = 'center',
+    ...props
 }: HeroProps) {
     const container = useRef<HTMLElement>(null)
     const enterTl = useRef<gsap.core.Timeline | null>(null)
@@ -45,42 +47,18 @@ export default function Hero({
             enterTl.current = gsap.timeline({
                 defaults: {
                     duration: 1,
-                    ease: 'power1.out',
+                    ease: 'power4.out',
                 },
                 scrollTrigger: {
                     trigger: container.current,
                     start: 'top bottom',
                     end: 'top center',
                 },
-                onComplete: () => {
-                    scrubTl.current = gsap.timeline({
-                        scrollTrigger: {
-                            trigger: container.current,
-                            start: 'top 10%',
-                            end: 'bottom 10%',
-                            scrub: true,
-                        },
-                    })
-
-                    scrubTl.current
-                        ?.to(sectionBg, {
-                            y: 100,
-                            scale: 1.1,
-                        })
-                        .to(
-                            sectionTitle,
-                            {
-                                y: -50,
-                                opacity: 0.5,
-                            },
-                            '<'
-                        )
-                },
             })
 
             gsap.set(sectionBg, {
-                scale: 1.2,
-                autoAlpha: 0,
+                autoAlpha: 0.8,
+                scale: 0.8,
             })
             gsap.set(sectionTitle, {
                 x: -20,
@@ -98,18 +76,22 @@ export default function Hero({
             }
 
             enterTl.current
-                ?.to(sectionBg, {
-                    autoAlpha: 1,
-                    scale: 1,
-                    duration: 3,
-                })
+                .to(
+                    sectionBg,
+                    {
+                        scale: 1,
+                        autoAlpha: 1,
+                        duration: 3,
+                    },
+                    '<'
+                )
                 .to(
                     sectionTitle,
                     {
                         autoAlpha: 1,
                         x: 0,
                     },
-                    '-=2'
+                    '<+=0.4'
                 )
                 .to(
                     sectionDescription,
@@ -117,7 +99,7 @@ export default function Hero({
                         autoAlpha: 1,
                         y: 0,
                     },
-                    '-=1.5'
+                    '<+=0.4'
                 )
             if (cta) {
                 enterTl.current?.to(
@@ -126,7 +108,7 @@ export default function Hero({
                         autoAlpha: 1,
                         x: 0,
                     },
-                    '-=1.1'
+                    '<+=0.4'
                 )
             }
         },
@@ -134,7 +116,10 @@ export default function Hero({
     )
 
     return (
-        <section ref={container} className="relative h-[78vh] px-[5%]">
+        <section
+            ref={container}
+            className={`relative h-[78vh] px-[5%] ${props.className}`}
+        >
             <div className="section-bg absolute left-0 top-[-12vh] -z-50 h-[100vh] w-full">
                 <img
                     src={img}
@@ -158,9 +143,12 @@ export default function Hero({
                         <div className="mt-6 flex flex-col items-center justify-center gap-2 gap-x-4 md:mt-8 md:flex-row">
                             <PrimaryButton
                                 className="section-cta-1"
-                                href={cta.href}
+                                href={
+                                    'https://api.whatsapp.com/send?phone=5519983085819&text=Olá!%20estou%20interessado%20em%20saber%20mais%20sobre%20as%20suas%20solu%C3%A7%C3%B5es%20para%20neg%C3%B3cios.'
+                                }
                                 text={cta.text}
                                 additionalText={cta.additionalText}
+                                linkType={cta.linkType}
                             />
                         </div>
                     )}

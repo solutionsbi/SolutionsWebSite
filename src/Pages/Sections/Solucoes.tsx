@@ -1,4 +1,6 @@
-import Carrossel from '../../components/custom/CarrosselSoluções'
+import { useTranslation } from 'react-i18next'
+
+import Carrossel from '../../components/custom/SolutionsCarousel'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -11,6 +13,7 @@ type SolucoesProps = {
 }
 
 export default function Solucoes({ title = false }: SolucoesProps) {
+    const { t } = useTranslation()
     const container = useRef<HTMLDivElement>(null)
 
     useGSAP(
@@ -39,17 +42,20 @@ export default function Solucoes({ title = false }: SolucoesProps) {
         { scope: container }
     )
     return (
-        <section ref={container} className="overflow-hidden px-[5%]">
+        <section
+            ref={container}
+            className={`overflow-hidden px-[5%] ${title && 'py-24'}`}
+        >
             <div className="container">
                 <div className="flex flex-col gap-20">
                     {title && (
                         <div className="flex flex-col text-center">
                             <h2 className="section-title">
                                 <span className="text-brand-blue">
-                                    explore todas
+                                    {t('pages.solutions.title.part1')}
                                 </span>{' '}
                                 <br />
-                                as nossas solucões
+                                {t('pages.solutions.title.part2')}
                             </h2>
                         </div>
                     )}

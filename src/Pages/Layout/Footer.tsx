@@ -5,13 +5,18 @@ import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Heart } from 'lucide-react'
 import { GhostButton } from '@/components/custom/GhostButton'
+import { useTranslation } from 'react-i18next'
+
+import facebookIcon from '@/assets/svg/social-icons/facebook-icon.svg'
+import linkedinIcon from '@/assets/svg/social-icons/linkedin-icon.svg'
+import logo from '@/assets/svg/logo.svg'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Footer() {
     const container = useRef<HTMLElement>(null)
     const sectionTl = useRef<gsap.core.Timeline | null>(null)
-
+    const { t } = useTranslation()
     useGSAP(() => {
         if (!container.current) return
 
@@ -36,8 +41,8 @@ export default function Footer() {
                 markers: false,
             },
             defaults: {
-                duration: 1.5,
-                ease: 'power1.inOut',
+                duration: 1,
+                ease: 'power1.out',
             },
         })
 
@@ -66,27 +71,18 @@ export default function Footer() {
                 <div className="footer-info-grid grid justify-items-center gap-10 py-12 text-center md:grid-cols-2 md:text-start xl:grid-cols-4 xl:justify-items-start xl:gap-0 xl:text-start">
                     <div className="flex flex-col">
                         <span className="mb-6 flex items-center justify-center gap-2 font-bold uppercase text-brand-blue md:justify-start">
-                            Feito com <Heart />
-                            no Brasil
+                            {t('layout.footer.columns.1.title.part1')} <Heart />
+                            {t('layout.footer.columns.1.title.part2')}
                         </span>
-                        <span>
-                            A SolutionsBI é uma empresa de tecnologia
-                            especializada em criar soluções personalizadas para
-                            empresas que desejam otimizar seus processos e
-                            aumentar sua eficiência.
-                        </span>
+                        <span>{t('layout.footer.columns.1.description')}</span>
                         <div className="mt-6 flex items-center justify-center gap-4 md:justify-start xl:justify-start">
-                            <a href="">
+                            <a
+                                href="https://www.facebook.com/solutionsbi.fb/"
+                                target="_blank"
+                            >
                                 <img
-                                    src="/src/assets/svg/facebook-icon.svg"
+                                    src={facebookIcon}
                                     alt="facebook"
-                                    className="h-8 w-8"
-                                />
-                            </a>
-                            <a href="">
-                                <img
-                                    src="/src/assets/svg/instagram-icon.svg"
-                                    alt="instagram"
                                     className="h-8 w-8"
                                 />
                             </a>
@@ -95,7 +91,7 @@ export default function Footer() {
                                 target="_blank"
                             >
                                 <img
-                                    src="/src/assets/svg/linkedin-icon.svg"
+                                    src={linkedinIcon}
                                     alt="linkedin"
                                     className="h-8 w-8"
                                 />
@@ -104,7 +100,7 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col lg:col-start-2 xl:col-start-3 xl:justify-self-end xl:border-l xl:border-white/10 xl:pl-10">
                         <span className="mb-6 font-bold uppercase text-brand-blue">
-                            Soluções
+                            {t('layout.footer.columns.2.title')}
                         </span>
                         <ul className="flex flex-col gap-4">
                             <li>
@@ -113,42 +109,42 @@ export default function Footer() {
                                         to="engenharia-de-dados"
                                         className="font-normal"
                                     >
-                                        Engenharia de Dados
+                                        {t('layout.footer.columns.2.options.1')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
                                     <Link to="business-intelligence">
-                                        Business Intelligence
+                                        {t('layout.footer.columns.2.options.2')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
                                     <Link to="sistemas-personalizados">
-                                        Sistemas Personalizados
+                                        {t('layout.footer.columns.2.options.3')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
                                     <Link to="inteligencia-artificial">
-                                        Inteligência Artificial
+                                        {t('layout.footer.columns.2.options.4')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
                                     <Link to="transformacao-digital">
-                                        Transformação Digital
+                                        {t('layout.footer.columns.2.options.5')}
                                     </Link>
                                 </GhostButton>
                             </li>
                             <li>
                                 <GhostButton>
-                                    <Link to="websites-e-ecommerce">
-                                        Websites e E-commerce
+                                    <Link to="websites-e-ecommerces">
+                                        {t('layout.footer.columns.2.options.6')}
                                     </Link>
                                 </GhostButton>
                             </li>
@@ -156,13 +152,16 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col md:col-start-2 lg:col-start-3 xl:col-start-4 xl:justify-self-end xl:border-l xl:border-white/10 xl:pl-10">
                         <span className="mb-6 font-bold uppercase text-brand-blue">
-                            Contato
+                            {t('layout.footer.columns.3.title')}
                         </span>
 
                         <ul className="flex flex-col gap-4">
                             <li>
                                 <GhostButton>
-                                    <a href="mailto:contato@solutionsbi.com.br">
+                                    <a
+                                        href="mailto:contato@solutionsbi.com.br"
+                                        target="_blank"
+                                    >
                                         contato@solutionsbi.com.br
                                     </a>
                                 </GhostButton>
@@ -170,35 +169,40 @@ export default function Footer() {
                             <li>
                                 <GhostButton>
                                     <a
-                                        href="https://api.whatsapp.com/send?phone=5519993230833"
+                                        href="https://api.whatsapp.com/send?phone=5519983085819&text=Olá!%20estou%20interessado%20em%20saber%20mais%20sobre%20as%20suas%20solu%C3%A7%C3%B5es%20para%20neg%C3%B3cios."
                                         target="_blank"
                                     >
-                                        (19) 99323-0833
+                                        +55 (19) 98308-5819
                                     </a>
                                 </GhostButton>
                             </li>
                             <li>
-                                Rua Treze de maio, 257 <br />
-                                2º andar | Sala 21 <br />
-                                Centro - Limeira/SP
-                                <br />
-                                Cep: 13480-082
+                                <a
+                                    className="hover:text-brand-blue"
+                                    href="https://www.google.com/maps/place/Rua+Treze+de+Maio,+257+-+Centro,+Limeira+-+SP,+13480-082/@-22.0643365,-47.4006336,17z/data=!3m1!4b1!4m6!3m5!1s0x94c98a6742248333:0x3283242822822222!8m2!3d-22.0643365!4d-47.3980589!16s%2Fg%2F11c5r4x6c1"
+                                    target="_blank"
+                                >
+                                    Rua Treze de maio, 257 <br />
+                                    2º andar | Sala 21 <br />
+                                    Centro - Limeira/SP
+                                    <br />
+                                    Cep: 13480-082
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="additional-footer-container container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row">
-                    <img
-                        src="/src/assets/svg/logo.svg"
-                        alt="solutionsbi logo"
-                    />
+                    <img src={logo} alt="solutionsbi logo" />
                     <div className="flex flex-col items-center gap-4 text-neutral-300 md:flex-row">
-                        <p>Copyright © 2024 – SolutionsBI Brazil</p>
+                        <p className="text-center md:text-start">
+                            {t('layout.footer.copyright')}
+                        </p>
                         <Link
                             to="politica-de-privacidade"
                             className="underline hover:text-brand-blue"
                         >
-                            Política de Privacidade
+                            {t('layout.footer.privacy-policy')}
                         </Link>
                     </div>
                 </div>
