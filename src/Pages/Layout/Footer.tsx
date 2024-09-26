@@ -11,6 +11,15 @@ import facebookIcon from '@/assets/svg/social-icons/facebook-icon.svg'
 import linkedinIcon from '@/assets/svg/social-icons/linkedin-icon.svg'
 import logo from '@/assets/svg/logo.svg'
 
+import {
+    Phone,
+    Instagram,
+    Linkedin,
+    Facebook,
+    Mail,
+    MapPin,
+} from 'lucide-react'
+
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Footer() {
@@ -80,20 +89,27 @@ export default function Footer() {
                                 href="https://www.facebook.com/solutionsbi.fb/"
                                 target="_blank"
                             >
-                                <img
-                                    src={facebookIcon}
-                                    alt="facebook"
-                                    className="h-8 w-8"
+                                <Facebook
+                                    size={32}
+                                    className="text-brand-blue hover:text-neutral-100"
                                 />
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/solutions-bi-0208691a8/?original_referer=https%3A%2F%2Fwww%2Ebing%2Ecom%2F&originalSubdomain=br"
                                 target="_blank"
                             >
-                                <img
-                                    src={linkedinIcon}
-                                    alt="linkedin"
-                                    className="h-8 w-8"
+                                <Linkedin
+                                    size={32}
+                                    className="text-brand-blue hover:text-neutral-100"
+                                />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/solutions_bi/"
+                                target="_blank"
+                            >
+                                <Instagram
+                                    size={32}
+                                    className="text-brand-blue hover:text-neutral-100"
                                 />
                             </a>
                         </div>

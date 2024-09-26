@@ -22,11 +22,14 @@ import iconInteligenciaArtificial from '@/assets/svg/tech-icons/ia-icon.svg'
 import iconTransformacaoDigital from '@/assets/svg/tech-icons/transformacao-icon.svg'
 import iconWebsitesEEcommerces from '@/assets/svg/tech-icons/sites-icon.svg'
 
-import { Phone } from 'lucide-react'
-import { Mail } from 'lucide-react'
-import { MapPin } from 'lucide-react'
-import { Linkedin } from 'lucide-react'
-import { Facebook } from 'lucide-react'
+import {
+    Phone,
+    Instagram,
+    Linkedin,
+    Facebook,
+    Mail,
+    MapPin,
+} from 'lucide-react'
 
 export function MenuDeNavegaçãoPrincipal() {
     const { t } = useTranslation()
@@ -154,40 +157,40 @@ export function MenuDeNavegaçãoPrincipal() {
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent className="">
                                     <ul className="grid w-max gap-3 p-4 md:grid-cols-[200px_250px]">
-                                        <li className="">
-                                            <NavigationMenuLink asChild>
-                                                <div className="flex h-full w-full select-none flex-col rounded-md border-neutral-700 bg-brand-blue bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md">
-                                                    <div className="mb-2 text-lg font-medium">
-                                                        Solutions BI
-                                                    </div>
-                                                    <p className="text-sm font-normal leading-tight text-neutral-200">
-                                                        {t(
-                                                            'layout.header.menu.contact.description'
-                                                        )}
-                                                    </p>
-                                                    <div className="mt-auto flex gap-4 border-t border-white/10 pt-4">
-                                                        <a
-                                                            className=""
-                                                            href="https://www.facebook.com/solutionsbi.fb/"
-                                                            target="_blank"
-                                                        >
-                                                            <Facebook
-                                                                size={24}
-                                                            />
-                                                        </a>
-                                                        <a
-                                                            className=""
-                                                            href="https://www.linkedin.com/in/solutions-bi-0208691a8/?original_referer=https%3A%2F%2Fwww%2Ebing%2Ecom%2F&originalSubdomain=br"
-                                                            target="_blank"
-                                                        >
-                                                            <Linkedin
-                                                                size={24}
-                                                            />
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </NavigationMenuLink>
-                                        </li>
+                                        <div className="flex h-full w-full select-none flex-col rounded-md border-neutral-700 bg-brand-blue bg-gradient-to-b p-4 no-underline outline-none focus:shadow-md">
+                                            <div className="mb-2 text-lg font-medium">
+                                                Solutions BI
+                                            </div>
+                                            <p className="text-sm font-normal leading-tight text-neutral-200">
+                                                {t(
+                                                    'layout.header.menu.contact.description'
+                                                )}
+                                            </p>
+                                            <div className="mt-auto flex gap-4 border-t border-white/10 pt-4">
+                                                <a
+                                                    className=""
+                                                    href="https://www.facebook.com/solutionsbi.fb/"
+                                                    target="_blank"
+                                                >
+                                                    <Facebook size={24} />
+                                                </a>
+                                                <a
+                                                    className=""
+                                                    href="https://www.linkedin.com/in/solutions-bi-0208691a8/?original_referer=https%3A%2F%2Fwww%2Ebing%2Ecom%2F&originalSubdomain=br"
+                                                    target="_blank"
+                                                >
+                                                    <Linkedin size={24} />
+                                                </a>
+                                                <a
+                                                    className=""
+                                                    href="https://www.instagram.com/solutions_bi/"
+                                                    target="_blank"
+                                                >
+                                                    <Instagram size={24} />
+                                                </a>
+                                            </div>
+                                        </div>
+
                                         <div className="flex h-full flex-col justify-between">
                                             {contactInfoArray.map(
                                                 (component) => (
