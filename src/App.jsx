@@ -15,45 +15,45 @@ import NotFound from './Pages/NotFound'
 
 function App() {
     return (
-        <ReactLenis root>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route index element={<Home />} />
-                        <Route path="sobre" element={<Sobre />} />
-                        <Route
-                            path="engenharia-de-dados"
-                            element={<EgenhariaDeDados />}
-                        />
-                        <Route
-                            path="business-intelligence"
-                            element={<BusinessIntelligence />}
-                        />
-                        <Route
-                            path="sistemas-personalizados"
-                            element={<SistemasPersonalizados />}
-                        />
-                        <Route
-                            path="inteligencia-artificial"
-                            element={<InteligenciaArtificial />}
-                        />
-                        <Route
-                            path="transformacao-digital"
-                            element={<TransformacaoDigital />}
-                        />
-                        <Route
-                            path="websites-e-ecommerces"
-                            element={<WebsistesEcommerce />}
-                        />
-                        <Route
-                            path="politica-de-privacidade"
-                            element={<PoliticaDePrivacidade />}
-                        />
-                        <Route path="*" element={<NotFound />} />
-                    </Route>
-                </Routes>
-            </BrowserRouter>
-        </ReactLenis>
+        // <ReactLenis root>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="sobre" element={<Sobre />} />
+                    <Route
+                        path="engenharia-de-dados"
+                        element={<EgenhariaDeDados />}
+                    />
+                    <Route
+                        path="business-intelligence"
+                        element={<BusinessIntelligence />}
+                    />
+                    <Route
+                        path="sistemas-personalizados"
+                        element={<SistemasPersonalizados />}
+                    />
+                    <Route
+                        path="inteligencia-artificial"
+                        element={<InteligenciaArtificial />}
+                    />
+                    <Route
+                        path="transformacao-digital"
+                        element={<TransformacaoDigital />}
+                    />
+                    <Route
+                        path="websites-e-ecommerces"
+                        element={<WebsistesEcommerce />}
+                    />
+                    <Route
+                        path="politica-de-privacidade"
+                        element={<PoliticaDePrivacidade />}
+                    />
+                    <Route path="*" element={<NotFound />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+        // </ReactLenis>
     )
 }
 

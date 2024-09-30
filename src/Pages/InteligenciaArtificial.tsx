@@ -30,7 +30,7 @@ export default function InteligenciaArtificial() {
                         {translations.title.part2}
                     </>
                 }
-                description={translations.description.medium}
+                description={translations.description.long}
                 cta={{
                     href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: t('buttons.agende-uma-consultoria'),

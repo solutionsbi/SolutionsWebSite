@@ -23,7 +23,7 @@
  * ```
  */
 
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { gsap } from 'gsap'
@@ -60,7 +60,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
         tl.current = gsap.timeline({
             defaults: {
                 duration: 0.25,
-                ease: 'power1.inOut',
+                ease: 'power4.inOut',
             },
         })
 

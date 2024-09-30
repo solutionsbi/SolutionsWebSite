@@ -13,114 +13,114 @@ export default function Cta() {
     const container = useRef<HTMLElement>(null)
     const sectionTl = useRef<gsap.core.Timeline | null>(null)
 
-    useGSAP(
-        () => {
-            // check if container exists
-            if (!container.current) return
+    // useGSAP(
+    //     () => {
+    //         // check if container exists
+    //         if (!container.current) return
 
-            // get section elements to be animated
-            const sectionBg = container.current.querySelector('.section-bg')
-            const sectionContainerBg =
-                container.current.querySelector('.container-bg')
-            const sectionTitle =
-                container.current.querySelector('.section-title')
-            const sectionCta = container.current.querySelector('.section-cta')
-            const sectionBottomBar =
-                container.current.querySelector('.bottom-bar')
+    //         // get section elements to be animated
+    //         const sectionBg = container.current.querySelector('.section-bg')
+    //         const sectionContainerBg =
+    //             container.current.querySelector('.container-bg')
+    //         const sectionTitle =
+    //             container.current.querySelector('.section-title')
+    //         const sectionCta = container.current.querySelector('.section-cta')
+    //         const sectionBottomBar =
+    //             container.current.querySelector('.bottom-bar')
 
-            // background animation
-            gsap.set(sectionBg, {
-                autoAlpha: 1,
-                scale: 0.8,
-            })
-            gsap.to(sectionBg, {
-                autoAlpha: 1,
-                scale: 1,
-                duration: 3,
-                scrollTrigger: {
-                    trigger: sectionBg,
-                    start: 'top bottom',
-                    end: 'bottom top',
-                    scrub: 1,
-                    markers: false,
-                },
-            })
+    //         // background animation
+    //         gsap.set(sectionBg, {
+    //             autoAlpha: 1,
+    //             scale: 0.8,
+    //         })
+    //         gsap.to(sectionBg, {
+    //             autoAlpha: 1,
+    //             scale: 1,
+    //             duration: 3,
+    //             scrollTrigger: {
+    //                 trigger: sectionBg,
+    //                 start: 'top bottom',
+    //                 end: 'bottom top',
+    //                 scrub: 1,
+    //                 markers: false,
+    //             },
+    //         })
 
-            // create timeline for section animation
-            sectionTl.current = gsap.timeline({
-                scrollTrigger: {
-                    trigger: container.current,
-                    start: 'top bottom',
-                    markers: false,
-                },
-                defaults: {
-                    duration: 1,
-                    ease: 'power1.out',
-                },
-            })
+    //         // create timeline for section animation
+    //         sectionTl.current = gsap.timeline({
+    //             scrollTrigger: {
+    //                 trigger: container.current,
+    //                 start: 'top bottom',
+    //                 markers: false,
+    //             },
+    //             defaults: {
+    //                 duration: 1,
+    //                 ease: 'power1.out',
+    //             },
+    //         })
 
-            // set initial styles to prevent flashing of unstyled content
-            gsap.set(sectionContainerBg, {
-                transformOrigin: 'bottom',
-                autoAlpha: 0,
-                scaleY: 0,
-            })
-            gsap.set(sectionTitle, {
-                autoAlpha: 0,
-                x: 20,
-            })
+    //         // set initial styles to prevent flashing of unstyled content
+    //         gsap.set(sectionContainerBg, {
+    //             transformOrigin: 'bottom',
+    //             autoAlpha: 0,
+    //             scaleY: 0,
+    //         })
+    //         gsap.set(sectionTitle, {
+    //             autoAlpha: 0,
+    //             x: 20,
+    //         })
 
-            gsap.set(sectionCta, {
-                autoAlpha: 0,
-                scale: 0.8,
-                x: -20,
-            })
-            gsap.set(sectionBottomBar, {
-                autoAlpha: 0,
-                scaleX: 0,
-            })
+    //         gsap.set(sectionCta, {
+    //             autoAlpha: 0,
+    //             scale: 0.8,
+    //             x: -20,
+    //         })
+    //         gsap.set(sectionBottomBar, {
+    //             autoAlpha: 0,
+    //             scaleX: 0,
+    //         })
 
-            // animate section elements
-            sectionTl.current.to(
-                sectionBottomBar,
-                {
-                    autoAlpha: 1,
-                    scaleX: 1,
-                    duration: 1,
-                },
-                '<+=0.5'
-            )
+    //         // animate section elements
+    //         sectionTl.current.to(
+    //             sectionBottomBar,
+    //             {
+    //                 autoAlpha: 1,
+    //                 scaleX: 1,
+    //                 duration: 1,
+    //             },
+    //             '<+=0.5'
+    //         )
 
-            sectionTl.current.to(
-                sectionContainerBg,
-                {
-                    autoAlpha: 1,
-                    scaleY: 1,
-                },
-                '<+=0.5'
-            )
+    //         sectionTl.current.to(
+    //             sectionContainerBg,
+    //             {
+    //                 autoAlpha: 1,
+    //                 scaleY: 1,
+    //             },
+    //             '<+=0.5'
+    //         )
 
-            sectionTl.current.to(
-                sectionTitle,
-                {
-                    autoAlpha: 1,
-                    x: 0,
-                },
-                '<+=0.5'
-            )
+    //         sectionTl.current.to(
+    //             sectionTitle,
+    //             {
+    //                 autoAlpha: 1,
+    //                 x: 0,
+    //             },
+    //             '<+=0.5'
+    //         )
 
-            sectionTl.current.to(
-                sectionCta,
-                {
-                    autoAlpha: 1,
-                    scale: 1,
-                    x: 0,
-                },
-                '<+=0.5'
-            )
-        },
-        { scope: container }
-    )
+    //         sectionTl.current.to(
+    //             sectionCta,
+    //             {
+    //                 autoAlpha: 1,
+    //                 scale: 1,
+    //                 x: 0,
+    //             },
+    //             '<+=0.5'
+    //         )
+    //     },
+    //     { scope: container }
+    // )
 
     return (
         <section ref={container} className="relative px-[5%] py-16">

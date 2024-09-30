@@ -19,7 +19,7 @@ export const TimeLineCard: React.FC<TimeLineCardProps> = ({
     const { t } = useTranslation()
 
     return (
-        <div className="relative flex flex-col border-b border-white/10 pb-10">
+        <div className="relative flex w-full flex-col border-b border-white/10 pb-10">
             <div className="absolute left-[-12%] top-0 flex h-full flex-col items-center justify-center gap-4">
                 <svg
                     className=""
@@ -34,11 +34,11 @@ export const TimeLineCard: React.FC<TimeLineCardProps> = ({
                 <div className="h-full w-[2px] bg-white"></div>
             </div>
             <h3 className="mb-2 text-6xl text-brand-blue">{date}</h3>
-            <h4 className="mb-4 font-inter text-4xl font-semibold normal-case">
+            <h4 className="mb-4 whitespace-pre-line font-inter text-4xl font-semibold normal-case">
                 {title}
             </h4>
             <p className="mb-8 drop-shadow-custom">{description}</p>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
                 <div className="shadow-medium relative flex w-max items-center gap-3 rounded-[5px] border border-white/10 px-4 py-3">
                     <Database className="h-auto w-6" />
                     <span className="text-sm lg:text-base">
@@ -101,7 +101,7 @@ export default function Timeline() {
     return (
         <section className="page-section">
             <div className="container">
-                <div className="grid gap-16 md:grid-cols-2 lg:gap-[10%]">
+                <div className="grid w-full gap-16 md:grid-cols-2 lg:gap-[10%]">
                     <div className="flex w-full flex-col">
                         <h2 className="mb-5">
                             <Trans
@@ -116,7 +116,7 @@ export default function Timeline() {
                             {translatedTimeLineData.description}
                         </p>
                     </div>
-                    <div className="flex flex-col gap-10">
+                    <div className="flex w-full flex-col gap-10">
                         {translatedTimeLineData.events.map(
                             (year: any, index: number) => (
                                 <TimeLineCard

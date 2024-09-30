@@ -7,7 +7,7 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
-import heroBg from '@/assets/images/Background/1.jpeg'
+import heroBg from '@/assets/images/solutions/engenharia-de-dados.jpeg'
 import benefitsBg from '@/assets/images/Background/25.jpeg'
 
 export default function EngenhariaDeDados() {
@@ -20,7 +20,7 @@ export default function EngenhariaDeDados() {
     return (
         <div className="grid">
             <Hero
-                className="h-[60vh]"
+                className="h-[50vh]"
                 position="start"
                 title={
                     <>
@@ -31,7 +31,7 @@ export default function EngenhariaDeDados() {
                         {translations.title.part2}
                     </>
                 }
-                description={translations.description.medium}
+                description={translations.description.long}
                 cta={{
                     href: 'https://api.whatsapp.com/send?phone=5519983085819',
                     text: t('buttons.agende-uma-consultoria'),

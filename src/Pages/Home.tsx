@@ -4,6 +4,7 @@ import Hero from './Sections/Hero'
 import Solucoes from './Sections/Solucoes'
 import Partners from './Sections/Partners'
 import { Map } from './Sections/Map'
+// import { Map2 } from './Sections/Map2'
 import Benefícios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Cta from './Sections/Cta'
@@ -44,6 +45,7 @@ export default function Home() {
             <Solucoes />
             <Partners />
             <Map />
+            {/* <Map2 /> */}
             <Benefícios
                 title={
                     <>
