@@ -1,6 +1,3 @@
-import { Link } from 'react-router-dom'
-import PrimaryButton from '../components/custom/PrimaryButton'
-
 const NotFound = () => {
     return (
         <div className="page-section">
@@ -13,12 +10,6 @@ const NotFound = () => {
                         Página não <br /> encontrada{' '}
                     </h1>
                     <p>Oops! A página que você está procurando não existe.</p>
-                    <PrimaryButton
-                        text="Voltar para a página inicial"
-                        href="/"
-                        linkType="internal"
-                        className="mt-10 w-max"
-                    />
                 </div>
             </div>
         </div>

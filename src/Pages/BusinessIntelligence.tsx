@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next'
 
-import Hero from './Sections/Hero'
-import ComoFunciona from './Sections/ComoFunciona'
-import Beneficios from './Sections/Beneficios'
-import Faq from './Sections/Faq'
-import Solucoes from './Sections/Solucoes'
-import Cta from './Sections/Cta'
+import Hero from './sections/Hero'
+import ComoFunciona from './sections/HowItWorks'
+import Beneficios from './sections/Features'
+import Faq from './sections/Faq'
+import Solucoes from './sections/Services'
+import Cta from './sections/Cta'
 
-import heroBg from '@/assets/images/Solutions/business-intelligence.jpeg'
-import benefitsBg from '@/assets/images/Background/25.jpeg'
+import heroBg from '@/assets/images/backgrounds/business-intelligence.jpeg'
+import benefitsBg from '@/assets/images/backgrounds/25.jpeg'
 
 export default function BusinessIntelligence() {
     const { t } = useTranslation()
@@ -30,13 +30,7 @@ export default function BusinessIntelligence() {
                         {translations.title.part2}
                     </>
                 }
-                description={translations.description.long}
-                cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
-                    text: t('buttons.agende-uma-consultoria'),
-                    additionalText: t('buttons.fale-conosco'),
-                    linkType: 'external',
-                }}
+                description={translations.description.medium}
                 img={heroBg}
             />
             <ComoFunciona
@@ -58,12 +52,6 @@ export default function BusinessIntelligence() {
                         description: card.description,
                     })
                 )}
-                cta={{
-                    href: 'https://api.whatsapp.com/send?phone=5519983085819',
-                    text: t('buttons.agende-uma-consultoria'),
-                    additionalText: t('buttons.fale-conosco'),
-                    linkType: 'external',
-                }}
             />
             <Faq
                 faqs={translations.faqs.questions.map(

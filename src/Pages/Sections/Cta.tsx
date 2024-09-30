@@ -1,11 +1,11 @@
-import PrimaryButton from '../../components/custom/PrimaryButton'
+// import PrimaryButton from '../../components/custom/PrimaryButton'
 import { useTranslation, Trans } from 'react-i18next'
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import ctaImage from '@/assets/images/Background/2.jpeg'
+import ctaImage from '@/assets/images/backgrounds/2.jpeg'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Cta() {
@@ -144,15 +144,7 @@ export default function Cta() {
                         />
                     </h3>
                 </div>
-                <div className="mt-16 self-end lg:mt-0">
-                    <PrimaryButton
-                        className="section-cta"
-                        text={t('buttons.agende-uma-consultoria')}
-                        additionalText={t('buttons.fale-conosco')}
-                        href="https://api.whatsapp.com/send?phone=5519983085819&text=Olá!%20estou%20interessado%20em%20saber%20mais%20sobre%20as%20suas%20solu%C3%A7%C3%B5es%20para%20neg%C3%B3cios."
-                        linkType="external"
-                    />
-                </div>
+                <div className="mt-16 self-end lg:mt-0"></div>
             </div>
         </section>
     )

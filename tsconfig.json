@@ -2,26 +2,22 @@
     "compilerOptions": {
         "target": "es6", // Compile to ECMAScript 2015 (ES6)
         "module": "esnext", // Use ES modules (import/export)
+        "moduleResolution": "bundler", // Resolve modules using bundler style
         "lib": ["dom", "dom.iterable", "esnext"], // Include type definitions for DOM, DOM iterables, and ESNext
         "jsx": "react-jsx", // Support JSX in .tsx files (React 17+ style)
         "strict": true, // Enable all strict type-checking options
         "esModuleInterop": true, // Allow default imports from modules with no default export
         "skipLibCheck": true, // Skip type checking of declaration files
         "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
-        "moduleResolution": "node", // Resolve modules using Node.js style
         "resolveJsonModule": true, // Allow importing .json files
         "isolatedModules": true, // Ensure each file can be safely transpiled without relying on other imports
         "noEmit": true, // Do not emit outputs (useful when using Babel for transpilation)
         "baseUrl": ".", // Base directory to resolve non-relative module names
         "paths": {
-            "@/*": ["./src/*"], // Path alias for imports (e.g., @/components)
-            "@assets": ["./src/assets/*"], // Path alias for imports (e.g., @/components)
-            "@components": ["./src/components/*"], // Path alias for imports (e.g., @/components)
-            "@sections": ["./src/Pages/Sections/*"], // Path alias for imports (e.g., @/components)
-            "@pages": ["./src/Pages/*"] // Path alias for imports (e.g., @/components)
+            "@/*": ["src/*"]
         }
     },
 
-    "include": ["src/**/*.ts", "src/**/*.tsx"], // Include all TypeScript and TSX files in the src directory
+    "include": ["src/**/*.ts", "src/**/*.tsx", "i18next.config.ts"], // Include all TypeScript and TSX files in the src directory
     "exclude": ["node_modules"] // Exclude node_modules directory from compilation
 }

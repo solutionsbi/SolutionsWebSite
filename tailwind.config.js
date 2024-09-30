@@ -7,6 +7,8 @@ export default {
         fontFamily: {
             ibm: ['IBM Plex Sans', 'sans-serif'],
             inter: ['Inter', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+            roboto: ['Roboto', 'sans-serif'],
         },
         screens: {
             xs: '320px',
@@ -95,6 +97,7 @@ export default {
             },
             dropShadow: {
                 custom: '0px 4px 4px rgba(00, 0, 0, 0.5)',
+                custom2: '3px 3px 5px 0px rgba(00, 0, 0, 0.2)',
             },
             colors: {
                 brand: {

@@ -1,80 +1,74 @@
 import { useTranslation } from 'react-i18next'
 
-import Hero from './Sections/Hero'
-import Solucoes from './Sections/Solucoes'
-import Partners from './Sections/Partners'
-import { Map } from './Sections/Map'
-// import { Map2 } from './Sections/Map2'
-import Benefícios from './Sections/Beneficios'
-import Faq from './Sections/Faq'
-import Cta from './Sections/Cta'
+import { Hero, HeroTitle, HeroDescription, HeroButtons } from './sections/Hero'
+import { Services, ServicesHeader, ServicesCarousel } from './sections/Services'
+import Clients from './sections/Clients'
+import Clients2 from './sections/Clients2'
+import WorldMap from './sections/WorldMap'
+import Benefícios from './sections/Features'
+import Faq from './sections/Faq'
+import Cta from './sections/Cta'
+import { Link } from 'react-router-dom'
+import { getContactInfo } from '@/lib/getContactInfo'
+import { LearnMoreButton, WhatsappButton } from '@/components/CustomButtons'
 
-import heroBackgroundImage from '@/assets/images/Background/11.jpeg'
-import benefitsBackgroundImage from '@/assets/images/Background/firefly/6.jpg'
+import heroBackgroundImage from '@/assets/images/backgrounds/11.jpeg'
+import heroBackgroundVideo from '@/assets/video/27.mov'
+import benefitsBackgroundImage from '@/assets/images/backgrounds/firefly/6.jpg'
 
 export default function Home() {
     const { t } = useTranslation()
-
-    const homeData = t('pages.home', {
+    const contactInfo = getContactInfo(t)
+    const translations = t('pages.home', {
         returnObjects: true,
     }) as Record<string, any>
 
     return (
         <div className="grid">
-            <Hero
-                position="center"
+            <Hero backgroundVideo={heroBackgroundVideo}>
+                <HeroTitle>{translations.sections.hero.title}</HeroTitle>
+                <HeroDescription>
+                    {translations.sections.hero.description}
+                </HeroDescription>
+                <HeroButtons>
+                    <WhatsappButton href={contactInfo[0].url}>
+                        {translations.sections.hero.button1}
+                    </WhatsappButton>
+                    <LearnMoreButton to="/services">
+                        {translations.sections.hero.button2}
+                    </LearnMoreButton>
+                </HeroButtons>
+            </Hero>
+            <Services>
+                <ServicesCarousel />
+            </Services>
+            <Clients2 />
+            <WorldMap />
+            {/* <Benefícios
                 title={
                     <>
-                        {homeData.sections.hero.title.part1}{' '}
+                        {translations.sections.benefits.title.part1} <br />
                         <span className="text-brand-blue">
-                            {homeData.sections.hero.title.part2}{' '}
-                        </span>
-                        <br className="hidden md:inline-block" />
-                        {homeData.sections.hero.title.part3}
-                    </>
-                }
-                description={homeData.sections.hero.description}
-                cta={{
-                    text: homeData.sections.hero.cta.text,
-                    additionalText: homeData.sections.hero.cta.additionalText,
-                    href: '/sobre',
-                    linkType: 'external',
-                }}
-                img={heroBackgroundImage}
-            />
-            <Solucoes />
-            <Partners />
-            <Map />
-            {/* <Map2 /> */}
-            <Benefícios
-                title={
-                    <>
-                        {homeData.sections.benefits.title.part1} <br />
-                        <span className="text-brand-blue">
-                            {homeData.sections.benefits.title.part2}
+                            {translations.sections.benefits.title.part2}
                         </span>
                     </>
                 }
                 background={benefitsBackgroundImage}
-                description={homeData.sections.benefits.description}
-                benefits={homeData.sections.benefits.cards.map((card: any) => ({
-                    title: card.title,
-                    description: card.description,
-                }))}
-                cta={{
-                    href: '/sobre',
-                    text: t('buttons.saiba-mais'),
-                    additionalText: t('buttons.sobre-nos'),
-                    linkType: 'internal',
-                }}
-            />
-            <Faq
-                faqs={homeData.sections.faq.questions.map((faq: any) => ({
+                description={translations.sections.benefits.description}
+                benefits={translations.sections.benefits.cards.map(
+                    (card: any) => ({
+                        title: card.title,
+                        description: card.description,
+                    })
+                )}
+            /> */}
+            {/* <Faq
+                faqs={translations.sections.faq.questions.map((faq: any) => ({
                     question: faq.question,
                     answer: faq.answer,
                 }))}
-            />
-            <Cta />
+            /> */}
+            {/* <Cta /> */}
         </div>
     )
 }
