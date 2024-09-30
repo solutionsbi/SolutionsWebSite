@@ -115,7 +115,7 @@
                     "events": [
                         {
                             "title": "Do Início à \nEscalabilidade",
-                            "description": "Tudo começou em 2019 com a impressão de alguns cartões de apresentação e o primeiro projeto com um cliente do RJ. Esse mesmo voltaria a ser nosso cliente em 2023. Nosso primeiro parceiro se juntou ao time trazendo outros projetos para darmos continuidade no crescimento."
+                            "description": "Tudo começou em 2019 com a impressão de alguns cartões de apresentação e o primeiro projeto com um cliente do Rio de Janeiro. Esse mesmo voltaria a ser nosso cliente em 2023. Nosso primeiro parceiro se juntou ao time trazendo outros projetos para darmos continuidade no crescimento."
                         },
                         {
                             "title": "Da Diversificação à \n uma Nova Empresa",
@@ -193,7 +193,7 @@
                         "description": "Investir em uma engenharia de dados eficaz traz inúmeros benefícios para o seu negócio. Através de uma estrutura robusta e otimizada, sua empresa poderá tomar decisões mais assertivas, automatizar processos e se adaptar facilmente ao crescimento, garantindo competitividade e sucesso no mercado.",
                         "cards": [
                             {
-                                "title": "Dados organizados \n e acessíveis",
+                                "title": "Dados Organizados \n e Acessíveis",
                                 "description": "Com uma arquitetura de dados sólida, você obtém informações precisas e confiáveis, essenciais para tomar decisões estratégicas com confiança."
                             },
                             {
@@ -263,7 +263,7 @@
                                 "description": "Com os dados preparados, aplicamos técnicas avançadas de análise e modelagem. Utilizamos ferramentas de BI para identificar padrões, tendências e oportunidades ocultas que podem ser exploradas para aumentar a eficiência e a lucratividade do seu negócio."
                             },
                             {
-                                "title": "Visualização e Relatórios Personalizados",
+                                "title": "Visualização e \nRelatórios Personalizados",
                                 "description": "Os resultados da análise são transformados em relatórios visuais claros e intuitivos. Criamos dashboards personalizados que permitem aos decisores visualizar rapidamente os indicadores-chave de desempenho (KPIs), facilitando a tomada de decisões estratégicas em tempo real."
                             },
                             {
@@ -335,7 +335,7 @@
                         "description": "Entenda as principais etapas do nosso processo de desenvolvimento de sistemas personalizados, desde a análise inicial até a implantação e suporte contínuo.",
                         "steps": [
                             {
-                                "title": "ANÁLISE DE REQUISITOS \nE CONSULTORIA",
+                                "title": "Análise de Requisitos \ne Consultoria",
                                 "description": "Começamos com uma análise detalhada das necessidades do seu negócio. Nossos especialistas trabalham junto com sua equipe para entender os desafios, objetivos e requisitos específicos, garantindo que o sistema a ser desenvolvido seja perfeitamente alinhado às suas metas."
                             },
                             {
@@ -361,15 +361,15 @@
                         "description": "Investir em sistemas personalizados traz inúmeros benefícios para o seu negócio. Ao criar uma solução sob medida, sua empresa ganha em eficiência operacional, flexibilidade para mudanças futuras e uma vantagem competitiva significativa.",
                         "cards": [
                             {
-                                "title": "eficiência \noperacional",
+                                "title": "Eficiência \nOperacional",
                                 "description": "Sistemas que se encaixam perfeitamente nas suas operações reduzem gargalos e aumentam a produtividade."
                             },
                             {
-                                "title": "flexibilidade \ne escalabilidade",
+                                "title": "Flexibilidade \ne Escalabilidade",
                                 "description": "Sistemas personalizados podem crescer e evoluir junto com o seu negócio, permitindo ajustes rápidos às mudanças do mercado."
                             },
                             {
-                                "title": "segurança e \nconfiabilidade",
+                                "title": "Segurança e \nConfiabilidade",
                                 "description": "Desenvolvimento focado nas suas necessidades específicas garante um alto nível de segurança e confiabilidade."
                             }
                         ]

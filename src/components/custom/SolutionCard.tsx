@@ -140,7 +140,7 @@ export function SolutionCard({
 
             {/* card content */}
             <div>
-                <p className="card-description mt-8 text-neutral-200 lg:text-base">
+                <p className="card-description mt-8 text-neutral-200 drop-shadow-md lg:text-base">
                     {description}
                 </p>
             </div>

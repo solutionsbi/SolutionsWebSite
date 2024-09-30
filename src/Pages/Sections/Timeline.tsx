@@ -1,5 +1,44 @@
 import { UserPlus, Database } from 'lucide-react'
 import { useTranslation, Trans } from 'react-i18next'
+import { useRef } from 'react'
+import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(useGSAP, ScrollTrigger)
+
+const stats = [
+    {
+        date: '2019',
+        projects: 17,
+        employees: 5,
+    },
+    {
+        date: '2020',
+        projects: 15,
+        employees: 5,
+    },
+    {
+        date: '2021',
+        projects: 28,
+        employees: 8,
+    },
+    {
+        date: '2022',
+        projects: 50,
+        employees: 12,
+    },
+    {
+        date: '2023',
+        projects: 64,
+        employees: 12,
+    },
+    {
+        date: '2024',
+        projects: 150,
+        employees: 12,
+    },
+]
 
 type TimeLineCardProps = {
     date: string
@@ -58,51 +97,42 @@ export const TimeLineCard: React.FC<TimeLineCardProps> = ({
     )
 }
 
-const stats = [
-    {
-        date: '2019',
-        projects: 17,
-        employees: 5,
-    },
-    {
-        date: '2020',
-        projects: 15,
-        employees: 5,
-    },
-    {
-        date: '2021',
-        projects: 28,
-        employees: 8,
-    },
-    {
-        date: '2022',
-        projects: 50,
-        employees: 12,
-    },
-    {
-        date: '2023',
-        projects: 64,
-        employees: 12,
-    },
-    {
-        date: '2024',
-        projects: 150,
-        employees: 12,
-    },
-]
-
 export default function Timeline() {
+    const container = useRef<HTMLElement>(null)
     const { t } = useTranslation()
 
     const translatedTimeLineData = t('pages.about.sections.timeline', {
         returnObjects: true,
     }) as Record<string, any>
 
+    useGSAP(
+        () => {
+            if (!container.current) return
+
+            gsap.from(container.current, {
+                opacity: 0,
+                duration: 1,
+                ease: 'power1.inOut',
+                delay: 1,
+            })
+
+            // Set up our scroll trigger
+            const ST = ScrollTrigger.create({
+                trigger: container.current,
+                start: 'top 20%',
+                end: 'bottom bottom',
+                pin: '.left-content',
+                pinSpacing: false,
+            })
+        },
+        { scope: container }
+    )
+
     return (
-        <section className="page-section">
+        <section ref={container} className="page-section">
             <div className="container">
                 <div className="grid w-full gap-16 md:grid-cols-2 lg:gap-[10%]">
-                    <div className="flex w-full flex-col">
+                    <div className="left-content flex w-full flex-col">
                         <h2 className="mb-5">
                             <Trans
                                 i18nKey={'pages.about.sections.timeline.title'}
@@ -116,7 +146,7 @@ export default function Timeline() {
                             {translatedTimeLineData.description}
                         </p>
                     </div>
-                    <div className="flex w-full flex-col gap-10">
+                    <div className="right-content flex w-full flex-col gap-10">
                         {translatedTimeLineData.events.map(
                             (year: any, index: number) => (
                                 <TimeLineCard

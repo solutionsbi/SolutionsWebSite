@@ -78,7 +78,7 @@ export default function SolutionsCarousel() {
                 align: 'start',
                 loop: true,
             }}
-            plugins={[Autoplay({ delay: 5000 })]}
+            plugins={[Autoplay({ delay: 8000, stopOnMouseEnter: true })]}
             className="flex w-full items-center justify-center gap-2"
         >
             <CarouselPrevious

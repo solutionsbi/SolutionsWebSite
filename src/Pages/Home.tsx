@@ -38,7 +38,7 @@ export default function Home() {
                     text: homeData.sections.hero.cta.text,
                     additionalText: homeData.sections.hero.cta.additionalText,
                     href: '/sobre',
-                    linkType: 'internal',
+                    linkType: 'external',
                 }}
                 img={heroBackgroundImage}
             />

@@ -103,7 +103,7 @@ export default function Faq({ faqs }: FaqProps) {
                     </h2>
 
                     <Accordion
-                        type="single"
+                        type="multiple"
                         className="mx-auto grid w-full max-w-[992px] items-start justify-stretch gap-4"
                     >
                         {faqs.map((faq, index) => (

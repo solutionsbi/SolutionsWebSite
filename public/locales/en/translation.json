@@ -115,7 +115,7 @@
                     "events": [
                         {
                             "title": "From Start to \nScalability",
-                            "description": "It all began in 2019 with the printing of some business cards and the first project with a client from RJ. This same client would return to us in 2023. Our first partner joined the team, bringing other projects to continue our growth."
+                            "description": "It all began in 2019 with the printing of some business cards and the first project with a client from Rio de Janeiro. This same client would return to us in 2023. Our first partner joined the team, bringing other projects to continue our growth."
                         },
                         {
                             "title": "From Diversification to \na New Company",
@@ -193,7 +193,7 @@
                         "description": "Investing in effective data engineering brings numerous benefits to your business. Through a robust and optimized structure, your company will be able to make more assertive decisions, automate processes, and easily adapt to growth, ensuring competitiveness and success in the market.",
                         "cards": [
                             {
-                                "title": "Organized and \naccessible data",
+                                "title": "Organized and \nAccessible Data",
                                 "description": "With a solid data architecture, you get accurate and reliable information, essential for making strategic decisions with confidence."
                             },
                             {
@@ -263,11 +263,11 @@
                                 "description": "With the data prepared, we apply advanced analysis and modeling techniques. We use BI tools to identify hidden patterns, trends, and opportunities that can be exploited to increase your business's efficiency and profitability."
                             },
                             {
-                                "title": "Visualization and Custom Reports",
+                                "title": "Visualization and \nCustom Reports",
                                 "description": "The analysis results are transformed into clear and intuitive visual reports. We create customized dashboards that allow decision-makers to quickly visualize key performance indicators (KPIs), facilitating strategic decision-making in real-time."
                             },
                             {
-                                "title": "Solution Implementation and Continuous Monitoring",
+                                "title": "Solution Implementation and \nContinuous Monitoring",
                                 "description": "After implementing the recommended solutions, we continuously monitor the data to ensure that BI strategies are generating the expected results. Adjustments and optimizations are made as needed, ensuring that your company is always one step ahead."
                             }
                         ]
@@ -335,7 +335,7 @@
                         "description": "Understand the main steps of our custom system development process, from initial analysis to implementation and ongoing support.",
                         "steps": [
                             {
-                                "title": "REQUIREMENTS ANALYSIS \nAND CONSULTATION",
+                                "title": "Requirements Analysis \nand Consultation",
                                 "description": "We start with a detailed analysis of your business needs. Our experts work closely with your team to understand the challenges, goals, and specific requirements, ensuring that the system to be developed is perfectly aligned with your objectives."
                             },
                             {
@@ -361,15 +361,15 @@
                         "description": "Investing in custom systems brings numerous benefits to your business. By creating a tailored solution, your company gains operational efficiency, flexibility for future changes, and a significant competitive advantage.",
                         "cards": [
                             {
-                                "title": "operational \nefficiency",
+                                "title": "Operational \nEfficiency",
                                 "description": "Systems that fit perfectly into your operations reduce bottlenecks and increase productivity."
                             },
                             {
-                                "title": "flexibility \nand scalability",
+                                "title": "Flexibility \nand Scalability",
                                 "description": "Custom systems can grow and evolve with your business, allowing for quick adjustments to market changes."
                             },
                             {
-                                "title": "security and \nreliability",
+                                "title": "Security and \nReliability",
                                 "description": "Development focused on your specific needs ensures a high level of security and reliability."
                             }
                         ]

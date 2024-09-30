@@ -168,7 +168,7 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
             {/* Side menu container */}
             <div
                 ref={sideMenuRef}
-                className="side-menu-container fixed inset-0 z-[9999] mt-[10vh] grid h-[90vh] w-full translate-x-full transform grid-cols-[1fr_3fr] gap-4 overflow-y-auto border-t border-brand-blue bg-neutral-darkest/80 p-6 backdrop-blur"
+                className="side-menu-container fixed inset-0 z-[9999] mt-[10vh] grid w-full translate-x-full transform grid-cols-[1fr_3fr] gap-4 overflow-y-scroll border-t border-brand-blue bg-neutral-darkest/80 p-6 backdrop-blur"
                 aria-hidden={!isMenuOpen}
             >
                 {/* Vertical bar for visual effect */}
@@ -278,7 +278,7 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/custom-systems"
+                                    to="/sistemas-personalizados"
                                     className="flex items-center gap-2"
                                 >
                                     <img
@@ -297,7 +297,7 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/artificial-intelligence"
+                                    to="/inteligencia-artificial"
                                     className="flex items-center gap-2"
                                 >
                                     <img
@@ -316,7 +316,7 @@ const MenuDeNavegaçãoMobile: React.FC = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/digital-transformation"
+                                    to="/transformacao-digital"
                                     className="flex items-center gap-2"
                                 >
                                     <img
