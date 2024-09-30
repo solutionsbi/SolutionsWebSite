@@ -7,7 +7,7 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
-import heroBg from '@/assets/images/solutions/engenharia-de-dados.jpeg'
+import heroBg from '@/assets/images/Background/1.jpeg'
 import benefitsBg from '@/assets/images/Background/25.jpeg'
 
 export default function EngenhariaDeDados() {
