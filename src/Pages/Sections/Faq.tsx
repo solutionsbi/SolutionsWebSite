@@ -103,7 +103,7 @@ export default function Faq({ faqs }: FaqProps) {
                     </h2>
 
                     <Accordion
-                        type="single"
+                        type="multiple"
                         className="mx-auto grid w-full max-w-[992px] items-start justify-stretch gap-4"
                     >
                         {faqs.map((faq, index) => (
@@ -119,7 +119,7 @@ export default function Faq({ faqs }: FaqProps) {
                                                 alt=""
                                                 className="hidden h-8 w-8 md:block"
                                             />
-                                            <h3 className="font-inter font-medium normal-case lg:text-md xl:text-lg">
+                                            <h3 className="font-inter normal-case lg:text-md xl:text-lg">
                                                 {faq.question}
                                             </h3>
                                         </div>

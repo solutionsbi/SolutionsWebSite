@@ -148,7 +148,7 @@ export default function Cta() {
                     <PrimaryButton
                         className="section-cta"
                         text={t('buttons.agende-uma-consultoria')}
-                        additionalText={t('buttons.saiba-mais')}
+                        additionalText={t('buttons.fale-conosco')}
                         href="https://api.whatsapp.com/send?phone=5519983085819&text=Olá!%20estou%20interessado%20em%20saber%20mais%20sobre%20as%20suas%20solu%C3%A7%C3%B5es%20para%20neg%C3%B3cios."
                         linkType="external"
                     />

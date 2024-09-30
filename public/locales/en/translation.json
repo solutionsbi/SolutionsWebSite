@@ -8,17 +8,17 @@
                         "part2": "solutions",
                         "part3": "for your business"
                     },
-                    "description": "At SolutionsBI, we offer technology solutions to help your company grow,\n innovate and stand out in the market. Learn about our services and discover \n how we can help boost your business.",
+                    "description": "At Solutions BI, we offer technology solutions to help your company grow,\n innovate, and stand out in the market. Learn about our services and discover \n how we can help boost your business.",
                     "cta": {
-                        "text": "Boost Your Business",
-                        "additionalText": "Learn more"
+                        "text": "Schedule a consultation",
+                        "additionalText": "Contact us"
                     }
                 },
                 "partners": {
                     "title": {
                         "part1": "companies",
                         "part2": "that trust",
-                        "part3": "in our solutions"
+                        "part3": "our solutions"
                     },
                     "stats": [
                         {
@@ -49,7 +49,7 @@
                         "part1": "our",
                         "part2": "values"
                     },
-                    "description": "At SolutionsBI, we believe that technology can transform businesses and positively impact society. That's why we work with dedication, ethics, and transparency to offer innovative and efficient solutions to our clients.",
+                    "description": "At Solutions BI, we believe that technology can transform businesses and positively impact society. That's why we work with dedication, ethics, and transparency to offer innovative and efficient solutions to our clients.",
                     "cta": {
                         "text": "Boost Your Business",
                         "additionalText": "Learn more"
@@ -80,21 +80,21 @@
                             "answer": "To choose the ideal solution, we start with a detailed analysis of your business needs. We understand your challenges and objectives to recommend the solution that best aligns with your demands. Whether you need process optimization, better decision-making through Business Intelligence, or custom system development, our recommendations are based on a consultative and personalized approach, ensuring that the selected solution brings maximum benefit to your company."
                         },
                         {
-                            "question": "Which sectors does SolutionsBI serve?",
-                            "answer": "SolutionsBI serves companies from various sectors, including retail, healthcare, education, finance, among others. Our solutions are customized to meet the specific needs of each client, regardless of the sector in which they operate."
+                            "question": "Which sectors does Solutions BI serve?",
+                            "answer": "Solutions BI serves companies from various sectors, including retail, healthcare, education, finance, among others. Our solutions are customized to meet the specific needs of each client, regardless of the sector in which they operate."
                         },
                         {
-                            "question": "What benefits can SolutionsBI bring to my company?",
-                            "answer": "SolutionsBI can bring a series of benefits to your company, including process optimization, better decision-making, increased operational efficiency, cost reduction, among others. Our solutions are designed to drive the growth and success of your business, offering innovation, quality, and excellence in all our services."
+                            "question": "What benefits can Solutions BI bring to my company?",
+                            "answer": "Solutions BI can bring a series of benefits to your company, including process optimization, better decision-making, increased operational efficiency, cost reduction, among others. Our solutions are designed to drive the growth and success of your business, offering innovation, quality, and excellence in all our services."
                         },
                         {
-                            "question": "How do I start working with SolutionsBI?",
-                            "answer": "To start working with SolutionsBI, simply contact us through our website or by phone. Our team of experts is ready to help your company boost growth and business success with innovative and efficient solutions."
+                            "question": "Does Solutions BI offer support after implementation?",
+                            "answer": "Yes, we offer ongoing support after implementation, with updates, optimizations, and technical assistance to ensure that the solutions continue to bring results."
                         }
                     ]
                 },
                 "cta": {
-                    "title": "talk to one of <br/> our <span>specialists</span><br/>and <span>boost</span> your <br/> business now"
+                    "title": "talk to one of <br className='hidden md:block'/> our <span>specialists</span><br/>and <span>boost</span> your <br className='hidden md:block'/> business now"
                 }
             }
         },
@@ -114,12 +114,12 @@
                     "projects": "Projects",
                     "events": [
                         {
-                            "title": "From Start to Scalability",
-                            "description": "It all started in 2019 with the printing of some business cards and the first project with a client from RJ. This same client would return to us in 2023. Our first partner joined the team, bringing other projects to continue our growth."
+                            "title": "From Start to \nScalability",
+                            "description": "It all began in 2019 with the printing of some business cards and the first project with a client from Rio de Janeiro. This same client would return to us in 2023. Our first partner joined the team, bringing other projects to continue our growth."
                         },
                         {
-                            "title": "From Diversification to a New Company",
-                            "description": "We diversified our services, operating in sectors such as IT, Medicine, Industries, and Logistics. SolutionsBI has its firm legally established, consolidates its clients, and hires its first employee."
+                            "title": "From Diversification to \na New Company",
+                            "description": "We diversified our services, operating in sectors such as IT, Medicine, Industries, and Logistics. Solutions BI was legally established, consolidated its clients, and hired its first employee."
                         },
                         {
                             "title": "Globalization",
@@ -127,7 +127,7 @@
                         },
                         {
                             "title": "Growth",
-                            "description": "SolutionsBI is now present in major National and International projects. We have a consolidated and engaged team. At this point, we have worked on projects in Brazil, England, Germany, Portugal, USA, Uruguay, and Barbados."
+                            "description": "Solutions BI is now present in major National and International projects. We have a consolidated and engaged team. At this point, we have worked on projects in Brazil, England, Germany, Portugal, USA, Uruguay, and Barbados."
                         },
                         {
                             "title": "Maturation",
@@ -156,9 +156,9 @@
                         "part2": "Engineering"
                     },
                     "description": {
-                        "short": "Transform data into powerful insights and optimize decision-making with our cutting-edge solutions.",
-                        "medium": "We offer complete data engineering solutions, from collection and storage to processing and analysis of large volumes of data, supporting strategic decisions and promoting continuous innovation in your company.",
-                        "long": "We offer complete data engineering solutions, covering all stages, from collection and storage to processing and analysis of large volumes of data. Our solutions ensure that your company has the necessary information to support strategic decisions, optimize operations, and promote continuous innovation, keeping it competitive and prepared for future challenges."
+                        "short": "Data management and optimization.",
+                        "medium": "We structure and optimize your data, ensuring high performance and scalability, so that your decisions are always based on reliable information.",
+                        "long": "Our Data Engineering team focuses on creating efficient pipelines, collecting and storing structured and unstructured data, and building a robust data architecture. We facilitate access to essential information, ensuring that your data is optimized and scalable to meet your company's growing demands. By integrating modern tools, we help transform raw data into strategic insights."
                     },
                     "url": "/engenharia-de-dados",
                     "icon": "icon-engenharia-de-dados",
@@ -189,12 +189,12 @@
                         ]
                     },
                     "benefits": {
-                        "title": "The Advantages of Efficient Data Engineering",
+                        "title": "Advantages \n for your business",
                         "description": "Investing in effective data engineering brings numerous benefits to your business. Through a robust and optimized structure, your company will be able to make more assertive decisions, automate processes, and easily adapt to growth, ensuring competitiveness and success in the market.",
                         "cards": [
                             {
-                                "title": "Decisions Based \non Reliable Data",
-                                "description": "With a solid data architecture, you obtain accurate and reliable information, essential for making strategic decisions with confidence."
+                                "title": "Organized and \nAccessible Data",
+                                "description": "With a solid data architecture, you get accurate and reliable information, essential for making strategic decisions with confidence."
                             },
                             {
                                 "title": "Process \nOptimization",
@@ -208,15 +208,15 @@
                     },
                     "faqs": {
                         "title": "Frequently Asked Questions",
-                        "description": "We offer complete data engineering solutions, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "description": "We offer complete solutions in data engineering, from collection to analysis of large volumes, supporting strategic decisions and promoting continuous innovation in your company.",
                         "questions": [
                             {
                                 "question": "What is Data Engineering and why is it important for my company?",
-                                "answer": "Data Engineering is the process of collecting, organizing, structuring, and managing large volumes of data to transform them into useful and accessible information. It's fundamental for companies because it creates a solid foundation for accurate and efficient analyses, allowing decisions to be made based on reliable data. Additionally, Data Engineering improves process automation, operational efficiency, and the ability to scale and adapt the business as it grows and transforms."
+                                "answer": "Data Engineering is the process of collecting, organizing, structuring, and managing large volumes of data to transform them into useful and accessible information. It's fundamental for companies because it creates a solid foundation for accurate and efficient analysis, allowing decisions to be made based on reliable data. Additionally, Data Engineering improves process automation, operational efficiency, and the ability to scale and adapt the business as it grows and transforms."
                             },
                             {
                                 "question": "How can Data Engineering improve decision-making in my business?",
-                                "answer": "Data Engineering organizes data in a structured way, allowing for quick and accurate analyses. With this, you can make more informed decisions based on relevant insights that reflect the reality of the business."
+                                "answer": "Data Engineering organizes data in a structured way, allowing for quick and accurate analysis. With this, you can make more informed decisions based on relevant insights that reflect the reality of the business."
                             },
                             {
                                 "question": "What's the difference between Data Engineering and Data Analysis?",
@@ -239,9 +239,9 @@
                         "part2": "Intelligence"
                     },
                     "description": {
-                        "short": "Gain a clear view of your business and make strategic decisions based on data.",
-                        "medium": "Transform your data into strategic insights and make smarter decisions. Our BI solutions organize and analyze your information, helping you identify trends, optimize processes, and explore new growth opportunities.",
-                        "long": "With our BI solutions, we transform data into a competitive advantage. We organize your information and generate valuable insights that anticipate trends, optimize operations, and improve decision-making. BI offers a clear and comprehensive view of your business, allowing for quick reactions to changes and the exploration of new growth opportunities, ensuring that your company is always ahead in the market."
+                        "short": "Data-driven decision making",
+                        "medium": "We use advanced BI solutions to transform data into valuable insights, optimizing your business strategy and improving decision-making.",
+                        "long": "With our Business Intelligence solution, we offer dynamic dashboards, customized reports, and predictive analytics that help transform large volumes of data into clear and actionable insights. Our approach allows a 360° view of your operations, optimizing processes and providing a competitive advantage. We rely on interactive visualization tools and integrations with various data sources to ensure faster and more accurate decisions."
                     },
                     "url": "/business-intelligence",
                     "icon": "icon-business-intelligence",
@@ -263,17 +263,17 @@
                                 "description": "With the data prepared, we apply advanced analysis and modeling techniques. We use BI tools to identify hidden patterns, trends, and opportunities that can be exploited to increase your business's efficiency and profitability."
                             },
                             {
-                                "title": "Visualization and Custom Reports",
+                                "title": "Visualization and \nCustom Reports",
                                 "description": "The analysis results are transformed into clear and intuitive visual reports. We create customized dashboards that allow decision-makers to quickly visualize key performance indicators (KPIs), facilitating strategic decision-making in real-time."
                             },
                             {
-                                "title": "Solution Implementation and Continuous Monitoring",
+                                "title": "Solution Implementation and \nContinuous Monitoring",
                                 "description": "After implementing the recommended solutions, we continuously monitor the data to ensure that BI strategies are generating the expected results. Adjustments and optimizations are made as needed, ensuring that your company is always one step ahead."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "THE ADVANTAGES OF IMPLEMENTING \nBUSINESS INTELLIGENCE",
+                        "title": "Advantages \n for your business",
                         "description": "Adopting a Business Intelligence solution in your company offers a series of strategic benefits. From optimizing decision-making processes to identifying new market opportunities, BI empowers your organization to act with precision and agility, ensuring a competitive advantage in an increasingly data-driven market.",
                         "cards": [
                             {
@@ -292,27 +292,27 @@
                     },
                     "faqs": {
                         "title": "Frequently Asked Questions",
-                        "description": "Discover how Business Intelligence can transform your company's decision-making process and boost your results.",
+                        "description": "We offer complete solutions in business intelligence, from in business intelligence, from data collection to advanced analytics, supporting strategic decision-making and promoting continuous innovation in your company.",
                         "questions": [
                             {
-                                "question": "What is Business Intelligence and how can it help my company?",
-                                "answer": "Business Intelligence (BI) is a set of technologies and processes that transform raw data into meaningful and useful information for business purposes. It can help your company by providing insights for better decision-making, identifying market trends, optimizing operations, and increasing overall efficiency and profitability."
+                                "question": "What is Business Intelligence and how can it benefit my company?",
+                                "answer": "Business Intelligence (BI) is a set of processes, technologies, and tools that transform raw data into meaningful and useful information for business purposes. It can benefit your company by providing insights for better decision-making, identifying market trends, optimizing operations, and increasing overall efficiency and profitability."
                             },
                             {
-                                "question": "How long does it take to implement a BI solution?",
-                                "answer": "The implementation time of a BI solution varies depending on the size and complexity of your company and the chosen solution. It can range from a few weeks for simpler projects to several months for more comprehensive implementations. We work closely with our clients to establish realistic timelines and ensure a smooth implementation process."
+                                "question": "How long does it take to implement a Business Intelligence solution?",
+                                "answer": "The implementation time for a BI solution can vary depending on the size and complexity of your organization. Typically, it can range from a few weeks for small-scale projects to several months for more comprehensive implementations. We work closely with you to establish a timeline that meets your specific needs and goals."
                             },
                             {
-                                "question": "Is it necessary to have a large IT team to use BI tools?",
-                                "answer": "Not necessarily. While having an IT team can be beneficial, many modern BI tools are designed to be user-friendly and accessible to non-technical users. We offer training and support to ensure that your team can effectively use and benefit from the BI solution, regardless of their technical background."
+                                "question": "Do I need special technical skills to use Business Intelligence tools?",
+                                "answer": "While some technical knowledge can be beneficial, modern BI tools are designed to be user-friendly and accessible to non-technical users. We provide training and support to ensure that your team can effectively use and benefit from the BI solutions we implement."
                             },
                             {
-                                "question": "How does BI differ from traditional reporting methods?",
-                                "answer": "Unlike traditional reporting, which often provides static and historical data, BI offers dynamic, real-time insights. It allows for interactive data exploration, predictive analytics, and the ability to view information from multiple angles. This enables faster, more informed decision-making and the ability to quickly adapt to changing business conditions."
+                                "question": "How does Business Intelligence differ from traditional reporting?",
+                                "answer": "Unlike traditional reporting, which typically provides static views of historical data, Business Intelligence offers dynamic, interactive, and real-time insights. BI allows for deeper analysis, predictive modeling, and the ability to explore data from multiple angles, enabling more informed and proactive decision-making."
                             },
                             {
-                                "question": "Can BI be integrated with our existing systems?",
-                                "answer": "Yes, BI solutions can be integrated with a wide range of existing systems and data sources. We design our BI implementations to work seamlessly with your current infrastructure, whether it's ERP systems, CRM platforms, or custom databases. This integration ensures that you can leverage all your data assets for comprehensive insights."
+                                "question": "Can Business Intelligence be integrated with our existing systems?",
+                                "answer": "Yes, Business Intelligence solutions can be integrated with your existing systems and data sources. We design our BI implementations to work seamlessly with your current infrastructure, ensuring that you can leverage all your data assets for comprehensive insights."
                             }
                         ]
                     }
@@ -323,24 +323,24 @@
                         "part2": "Systems"
                     },
                     "description": {
-                        "short": "We develop tailored solutions to boost your business efficiency and growth.",
-                        "medium": "We develop custom systems that meet the unique needs of your business. From web and mobile applications to complex platforms, we offer efficient and scalable solutions to support your company's growth.",
-                        "long": "We design and develop custom systems that meet the specific needs of your business. From web and mobile applications to complex platforms, our developers transform your ideas into efficient and scalable tools, ensuring that your company has tailor-made technological solutions to grow and thrive."
+                        "short": "Tailored software for your company.",
+                        "medium": "We develop custom systems that meet your company's specific needs, providing greater efficiency and process integration.",
+                        "long": "Our custom systems are designed to solve the specific challenges of your organization. We work with cutting-edge technologies to create software that integrates seamlessly into your workflow, enabling better resource management, process automation, and increased productivity. From design to development, our focus is on delivering a scalable, secure solution adapted to your future growth, ensuring smooth implementation and continuous support."
                     },
                     "url": "/sistemas-personalizados",
                     "icon": "icon-sistemas-personalizados",
                     "background": "bg-sistemas-personalizados",
                     "howItWorks": {
                         "title": "How It Works",
-                        "description": "We offer complete solutions in custom systems, from conception to implementation, supporting strategic decisions and promoting continuous innovation in your company.",
+                        "description": "Understand the main steps of our custom system development process, from initial analysis to implementation and ongoing support.",
                         "steps": [
                             {
-                                "title": "REQUIREMENTS ANALYSIS \nAND CONSULTATION",
-                                "description": "We start with a detailed analysis of your business needs. Our specialists work with your team to understand the specific challenges, objectives, and requirements, ensuring that the system to be developed is perfectly aligned with your goals."
+                                "title": "Requirements Analysis \nand Consultation",
+                                "description": "We start with a detailed analysis of your business needs. Our experts work closely with your team to understand the challenges, goals, and specific requirements, ensuring that the system to be developed is perfectly aligned with your objectives."
                             },
                             {
                                 "title": "Design and \nPrototyping",
-                                "description": "Based on the requirements gathered, our design team creates interactive prototypes that illustrate how the system will work and integrate with your processes. This phase allows for adjustments and refinements before actual development begins."
+                                "description": "Based on the requirements gathered, our design team creates interactive prototypes that illustrate how the system will function and integrate with your processes. This phase allows for adjustments and refinements before actual development begins."
                             },
                             {
                                 "title": "Agile and Iterative \nDevelopment",
@@ -357,19 +357,19 @@
                         ]
                     },
                     "benefits": {
-                        "title": "THE ADVANTAGES OF A CUSTOM SYSTEM",
-                        "description": "Investing in custom systems brings numerous benefits to your business. By creating a tailored solution, your company gains in operational efficiency, flexibility for future changes, and a significant competitive advantage.",
+                        "title": "Advantages \n for your business",
+                        "description": "Investing in custom systems brings numerous benefits to your business. By creating a tailored solution, your company gains operational efficiency, flexibility for future changes, and a significant competitive advantage.",
                         "cards": [
                             {
-                                "title": "operational \nefficiency",
+                                "title": "Operational \nEfficiency",
                                 "description": "Systems that fit perfectly into your operations reduce bottlenecks and increase productivity."
                             },
                             {
-                                "title": "flexibility \nand scalability",
+                                "title": "Flexibility \nand Scalability",
                                 "description": "Custom systems can grow and evolve with your business, allowing for quick adjustments to market changes."
                             },
                             {
-                                "title": "security and \nreliability",
+                                "title": "Security and \nReliability",
                                 "description": "Development focused on your specific needs ensures a high level of security and reliability."
                             }
                         ]
@@ -380,7 +380,7 @@
                         "questions": [
                             {
                                 "question": "How long does it take to develop a custom system?",
-                                "answer": "Development time can vary depending on the complexity of the project, but we use agile methodologies to ensure quick and adjustable deliveries based on client feedback."
+                                "answer": "Development time can vary depending on the complexity of the project, but we use agile methodologies to ensure rapid and adjustable deliveries based on client feedback."
                             },
                             {
                                 "question": "How do you ensure the system will meet my needs?",
@@ -388,15 +388,15 @@
                             },
                             {
                                 "question": "What if I need adjustments to the system after delivery?",
-                                "answer": "We offer ongoing support after delivery, ensuring that adjustments and updates can be made as your needs evolve."
+                                "answer": "We offer continuous support after delivery, ensuring that adjustments and updates can be made as your needs evolve."
                             },
                             {
                                 "question": "Can you integrate the new system with my current platforms?",
-                                "answer": "Yes, our systems are developed with flexibility, allowing easy integration with existing platforms and software in your company."
+                                "answer": "Yes, our systems are developed with flexibility, allowing easy integration with your company's existing platforms and software."
                             },
                             {
-                                "question": "What technologies do you use in developing custom systems?",
-                                "answer": "We use a wide variety of modern technologies, including programming languages like JavaScript, Python, frameworks like React and Node.js, as well as database platforms like SQL and NoSQL, depending on the project's needs."
+                                "question": "What technologies do you use in custom system development?",
+                                "answer": "We use a wide variety of modern technologies, including programming languages such as JavaScript, Python, frameworks like React and Node.js, as well as database platforms like SQL and NoSQL, depending on the project's needs."
                             }
                         ]
                     }
@@ -407,9 +407,9 @@
                         "part2": "Intelligence"
                     },
                     "description": {
-                        "short": "Automate processes and personalize customer experience with AI.",
-                        "medium": "Automate processes, analyze large volumes of data, and improve decision-making with our Artificial Intelligence solutions. Increase operational efficiency, personalize experiences, and make your company more competitive and prepared for the future.",
-                        "long": "We use Artificial Intelligence to create solutions that automate processes, analyze large volumes of data, and enhance decision-making. With our AI solutions, your company can predict trends, personalize experiences, and increase operational efficiency, becoming more competitive in the market and ready to face future challenges."
+                        "short": "AI solutions for automation and analysis.",
+                        "medium": "Automate processes and improve decisions with our AI solutions, increasing efficiency and personalizing experiences to make your company more competitive.",
+                        "long": "Artificial Intelligence is transforming the way companies operate, and we bring this innovation to your business. We offer AI solutions that include automation of repetitive tasks, predictive analytics, and service personalization. We use machine learning algorithms and natural language processing to identify patterns and provide insights that help improve operational efficiency and customer experience. Our solutions are customized for your industry and tailored to your needs."
                     },
                     "url": "/inteligencia-artificial",
                     "icon": "icon-inteligencia-artificial",
@@ -428,32 +428,32 @@
                             },
                             {
                                 "title": "Implementation \nand Integration",
-                                "description": "After development and rigorous testing, we integrate the AI solution into your existing systems. We ensure that the technology works harmoniously with your current operations, maximizing benefits without interruptions."
+                                "description": "After development and rigorous testing, we integrate the AI solution into your existing systems. We ensure that the technology works harmoniously with your current operations, maximizing benefits without disruptions."
                             },
                             {
                                 "title": "Continuous Monitoring \nand Optimization",
-                                "description": "Artificial Intelligence is not static; therefore, we continuously monitor the performance of implemented models, making adjustments and optimizations as needed to ensure they continue to offer value over time."
+                                "description": "Artificial Intelligence is not static; therefore, we continuously monitor the performance of implemented models, making adjustments and optimizations as needed to ensure they continue to deliver value over time."
                             },
                             {
                                 "title": "Expansion and \nScalability",
-                                "description": "As your company grows, AI solutions are scalable to keep up with expansion. We can adapt and expand AI models for new scenarios and demands, ensuring that you continue to reap the benefits as your needs evolve."
+                                "description": "As your company grows, AI solutions are scalable to keep up with expansion. We can adapt and expand AI models for new scenarios and demands, ensuring you continue to reap the benefits as your needs evolve."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "The Advantages of Implementing Artificial Intelligence",
+                        "title": "Advantages \n for your business",
                         "description": "Implementing Artificial Intelligence in your business brings a series of strategic benefits, transforming data into insights and automation into operational efficiency.",
                         "cards": [
                             {
-                                "title": "Intelligent Automation",
+                                "title": "Intelligent \nAutomation",
                                 "description": "Increase efficiency by automating repetitive tasks and freeing your team to focus on strategic activities."
                             },
                             {
-                                "title": "Data-Driven Decision Making",
+                                "title": "Data-Driven \nDecision Making",
                                 "description": "Use advanced algorithms to analyze large volumes of data, providing insights that support more informed and accurate decisions."
                             },
                             {
-                                "title": "Personalization at Scale",
+                                "title": "Personalization \nat Scale",
                                 "description": "Offer personalized experiences to your customers, increasing satisfaction and loyalty through more relevant and accurate interactions."
                             }
                         ]
@@ -464,7 +464,7 @@
                         "questions": [
                             {
                                 "question": "What is Artificial Intelligence and how can it benefit my company?",
-                                "answer": "Artificial Intelligence allows machines to perform tasks that would normally require human intelligence. It can benefit your company by automating processes, improving decision-making, analyzing large volumes of data, and personalizing customer experience."
+                                "answer": "Artificial Intelligence allows machines to perform tasks that normally require human intelligence. It can benefit your company by automating processes, improving decision-making, analyzing large volumes of data, and personalizing customer experience."
                             },
                             {
                                 "question": "My company is small. Can I implement AI?",
@@ -476,7 +476,7 @@
                             },
                             {
                                 "question": "Is it difficult to integrate AI with my current systems?",
-                                "answer": "No, our team works to ensure smooth integration with your existing systems, developing custom AI solutions that easily adapt to your infrastructure."
+                                "answer": "No, our team works to ensure smooth integration with your existing systems, developing customized AI solutions that easily adapt to your infrastructure."
                             },
                             {
                                 "question": "Which sectors can benefit from Artificial Intelligence?",
@@ -491,20 +491,20 @@
                         "part2": "Transformation"
                     },
                     "description": {
-                        "short": "Modernize your company and create new opportunities with innovative technologies.",
-                        "medium": "We help your company thrive in the digital age by modernizing processes and integrating innovative technologies. Our digital transformation improves efficiency and creates new growth opportunities, preparing your company to meet the demands of today's market.",
-                        "long": "We help your company adapt and thrive in the digital age by modernizing processes and integrating innovative technologies. Our digital transformation approach not only increases efficiency but also opens up new opportunities for growth and innovation, aligning your company with current market demands and preparing it for the future."
+                        "short": "Modernization of digital processes.",
+                        "medium": "We help your company adapt to the digital world, modernizing your processes and integrating the latest technologies to ensure competitiveness and efficiency.",
+                        "long": "Digital transformation is fundamental for companies seeking to remain competitive in an increasingly technological market. Our approach encompasses the integration of new technologies in all areas of your company, from process automation to improving customer experience. We conduct a deep analysis of your operations and implement solutions that modernize your workflow, optimize communication, and reduce costs, creating a strong and innovative digital culture."
                     },
                     "url": "/transformacao-digital",
                     "icon": "icon-transformacao-digital",
                     "background": "bg-transformacao-digital",
                     "howItWorks": {
                         "title": "How It Works",
-                        "description": "Discover how we take your company to the next level by integrating technology in all areas of your business to drive growth and competitiveness.",
+                        "description": "Discover how we take your company to the next level, integrating technology in all areas of your business to drive growth and competitiveness.",
                         "steps": [
                             {
                                 "title": "Digital Assessment \nand Diagnosis",
-                                "description": "The process begins with a comprehensive analysis of your company's current situation, including an assessment of infrastructure, processes, and technological capabilities. We identify areas that can be optimized and develop a digital strategy aligned with your business objectives."
+                                "description": "The process begins with a comprehensive analysis of your company's current situation, including assessment of infrastructure, processes, and technological capabilities. We identify areas that can be optimized and develop a digital strategy aligned with your business objectives."
                             },
                             {
                                 "title": "Digital Planning \nand Roadmap",
@@ -512,21 +512,21 @@
                             },
                             {
                                 "title": "Implementation of \nDigital Solutions",
-                                "description": "We move on to implementing technological solutions, which may include process automation, cloud migration, system integration, and more. We work closely with your team to ensure a smooth transition and minimize disruptions to operations."
+                                "description": "We move on to implementing technological solutions, which may include process automation, cloud migration, system integration, and much more. We work closely with your team to ensure a smooth transition and minimize disruptions to operations."
                             },
                             {
-                                "title": "Training and \nCapacity Building",
+                                "title": "Capacity Building \nand Training",
                                 "description": "Digital transformation is not just about technology; it's also about people. We offer training and capacity building for your team, ensuring that everyone is prepared to maximize the use of new tools and processes."
                             },
                             {
                                 "title": "Continuous Monitoring \nand Adjustments",
-                                "description": "After implementation, we monitor the performance of deployed solutions and make adjustments as needed. Our goal is to ensure that your company reaps the benefits of digital transformation continuously, staying competitive in the market."
+                                "description": "After implementation, we monitor the performance of deployed solutions and make adjustments as needed. Our goal is to ensure that your company reaps the benefits of digital transformation continuously, remaining competitive in the market."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "The Benefits of Digital Transformation",
-                        "description": "Digital transformation offers a series of advantages that can drive your business success in the current and future scenario.",
+                        "title": "Advantages \n for your business",
+                        "description": "Digital transformation offers a series of advantages that can boost your business success in the current and future scenario.",
                         "cards": [
                             {
                                 "title": "Operational \nEfficiency",
@@ -534,10 +534,10 @@
                             },
                             {
                                 "title": "Improved Customer \nExperience",
-                                "description": "Offer a more personalized and agile experience to your customers, improving satisfaction and loyalty."
+                                "description": "Quickly adapt your operations to business growth or market changes with flexible and scalable technologies."
                             },
                             {
-                                "title": "Informed \nDecision Making",
+                                "title": "Scalability",
                                 "description": "Use real-time data to make strategic decisions and respond quickly to market changes."
                             }
                         ]
@@ -559,7 +559,7 @@
                                 "answer": "The time varies depending on the complexity of the project and the areas involved, but it can be carried out continuously and gradually."
                             },
                             {
-                                "question": "What if my team isn't ready for these changes?",
+                                "question": "What if my team is not ready for these changes?",
                                 "answer": "We offer training and support to ensure that your team adapts and uses new technologies efficiently."
                             },
                             {
@@ -575,9 +575,9 @@
                         "part2": "E-commerce"
                     },
                     "description": {
-                        "short": "Sites and platforms that maximize conversions and strengthen your online presence.",
-                        "medium": "We create websites and e-commerce platforms that attract visitors and increase conversions. Our solutions focus on a smooth user experience, intuitive design, and SEO optimization, strengthening your digital presence.",
-                        "long": "We develop websites and e-commerce platforms that not only attract visitors but also convert sales. Our solutions are designed to provide an intuitive and smooth user experience, following best practices in design and SEO. This ensures that your online presence is strong, effective, and capable of generating concrete results."
+                        "short": "Creation of websites and online stores.",
+                        "medium": "We develop custom websites and e-commerce platforms, focused on user experience and conversion, optimized for mobile devices and SEO.",
+                        "long": "We develop websites and e-commerce platforms that not only attract visitors but convert these visitors into customers. Our solutions are customized to reflect your brand identity, with responsive design, optimized functionality, and integration with payment and logistics methods. Additionally, we apply best SEO practices to ensure visibility in search engines, offering an intuitive and fluid browsing experience, focused on increasing your online sales."
                     },
                     "url": "/websites-e-ecommerces",
                     "icon": "icon-websites-e-ecommerces",
@@ -588,19 +588,19 @@
                         "steps": [
                             {
                                 "title": "Needs Analysis \nand Goal Setting",
-                                "description": "Our process begins with a deep understanding of your needs and business objectives. We work with you to define project goals, whether it's increasing online visibility, improving user experience, or increasing sales."
+                                "description": "Our process begins with a deep understanding of your needs and business objectives. We work closely with you to define project goals, whether it's increasing online visibility, improving user experience, or boosting sales."
                             },
                             {
                                 "title": "Planning and \nStructuring",
-                                "description": "With clear objectives, we create a detailed plan for developing your website or e-commerce. This step includes defining information architecture, wireframes, and prototypes, ensuring that the site structure meets user needs and supports your business goals."
+                                "description": "With clear objectives, we create a detailed plan for developing your website or e-commerce. This stage includes defining information architecture, wireframes, and prototypes, ensuring that the site structure meets user needs and supports your business goals."
                             },
                             {
                                 "title": "Responsive Design \nand UX/UI",
-                                "description": "Our design team creates attractive and functional interfaces, always focusing on user experience (UX/UI). We ensure that your website or e-commerce is fully responsive, providing smooth navigation on any device, whether desktop, tablet, or mobile."
+                                "description": "Our design team creates attractive and functional interfaces, always focusing on user experience (UX/UI). We ensure that your website or e-commerce is fully responsive, providing smooth navigation on any device, be it desktop, tablet, or mobile."
                             },
                             {
                                 "title": "Development \nand Integration",
-                                "description": "Using the latest technologies and coding practices, we develop your website or e-commerce platform with a focus on performance, security, and scalability. We integrate essential functionalities such as payment systems, inventory management, and analysis tools."
+                                "description": "Using the latest technologies and coding practices, we develop your website or e-commerce platform with a focus on performance, security, and scalability. We integrate essential functionalities such as payment systems, inventory management, and analytics tools."
                             },
                             {
                                 "title": "Testing \nand Optimization",
@@ -608,25 +608,25 @@
                             },
                             {
                                 "title": "Launch and \nContinuous Support",
-                                "description": "After final approval, we launch the website or e-commerce platform, ensuring a smooth transition. Additionally, we offer ongoing support for maintenance, updates, and optimizations, ensuring that your site continues to deliver exceptional results."
+                                "description": "After final approval, we launch the website or e-commerce platform, ensuring a smooth transition. Additionally, we offer ongoing support for maintenance, updates, and optimizations, ensuring your site continues to deliver exceptional results."
                             }
                         ]
                     },
                     "benefits": {
-                        "title": "Why Choose Our Website \nand E-commerce \nSolutions",
+                        "title": "Advantages \n for your business",
                         "description": "Creating a website or e-commerce platform with our team offers numerous advantages for your business, boosting your online presence and increasing your sales.",
                         "cards": [
                             {
-                                "title": "Custom Design",
+                                "title": "Custom \nDesign",
                                 "description": "Websites and e-commerce platforms created specifically to meet the unique needs of your business."
                             },
                             {
-                                "title": "Optimized User Experience",
+                                "title": "Optimized User \nExperience",
                                 "description": "Intuitive interfaces and smooth navigation that improve customer satisfaction and encourage conversion."
                             },
                             {
-                                "title": "SEO and Performance",
-                                "description": "Development optimized for search engines, ensuring that your site is easily found online and loads quickly."
+                                "title": "SEO and \nPerformance",
+                                "description": "Development optimized for search engines, ensuring your site is easily found online and loads quickly."
                             }
                         ]
                     },
@@ -673,19 +673,19 @@
                 },
                 {
                     "title": "Your Rights",
-                    "description": "You have full control over your information. You can choose not to participate in our data collection activities by disabling cookies in your browser or choosing not to provide your email. Additionally, you have the right to access and correct the information we have about you. If you wish, you can request a copy of your personal data and correct any errors that may exist. If, at any time, you no longer want to receive our newsletters, you can unsubscribe using the unsubscribe link available in our emails."
+                    "description": "You have full control over your information. You can choose not to participate in our data collection activities by disabling cookies in your browser or opting not to provide your email. Additionally, you have the right to access and correct the information we have about you. If you wish, you can request a copy of your personal data and correct any errors that may exist. If, at any time, you no longer want to receive our newsletters, you can unsubscribe using the unsubscribe link available in our emails."
                 },
                 {
                     "title": "Information Security",
-                    "description": "We implement various security measures to protect your personal information against unauthorized access, alterations, disclosures, or destruction. We use advanced techniques such as encryption, firewalls, and access controls to ensure the security of your data. Despite all our efforts, it's important to note that no method of data transmission over the internet or electronic storage is completely secure, and therefore we cannot guarantee absolute security of information."
+                    "description": "We implement various security measures to protect your personal information against unauthorized access, alterations, disclosures, or destructions. We use advanced techniques such as encryption, firewalls, and access controls to ensure the security of your data. Despite all our efforts, it's important to note that no method of data transmission over the internet or electronic storage is completely secure, and therefore we cannot guarantee the absolute security of information."
                 },
                 {
                     "title": "Data Retention",
-                    "description": "We retain the personal information we collect only for as long as necessary to fulfill the purposes described in this Privacy Policy. However, in some cases, data retention may be extended to comply with specific legal or regulatory requirements. When no longer necessary for these purposes, the information will be securely deleted."
+                    "description": "We retain the personal information we collect only for as long as necessary to fulfill the purposes described in this Privacy Policy. However, in some cases, data retention may be extended to comply with specific legal or regulatory requirements. When no longer needed for these purposes, the information will be securely deleted."
                 },
                 {
                     "title": "Changes to the Privacy Policy",
-                    "description": "We reserve the right to update this Privacy Policy periodically to reflect changes in our practices, technological innovations, or legal requirements. We recommend that you review this page regularly to stay informed about our most recent practices. Any significant changes to this policy will be communicated appropriately to ensure that you are aware of the changes."
+                    "description": "We reserve the right to update this Privacy Policy periodically to reflect changes in our practices, technological innovations, or legal requirements. We recommend that you review this page regularly to stay informed about our most recent practices. Any significant changes to this policy will be communicated appropriately to ensure you are aware of the changes."
                 }
             ],
             "contact": {
@@ -705,7 +705,7 @@
                 "services": "Solutions",
                 "contact": {
                     "title": "Contact",
-                    "description": "Get in touch with SolutionsBI to learn more about our services and solutions.",
+                    "description": "Contact Solutions BI to learn more about our services and solutions.",
                     "location": "Location"
                 }
             }
@@ -717,7 +717,7 @@
                         "part1": "Made with",
                         "part2": "in Brazil"
                     },
-                    "description": "SolutionsBI is a technology company specialized in creating customized solutions for businesses that want to optimize their processes and increase their efficiency."
+                    "description": "Solutions BI is a technology company specialized in creating customized solutions for businesses that want to optimize their processes and increase their efficiency."
                 },
                 "2": {
                     "title": "Solutions",
@@ -734,7 +734,7 @@
                     "title": "Contact"
                 }
             },
-            "copyright": "© 2024 SolutionsBI. All rights reserved.",
+            "copyright": "© 2024 Solutions BI. All rights reserved.",
             "privacy-policy": "Privacy Policy"
         }
     },
@@ -744,7 +744,7 @@
         "impulsione-seu-negocio": "Boost Your Business",
         "entre-em-contato": "Get in Touch",
         "solicitar-demonstracao": "Request a Demo",
-        "fale-com-um-especialista": "Talk to an Expert",
+        "fale-com-um-especialista": "Speak with an Expert",
         "fale-conosco": "Contact Us",
         "saiba-mais-sobre-nos": "Learn More About Us",
         "sobre-nos": "About Us"

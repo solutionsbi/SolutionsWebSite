@@ -36,12 +36,6 @@ export default function ComoFunciona({
             const comoFuncionaGridItems = gsap.utils.toArray(
                 container.current.querySelectorAll('.como-funciona-grid-item')
             )
-            const comoFuncionaGridBg = container.current.querySelector(
-                '.como-funciona-grid-bg'
-            )
-            const comoFuncionaGridLine = container.current.querySelector(
-                '.como-funciona-grid-line'
-            )
 
             gsap.set(sectionTitle, {
                 opacity: 0,
@@ -56,15 +50,6 @@ export default function ComoFunciona({
                 opacity: 0,
                 y: 20,
             })
-            gsap.set(comoFuncionaGridBg, {
-                opacity: 0,
-                scaleY: 0,
-                transformOrigin: 'top',
-            })
-            gsap.set(comoFuncionaGridLine, {
-                opacity: 0,
-                scaleX: 0,
-            })
 
             sectionTl.current = gsap.timeline({
                 scrollTrigger: {
@@ -73,8 +58,8 @@ export default function ComoFunciona({
                     markers: false,
                 },
                 defaults: {
-                    duration: 1,
-                    ease: 'power4.out',
+                    duration: 0.5,
+                    ease: 'power1.inOut',
                 },
             })
 
@@ -89,30 +74,14 @@ export default function ComoFunciona({
                         opacity: 1,
                         y: 0,
                     },
-                    '<+=0.5'
-                )
-                .to(
-                    comoFuncionaGridLine,
-                    {
-                        opacity: 1,
-                        scaleX: 1,
-                    },
-                    '<+=0.5'
-                )
-                .to(
-                    comoFuncionaGridBg,
-                    {
-                        opacity: 1,
-                        scaleY: 1,
-                    },
-                    '<'
+                    '<+=0.4'
                 )
                 .to(
                     comoFuncionaGridItems,
                     {
                         opacity: 1,
                         y: 0,
-                        stagger: 0.5,
+                        stagger: 0.2,
                     },
                     '<+=0.5'
                 )
@@ -127,7 +96,7 @@ export default function ComoFunciona({
             <div className="container">
                 <div className="flex w-full flex-col items-center">
                     <div className="mb-20 flex flex-col items-center text-center">
-                        <h2 className="section-title mb-4">
+                        <h2 className="section-title mb-4 font-inter">
                             {t('pages.solutions.howItWorks.title')}
                         </h2>
 
@@ -136,25 +105,22 @@ export default function ComoFunciona({
                         </p>
                     </div>
 
-                    <div className="como-funciona-grid relative grid grid-cols-1 gap-8 px-5 pt-12 lg:grid-cols-2 xl:gap-12 xl:px-20 xl:py-20">
-                        <div className="como-funciona-grid-bg absolute left-0 top-0 h-full w-full bg-gradient-to-b from-neutral-darkest/70 backdrop-blur" />
-                        <div className="como-funciona-grid-line absolute left-0 top-0 h-[2px] w-full rounded-full bg-brand-blue shadow-[0px_5px_10px_5px_rgba(0,0,0,0.2)]" />
-
+                    <div className="como-funciona-grid relative grid grid-cols-1 gap-8 lg:grid-cols-2">
                         {steps.map((step, index) => (
                             <div
                                 key={index}
-                                className="como-funciona-grid-item relative flex flex-col gap-6 rounded-lg bg-gradient-to-br from-neutral-darkest/50 p-10 shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)]"
+                                className="como-funciona-grid-item group relative flex flex-col gap-6 rounded-2xl bg-neutral-darkest/40 p-8 ring-2 ring-white/5 hover:scale-105 hover:ring-2 hover:ring-brand-blue md:p-10"
                             >
-                                <div className="flex h-max gap-6">
-                                    <span className="font-ibm text-10xl/none font-bold text-brand-blue">
+                                <div className="flex h-max gap-4 md:gap-6">
+                                    <span className="font-ibm text-6xl font-bold text-brand-blue md:text-10xl/none">
                                         {index + 1}
                                     </span>
-                                    <h3 className="whitespace-pre-line border-l-2 border-brand-blue pl-6 text-2xl/tight drop-shadow-custom">
+                                    <h3 className="whitespace-pre-line border-l-2 border-brand-blue pl-4 font-inter text-2xl normal-case drop-shadow-custom md:pl-6 md:text-3xl/tight">
                                         {step.title}
                                     </h3>
                                 </div>
                                 <div className={`flex flex-col gap-3`}>
-                                    <p className="text-base text-text-alternative drop-shadow-custom">
+                                    <p className="text-base text-neutral-200 drop-shadow-custom">
                                         {step.description}
                                     </p>
                                 </div>

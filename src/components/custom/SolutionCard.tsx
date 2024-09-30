@@ -41,28 +41,13 @@ export function SolutionCard({
             cardHeaderText: cardContainer?.children[0]?.children[0],
             cardHeaderIcon: cardContainer?.children[0]?.children[1],
             cardContentText: cardContainer?.children[1]?.children[0],
-            cardFooterText: cardContainer?.children[2]?.children[0],
+            cardFooterText: cardContainer?.children[2]?.children[0].children[0],
+            cardFooterText2:
+                cardContainer?.children[2]?.children[0].children[1],
             cardFooterArrow: cardContainer?.children[2]?.children[1],
             cardBackground: cardContainer?.children[3],
         }
     }
-
-    useGSAP(() => {
-        const { cardFooterText, cardFooterArrow } = getCardElements()
-
-        if (cardFooterText) {
-            gsap.set(cardFooterText, {
-                opacity: 0,
-                x: -10,
-            })
-        }
-        if (cardFooterArrow) {
-            gsap.set(cardFooterArrow, {
-                xPercent: 100,
-                opacity: 0,
-            })
-        }
-    }, [])
 
     const animateCard = (isEntering: boolean) => {
         const {
@@ -71,6 +56,7 @@ export function SolutionCard({
             cardHeaderIcon,
             cardContentText,
             cardFooterText,
+            cardFooterText2,
             cardFooterArrow,
             cardBackground,
         } = getCardElements()
@@ -78,20 +64,20 @@ export function SolutionCard({
         if (!tl.current) {
             tl.current = gsap.timeline({
                 defaults: {
-                    duration: 0.5,
-                    ease: 'power2.inOut',
+                    duration: 0.4,
+                    ease: 'power4.inOut',
                 },
                 paused: true,
             })
 
-            if (cardHeaderText)
-                tl.current.from(cardHeaderText, {
-                    onStart: () => {
-                        if (cardHeaderText instanceof HTMLElement) {
-                            binaryTextTransitionEffect(cardHeaderText)
-                        }
-                    },
-                })
+            // if (cardHeaderText)
+            //     tl.current.from(cardHeaderText, {
+            //         onStart: () => {
+            //             if (cardHeaderText instanceof HTMLElement) {
+            //                 binaryTextTransitionEffect(cardHeaderText)
+            //             }
+            //         },
+            //     })
             if (cardHeaderIcon)
                 tl.current.to(cardHeaderIcon, { scale: 1.2 }, '<')
             if (cardBackground)
@@ -100,23 +86,14 @@ export function SolutionCard({
                     { scaleY: 1, transformOrigin: 'top' },
                     '<'
                 )
-            if (cardContentText) {
+            if (cardFooterText && cardFooterText2)
                 tl.current.to(
-                    cardContentText,
-                    {
-                        scale: 1.02,
-                    },
-                    '<'
+                    [cardFooterText, cardFooterText2],
+                    { yPercent: -100, opacity: 1 },
+                    '-=0.3'
                 )
-            }
-            if (cardFooterText)
-                tl.current.to(cardFooterText, { opacity: 1, x: 0 }, '-=0.3')
-            if (cardFooterArrow)
-                tl.current.to(
-                    cardFooterArrow,
-                    { opacity: 1, xPercent: -100 },
-                    '<'
-                )
+
+            if (cardFooterArrow) tl.current.to(cardFooterArrow, { x: 0 }, '<')
         }
 
         if (isEntering) {
@@ -151,11 +128,11 @@ export function SolutionCard({
             onMouseLeave={handleMouseLeave}
             ref={container}
             to={url}
-            className="service-card relative flex h-[330px] select-none flex-col overflow-hidden border-t-2 border-brand-blue p-6 lg:p-8"
+            className="service-card relative flex h-[330px] select-none flex-col border-t-2 border-brand-blue p-6 lg:p-8"
         >
             {/* card header */}
             <div className="flex items-center justify-between">
-                <h3 className="whitespace-pre-line text-2xl/[1.1] font-bold">
+                <h3 className="whitespace-pre-line font-inter text-3xl/[1.1] font-bold normal-case">
                     {title.part1} <br /> {title.part2}
                 </h3>
                 <img className="h-12 w-12" src={iconMapping[icon]} alt="" />
@@ -163,17 +140,22 @@ export function SolutionCard({
 
             {/* card content */}
             <div>
-                <p className="card-description mt-8 text-sm text-neutral-200 lg:text-base">
+                <p className="card-description mt-8 text-neutral-200 drop-shadow-md lg:text-base">
                     {description}
                 </p>
             </div>
 
             {/* card footer */}
             <div className="relative mt-auto flex h-max w-full items-center justify-between overflow-hidden">
-                <span className="text-md font-semibold uppercase text-neutral-100">
-                    {t('buttons.saiba-mais')}
+                <span className="relative h-full w-full overflow-hidden text-md font-semibold uppercase">
+                    <span className="absolute left-0 top-0 h-full w-full">
+                        {t('buttons.saiba-mais')}
+                    </span>
+                    <span className="absolute left-0 top-0 h-full w-full translate-y-full opacity-0">
+                        {t('buttons.saiba-mais')}
+                    </span>
                 </span>
-                <MoveRight size={24} className="" />
+                <MoveRight size={24} className="translate-x-[150%]" />
             </div>
 
             {/* card background */}

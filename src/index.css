@@ -61,10 +61,6 @@
 }
 
 @layer utilities {
-    .card-bg {
-        @apply shadow-custom relative rounded-3xl border border-white/10 bg-neutral-darkest/50 before:absolute before:inset-0 before:-z-50 before:rounded-3xl before:backdrop-blur;
-    }
-
     .page-section {
         @apply relative min-h-[90vh] px-[5%] py-16 md:py-24 lg:py-28;
     }
