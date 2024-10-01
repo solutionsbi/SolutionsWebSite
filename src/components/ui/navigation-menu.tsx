@@ -73,7 +73,7 @@ const NavigationMenuItem = NavigationMenuPrimitive.Item
 // navigationMenuTriggerStyle is a function that generates classes for the NavigationMenuTrigger.
 // It uses cva (class-variance-authority) to create a set of classes that can be easily customized.
 const navigationMenuTriggerStyle = cva(
-    'group inline-flex w-max items-center justify-center transition-colors hover:text-blue-500 focus:text-blue-500 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:text-blue-500 data-[state=open]:text-blue-500'
+    'group inline-flex w-max items-center justify-center transition-colors hover:text-brand-blue focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:text-blue-500* data-[state=open]:text-brand-blue'
 )
 
 // NavigationMenuTrigger is the clickable element that toggles the visibility of NavigationMenuContent.
