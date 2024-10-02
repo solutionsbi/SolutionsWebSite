@@ -4,13 +4,12 @@ import Hero from './Sections/Hero'
 import Solucoes from './Sections/Solucoes'
 import Partners from './Sections/Partners'
 import { Map } from './Sections/Map'
-// import { Map2 } from './Sections/Map2'
 import Benefícios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Cta from './Sections/Cta'
 
-import heroBackgroundImage from '@/assets/images/Background/11.jpeg'
-import benefitsBackgroundImage from '@/assets/images/Background/firefly/6.jpg'
+import heroBackgroundImage from '@/assets/webp-imgs/1.webp'
+import benefitsBackgroundImage from '@/assets/webp-imgs/3.webp'
 
 export default function Home() {
     const { t } = useTranslation()
@@ -22,6 +21,7 @@ export default function Home() {
     return (
         <div className="grid">
             <Hero
+                className="h-[64vh]"
                 position="center"
                 title={
                     <>
@@ -45,7 +45,6 @@ export default function Home() {
             <Solucoes />
             <Partners />
             <Map />
-            {/* <Map2 /> */}
             <Benefícios
                 title={
                     <>

@@ -7,8 +7,8 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
-import heroBg from '@/assets/images/Solutions/inteligencia-artificial.jpeg'
-import benefitsBg from '@/assets/images/Background/25.jpeg'
+import heroBg from '@/assets/webp-imgs/ia-bg.webp'
+import benefitsBg from '@/assets/webp-imgs/1.webp'
 
 export default function InteligenciaArtificial() {
     const { t } = useTranslation()
@@ -20,6 +20,7 @@ export default function InteligenciaArtificial() {
     return (
         <>
             <Hero
+                className="h-[60vh]"
                 position="start"
                 title={
                     <>

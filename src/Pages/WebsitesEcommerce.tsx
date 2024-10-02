@@ -7,8 +7,8 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
-import heroBg from '@/assets/images/Solutions/websites-ecommerce.jpeg'
-import benefitsBg from '@/assets/images/Background/25.jpeg'
+import heroBg from '@/assets/webp-imgs/websites-ecommerce-bg.webp'
+import benefitsBg from '@/assets/webp-imgs/1.webp'
 
 export default function WebsistesEcommerce() {
     const { t } = useTranslation()
@@ -20,6 +20,7 @@ export default function WebsistesEcommerce() {
     return (
         <>
             <Hero
+                className="h-[60vh]"
                 position="start"
                 title={
                     <>

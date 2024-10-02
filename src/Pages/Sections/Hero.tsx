@@ -118,7 +118,7 @@ export default function Hero({
     return (
         <section
             ref={container}
-            className={`relative h-[78vh] px-[5%] ${props.className}`}
+            className={`relative px-[5%] ${props.className}`}
         >
             <div className="section-bg absolute left-0 top-[-12vh] -z-50 h-[100vh] w-full">
                 <img

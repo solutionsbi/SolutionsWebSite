@@ -7,8 +7,8 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
-import heroBg from '@/assets/images/Background/1.jpeg'
-import benefitsBg from '@/assets/images/Background/25.jpeg'
+import heroBg from '@/assets/webp-imgs/engenharia-de-dados-bg.webp'
+import benefitsBg from '@/assets/webp-imgs/1.webp'
 
 export default function EngenhariaDeDados() {
     const { t } = useTranslation()
@@ -20,7 +20,7 @@ export default function EngenhariaDeDados() {
     return (
         <div className="grid">
             <Hero
-                className="h-[50vh]"
+                className="h-[60vh]"
                 position="start"
                 title={
                     <>

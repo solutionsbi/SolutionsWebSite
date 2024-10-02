@@ -109,20 +109,25 @@ export default function Timeline() {
         () => {
             if (!container.current) return
 
-            gsap.from(container.current, {
-                opacity: 0,
-                duration: 1,
-                ease: 'power1.inOut',
-                delay: 1,
-            })
+            let mm = gsap.matchMedia()
 
-            // Set up our scroll trigger
-            const ST = ScrollTrigger.create({
-                trigger: container.current,
-                start: 'top 20%',
-                end: 'bottom bottom',
-                pin: '.left-content',
-                pinSpacing: false,
+            mm.add('(min-width: 768px)', () => {
+                gsap.from(container.current, {
+                    opacity: 0,
+                    duration: 1,
+                    ease: 'power1.inOut',
+                    delay: 1,
+                })
+
+                // Set up our scroll trigger
+                const ST = ScrollTrigger.create({
+                    trigger: container.current,
+                    start: 'top 10%',
+                    end: 'bottom bottom',
+                    pin: '.left-content',
+                    pinSpacing: false,
+                    markers: false,
+                })
             })
         },
         { scope: container }
