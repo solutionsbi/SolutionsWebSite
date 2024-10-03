@@ -92,20 +92,6 @@ export default function SolutionsCarousel() {
 
     return (
         <div className="relative">
-            <div className="mb-8 flex justify-center">
-                {Array.from({ length: count }).map((_, index) => (
-                    <button
-                        key={index}
-                        className={cn(
-                            'mx-1 h-2 w-2 rounded-full transition-all duration-300',
-                            current === index + 1
-                                ? 'bg-brand-blue'
-                                : 'bg-neutral-100'
-                        )}
-                        onClick={() => api?.scrollTo(index)}
-                    />
-                ))}
-            </div>
             <Carousel
                 setApi={setApi}
                 ref={container}
@@ -143,6 +129,20 @@ export default function SolutionsCarousel() {
                     variant="icon"
                 />
             </Carousel>
+            <div className="mt-10 flex justify-center">
+                {Array.from({ length: count }).map((_, index) => (
+                    <button
+                        key={index}
+                        className={cn(
+                            'mx-1 h-2 w-2 rounded-full transition-all duration-300',
+                            current === index + 1
+                                ? 'bg-brand-blue'
+                                : 'bg-neutral-100'
+                        )}
+                        onClick={() => api?.scrollTo(index)}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

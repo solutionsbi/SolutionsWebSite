@@ -20,7 +20,7 @@ export default function Home() {
     return (
         <div className="grid">
             <Hero
-                className="h-[64vh]"
+                className="h-[68vh]"
                 position="center"
                 title={
                     <>
