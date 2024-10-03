@@ -93,7 +93,7 @@ export default function Beneficios({
                 scrollTrigger: {
                     trigger: container.current,
                     start: 'top 80%',
-                    markers: true,
+                    markers: false,
                 },
                 defaults: {
                     duration: 2,
