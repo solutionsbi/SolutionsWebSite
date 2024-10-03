@@ -1,5 +1,3 @@
-// Original Map.tsx file
-import React from 'react'
 import { lazy, Suspense } from 'react'
 
 const LazyMap = lazy(() => import('@/components/custom/LazyLoadedMap'))

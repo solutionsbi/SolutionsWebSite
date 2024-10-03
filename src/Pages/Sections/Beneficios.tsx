@@ -67,19 +67,8 @@ export default function Beneficios({
 
             //background animation
             gsap.set(sectionBg, {
-                autoAlpha: 0.5,
+                autoAlpha: 0,
                 scale: 0.8,
-            })
-            gsap.to(sectionBg, {
-                autoAlpha: 1,
-                scale: 1,
-                scrollTrigger: {
-                    trigger: container.current,
-                    start: 'top bottom',
-                    end: 'bottom top',
-                    markers: false,
-                    scrub: 1,
-                },
             })
 
             gsap.set(sectionTitle, {
@@ -92,42 +81,40 @@ export default function Beneficios({
             })
             gsap.set(sectionBenefits, {
                 autoAlpha: 0,
-                x: -20,
+                x: -100,
             })
 
             gsap.set(sectionsCtas, {
                 autoAlpha: 0,
-                x: 20,
+                x: 50,
             })
 
             enterTl.current = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top 90%',
+                    start: 'top 80%',
                     markers: false,
                 },
                 defaults: {
-                    duration: 0.5,
-                    ease: 'power1.out',
+                    duration: 2,
+                    // ease: 'elastic.out(0.5, 0.75)',
                 },
             })
 
-            enterTl.current.to(sectionTitle, { autoAlpha: 1, y: 0 }, '<+=1')
-            enterTl.current.to(
-                sectionDescription,
-                { autoAlpha: 1, y: 0 },
-                '<+=0.2'
-            )
-            enterTl.current.to(
-                sectionBenefits,
-                { autoAlpha: 1, x: 0, stagger: 0.5 },
-                '<+=0.2'
-            )
-            enterTl.current.to(
-                sectionsCtas,
-                { autoAlpha: 1, x: 0, stagger: 0.1 },
-                '<+=0.2'
-            )
+            enterTl.current
+                .to(sectionBg, {
+                    autoAlpha: 0.8,
+                    scale: 1,
+                    duration: 2,
+                })
+                .to(sectionTitle, { autoAlpha: 1, y: 0 }, '<')
+                .to(sectionDescription, { autoAlpha: 1, y: 0 }, '<+=0.2')
+                .to(
+                    sectionBenefits,
+                    { autoAlpha: 1, x: 0, stagger: 0.2, duration: 1.5 },
+                    '<+=0.2'
+                )
+                .to(sectionsCtas, { autoAlpha: 1, x: 0 }, '<+=0.2')
         },
         { scope: container }
     )
@@ -166,7 +153,7 @@ export default function Beneficios({
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
-                            className="benefit-item relative flex w-full max-w-md flex-col gap-4 border-l-2 border-brand-blue bg-gradient-to-r from-neutral-darkest/50 px-8 py-6 shadow-[-5px_5px_10px_1px_rgba(0,0,0,0.2)] backdrop-blur"
+                            className="benefit-item relative flex w-full max-w-md flex-col gap-4 border-l-2 border-brand-blue bg-gradient-to-r from-neutral-darkest/70 px-8 py-6 shadow-[-5px_5px_10px_1px_rgba(0,0,0,0.2)] backdrop-blur"
                         >
                             <div className="flex items-center gap-3">
                                 <img

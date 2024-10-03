@@ -9,57 +9,57 @@ const LazyLoadedMap = () => {
     const container = useRef<SVGSVGElement | null>(null)
     const tl = useRef<gsap.core.Timeline | null>(null)
 
-    useGSAP(
-        () => {
-            const countries = gsap.utils.toArray(
-                container.current?.querySelectorAll('.country') || []
-            ) as SVGSetElement[]
-            const countryIcons = gsap.utils.toArray(
-                container.current?.querySelectorAll('.country-icon') || []
-            ) as SVGElement[]
+    // useGSAP(
+    //     () => {
+    //         const countries = gsap.utils.toArray(
+    //             container.current?.querySelectorAll('.country') || []
+    //         ) as SVGSetElement[]
+    //         const countryIcons = gsap.utils.toArray(
+    //             container.current?.querySelectorAll('.country-icon') || []
+    //         ) as SVGElement[]
 
-            gsap.set(countries, {
-                autoAlpha: 0,
-            })
-            gsap.set(countryIcons, {
-                autoAlpha: 0,
-                y: -20,
-            })
+    //         gsap.set(countries, {
+    //             autoAlpha: 0,
+    //         })
+    //         gsap.set(countryIcons, {
+    //             autoAlpha: 0,
+    //             y: -20,
+    //         })
 
-            tl.current = gsap.timeline({
-                defaults: {
-                    duration: 0.5,
-                    ease: 'power4.out',
-                },
-                scrollTrigger: {
-                    trigger: container.current,
-                    start: 'top bottom',
-                    markers: false,
-                },
-            })
+    //         tl.current = gsap.timeline({
+    //             defaults: {
+    //                 duration: 0.5,
+    //                 ease: 'power4.out',
+    //             },
+    //             scrollTrigger: {
+    //                 trigger: container.current,
+    //                 start: 'top bottom',
+    //                 markers: false,
+    //             },
+    //         })
 
-            tl.current
-                .to(
-                    countries,
-                    {
-                        autoAlpha: 1,
+    //         tl.current
+    //             .to(
+    //                 countries,
+    //                 {
+    //                     autoAlpha: 1,
 
-                        stagger: 0.05,
-                    },
-                    '<+=0.2'
-                )
-                .to(
-                    countryIcons,
-                    {
-                        autoAlpha: 1,
-                        y: 0,
-                        stagger: 0.2,
-                    },
-                    '<+=0.2'
-                )
-        },
-        { scope: container }
-    )
+    //                     stagger: 0.05,
+    //                 },
+    //                 '<+=0.2'
+    //             )
+    //             .to(
+    //                 countryIcons,
+    //                 {
+    //                     autoAlpha: 1,
+    //                     y: 0,
+    //                     stagger: 0.2,
+    //                 },
+    //                 '<+=0.2'
+    //             )
+    //     },
+    //     { scope: container }
+    // )
 
     return (
         <div className="container relative grid h-full w-full place-content-center">

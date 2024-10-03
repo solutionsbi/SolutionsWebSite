@@ -119,7 +119,7 @@ export default function Partners() {
                 scale: 0.8,
             })
             gsap.to(sectionBg, {
-                autoAlpha: 1,
+                autoAlpha: 0.8,
                 scale: 1,
                 duration: 2,
                 ease: 'power1.inOut',
@@ -128,7 +128,6 @@ export default function Partners() {
                     start: 'top bottom',
                     end: 'bottom top',
                     markers: false,
-                    scrub: 1,
                 },
             })
 
