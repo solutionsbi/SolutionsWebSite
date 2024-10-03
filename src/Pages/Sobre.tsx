@@ -5,7 +5,7 @@ import Timeline from './Sections/Timeline'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
-import heroImage from '@/assets/images/Background/14.jpeg'
+import heroImage from '@/assets/images/Background/22.webp'
 
 export default function Sobre() {
     const { t } = useTranslation()

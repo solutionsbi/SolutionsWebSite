@@ -7,8 +7,7 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
-import heroBg from '@/assets/images/Solutions/transformacao-digital.jpeg'
-import benefitsBg from '@/assets/images/Background/25.jpeg'
+import heroBg from '@/assets/images/Background/26.webp'
 
 export default function TransformacaoDigital() {
     const { t } = useTranslation()
@@ -20,6 +19,7 @@ export default function TransformacaoDigital() {
     return (
         <>
             <Hero
+                className="h-[80vh]"
                 position="start"
                 title={
                     <>
@@ -50,7 +50,6 @@ export default function TransformacaoDigital() {
             />
             <Beneficios
                 title={translations.benefits.title}
-                background={benefitsBg}
                 description={translations.benefits.description}
                 benefits={translations.benefits.cards.map((card: any) => ({
                     title: card.title,

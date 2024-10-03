@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import ctaImage from '@/assets/images/Background/2.jpeg'
+import ctaImage from '@/assets/images/Background/18.webp'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Cta() {

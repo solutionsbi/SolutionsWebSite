@@ -7,8 +7,7 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
-import heroBg from '@/assets/images/solutions/engenharia-de-dados.jpeg'
-import benefitsBg from '@/assets/images/Background/25.jpeg'
+import heroBg from '@/assets/images/Background/30.webp'
 
 export default function EngenhariaDeDados() {
     const { t } = useTranslation()
@@ -20,7 +19,7 @@ export default function EngenhariaDeDados() {
     return (
         <div className="grid">
             <Hero
-                className="h-[50vh]"
+                className="h-[80vh]"
                 position="start"
                 title={
                     <>
@@ -57,7 +56,6 @@ export default function EngenhariaDeDados() {
                     linkType: 'external',
                 }}
                 title={translations.benefits.title}
-                background={benefitsBg}
                 description={translations.benefits.description}
                 benefits={translations.benefits.cards.map(
                     (card: any, index: any) => ({

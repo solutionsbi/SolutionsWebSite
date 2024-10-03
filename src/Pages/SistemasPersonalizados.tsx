@@ -7,8 +7,7 @@ import Faq from './Sections/Faq'
 import Solucoes from './Sections/Solucoes'
 import Cta from './Sections/Cta'
 
-import heroBg from '@/assets/images/Solutions/sistemas-personalizados.jpeg'
-import benefitsBg from '@/assets/images/Background/25.jpeg'
+import heroBg from '@/assets/images/Background/19.webp'
 
 export default function SistemasPersonalizados() {
     const { t } = useTranslation()
@@ -20,6 +19,7 @@ export default function SistemasPersonalizados() {
     return (
         <>
             <Hero
+                className="h-[80vh]"
                 position="start"
                 title={
                     <>
@@ -50,7 +50,6 @@ export default function SistemasPersonalizados() {
             />
             <Beneficios
                 title={translations.benefits.title}
-                background={benefitsBg}
                 description={translations.benefits.description}
                 benefits={translations.benefits.cards.map(
                     (card: any, index: any) => ({
