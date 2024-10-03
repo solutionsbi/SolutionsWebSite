@@ -209,7 +209,9 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="additional-footer-container container flex flex-col items-center justify-between gap-10 py-10 lg:flex-row">
-                    <img src={logo} alt="solutionsbi logo" />
+                    <Link to="/">
+                        <img src={logo} alt="solutionsbi logo" />
+                    </Link>
                     <div className="flex flex-col items-center gap-4 text-neutral-300 md:flex-row">
                         <p className="text-center md:text-start">
                             {t('layout.footer.copyright')}
