@@ -12,6 +12,8 @@ import icon2 from '@/assets/svg/abstract-icons/icon2.svg'
 import icon3 from '@/assets/svg/abstract-icons/icon3.svg'
 import icon4 from '@/assets/svg/abstract-icons/icon4.svg'
 
+import benefitsBackgroundImage from '@/assets/images/Background/8.webp'
+
 const icons = [icon1, icon2, icon3, icon4]
 
 export type Benefit = {
@@ -23,7 +25,6 @@ type BeneficiosProps = {
     title: React.ReactNode
     description: string
     benefits: Benefit[]
-    background: string
     cta: PrimaryButtonProps
 }
 
@@ -31,7 +32,6 @@ export default function Beneficios({
     title,
     description,
     benefits,
-    background,
     cta,
 }: BeneficiosProps) {
     const container = useRef<HTMLElement>(null)
@@ -67,7 +67,7 @@ export default function Beneficios({
 
             //background animation
             gsap.set(sectionBg, {
-                autoAlpha: 0,
+                autoAlpha: 0.5,
                 scale: 0.8,
             })
             gsap.to(sectionBg, {
@@ -136,7 +136,7 @@ export default function Beneficios({
         <section ref={container} className="page-section">
             <div className="section-bg absolute left-1/2 top-1/2 -z-50 mx-auto h-[120%] w-full max-w-[1920px] translate-x-[-50%] translate-y-[-50%]">
                 <img
-                    src={background}
+                    src={benefitsBackgroundImage}
                     className="mask-rect h-full w-full object-cover opacity-100"
                 />
             </div>

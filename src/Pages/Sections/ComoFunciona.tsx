@@ -54,7 +54,7 @@ export default function ComoFunciona({
             sectionTl.current = gsap.timeline({
                 scrollTrigger: {
                     trigger: container.current,
-                    start: 'top 68%',
+                    start: 'top 80%',
                     markers: false,
                 },
                 defaults: {

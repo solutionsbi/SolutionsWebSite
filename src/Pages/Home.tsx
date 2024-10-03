@@ -8,8 +8,7 @@ import Benefícios from './Sections/Beneficios'
 import Faq from './Sections/Faq'
 import Cta from './Sections/Cta'
 
-import heroBackgroundImage from '@/assets/optimized-imgs/1.webp'
-import benefitsBackgroundImage from '@/assets/webp-imgs/3.webp'
+import heroBackgroundImage from '@/assets/images/Background/7.webp'
 
 export default function Home() {
     const { t } = useTranslation()
@@ -54,7 +53,6 @@ export default function Home() {
                         </span>
                     </>
                 }
-                background={benefitsBackgroundImage}
                 description={homeData.sections.benefits.description}
                 benefits={homeData.sections.benefits.cards.map((card: any) => ({
                     title: card.title,

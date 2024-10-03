@@ -3,10 +3,9 @@ import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
 import { animateCounting } from '@/lib/animateCouting'
-// import sectionBg from '@assets/images/Background/firefly/10.jpg'
-import sectionBg from '@assets/webp-imgs/4.webp'
+
+import sectionBg from '@/assets/images/Background/1.webp'
 import samsumgLogo from '@assets/images/Partner Logos/samsung.svg'
 import ambevLogo from '@assets/images/Partner Logos/ambev.png'
 import abercrombieLogo from '@assets/images/Partner Logos/abercrombie.svg'
@@ -116,7 +115,7 @@ export default function Partners() {
 
             // background animation
             gsap.set(sectionBg, {
-                autoAlpha: 0,
+                autoAlpha: 0.5,
                 scale: 0.8,
             })
             gsap.to(sectionBg, {
