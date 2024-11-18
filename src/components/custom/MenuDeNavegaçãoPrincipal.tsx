@@ -33,9 +33,17 @@ import {
 } from 'lucide-react'
 
 export function MenuDeNavegaçãoPrincipal() {
-    const { t } = useTranslation()
+    const { t, i18n, ready } = useTranslation('translation', {
+        useSuspense: false,
+    })
     const location = useLocation()
     const navigate = useNavigate()
+
+    // Add loading and initialization checks
+    if (!i18n.isInitialized || !ready) {
+        return <div>Loading...</div> // Or your loading component
+    }
+
     const solutionsData = t('pages.solutions.items', {
         returnObjects: true,
     }) as Record<string, any>

@@ -7,17 +7,22 @@ i18n.use(Backend)
     .init({
         fallbackLng: 'pt',
         supportedLngs: ['pt', 'en'],
-        lng: 'pt', // Set default language to Portuguese
+        lng: 'pt',
         debug: true,
         interpolation: {
             escapeValue: false,
         },
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json',
+            crossDomain: true,
+            withCredentials: true,
         },
         react: {
-            useSuspense: true,
+            useSuspense: false,
         },
+        ns: ['translation'],
+        defaultNS: 'translation',
+        initImmediate: false,
     })
 
 export default i18n
