@@ -109,7 +109,7 @@ export default function ComoFunciona({
                         {steps.map((step, index) => (
                             <div
                                 key={index}
-                                className="como-funciona-grid-item group relative flex flex-col gap-6 rounded-2xl bg-neutral-darkest/40 p-8 ring-2 ring-white/5 hover:scale-105 hover:ring-2 hover:ring-brand-blue md:p-10"
+                                className="como-funciona-grid-item group relative flex flex-col gap-6 rounded-2xl bg-neutral-darkest/40 p-8 ring-2 ring-white/5 md:p-10"
                             >
                                 <div className="flex h-max gap-4 md:gap-6">
                                     <span className="font-ibm text-6xl font-bold text-brand-blue md:text-10xl/none">

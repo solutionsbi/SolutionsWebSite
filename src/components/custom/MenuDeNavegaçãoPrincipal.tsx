@@ -2,6 +2,7 @@ import * as React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/utils'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 import {
     NavigationMenu,
@@ -32,7 +33,17 @@ import {
 } from 'lucide-react'
 
 export function MenuDeNavegaçãoPrincipal() {
-    const { t } = useTranslation()
+    const { t, i18n, ready } = useTranslation('translation', {
+        useSuspense: false,
+    })
+    const location = useLocation()
+    const navigate = useNavigate()
+
+    // Add loading and initialization checks
+    if (!i18n.isInitialized || !ready) {
+        return <div>Loading...</div> // Or your loading component
+    }
+
     const solutionsData = t('pages.solutions.items', {
         returnObjects: true,
     }) as Record<string, any>
@@ -75,17 +86,29 @@ export function MenuDeNavegaçãoPrincipal() {
         iconWebsitesEEcommerces,
     ]
 
+    const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault()
+        if (location.pathname === '/') {
+            // If on homepage, scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        } else {
+            // If on another page, navigate to homepage and scroll to top
+            navigate('/')
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+    }
+
     return (
         <nav className="w-full">
             <div className="flex h-full items-center justify-between px-4 py-2">
                 <div className="flex-shrink-0">
-                    <NavLink to="/">
+                    <a href="/" onClick={handleLogoClick}>
                         <img
                             className="h-10 w-auto object-contain lg:h-12"
                             src={logo}
                             alt="logo"
                         />
-                    </NavLink>
+                    </a>
                 </div>
 
                 <div className="flex justify-center">
